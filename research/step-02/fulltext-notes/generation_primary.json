@@ -1,0 +1,104 @@
+[
+  {
+    "id": "L30",
+    "full_text_reviewed": true,
+    "title": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "method": {
+      "target": "A single instruction-tuned generative LLM predicts answer y; y is held fixed while the same LLM generates and refines its post-hoc explanation.",
+      "pipeline": "Generate answer, generate initial explanation, then K feedback/refinement rounds. Natural-language feedback is regenerated from each current explanation; important-word feedback (IWF) is computed once and reused across rounds (Algorithm1). IWF variants are prompt ranking, final-layer mean-attention and Integrated Gradients.",
+      "attribution": "Sequentially attribute each answer-span token to preceding input/output context; use absolute values, sum across answer tokens, then aggregate subword scores to words from task input excluding prompt tokens. Top5 words guide explanations; this is unsigned magnitude evidence, not signed contribution claims.",
+      "checks": "Method refines from supplied feedback; the CT faithfulness test is an evaluation on label-changing inserted-word interventions. It does not apply a semantic claim verifier/release gate to every final explanation. Prompts request retaining correct content, but no mechanically enforced supported-claim contract is supplied."
+    },
+    "evaluation": {
+      "datasets": "ComVE, ECQA, e-SNLI; first1000test examples from each. GPT-4o generates20coherent unique adjective/adverb insertion interventions per original, yielding20000intervened inputs per dataset/model. Manual intervention quality check150examples (50perdataset).",
+      "models": "Falcon3-Instruct7B, Llama3.1-Instruct8B, Mistral-Instruct-v0.3 7B, Qwen2.5-Instruct7B; greedy generation, K≤3, top5words.",
+      "metric": "Only counter instances whose prediction changes are scored. Unfaithfulness=Ncounter explanations that do not string-match the inserted word / Ncounter. This is influential-word acknowledgment, not arbitrary semantic claim support. Counter counts vary392–3058 by model/dataset (Appendix F.2 Table8).",
+      "baselines": "Initial NLE; SC-NLE samples20explanations at T=1 and uses all-mpnet-base-v2 semantic-centroid voting; NLF vs IWF variants. G-TEX numbers are taken from a different paper and authors explicitly say not fully controlled. Random5word feedback is an appendix diagnostic on e-SNLI.",
+      "reported_result": "After3rounds, Table1 macro-average across12dataset-model conditions: Init54.81%unfaithfulness, SC49.74%, NLF47.58%, IWF-Pmt37.23%, IWF-Attn36.02%, IWF-IG36.30%; best reported absolute change18.79percentage points from Init. These are conditional CT proxy outcomes, not semantic verification accuracy or universal faithfulness.",
+      "critical_control": "AppendixF.6 Table12 e-SNLI: random-word feedback29.28% mean, IWF-Pmt30.10%, IWF-Attn27.69%, IWF-IG28.39%. Random trials use3seeds; result shows selected-word quality need not explain most improvement. Table13 acknowledgment-in-topN rates also compare to random."
+    },
+    "limitations": [
+      "Authors: post-hoc explanations only; sole CT metric, no plausibility/completeness/reference alignment; underlying attention/IG reliability and baseline dependence; models only7–8B.",
+      "IG uses EOS-embedding baseline. Selected500integrationsteps for Falcon/Llama/Mistral and1000forQwen make exact IG variant expensive; no actual compute configuration/runtime table is supplied in the inspected paper.",
+      "Conditioning on label-changing interventions and lexical string matching limits construct validity. Length increases with refinement (Fig6); related surface overlap/length effects need independent controls.",
+      "Paper itself acknowledges close-to-random important-word selection. Do not characterize random-feedback weakness as an undisclosed flaw or claim this paper proves causally faithful internal explanations."
+    ],
+    "claim_preservation_overlap": {
+      "exists": "Checks refined explanations after generation for inserted-word inclusion; refiner prompts instruct preserving correct parts and integrating feedback naturally (Tables21–22). Same fixed answer and reused attribution feedback are relevant prior art.",
+      "not_found_in_inspected_text": "No novice/expert audience transformation experiment, general atomic factual/model-evidence claim audit, supported paraphrase versus contradiction diagnostic, or risk/coverage abstention release mechanism. The CT is a specific proxy rather than full semantic preservation.",
+      "scope_caution": "The absence assessment is limited to this inspected paper and its appendices; not evidence that the broader field lacks those features."
+    },
+    "novelty_implication": "Attribution-guided post-hoc explanation refinement with fixed target answer is established. Any contribution should exceed this with a concrete preservation mechanism and independent diagnostics; include random-word feedback and length controls before asserting attribution superiority.",
+    "baseline_feasibility": "Prompt-based IWF is the most feasible lightweight direct comparator: one model, once-computed top5word ranking, K3refinements. Attention needs local internals; exact IG variant is substantially costlier. Clearly label prompt-IWF as prompted evidence, not grounded numerical attribution. Reproduce CT separately from any new claim-consistency metric.",
+    "locators": [
+      "PDFpp3–5, §§3.1–3.3: single-model architecture, equations1–9, absolute/summed attributions.",
+      "PDFp6, §§4.3–4.5: CT string-match definition, interventions, SC-NLE and greedy/top5/K3 setup.",
+      "PDFp7, Tables1–2 and §5.2: reported results and uncontrolled G-TEX comparison caveat.",
+      "PDFp8, Fig6: explanation length versus proxy unfaithfulness.",
+      "PDFp10, Limitations: sole evaluation proxy and attribution/model-scale caveats.",
+      "PDFpp12–14, AppendicesA–E: dataset first1000, modelnames, EOSbaseline,500/1000IGsteps.",
+      "PDFpp15–16, AppendixF.2/F.6, Tables8/12/13: counter denominators and random-word control.",
+      "PDFp18, Algorithm1: IWF computed once, reused; answer fixed.",
+      "PDFpp22–27, Tables17–22: all prompts and correct-content retention requests."
+    ],
+    "corrections_to_interim": [
+      "Prior code-inspection concern is confirmed in full-paper §4.3, not merely an implementation peculiarity.",
+      "Important-word feedback is reused across rounds in Algorithm1; do not imply recomputing attribution every refinement is required.",
+      "Add explicit random-word feedback and explanation-length controls; paper already includes the random diagnostic.",
+      "Results are conditional influential-word mention rates over counter instances, not full semantic unsupported-claim detection or per-input release reliability.",
+      "G-TEX cross-paper comparison cannot substantiate controlled head-to-head superiority."
+    ]
+  },
+  {
+    "id": "L36",
+    "full_text_reviewed": true,
+    "title": "Faithfulness Serum: Mitigating the Faithfulness Gap in Textual Explanations of LLM Decisions via Attribution Guidance",
+    "method": {
+      "target": "Fixed prior answer from an unmodified target LLM; explaining generation is steered after prediction. Compute PE-LRP relevance for first generated answer token, aggregate relevance over question input (excluding system/generated tokens), add alpha*relevance to post-softmax attention at selected layers throughout explanation decoding.",
+      "intervention": "Main local models Llama3.1-8B-Instruct and Qwen2.5-7B-Instruct. Layers17–19 selected by logit-lens study. Staticalpha=.06Llama/.1Qwen from MMLU auxiliary-training lexical-diversity sweep.",
+      "adaptive": "TTalpha regenerates explanation while adjustingalpha to seek distinct-1 ratio35–45%, max15iterations. This controls a lexical-diversity proxy, not verified support/claim risk; generation is not simply one extra pass in this adaptive variant.",
+      "evaluation_setup": "Inject four misleading hint types; retain instances where the same target model changes its answer to the hint-provided answer; ask post-hoc explanation with general or protocol-specific prompts (and intermediate grounding prompts)."
+    },
+    "evaluation": {
+      "metrics": "Two final-output evaluations: Qwen2.5-14B-Instruct judge requires explicit hint mention PLUS substantive reliance; CT keyword test accepts distinctive words per hint category. Neither checks every factual/model-evidence claim. Human validation of judge96sampledexplanations×3independentreviewers, average93.4%agreement with judge and reportedkappa.84.",
+      "data_denominators": "MainMMLU1000successfullyhint-flippedexamples per hint category for each open model; counts of searched inputs are reported (Llama1182–3378; Qwen1896–3232 dependinghint). Closedmodel evaluation50successfullyflippedexamples per hint/model (GPT4o,Gemini2.0Flash). Additional ARC-C,OpenBookQA,CommonsenseQA,SciQ report full dataset and selectedflip counts in Table8. Open-ended MMLU extension also used.",
+      "baselines": "Unsteered explanation with same prompts; four promptingstrategies; attentionrollout/layer-to-layer relevance alternatives; firsttoken-only/firstsentence/full-decoding intervention; firstanswer-token vs explicitlabeltoken PE-LRP target.",
+      "reported_result_example": "Table1 LlamaMMLU general metadata hint1000selectedflips: judge acknowledgment3.0→10.0%; CT2.9→6.9%. Sycophancy judge36.1→47.7%; CT47→65%. These specific conditional outcomes must not become universal validity/faithfulness improvements.",
+      "adaptive_reporting_caution": "Table4 caption says1000examples, but §5 describes100benchmarksamples perhint across3seeds; preserve unresolved denominator mismatch if quoting TTalpha exact results. Main prose reports7.2generationsaverage. Credit-bias paragraph/Table6 also differ100vs1000sample wording; avoid those exact counts without clarification."
+    },
+    "limitations": [
+      "Predict-and-explain only and attention mechanism only are explicit author limitations; residual/feed-forward/normalization effects not handled.",
+      "Evaluation focuses on acknowledgment/dependence for synthetic hint-induced answer changes. This is a narrow known-influence test, not exhaustive truth, causal completeness or robustness to all real inputs.",
+      "CT keyword matches can accept superficial references; complementary judge has human agreement but is still not universal ground truth.",
+      "Paper qualitative guided examples can acknowledge a hint while retaining incorrect arithmetic or factual claims (AppendixC,PDFpp18–19). Thus hint attribution and globally correct supported claims differ.",
+      "Static method adds one PE-LRP backward pass plus explanation attention modifications; no empiricalwallclockcosttable supplied. TTalpha multiple generations adds further cost. Experimental infrastructure NVIDIAH10080GB, individualrunmax24h.",
+      "PDF title is Faithfulness Serum whereas inspected ACL XML/title metadata says Faithful Serum: flag version/title discrepancy rather than silently assume identical title metadata."
+    ],
+    "claim_preservation_overlap": {
+      "exists": "Finalgeneratedexplanations are semantically assessed for hint dependence by judge, with keyword complement and limited human judge validation. It is incorrect to say this predecessor never evaluates final text or has no semantic checking. It also compares explicitgrounding prompts and generationfluency.",
+      "not_found_in_inspected_text": "No audience-specific rewriting stage, fixed-evidence claim schema with preservation tests across novice/expert variants, or release/abstention criterion based on independent general claim support. TTalpha is fluency-adaptive, not evidencesupport gating.",
+      "scope_caution": "Conditional hintcounter yields are reported; do not claim authors hide all selection denominators. Coverage of successfulhint construction is different from an explanationreleasecoverage protocol."
+    },
+    "novelty_implication": "Attribution-grounded generation plus counterfactual influence testing and semantically judged final explanations is direct2026priorart. A candidate preservation study must target a distinguishable property such as semantic content across audience transformations, not just final-output checking.",
+    "baseline_feasibility": "Faithful attentionsteering requireslocalopenweight model and PE-LRP/backward/attentionhooks; potentially expensive for studentcompute. Treat as nearestmethod priority but only reproduce ifinternals/hardwareavailable. Promptgrounding baselines are easier but not reproduction of Serum. Do not claim wholemethod matched using only attributionwordsinprompt.",
+    "locators": [
+      "PDFp1: actual inspected title Faithfulness Serum; proceedingspp6622–6645,ACLJuly2026.",
+      "PDFpp3–4, §3: hint-inducedflip setup, conditionalselection,LLMjudge and CT,openendedextension.",
+      "PDFp5, §4Eq1: PE-LRPfirstanswertoken,question-tokenattention, layers17–19.",
+      "PDFp6, §4/§5: staticstrength,distinct-1 threshold,TTalpha max15;MMLUsearchcounts.",
+      "PDFp7, Tables1–4: mainmetrics,closedmodeldenominators,TTalphacaptionvsprose mismatch.",
+      "PDFpp8–9, §5.1/Limitations: otherdatasets/ablations and paradigm/attentionlimits.",
+      "PDFpp13–14, AppendixB: exactjudgeprompt,96×3humanvalidation,keywordsets.",
+      "PDFpp18–19, AppendixC.3: guidedexplanations acknowledgehint but contain unsupportedcontradictoryarithmetic.",
+      "PDFp22, AppendicesD/F/G: staticaddedbackwardpass,H10080GB,max24h,otherdatasetcounts.",
+      "PDFpp23–24, AppendixH/I: decoding/targetablations andpseudocode."
+    ],
+    "corrections_to_interim": [
+      "Use actual PDF title Faithfulness Serum, with note officialmetadata used Faithful Serum.",
+      "State it already evaluates final explanations with substantivehint-reliance judge and humanvalidation; noaudiencerewritingcontractfound is a narrower claim.",
+      "Hardware/resources known after fulltext: H10080GB; do not describe low-cost on arbitrary localmachines from trainingfree claim.",
+      "Distinguish staticextraPE-LRPbackwardpass from TTalpha repeatedlygenerated outputs; do not transfer minimal-cost claim toadaptivevariant.",
+      "Avoid TTalpha andcreditbias denominator claims until internalcaption/prose inconsistencies are resolved."
+    ]
+  }
+]

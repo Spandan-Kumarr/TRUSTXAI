@@ -1,0 +1,47 @@
+[
+  {
+    "file": "ILLUSTRATIVE_CASES.json",
+    "bytes": 2388,
+    "sha256": "a88fd1e2d4af228bbd881871189946f700164579dd1202715624d34f8427e421"
+  },
+  {
+    "file": "METHOD_SPECIFICATION.json",
+    "bytes": 2187,
+    "sha256": "948ddd0a8864fef124aeefb0308769943d97b2743fbcb7a6d7aec291941a4393"
+  },
+  {
+    "file": "NEAREST_METHOD_COMPARISON.csv",
+    "bytes": 3826,
+    "sha256": "f0dfa11170fcbfc113f0ce03c3213d6567603865968fa7c00e562a914d8e46aa"
+  },
+  {
+    "file": "README.md",
+    "bytes": 942,
+    "sha256": "6725b1049d9f30cff3fa8827f8ec788eb99179a1de1660c2a795e5369d29c33b"
+  },
+  {
+    "file": "RESEARCH_QUESTIONS.csv",
+    "bytes": 1257,
+    "sha256": "1e8308a82cc0202ec64f06908d5681e28880d65615a628a7816a938f77e0cd86"
+  },
+  {
+    "file": "STEP_03_RESEARCH_DESIGN.docx",
+    "bytes": 48838,
+    "sha256": "2438a58cc4cfcf2b231d91209581db9ac7366013837d5beffbf3d4f4eae12f6f"
+  },
+  {
+    "file": "STEP_03_RESEARCH_DESIGN.md",
+    "bytes": 25799,
+    "sha256": "4320c0d99605e1fea5759364ee4ff81729338cf4a169e4392c71004966b5238a"
+  },
+  {
+    "file": "STEP_03_RESEARCH_DESIGN.pdf",
+    "bytes": 68427,
+    "sha256": "3b4eb2ba709ec6d6ac58cacdf126345a1766231be9acfa1c664e98741b7a81ff"
+  },
+  {
+    "file": "VALIDATION_AND_STATUS.json",
+    "bytes": 1203,
+    "sha256": "bc5a64da85b0b639f07f25e1b47c2a78496ec0abf31d6d23311123e301e04959"
+  }
+]

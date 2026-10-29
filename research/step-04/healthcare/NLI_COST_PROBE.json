@@ -1,0 +1,59 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "batch": 8,
+  "threads": 4,
+  "dtype": "float32",
+  "records": [
+    {
+      "batch": 8,
+      "tokens": 128,
+      "repeat": 0,
+      "wall_seconds": 1.1524942410005679,
+      "CPU_seconds": 4.293126738000001
+    },
+    {
+      "batch": 8,
+      "tokens": 128,
+      "repeat": 1,
+      "wall_seconds": 1.0116632139997819,
+      "CPU_seconds": 3.827549846
+    },
+    {
+      "batch": 8,
+      "tokens": 256,
+      "repeat": 0,
+      "wall_seconds": 2.267160321999654,
+      "CPU_seconds": 8.344083255
+    },
+    {
+      "batch": 8,
+      "tokens": 256,
+      "repeat": 1,
+      "wall_seconds": 2.0829615389993705,
+      "CPU_seconds": 7.666807907000003
+    },
+    {
+      "batch": 8,
+      "tokens": 512,
+      "repeat": 0,
+      "wall_seconds": 5.459695661000296,
+      "CPU_seconds": 19.614993284999997
+    },
+    {
+      "batch": 8,
+      "tokens": 512,
+      "repeat": 1,
+      "wall_seconds": 5.765163474000474,
+      "CPU_seconds": 20.749413161999996
+    }
+  ],
+  "median_CPU_seconds_per_pair_by_tokens": {
+    "128": 0.5075422865000001,
+    "256": 1.000680697625,
+    "512": 2.5227754029374996
+  },
+  "peak_RSS_GiB": 1.6402397155761719,
+  "semantic_accuracy_evaluated": false,
+  "healthcare_sources_used": 0
+}

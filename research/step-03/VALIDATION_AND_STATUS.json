@@ -1,0 +1,30 @@
+{
+  "step": 3,
+  "date": "2026-10-27",
+  "status": "research design completed; implementation and evaluation not started",
+  "approved_title_retained": true,
+  "selected_direction": "preserving fixed-target decision evidence across novice/expert explanation views",
+  "novelty_status": "candidate specified against inspected prior art; no field-wide originality proof",
+  "primary_hypothesis": "H1",
+  "primary_metric": "complete supported pair yield over all requested source cases",
+  "comparators": 5,
+  "nearest_method_records": 10,
+  "hypotheses_and_questions": 4,
+  "synthetic_specification_examples": 9,
+  "experiments_run": 0,
+  "verification": [
+    "source IDs resolve to Step2library",
+    "method repair limit and denominator rules agree across artifacts",
+    "synthetic examples are flagged and have unique IDs",
+    "comparison/hypothesis CSVs parse",
+    "PDF extracted; Word opens with4tables",
+    "PDF pages1and4 visually reviewed"
+  ],
+  "open_step4": [
+    "data/task/model and compute feasibility",
+    "evidence and checker selection",
+    "minimum information and claim plan",
+    "sample sizes, thresholds and statistical plan",
+    "human annotation/participant protocol"
+  ]
+}

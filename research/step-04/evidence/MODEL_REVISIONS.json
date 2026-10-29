@@ -1,0 +1,188 @@
+{
+  "Qwen/Qwen2.5-1.5B-Instruct": {
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "license_metadata": "apache-2.0",
+    "gated": false,
+    "card_sha256": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada",
+    "local_path": "/workspace/thesis-runtime/cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "download_error": null,
+    "files": [
+      {
+        "name": "LICENSE",
+        "bytes": 11343,
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "README.md",
+        "bytes": 4917,
+        "sha256": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "config.json",
+        "bytes": 660,
+        "sha256": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "generation_config.json",
+        "bytes": 242,
+        "sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "merges.txt",
+        "bytes": 1671839,
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 3087467144,
+        "sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 7031645,
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 7305,
+        "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "vocab.json",
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "matches_hub_lfs_digest": null
+      }
+    ],
+    "weights_sha256_verified": true
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct": {
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "license_metadata": "apache-2.0",
+    "gated": false,
+    "card_sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+    "local_path": null
+  },
+  "cross-encoder/nli-deberta-v3-base": {
+    "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+    "license_metadata": "apache-2.0",
+    "gated": false,
+    "card_sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878",
+    "local_path": "/workspace/thesis-runtime/cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 2856,
+        "sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "added_tokens.json",
+        "bytes": 26,
+        "sha256": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "config.json",
+        "bytes": 1052,
+        "sha256": "897e756eb59d3183adb505952e7910e7cbc7750a43f3b3747a96b688d2b02a47",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 737726552,
+        "sha256": "d8148c6d49e0a7925134294c56326c71fe0ab1dc390e37355e00c7efbb488afa",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 301,
+        "sha256": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "spm.model",
+        "bytes": 2464616,
+        "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 8656624,
+        "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+        "matches_hub_lfs_digest": null
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 1346,
+        "sha256": "f3eecd07c370ef0bf7dd3780d3cd68cf9c8b00c267e21a208ddcd8f82bfec1a6",
+        "matches_hub_lfs_digest": null
+      }
+    ],
+    "download_error": null,
+    "weights_sha256_verified": true
+  },
+  "Qwen/Qwen3-1.7B": {
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "license_metadata": "apache-2.0",
+    "gated": false,
+    "local_path": "/workspace/thesis-runtime/models/Qwen3-1.7B/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "weights_sha256_verified": true,
+    "files": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "bytes": 3441185608,
+        "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "bytes": 622329984,
+        "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+        "matches_hub_lfs_digest": true
+      }
+    ]
+  },
+  "Qwen/Qwen3-4B-Instruct-2507": {
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license_metadata": "apache-2.0",
+    "gated": false,
+    "local_path": "/workspace/thesis-runtime/models/Qwen3-4B-Instruct-2507/cdbee75f17c01a7cc42f958dc650907174af0554",
+    "weights_sha256_verified": true,
+    "files": [
+      {
+        "name": "model-00001-of-00003.safetensors",
+        "bytes": 3957900840,
+        "sha256": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "model-00002-of-00003.safetensors",
+        "bytes": 3987450520,
+        "sha256": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+        "matches_hub_lfs_digest": true
+      },
+      {
+        "name": "model-00003-of-00003.safetensors",
+        "bytes": 99630640,
+        "sha256": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d",
+        "matches_hub_lfs_digest": true
+      }
+    ],
+    "auxiliary_files": [
+      {
+        "name": "model.safetensors.index.json",
+        "bytes": 32819,
+        "sha256": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c"
+      }
+    ]
+  }
+}

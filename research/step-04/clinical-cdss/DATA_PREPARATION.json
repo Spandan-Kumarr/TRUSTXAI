@@ -1,0 +1,54 @@
+{
+  "source": "Explicitly identified GBaker public mirror; no silent attribution as original author release",
+  "raw_counts": {
+    "train": 10178,
+    "test": 1273
+  },
+  "diagnostic_candidates_before_text_grouping": {
+    "train": 917,
+    "test": 117
+  },
+  "candidate_exact_question_repeats": 0,
+  "near_duplicate_edges": 0,
+  "text_components": 1034,
+  "cross_source_partition_quarantined_cases": 0,
+  "exclusions": {
+    "train:not_terminal_diagnosis_question": 8663,
+    "train:nonclinical_heuristic": 598,
+    "test:not_terminal_diagnosis_question": 1088,
+    "test:nonclinical_heuristic": 68,
+    "train:archived_exploratory_source": 40
+  },
+  "eligible_cases": {
+    "train": 877,
+    "test": 117
+  },
+  "eligible_correct_option_counts": {
+    "train": {
+      "C": 212,
+      "A": 233,
+      "D": 226,
+      "B": 206
+    },
+    "test": {
+      "A": 32,
+      "C": 34,
+      "B": 30,
+      "D": 21
+    }
+  },
+  "selected_sources": {
+    "feasibility": 24,
+    "development": 40,
+    "test": 60
+  },
+  "cross_partition_group_overlap": false,
+  "sampling_seed": 20261027,
+  "max_selected_prompt_tokens": 552,
+  "split_manifest_sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff",
+  "answer_field_projection_sentinel_passed": true,
+  "raw_exam_text_packaged": false,
+  "clinical_model_inference_run": false,
+  "test_model_inference_run": false,
+  "option_position_balance_not_disease_balance": true
+}

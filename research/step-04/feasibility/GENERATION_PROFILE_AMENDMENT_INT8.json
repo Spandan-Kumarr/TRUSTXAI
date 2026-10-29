@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "reason": "FP32 CPU joint rendering takes 140\u2013147 seconds in first two completed feasibility sources, above120s gate. Preserve those observations; do not change gate.",
+  "scope": "One declared CPU generation alternative: PyTorch dynamic qint8 Linear layers from same SHA256-verified pinned Qwen3-1.7B weights, used only for counterfactual text generation and narrative communication. Fixed task classification, all independent CF scoring, chosen-edit rechecks, and deletion sensitivity remain original FP32 target.",
+  "selected_source_policy": "same first5 per original class in fixed feasibility pool; all10 must be run; no development/test inference",
+  "checks_required": [
+    "generation native support",
+    "peak RSS<=24GiB including simultaneously loaded FP32 target and generation model",
+    "valid JSON>=8/10",
+    "median joint generation<=120seconds",
+    "projected full matrix<=24CPUhours"
+  ],
+  "classification_gate_inheritance": "Only FP32 target classification results apply; no claim of int8 target accuracy.",
+  "semantic_preservation_evaluated": false,
+  "test_sources_used": 0
+}

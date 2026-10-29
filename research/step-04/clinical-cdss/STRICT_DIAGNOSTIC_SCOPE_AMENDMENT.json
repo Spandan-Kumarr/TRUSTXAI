@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "stage": "Only exploratory clinical feasibility outcomes seen; no development/test predictions",
+  "scope_error": "Keyword diagnosis included diagnostic workup/test/mechanism questions; primary task requires disease/condition identification",
+  "corrected_rule": "Terminal interrogative contains most-likely/probable diagnosis formulation and excludes test/confirm/workup/next-step/mechanism/hypersensitivity prompts. Extract final interrogative separately so lab blocks remain case evidence.",
+  "source_changes": "Fresh24source feasibility sample excludes every old24source; old feasibility sources also excluded from research development; final test never scored. Membership selection remains outcome-blind and fixed by source rule plus seed.",
+  "retained_exploratory_result": "16/24under broader scope; not the primary diagnosis-only result",
+  "quality_gates_unchanged": true,
+  "old_manifest_sha256": "1a6c304a2272a4fac163b135fa89e346278ae31f6ebe506f346fe962a6f0e15e",
+  "old_source_ids_private_file": "/workspace/thesis-runtime/clinical-cdss/exploratory_source_exclusions.json"
+}

@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/pubmedqa/pubmedqa",
+  "revision": "1cbae8e92f72f20c8d3747cbb3bf5bc53554d997",
+  "revision_method": "git ls-remote refs/heads/master; subsequent downloads use immutable commit",
+  "files": [
+    {
+      "file": "data/ori_pqal.json",
+      "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/data/ori_pqal.json",
+      "bytes": 2584787,
+      "sha256": "8b3276be8942ebbd77f3ddcda12c1749bf0e490045a736fd8438ee40cf37a41d"
+    },
+    {
+      "file": "preprocess/split_dataset.py",
+      "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/preprocess/split_dataset.py",
+      "bytes": 3221,
+      "sha256": "06ea7c187f3f4087bd2d2be9788006eae3a75473c8dcbb55e4cfc495ebd1127b"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/LICENSE",
+      "bytes": 1065,
+      "sha256": "8e75abc6136be91e5ae66dbb6dda07c8bc9dcc215ed3bc1ba3ae7fab7904777e"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/README.md",
+      "bytes": 1723,
+      "sha256": "1338affd8530b416358b4ea40e6f1d6c935197352341bca2cf02288985a1fd99"
+    },
+    {
+      "file": "evaluation.py",
+      "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/evaluation.py",
+      "bytes": 609,
+      "sha256": "2838af5bb0ac18e301a9af57323c2d89784f153ddaf4f889329bfa04842099f8"
+    }
+  ],
+  "raw_data_location": "/workspace/thesis-runtime/healthcare/source/data/ori_pqal.json",
+  "repository_license": "MIT",
+  "underlying_abstracts": "Preserve attribution; no raw corpus/abstract redistribution in public pack; NLM policy route not accessible in this environment"
+}

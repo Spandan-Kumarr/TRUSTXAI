@@ -1,0 +1,13 @@
+{
+  "profile": "Qwen/Qwen3-1.7B FP32 no-thinking",
+  "run": "qwen3_17_feas_v1",
+  "sources": "first5per original class;10total; same unaltered feasibility source pool",
+  "classifier_prompt": "CLASSIFICATION_PROMPT_V3.json",
+  "max_pair_new_tokens": 512,
+  "maximum_CF_candidates": 3,
+  "cache_scope": "static-prefix KV reuse for deletion scoring only; original and allCFscore/retest calls full uncached",
+  "cache_validation": "10original/edited probes,5feasibility sources, maxlogscore difference4.863739013671875e-05 <1e-4; all labels equal",
+  "model_test_scope": "format/runtime feasibility, not semantic preservation or study endpoints",
+  "script_sha256": "e73421618239103c7c159b6c241d1437a2f6946e63fb070c0158da0f1a9caeb0",
+  "final_test_inference_run": false
+}

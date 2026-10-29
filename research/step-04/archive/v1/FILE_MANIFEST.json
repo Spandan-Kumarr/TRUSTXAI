@@ -1,0 +1,72 @@
+[
+  {
+    "file": "EXPERIMENT_CONFIG.json",
+    "bytes": 4865,
+    "sha256": "3c07029c34476c925baaa472372d330a698ad2d783f82bda3ca91adf86d468d6"
+  },
+  {
+    "file": "EXPERIMENT_MATRIX.csv",
+    "bytes": 487,
+    "sha256": "d5c18654dbba0791331e6a987a0181f9f404d2bf578a3bd5750262f92cf5e4ff"
+  },
+  {
+    "file": "INSTALL_CPU_RUNTIME.sh",
+    "bytes": 1058,
+    "sha256": "65049eb64970d88c05249e06470826cf3af7bc463987a6405e40274c3c239324"
+  },
+  {
+    "file": "README.md",
+    "bytes": 1163,
+    "sha256": "6449e2b8bc4824b79ea614f534196bf86b8a53ea4a9899283b3b15747727c200"
+  },
+  {
+    "file": "RESOURCE_SELECTION.csv",
+    "bytes": 773,
+    "sha256": "1981a84ae936629ce7688745614d7d39e24bdd37e8ac99538810932f1a2b0ab9"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.docx",
+    "bytes": 49161,
+    "sha256": "44c4912a03af3162e3129957f8aea3c507cf02d41029289d0f56d6aa515f6ce7"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.md",
+    "bytes": 25212,
+    "sha256": "82516ff7179f6c1f3919eaace60565974fac0fdeebddff0c83329d338b49494f"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.pdf",
+    "bytes": 67008,
+    "sha256": "2b29a4cbe952e29b1cadfdb7027bd3192b9c6d565f26cc2b416195c6d570d1eb"
+  },
+  {
+    "file": "VALIDATION_AND_STATUS.json",
+    "bytes": 1645,
+    "sha256": "aca257fdd96cd9cec2feb3efddb5cf989b39c5279a7ad4800bcc5401e2cc4a8e"
+  },
+  {
+    "file": "evidence/ACCESS_CHECKS.json",
+    "bytes": 1117,
+    "sha256": "7609c22bb4873086e3879f53e6698b3aa686f6ba89b72bc0c0df19a3397b479b"
+  },
+  {
+    "file": "evidence/CPU_DEPENDENCIES.freeze.txt",
+    "bytes": 755,
+    "sha256": "986a239ef276d5b61bee8dbf86f409ce36b5d871d6af6d9f545d2b2c5a7deae1"
+  },
+  {
+    "file": "evidence/INITIAL_FEASIBILITY.json",
+    "bytes": 460,
+    "sha256": "460bfe3f60c807efe1cbbfbd743b5da8a563675b55bd06f55fad6a47d7d40567"
+  },
+  {
+    "file": "evidence/Qwen2.5_official_README.md",
+    "bytes": 24732,
+    "sha256": "0b2c2bb11806f7a00c8465f2586e2e99f15de28622fd5c9b70b83ae1ab18c75d"
+  },
+  {
+    "file": "evidence/RUNTIME_VALIDATION.json",
+    "bytes": 418,
+    "sha256": "ef97e365e7fb39d34aa0001d95ef8bb4ee9cc152ade60969c9e47fa33f8b11bc"
+  }
+]

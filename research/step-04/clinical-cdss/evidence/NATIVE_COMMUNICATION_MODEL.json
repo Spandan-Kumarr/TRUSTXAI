@@ -1,0 +1,24 @@
+{
+  "model": "Qwen/Qwen3-1.7B-GGUF",
+  "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+  "format": "GGUF Q8_0",
+  "publisher": "Qwen",
+  "license_metadata": "apache-2.0",
+  "file": "Qwen3-1.7B-Q8_0.gguf",
+  "bytes": 1834426016,
+  "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+  "matches_publisher_LFS": true,
+  "local_path": "/workspace/thesis-runtime/models/Qwen3-1.7B-GGUF/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
+  "tokenizer_reference": "Qwen/Qwen3-1.7B revision70d244cc86ccca08cf5af4e1e306ecf908b1ad5e; native token equality still to be checked",
+  "source_conversion_commit": "Not established; pin actual published GGUF artifact",
+  "small_files": [
+    {
+      "file": "README.md",
+      "sha256": "60706b0c6aa38e0d1e73a7b21f98e50cad82ee1eaea636fd1f3a49617bccdb0d"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd"
+    }
+  ]
+}

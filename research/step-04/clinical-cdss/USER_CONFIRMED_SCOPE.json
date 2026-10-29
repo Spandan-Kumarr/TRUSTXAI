@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "application": "Healthcare Clinical Decision Support System",
+  "primary_task": "Diagnostic decision support from clinical cases",
+  "confirmed_by_user": true,
+  "compute": "Local only; user confirmed no API access/budget",
+  "primary_candidate_benchmark": "MedQA-USMLE4option diagnostic clinical vignette subset, subject to verification",
+  "PubMedQA_role": "Preserved auxiliary biomedical research-QA experiment, not primary clinical validation",
+  "clinical_benchmark_inference_run": false
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "key": "L39",
+    "url": "https://arxiv.org/pdf/2402.04614v3",
+    "status": 200,
+    "bytes": 960651,
+    "sha256": "d31344b245e10e9c854941a25da245982508be51e1f90a9a15fd552c9f544502",
+    "retrieved_utc": "2026-10-26T14:38:06.268051+00:00"
+  },
+  {
+    "key": "L40",
+    "url": "https://arxiv.org/pdf/2307.13702v1",
+    "status": 200,
+    "bytes": 1091161,
+    "sha256": "98bd5d514a25af073c382e87e9b230d81c74f024db5c8b5388769dc8e4dcca2c",
+    "retrieved_utc": "2026-10-26T14:38:06.155132+00:00"
+  },
+  {
+    "key": "crossref_search_1",
+    "url": "https://api.crossref.org/works?query=natural%20language%20explanations%20audience%20adaptation%20faithfulness%20verification&rows=12",
+    "status": 200,
+    "bytes": 43224,
+    "sha256": "6a4fbc0b38e31c74a1b9235d34d401a1d70a30ca6499ae012a88eac9101b7b42",
+    "retrieved_utc": "2026-10-26T14:38:08.295120+00:00"
+  },
+  {
+    "key": "crossref_search_2",
+    "url": "https://api.crossref.org/works?query=model%20explanations%20supported%20claims%20natural%20language%20factual%20consistency&rows=12",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "crossref_search_3",
+    "url": "https://api.crossref.org/works?query=LLM%20XAI%20explanation%20personalization%20fidelity%20verification&rows=12",
+    "status": 200,
+    "bytes": 77679,
+    "sha256": "9fa3c29ba1193adfe179d26ea53b7174bdd4d937a3ccde4be0ba815293dba494",
+    "retrieved_utc": "2026-10-26T14:38:10.310191+00:00"
+  },
+  {
+    "key": "crossref_search_4",
+    "url": "https://api.crossref.org/works?query=explanation%20preservation%20audience%20simplification%20model%20evidence&rows=12",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "key": "bing_preservation",
+    "url": "https://www.bing.com/search?q=%22explanations%22%20%22audience%22%20%22faithfulness%22%20LLM",
+    "status": 200,
+    "bytes": 120807,
+    "sha256": "9329e9b01af52bc216bab70061762cf9354c8c1e9eb2a413f44853bf1ad7daac",
+    "retrieved_utc": "2026-10-26T14:38:06.133188+00:00"
+  }
+]

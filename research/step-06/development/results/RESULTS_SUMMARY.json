@@ -1,0 +1,69 @@
+{
+  "analysis_status": "automated_proxy",
+  "bootstrap_replicates": 5000,
+  "expected_sources": 40,
+  "formal_hypotheses_completed": false,
+  "frozen_operating_threshold": 0.6,
+  "inputs": {
+    "controlled_variant_semantic_labels": {
+      "present": false,
+      "sha256": null
+    },
+    "costs": {
+      "file_count": 40,
+      "file_identity_list_sha256": "fec253256a1d88e3b2cb1f49bd839c9b5863945f8f8259b8ef681e24c9c8cbff",
+      "records": 275
+    },
+    "diagnostics": {
+      "file_count": 40,
+      "file_identity_list_sha256": "4aa3bba8bb2f3b24fa5e8786ea7ec6f892cb301f053a4bf2adbc416204b17920",
+      "records": 480
+    },
+    "natural": {
+      "file_count": 40,
+      "file_identity_list_sha256": "fec253256a1d88e3b2cb1f49bd839c9b5863945f8f8259b8ef681e24c9c8cbff",
+      "records": 280
+    },
+    "natural_automated_proxy": {
+      "file_count": 40,
+      "kind": "checkpoint_directory",
+      "present": true,
+      "sha256": "92779b7d555bcc2e6535b4f762225b71fb14c18da7354d470750327ca000d81b"
+    },
+    "natural_semantic_labels": {
+      "present": false,
+      "sha256": null
+    },
+    "omissions": {
+      "file_count": 40,
+      "file_identity_list_sha256": "fe7af3127cc4c5fd1af50eab6203e662e8dd1ea61d86186f3c3d9461f4539c85",
+      "records": 40
+    },
+    "post_prediction_gold": {
+      "kind": "file",
+      "present": true,
+      "sha256": "ec4b2387274fcbc927102bcc3c73f15212d60dfcf6ef48aa34a6d174910735de"
+    },
+    "sources": {
+      "file_count": 40,
+      "file_identity_list_sha256": "fe7af3127cc4c5fd1af50eab6203e662e8dd1ea61d86186f3c3d9461f4539c85",
+      "records": 40
+    }
+  },
+  "outputs": {
+    "COSTS.json": "complete",
+    "DIAGNOSTIC_ACCURACY.json": "complete",
+    "H1_AUTOMATED_PROXY.json": "non_independent_proxy",
+    "H1_PRIMARY.json": "not_run_requires_two_independent_raters",
+    "H2_CHECKER.json": "not_run_requires_two_independent_raters",
+    "H2_CONSTRUCTION_INTENT_PROXY.json": "non_independent_proxy",
+    "H3_AUTOMATED_PROXY.json": "non_independent_proxy",
+    "H3_REPAIR.json": "not_run_requires_two_independent_raters",
+    "HOLM_SECONDARY.json": "blocked_or_unavailable",
+    "OMISSION_AUDIT.json": "complete"
+  },
+  "raw_text_exported": false,
+  "records_layout": "development",
+  "seed": 20261027,
+  "semantic_label_boundary": "automated construction-intent/proxy; not independent semantic ground truth"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "synthetic_training_only_not_experimental_data",
+  "version": "1.0",
+  "invented_evidence": {
+    "case_findings": [
+      {"id": "S1", "text": "Invented finding alpha."},
+      {"id": "S2", "text": "Invented finding beta."}
+    ],
+    "C1": "The recorded model suggestion was B (Example condition). It was not a verified diagnosis.",
+    "C2": "Omitting S2 returned C, changing the original answer B.",
+    "C3": "2 of 2 spans were tested; 2 valid labels; 1 answer change; the selected-result recheck agreed.",
+    "C4": "The tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+  },
+  "examples": [
+    {
+      "id": "training-supported",
+      "text": "The model suggested B (Example condition), not a verified diagnosis. Leaving out S2 changed B to C. Both spans returned valid labels, one answer changed, and the repeat agreed. This does not establish clinical causation, every possible edit or the model's complete reasoning.",
+      "expected": {"C1": "supported", "C2": "supported", "C3": "supported", "C4": "supported", "extra_claim_present": "no"}
+    },
+    {
+      "id": "training-option-substitution",
+      "text": "The model suggested A (Another condition), not a verified diagnosis.",
+      "expected": {"C1": "contradicted", "C2": "missing", "C3": "missing", "C4": "missing", "extra_claim_present": "no"}
+    },
+    {
+      "id": "training-span-mismatch",
+      "text": "Omitting S1 changed the model answer from B to C.",
+      "expected": {"C1": "missing", "C2": "contradicted", "C3": "missing", "C4": "missing", "extra_claim_present": "no"}
+    },
+    {
+      "id": "training-count-corruption",
+      "text": "Eight of two spans were tested and seven answers changed.",
+      "expected": {"C1": "missing", "C2": "missing", "C3": "contradicted", "C4": "missing", "extra_claim_present": "no"}
+    },
+    {
+      "id": "training-missing-limit",
+      "text": "The model suggested B. Omitting S2 changed B to C. Two spans were tested and the repeat agreed.",
+      "expected": {"C1": "unsupported", "C2": "supported", "C3": "supported", "C4": "missing", "extra_claim_present": "no"},
+      "explanation": "C1 lacks the required model-status qualification and exact option name."
+    },
+    {
+      "id": "training-unsupported-causal-addition",
+      "text": "Omitting S2 changed B to C, proving that S2 clinically caused Example condition.",
+      "expected": {"C1": "missing", "C2": "supported", "C3": "missing", "C4": "contradicted", "extra_claim_present": "yes", "scope_flag": "clinical_causation_claimed"}
+    }
+  ],
+  "qualification_rule": "Annotator explains all disagreements with expected labels before receiving experimental packets; no numerical pass result is represented here."
+}

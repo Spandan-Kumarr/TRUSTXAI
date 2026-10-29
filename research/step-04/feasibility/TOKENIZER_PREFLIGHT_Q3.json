@@ -1,0 +1,1582 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "prompt_sha256": "65e790be11309d07b0f3f8c34e2c98d6d39e2d80fc347d2b053b7ac7e8cdfb06",
+  "enable_thinking": false,
+  "sources_mechanically_checked": 120,
+  "feasibility_sources": 20,
+  "max_context_tokens": 246,
+  "label_token_ids": {
+    "ham": [
+      5604
+    ],
+    "spam": [
+      75545
+    ]
+  },
+  "all_candidate_prefixes_stable": true,
+  "target_inference_run": false,
+  "test_target_inference_run": false,
+  "details": [
+    {
+      "source_id": "uci228-00268",
+      "partition": "feasibility",
+      "context_tokens": 231,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00586",
+      "partition": "feasibility",
+      "context_tokens": 189,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00918",
+      "partition": "feasibility",
+      "context_tokens": 213,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01064",
+      "partition": "feasibility",
+      "context_tokens": 210,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01168",
+      "partition": "feasibility",
+      "context_tokens": 181,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01217",
+      "partition": "feasibility",
+      "context_tokens": 193,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01766",
+      "partition": "feasibility",
+      "context_tokens": 205,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02119",
+      "partition": "feasibility",
+      "context_tokens": 226,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02187",
+      "partition": "feasibility",
+      "context_tokens": 194,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02223",
+      "partition": "feasibility",
+      "context_tokens": 210,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02248",
+      "partition": "feasibility",
+      "context_tokens": 240,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02656",
+      "partition": "feasibility",
+      "context_tokens": 182,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02744",
+      "partition": "feasibility",
+      "context_tokens": 208,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02826",
+      "partition": "feasibility",
+      "context_tokens": 227,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03064",
+      "partition": "feasibility",
+      "context_tokens": 222,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03774",
+      "partition": "feasibility",
+      "context_tokens": 192,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04016",
+      "partition": "feasibility",
+      "context_tokens": 186,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04602",
+      "partition": "feasibility",
+      "context_tokens": 220,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05112",
+      "partition": "feasibility",
+      "context_tokens": 192,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05223",
+      "partition": "feasibility",
+      "context_tokens": 200,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00013",
+      "partition": "development",
+      "context_tokens": 212,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00186",
+      "partition": "development",
+      "context_tokens": 206,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00289",
+      "partition": "development",
+      "context_tokens": 213,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00302",
+      "partition": "development",
+      "context_tokens": 208,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00738",
+      "partition": "development",
+      "context_tokens": 228,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00831",
+      "partition": "development",
+      "context_tokens": 236,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00856",
+      "partition": "development",
+      "context_tokens": 207,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01059",
+      "partition": "development",
+      "context_tokens": 193,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01060",
+      "partition": "development",
+      "context_tokens": 235,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01091",
+      "partition": "development",
+      "context_tokens": 230,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01252",
+      "partition": "development",
+      "context_tokens": 195,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01367",
+      "partition": "development",
+      "context_tokens": 188,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01458",
+      "partition": "development",
+      "context_tokens": 235,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01635",
+      "partition": "development",
+      "context_tokens": 246,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01673",
+      "partition": "development",
+      "context_tokens": 230,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01793",
+      "partition": "development",
+      "context_tokens": 212,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01866",
+      "partition": "development",
+      "context_tokens": 194,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01891",
+      "partition": "development",
+      "context_tokens": 195,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02144",
+      "partition": "development",
+      "context_tokens": 218,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02153",
+      "partition": "development",
+      "context_tokens": 189,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02393",
+      "partition": "development",
+      "context_tokens": 190,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02590",
+      "partition": "development",
+      "context_tokens": 224,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02730",
+      "partition": "development",
+      "context_tokens": 235,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03002",
+      "partition": "development",
+      "context_tokens": 207,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03030",
+      "partition": "development",
+      "context_tokens": 181,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03247",
+      "partition": "development",
+      "context_tokens": 210,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03473",
+      "partition": "development",
+      "context_tokens": 194,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03560",
+      "partition": "development",
+      "context_tokens": 234,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03587",
+      "partition": "development",
+      "context_tokens": 223,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03639",
+      "partition": "development",
+      "context_tokens": 220,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03976",
+      "partition": "development",
+      "context_tokens": 198,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04070",
+      "partition": "development",
+      "context_tokens": 191,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04200",
+      "partition": "development",
+      "context_tokens": 216,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04249",
+      "partition": "development",
+      "context_tokens": 189,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04298",
+      "partition": "development",
+      "context_tokens": 200,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04543",
+      "partition": "development",
+      "context_tokens": 239,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04943",
+      "partition": "development",
+      "context_tokens": 201,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05172",
+      "partition": "development",
+      "context_tokens": 194,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05338",
+      "partition": "development",
+      "context_tokens": 199,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05547",
+      "partition": "development",
+      "context_tokens": 183,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00165",
+      "partition": "test",
+      "context_tokens": 215,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00315",
+      "partition": "test",
+      "context_tokens": 182,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00527",
+      "partition": "test",
+      "context_tokens": 236,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00576",
+      "partition": "test",
+      "context_tokens": 206,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00697",
+      "partition": "test",
+      "context_tokens": 184,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00802",
+      "partition": "test",
+      "context_tokens": 196,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00824",
+      "partition": "test",
+      "context_tokens": 232,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00843",
+      "partition": "test",
+      "context_tokens": 190,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00847",
+      "partition": "test",
+      "context_tokens": 192,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00866",
+      "partition": "test",
+      "context_tokens": 223,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-00988",
+      "partition": "test",
+      "context_tokens": 208,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01022",
+      "partition": "test",
+      "context_tokens": 232,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01031",
+      "partition": "test",
+      "context_tokens": 184,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01196",
+      "partition": "test",
+      "context_tokens": 193,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01221",
+      "partition": "test",
+      "context_tokens": 228,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01274",
+      "partition": "test",
+      "context_tokens": 193,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01322",
+      "partition": "test",
+      "context_tokens": 184,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01533",
+      "partition": "test",
+      "context_tokens": 212,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01687",
+      "partition": "test",
+      "context_tokens": 226,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01742",
+      "partition": "test",
+      "context_tokens": 187,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01889",
+      "partition": "test",
+      "context_tokens": 192,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01978",
+      "partition": "test",
+      "context_tokens": 207,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-01998",
+      "partition": "test",
+      "context_tokens": 230,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02033",
+      "partition": "test",
+      "context_tokens": 188,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02055",
+      "partition": "test",
+      "context_tokens": 184,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02071",
+      "partition": "test",
+      "context_tokens": 217,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02089",
+      "partition": "test",
+      "context_tokens": 227,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02108",
+      "partition": "test",
+      "context_tokens": 212,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02220",
+      "partition": "test",
+      "context_tokens": 226,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02251",
+      "partition": "test",
+      "context_tokens": 193,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02361",
+      "partition": "test",
+      "context_tokens": 200,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02374",
+      "partition": "test",
+      "context_tokens": 226,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02556",
+      "partition": "test",
+      "context_tokens": 229,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02850",
+      "partition": "test",
+      "context_tokens": 237,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02859",
+      "partition": "test",
+      "context_tokens": 210,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02936",
+      "partition": "test",
+      "context_tokens": 181,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-02966",
+      "partition": "test",
+      "context_tokens": 204,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03222",
+      "partition": "test",
+      "context_tokens": 217,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03425",
+      "partition": "test",
+      "context_tokens": 238,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03905",
+      "partition": "test",
+      "context_tokens": 224,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-03942",
+      "partition": "test",
+      "context_tokens": 199,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04149",
+      "partition": "test",
+      "context_tokens": 216,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04275",
+      "partition": "test",
+      "context_tokens": 189,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04285",
+      "partition": "test",
+      "context_tokens": 187,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04305",
+      "partition": "test",
+      "context_tokens": 190,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04329",
+      "partition": "test",
+      "context_tokens": 240,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04366",
+      "partition": "test",
+      "context_tokens": 197,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04379",
+      "partition": "test",
+      "context_tokens": 182,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04473",
+      "partition": "test",
+      "context_tokens": 182,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04475",
+      "partition": "test",
+      "context_tokens": 202,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04754",
+      "partition": "test",
+      "context_tokens": 209,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04798",
+      "partition": "test",
+      "context_tokens": 229,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04870",
+      "partition": "test",
+      "context_tokens": 233,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04885",
+      "partition": "test",
+      "context_tokens": 194,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-04966",
+      "partition": "test",
+      "context_tokens": 191,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05073",
+      "partition": "test",
+      "context_tokens": 232,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05194",
+      "partition": "test",
+      "context_tokens": 191,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05212",
+      "partition": "test",
+      "context_tokens": 190,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05380",
+      "partition": "test",
+      "context_tokens": 236,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    },
+    {
+      "source_id": "uci228-05458",
+      "partition": "test",
+      "context_tokens": 207,
+      "label_tokens": {
+        "ham": [
+          5604
+        ],
+        "spam": [
+          75545
+        ]
+      }
+    }
+  ]
+}

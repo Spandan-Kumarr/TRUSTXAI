@@ -1,0 +1,13 @@
+{
+  "model_host_metadata_access": "working",
+  "weight_redirect_host": "us.aws.cdn.hf.co",
+  "observed_result": "proxy tunnel403Forbidden",
+  "standard_HTTPS_route_tested": true,
+  "Xet_download": "stalled, zero-byte partial, own process terminated; no unverified artifacts used",
+  "remaining_weight_files_verified": false,
+  "specific_host_added_to_draft": true,
+  "save_confirmed": true,
+  "requires_publish": true,
+  "runtime_update_confirmed": false,
+  "all_prior_network_rules_preserved": true
+}

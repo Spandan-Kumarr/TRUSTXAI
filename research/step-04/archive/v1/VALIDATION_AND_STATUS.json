@@ -1,0 +1,45 @@
+{
+  "step": 4,
+  "date": "2026-10-27",
+  "status": "protocol_and_CPU_runtime_prepared; final_feasibility_blocked_by_primary_host_access",
+  "selected_task": "offline SMS spam triage",
+  "selected_dataset_candidate": "UCI SMS Spam Collection228",
+  "primary_model_candidate": "Qwen/Qwen2.5-1.5B-Instruct",
+  "checker_candidate": "cross-encoder/nli-deberta-v3-base",
+  "user_resource_reply": "MacBook AirM5; no known externalGPU; local memory/performance not inspected",
+  "verified": [
+    "CPU/RAM/disk observations",
+    "PyTorch2.8CPU/Transformers architecture imports",
+    "43package dependency compatibility check",
+    "repeat Linux bootstrap execution passed",
+    "PDF and Word structural reading",
+    "PDF pages1and3visually inspected",
+    "JSON and planned-count consistency checks",
+    "network draft save confirmed; existing custom domains preserved"
+  ],
+  "unrun": [
+    "dataset loading/licence verification",
+    "model weight/revision verification",
+    "label tokenization",
+    "inference benchmark",
+    "20source feasibility gates",
+    "development/test splits",
+    "semantic checker evaluation",
+    "thesis experiments"
+  ],
+  "planned_counts": {
+    "feasibility_sources": 20,
+    "development_sources": 40,
+    "test_sources": 60,
+    "test_conditions": 6,
+    "test_view_slots": 720,
+    "development_diagnostics": 480,
+    "test_diagnostics": 720
+  },
+  "experiments_run": 0,
+  "test_locked": false,
+  "model_accuracy": null,
+  "model_latency": null,
+  "network_action": "Review/save saved host additions in environment settings and publish; then retry actual downloads",
+  "automatic_approval_rejection": false
+}

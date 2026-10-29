@@ -1,0 +1,10 @@
+{
+  "stage": "feasibility only; before development or final-test inference",
+  "reason": "v1A/B balanced accuracy0.60;v2semantic labels0.55;free completions on4selected feasibility cases confirm spam-heavy behavior agrees with constrained scores",
+  "bounded_change": "one further compact prompt with general non-promotional-message definition and4invented balanced examples",
+  "synthetic_examples_not_corpus_records": true,
+  "maximum_prompt_variants_planned_for_this_diagnosis": 3,
+  "prompt_sha256": "65e790be11309d07b0f3f8c34e2c98d6d39e2d80fc347d2b053b7ac7e8cdfb06",
+  "no_test_outcomes_seen": true,
+  "caution": "feasibility outcomes used for prompt development are optimistic and not final validation"
+}

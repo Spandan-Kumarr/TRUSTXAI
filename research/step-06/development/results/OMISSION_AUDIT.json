@@ -1,0 +1,32 @@
+{
+  "answer_changes": 35,
+  "available_spans": 286,
+  "informative_evidence_fraction": 1.0,
+  "informative_evidence_sources": 40,
+  "interpretation": "input-removal observations; not clinical causation",
+  "omission_attempts": 286,
+  "recheck_agreement_all_sources": 1.0,
+  "recheck_agreement_among_attempts": 1.0,
+  "selected_rechecks_agreed": 40,
+  "selected_rechecks_attempted": 40,
+  "sources": 40,
+  "sources_with_any_change": 19,
+  "transitions": {
+    "A->A": 87,
+    "A->B": 2,
+    "A->C": 6,
+    "A->D": 4,
+    "B->A": 1,
+    "B->B": 54,
+    "B->C": 1,
+    "B->D": 2,
+    "C->A": 1,
+    "C->B": 6,
+    "C->C": 54,
+    "D->A": 1,
+    "D->B": 3,
+    "D->C": 8,
+    "D->D": 56
+  },
+  "valid_omission_labels": 286
+}

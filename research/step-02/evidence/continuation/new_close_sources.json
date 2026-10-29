@@ -1,0 +1,31 @@
+[
+  {
+    "id": "L41",
+    "url": "https://aclanthology.org/2024.emnlp-main.172.pdf",
+    "status": 200,
+    "bytes": 1256043,
+    "sha256": "14916d5d0a2dfa6053bf40882da172befce8690259050b6a840a32c23b0d66bb"
+  },
+  {
+    "id": "L42",
+    "url": "https://aclanthology.org/2024.emnlp-main.36.pdf",
+    "status": 200,
+    "bytes": 5981878,
+    "sha256": "0376b8f76b7c41e886b609a94c1c5eb450351e16c1bba165b8616dae192407bf"
+  },
+  {
+    "id": "L43",
+    "acl_id": "2025.inlg-main.5",
+    "url": "https://aclanthology.org/2025.inlg-main.5.pdf",
+    "status": 200,
+    "bytes": 868681,
+    "sha256": "9f5118e8bce7fc967f9eaa6202f223c40495155cb62739d37c2687873d385f41"
+  },
+  {
+    "id": "inlg2025",
+    "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.inlg.xml",
+    "status": 200,
+    "bytes": 93728,
+    "sha256": "2175e865b239dff251bb87c295ed8b4c0539fe6a1bd212d066ef9d65454b13a7"
+  }
+]

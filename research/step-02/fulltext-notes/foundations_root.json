@@ -1,0 +1,58 @@
+[
+  {
+    "id": "L39",
+    "title": "Faithfulness vs. Plausibility: On the (Un)Reliability of Explanations from Large Language Models",
+    "full_text_reviewed": true,
+    "method": "Conceptual review distinguishing plausibility and model faithfulness, covering token importance, counterfactuals and CoT; application-specific transparency discussion.",
+    "evaluation": "Illustrative examples and synthesis of prior studies; not a new controlled benchmark or measured improvement.",
+    "limitations": "Conceptual definitions and recommendations do not certify a method; domain examples do not establish empirical deployment outcomes.",
+    "claim_preservation_overlap": "Already argues for meeting both user-facing and model-facing needs; no specified typed decision-evidence preservation experiment across audience rewrites in inspected text.",
+    "novelty_implication": "Motivation is established; do not claim invention of the plausibility-faithfulness distinction.",
+    "baseline_feasibility": "Conceptual foundation rather than executable baseline.",
+    "locators": [
+      "\u00a7\u00a72\u20134, PDF pp2\u20135",
+      "\u00a7\u00a75\u20137, PDF pp5\u20139"
+    ],
+    "corrections_to_interim": [
+      "Primary source now read, replacing secondary citation only."
+    ]
+  },
+  {
+    "id": "L40",
+    "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+    "full_text_reviewed": true,
+    "method": "Intervenes on generated CoT by early answering, mistakes, filler tokens and paraphrasing; measures subsequent answers. Main experiments use a175B RLHF model; model-size experiments are separate.",
+    "evaluation": "Eight multiple-choice tasks;100reasoning samples/problem, temperature0.8 and nucleus p0.95. Task-dependent effects; paraphrase experiment isolates phrasing by hiding the original question from the paraphraser and preserving a later continuation.",
+    "limitations": "\u00a75 explicitly lacks independent access to true internal reasoning. No guarantee that behavioral robustness establishes complete faithfulness. Proprietary models and sampling cost limit direct reproduction.",
+    "claim_preservation_overlap": "Paraphrase intervention is existing prior art; not audience-specific rendering of a fixed decision/evidence record.",
+    "novelty_implication": "Do not claim novel paraphrase robustness or first behavioral intervention tests.",
+    "baseline_feasibility": "Use its controlled-intervention logic; repeating175B/100samples is not required for a bounded thesis pilot.",
+    "locators": [
+      "\u00a72.1, PDF pp2\u20133",
+      "\u00a7\u00a72.3\u20132.6, PDF pp3\u20137",
+      "\u00a73 and \u00a75, PDF pp7\u20139"
+    ],
+    "corrections_to_interim": [
+      "Primary source now read; conclusions are conditional on tasks/models, not universal unfaithfulness."
+    ]
+  },
+  {
+    "id": "L41",
+    "title": "Verification and Refinement of Natural Language Explanations through LLM-Symbolic Theorem Proving",
+    "full_text_reviewed": true,
+    "method": "Explanation-Refiner converts NLI premises, hypotheses and explanatory facts into Isabelle/HOL theories using event semantics/FOL, corrects syntax, proposes proof steps, and refines explanations using failed proof feedback.",
+    "evaluation": "Evaluates formalized entailment and refinement on e-SNLI,QASC,WorldTree with open/closed LLMs; measures logical validity and autoformalization errors.",
+    "limitations": "Guarantees concern the formalized theory under its assumptions; natural-language-to-logic translation can lose semantics. Logical support is distinct from tracing an unchanged LLM decision. Authors caution that safety/correctness guarantees in critical applications require further investigation.",
+    "claim_preservation_overlap": "Formal external checks, sentence-level semantic preservation and refinement already exist. Not an inspected multi-audience preservation protocol tied to target-LLM attributions and behavioralCF outcomes.",
+    "novelty_implication": "Formalizing claims or adding an external checker alone is not new; this is important direct prior art.",
+    "baseline_feasibility": "Architecture comparator; full reproduction adds Isabelle, formalization prompts and iterative model calls.",
+    "locators": [
+      "\u00a72 and \u00a73, PDF pp2\u20135",
+      "\u00a74, PDF pp5\u20138",
+      "\u00a75.3, Conclusion and Limitations, PDF p9"
+    ],
+    "corrections_to_interim": [
+      "New full-text predecessor; narrows generic external-verification novelty."
+    ]
+  }
+]

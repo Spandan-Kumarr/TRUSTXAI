@@ -1,0 +1,54 @@
+{
+  "B1_successes": 0,
+  "B1_yield": 0.0,
+  "B4_LLM_narrative_yield": null,
+  "P_successes": 0,
+  "P_yield": 0.0,
+  "analysis_status": "non_independent_proxy",
+  "bootstrap": {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "estimate": 0.0,
+    "method": "paired source bootstrap; percentile interval; resampled within correct-option strata",
+    "replicates": 5000,
+    "seed": 20261027,
+    "strata": {
+      "A": 10,
+      "B": 10,
+      "C": 10,
+      "D": 10
+    }
+  },
+  "by_frozen_target_outcome": {
+    "target_correct": {
+      "B1_successes": 0,
+      "B1_yield": 0.0,
+      "P_successes": 0,
+      "P_yield": 0.0,
+      "sources": 29
+    },
+    "target_incorrect": {
+      "B1_successes": 0,
+      "B1_yield": 0.0,
+      "P_successes": 0,
+      "P_yield": 0.0,
+      "sources": 11
+    }
+  },
+  "denominator": 40,
+  "endpoint": "complete supported LLM narrative-pair yield",
+  "failure_rule": "missing, unparseable, blocked, status-only and fallback/template outputs fail",
+  "mcnemar": {
+    "a_only": 0,
+    "b_only": 0,
+    "both_success": 0,
+    "discordant": 0,
+    "n": 40,
+    "neither_success": 40,
+    "two_sided_exact_p": 1.0
+  },
+  "paired_difference_P_minus_B1": 0.0,
+  "semantic_label_basis": "post-hoc automated natural-output checker; not independent semantic review"
+}

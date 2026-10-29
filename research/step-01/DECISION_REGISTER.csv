@@ -1,0 +1,19 @@
+ID,Topic,Status,Evidence_or_working_position,Needed_by,Next_action
+D01,Thesis title,Retained,Exact title from Review 1 slides 1–2,Step 1,No title change
+D02,Decision model role,Scope established,LLM makes the target decision; evidence must refer to that LLM,Step 1,Choose actual model in Step 4
+D03,Communication model role,Recommended clarification,Distinct explanatory role; same or different weights remain open,Step 4,Choose configuration
+D04,Final explanation checks,Recommended,Check claims after audience adaptation as well as underlying evidence,Step 5,Operationalize checks and failure handling
+D05,Novelty,Unverified,Two base papers alone do not establish an original contribution,Steps 2–3,Search nearest competing methods
+D06,Primary task and dataset,Open,Bounded classification recommended; no dataset selected,Step 4,Compare evidence and feasibility
+D07,XAI and verification method,Open,Must match actual access to the decision LLM,Steps 3–4,Define method and testable hypotheses
+D08,Baselines,Proposed in Review 1,Self-explanation; technical XAI; translation-only; integrated framework,Step 4,Define fair experimental conditions
+D09,Resources and model access,Open,Compute and budget not established for selected experiments,Step 4,Inspect available compute and permissions
+D10,Human evaluation,Planned; not conducted,Permission/consent and actual participants needed before claims,Before study,Define feasible approved protocol
+D11,Application presentation,User preference,Minimalist professional interface with inspectable evidence,Steps 5–7,Avoid decorative complexity
+D12,IEEE manuscript,Supervisor instruction reported,Prepare using supplied A4 template; venue and authorship unspecified,Step 9,Verify metadata and real results
+D13,Phase I report,Required,Report needed at Review 2; university template not supplied,By Review 2,Obtain template and certificates
+D14,Review 2 timing,User-supplied,18–20 November 2026 online; report submission before 25 November,Review preparation,Confirm assigned slot and logistics
+D15,Publication route,Clarification later,"Overall publication outcome required; Review 2 form mentions submission, not express acceptance deadline",Before submission,Confirm acceptable route with supervisor
+D16,Source metadata,Verification pending,Paper 1 publication metadata and full literature references need verification,Step 2,Check authoritative records
+D17,Post-Review-1 guidance,Optional question pending,No added constraints assumed while awaiting reply,When supplied,Incorporate any new guidance
+D18,AI assistance and plagiarism process,Unspecified details,Plagiarism report required; no numeric threshold or AI policy supplied,Before submission,Follow actual institutional rules

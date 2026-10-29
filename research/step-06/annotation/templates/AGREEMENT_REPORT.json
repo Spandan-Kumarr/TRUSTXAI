@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "status": "blank_template_no_measured_agreement",
+  "partition": null,
+  "rater_count": 0,
+  "items_assigned": null,
+  "items_completed_by_both": null,
+  "raw_claim_agreement": null,
+  "claim_status_cohen_kappa": null,
+  "raw_complete_view_agreement": null,
+  "complete_view_cohen_kappa": null,
+  "raw_complete_pair_agreement": null,
+  "complete_pair_cohen_kappa": null,
+  "disagreement_count": null,
+  "adjudication_method": null,
+  "adjudicated_count": null,
+  "style_based_unblinding_disclosures": [],
+  "notes": "Populate only from two locked real response files; retain pre-adjudication values."
+}

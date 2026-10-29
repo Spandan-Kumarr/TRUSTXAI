@@ -1,0 +1,66 @@
+{
+  "analysis_status": "automated_proxy_pending_independent_annotation",
+  "conditions": {
+    "B0": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": 0.0,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    },
+    "B1": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": 0.0,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    },
+    "B2": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": 0.0,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    },
+    "B3": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": 0.0,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    },
+    "B4": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": null,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    },
+    "P": {
+      "abstained": 0,
+      "accepted": 0,
+      "automated_proxy_llm_pair_yield": 0.0,
+      "independent_result": null,
+      "rejected": 40,
+      "requested_sources": 40
+    }
+  },
+  "freeze_file_sha256": null,
+  "frozen_threshold": 0.6,
+  "independent_semantic_validation": false,
+  "mode": "natural",
+  "private_checkpoints_sha256": "2de99ecb2bbb9435af182cdbd18fc78d20c9cd923f7d67f98b15c49ceb7c5171",
+  "raw_text_published": false,
+  "requested_P_initial_pairs": 40,
+  "requested_final_pairs": 240,
+  "requested_logical_rows": 280,
+  "schema": "trustxai-step6-natural-summary-2",
+  "source_ids_sha256": "42303edbeca745382ce120035ea1bd36123ed90832e64154c10c3cc1ad986584",
+  "sources": 40,
+  "split": "development"
+}

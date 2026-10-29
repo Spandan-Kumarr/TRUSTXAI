@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-27",
+  "type": "observed access checks from this turn",
+  "requests": [
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-0.5B-Instruct",
+      "result": "proxy tunnel403Forbidden"
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct",
+      "result": "proxy tunnel403Forbidden"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/stanfordnlp/sst2",
+      "result": "proxy tunnel403Forbidden"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/ucirvine/sms_spam",
+      "result": "proxy tunnel403Forbidden"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/api/dataset?id=228",
+      "result": "proxy tunnel403Forbidden"
+    }
+  ],
+  "network_draft_saved": true,
+  "requires_publish": true,
+  "runtime_update_confirmed": false,
+  "new_domains": [
+    "huggingface.co",
+    "cdn-lfs.hf.co",
+    "cdn-lfs-us-1.hf.co",
+    "cas-bridge.xethub.hf.co",
+    "cas-server.xethub.hf.co",
+    "transfer.xethub.hf.co",
+    "archive.ics.uci.edu"
+  ],
+  "existing_custom_domains_preserved": true,
+  "new_secret_requirements": []
+}

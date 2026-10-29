@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "stage": "after completed24source healthcare feasibility run; before development/test predictions",
+  "observed_initial": {
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_F1": 0.2222222222222222,
+    "no_recall": 0
+  },
+  "bounded_prompt_amendment": "One balanced three-example prompt, invented generic biomedical-style demonstrations only. No corpus record or gold answer is inserted. Same target,24sources and unchanged gates. Preserve initial failure.",
+  "maximum_prompt_variants_for_this_backbone": 2,
+  "new_prompt_sha256": "c42bb73aceeb3d1a5f28599d7dfd21670695fd1e638eed475c9dbac1a0af418d",
+  "fallback_if_quality_still_fails": "Declare one stronger local candidate/resource profile before measuring it; do not lower thresholds or resample cases",
+  "test_predictions_seen": 0
+}

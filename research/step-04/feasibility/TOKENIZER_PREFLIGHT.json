@@ -1,0 +1,301 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "prompt_sha256": "6cfb450c99c4e5f7fa7e9403e2d37af79457d85872330cb827b081b4e9394fdb",
+  "checked_feasibility_sources": 20,
+  "label_tokens": {
+    "A": [
+      32
+    ],
+    "B": [
+      33
+    ]
+  },
+  "max_context_tokens": 152,
+  "all_prefix_stable": true,
+  "scoring_fast_path_allowed_for_this_prompt": true,
+  "model_inference_run": false,
+  "test_sources_used": false,
+  "details": [
+    {
+      "source_id": "uci228-00268",
+      "context_tokens": 143,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-00586",
+      "context_tokens": 101,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-00918",
+      "context_tokens": 125,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-01064",
+      "context_tokens": 122,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-01168",
+      "context_tokens": 93,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-01217",
+      "context_tokens": 105,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-01766",
+      "context_tokens": 117,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02119",
+      "context_tokens": 138,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02187",
+      "context_tokens": 106,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02223",
+      "context_tokens": 122,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02248",
+      "context_tokens": 152,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02656",
+      "context_tokens": 94,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02744",
+      "context_tokens": 120,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-02826",
+      "context_tokens": 139,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-03064",
+      "context_tokens": 134,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-03774",
+      "context_tokens": 104,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-04016",
+      "context_tokens": 98,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-04602",
+      "context_tokens": 132,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-05112",
+      "context_tokens": 104,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    },
+    {
+      "source_id": "uci228-05223",
+      "context_tokens": 112,
+      "prefix_stable": true,
+      "label_token_ids": {
+        "A": [
+          32
+        ],
+        "B": [
+          33
+        ]
+      },
+      "distinct_single_token_labels": true
+    }
+  ]
+}

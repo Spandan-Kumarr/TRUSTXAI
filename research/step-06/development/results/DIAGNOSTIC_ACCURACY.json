@@ -1,0 +1,60 @@
+{
+  "accuracy": 0.725,
+  "balanced_accuracy": 0.725,
+  "confusion_matrix": {
+    "columns_predicted": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "invalid"
+    ],
+    "rows_true": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "values": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        6,
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        6,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        7,
+        0
+      ]
+    ]
+  },
+  "correct": 29,
+  "interpretation": "option-position diagnostics, not disease-class performance",
+  "macro_F1": 0.7171052631578947,
+  "recall_by_correct_option": {
+    "A": 1.0,
+    "B": 0.6,
+    "C": 0.6,
+    "D": 0.7
+  },
+  "sources": 40,
+  "valid_decision_fraction": 1.0
+}

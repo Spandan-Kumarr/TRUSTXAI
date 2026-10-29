@@ -1,0 +1,25 @@
+[
+  {
+    "name": "MedHallu_pdf",
+    "url": "https://arxiv.org/pdf/2502.14302",
+    "bytes": 3031068,
+    "sha256": "91d47782c132f4eb0e159b1ddd1c078049721c8448b53e8075bf95e8452b3ee7",
+    "pages": 18
+  },
+  {
+    "name": "MedExQA_pdf",
+    "url": "https://arxiv.org/pdf/2406.06331",
+    "bytes": 1753922,
+    "sha256": "78ef9c49b0a6310dc541393a92cc992fb70b04dbd942522140c957052fd93581",
+    "pages": 15
+  },
+  {
+    "name": "BioNLP2024_metadata",
+    "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.bionlp.xml",
+    "bytes": 144247,
+    "sha256": "ed285785d6c43adbe1df266d204784b1cab5880c7f0d9ebd201b6a9ef132a9f4",
+    "matches": [
+      "<paper id=\"14\">\n      \n      <title><fixed-case>M</fixed-case>ed<fixed-case>E</fixed-case>x<fixed-case>QA</fixed-case>: Medical Question Answering Benchmark with Multiple Explanations</title>\n      <author><first>Yunsoo</first><last>Kim</last></author>\n      <author><first>Jinge</first><last>Wu</last></author>\n      <author><first>Yusuf</first><last>Abdulle</last></author>\n      <author><first>Honghan</first><last>Wu</last></author>\n      <pages>167\u2013181</pages>\n      <abstract>This paper introduces MedExQA, a novel benchmark in medical question-answering, to evaluate large language models\u2019 (LLMs) understanding of medical knowledge through explanations. By constructing datasets across five distinct medical specialties that are underrepresented in current datasets and further incorporating multiple explanations for each question-answer pair, we address a major gap in current medical QA benchmarks which is the absence of comprehensive assessments of LLMs\u2019 ability to generate nuanced medical explanations. Our work highlights the importance of explainability in medical LLMs, proposes an effective methodology for evaluating models beyond classification accuracy, and sheds light on one specific domain, speech language pathology, where current LLMs including GPT4 lack good understanding. Our results show generation evaluation with multiple explanations aligns better with human assessment, highlighting an opportunity for a more robust automated comprehension assessment for LLMs. To diversify open-source medical LLMs (currently mostly based on Llama2), this work also proposes a new medical model, MedPhi-2, based on Phi-2 (2.7B). The model outperformed medical LLMs based on Llama2-70B in generating explanations, showing its effectiveness in the resource-constrained medical domain. We will share our benchmark datasets and the trained model.</abstract>\n      <pdf hash=\"2895c704\" />\n      <bibkey>kim-etal-2024-medexqa</bibkey>\n      <doi>10.18653/v1/2024.bionlp-1.14</doi>\n    </paper>\n    "
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "raw_records": 1000,
+  "raw_labels": {
+    "yes": 552,
+    "no": 338,
+    "maybe": 110
+  },
+  "official_CV": 500,
+  "official_test": 500,
+  "official_test_labels": {
+    "yes": 276,
+    "maybe": 55,
+    "no": 169
+  },
+  "official_test_membership_sha256": "f052431fd3c28671e5fdeb226e3aa940bcb79bc8a683b7c473fba0760a635ef8",
+  "normalized_exact_repeats": 0,
+  "normalized_question_repeats": 0,
+  "near_duplicate_edges": 0,
+  "source_components": 1000,
+  "quarantined_sources": {},
+  "eligibility_exclusions": {
+    "section_budget": 2
+  },
+  "eligible_counts": {
+    "official_cv": {
+      "yes": 275,
+      "no": 169,
+      "maybe": 55
+    },
+    "official_test": {
+      "yes": 276,
+      "no": 168,
+      "maybe": 55
+    }
+  },
+  "selected_sources": {
+    "feasibility": 24,
+    "development": 45,
+    "test": 60
+  },
+  "cross_split_component_overlap": false,
+  "max_selected_prompt_tokens": 940,
+  "manifest_sha256": "b7877285f57fb2c0bbe98a5921806a7ccc2114b9c4e147c8eb34481e871788a7",
+  "leakage_projection_sentinel_passed": true,
+  "dataset_model_predictions_excluded": true,
+  "model_inference_run": false,
+  "test_model_inference_run": false,
+  "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "source_text_in_public_pack": false
+}

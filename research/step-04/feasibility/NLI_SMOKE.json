@@ -1,0 +1,60 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "label_mapping": {
+    "0": "contradiction",
+    "1": "entailment",
+    "2": "neutral"
+  },
+  "synthetic_smoke_cases": [
+    {
+      "premise": "The recorded model decision is spam.",
+      "hypothesis": "The recorded model decision is spam.",
+      "expected_smoke_label": "entailment",
+      "predicted": "entailment",
+      "scores": {
+        "contradiction": 0.00019649032037705183,
+        "entailment": 0.9952149391174316,
+        "neutral": 0.00458865100517869
+      }
+    },
+    {
+      "premise": "The recorded model decision is spam.",
+      "hypothesis": "The recorded model decision is ham.",
+      "expected_smoke_label": "contradiction",
+      "predicted": "contradiction",
+      "scores": {
+        "contradiction": 0.9943689703941345,
+        "entailment": 0.0016957157058641315,
+        "neutral": 0.003935358487069607
+      }
+    },
+    {
+      "premise": "The tested edit returned ham.",
+      "hypothesis": "The tested edit returned spam.",
+      "expected_smoke_label": "contradiction",
+      "predicted": "contradiction",
+      "scores": {
+        "contradiction": 0.9925645589828491,
+        "entailment": 0.0016850896645337343,
+        "neutral": 0.0057503762654960155
+      }
+    },
+    {
+      "premise": "The tested edit returned ham.",
+      "hypothesis": "The system has complete knowledge of every possible edit.",
+      "expected_smoke_label": "neutral",
+      "predicted": "neutral",
+      "scores": {
+        "contradiction": 0.00440375367179513,
+        "entailment": 0.00011296859884168953,
+        "neutral": 0.9954832792282104
+      }
+    }
+  ],
+  "load_seconds": 0.45878830999998854,
+  "batch_inference_seconds": 0.49704690999999457,
+  "peak_rss_GiB": 0.7842903137207031,
+  "not_a_checker_accuracy_benchmark": true,
+  "heldout_sources_used": 0
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "MedQA_paper",
+    "url": "https://arxiv.org/pdf/2009.13081",
+    "bytes": 189006,
+    "sha256": "5e19522f21c0ab5c24cc0dacd3feaa5d4b7057391520075f2e521a271d062ee6",
+    "pages": 12
+  },
+  {
+    "name": "MedQA_publication",
+    "title": [
+      "What Disease Does This Patient Have? A Large-Scale Open Domain Question Answering Dataset from Medical Exams"
+    ],
+    "DOI": "10.3390/app11146421",
+    "container": [
+      "Applied Sciences"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          12
+        ]
+      ]
+    },
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9587-1698",
+        "authenticated-orcid": false,
+        "given": "Di",
+        "family": "Jin",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer Science and Artificial Intelligence, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eileen",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science and Artificial Intelligence, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nassim",
+        "family": "Oufattole",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science and Artificial Intelligence, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei-Hung",
+        "family": "Weng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science and Artificial Intelligence, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hanyi",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tongji Medical College, Huazhong University of Science and Technology, Wuhan 430074, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Szolovits",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science and Artificial Intelligence, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  }
+]

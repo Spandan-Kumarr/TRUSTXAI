@@ -1,0 +1,8 @@
+ID,Candidate_or_claim,Nearest_records,Assessment,Novelty_status,Evidence_needed,Disposition
+G1,Supported target-decision claim preservation across audience adaptation,L30;L35;L36;L34;L15,High alignment; plausible next investigation,Unverified; full texts needed,Define mechanism/claim types; assess against exact nearest methods; independent claim labels; error/coverage/cost,"Preferred candidate to assess in Step3, not final novelty"
+G2,Diagnostic benchmark for final-explanation checker failures,L03;L21;L23;L24;L37,Useful evaluation supporting G1,Unverified; established diagnostic-testing field,"Show distinct target failures, preserve valid paraphrases, include natural errors and control synthetic errors",Consider as supporting contribution
+G3,Budget-aware validated counterfactual generation,L02;L07;L26;L38,Feasible support component but heavily populated prior art,Weak novelty without a distinct algorithm,Compare search strategy and quality/coverage/latency fairly under fixed budget,Do not make primary novelty claim yet
+N1,SHAP plus LLM narratives,L22,Already implemented,Excluded broad novelty claim,Cite and compare,Engineering component
+N2,Critic/refine explanation framework,L19;L25;L30,Already proposed,Excluded broad novelty claim,Cite and compare,Need narrower mechanism
+N3,Attribution-guided CF generation with label checking,L26;L38;L02,Already proposed,Excluded broad novelty claim,Cite and compare,Baseline/support component
+N4,Audience tailoring with factuality evaluation,L34;L01,Already proposed,Excluded broad novelty claim,Distinguish preservation of target-model evidence,Need narrower mechanism

@@ -1,0 +1,72 @@
+{
+  "upstream_author_repository": "https://github.com/jind11/MedQA",
+  "upstream_code_revision": "27b02f66aac217933c9648a06f82e9f720377925",
+  "upstream_license": "MIT for repository software/documentation; does not establish all question-bank content terms",
+  "upstream_question_delivery": "Author README links GoogleDrive; question files absent from Git tree",
+  "retrieved_mirror": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options",
+  "mirror_revision": "0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18",
+  "mirror_card_license": "cc-by-4.0",
+  "no_claim_mirror_is_original_author_release": true,
+  "files": [
+    {
+      "file": "phrases_no_exclude_train.jsonl",
+      "url": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options/resolve/0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18/phrases_no_exclude_train.jsonl",
+      "bytes": 16211077,
+      "sha256": "3a65baf760f17c395058d6699315a7ce8aa767c50cb193fea87ceb94dd790324",
+      "rows": 10178,
+      "fields": [
+        "answer",
+        "answer_idx",
+        "meta_info",
+        "metamap_phrases",
+        "options",
+        "question"
+      ],
+      "answer_keys": {
+        "D": 2383,
+        "A": 2584,
+        "C": 2557,
+        "B": 2654
+      },
+      "option_counts": {
+        "4": 10178
+      },
+      "clinical_heuristic_count": 9580,
+      "terminal_diagnosis_question_heuristic_count": 1253,
+      "model_inference_run": false,
+      "retrieved_via": "Explicitly identified public mirror",
+      "publisher_LFS_SHA256_match": true
+    },
+    {
+      "file": "phrases_no_exclude_test.jsonl",
+      "url": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options/resolve/0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18/phrases_no_exclude_test.jsonl",
+      "bytes": 2075679,
+      "sha256": "c3b905ccfa66152dc25afbcb2c10e86c0bdb208824f0658fcdb2c040f60a2beb",
+      "rows": 1273,
+      "fields": [
+        "answer",
+        "answer_idx",
+        "meta_info",
+        "metamap_phrases",
+        "options",
+        "question"
+      ],
+      "answer_keys": {
+        "B": 309,
+        "D": 265,
+        "C": 346,
+        "A": 353
+      },
+      "option_counts": {
+        "4": 1273
+      },
+      "clinical_heuristic_count": 1205,
+      "terminal_diagnosis_question_heuristic_count": 164,
+      "model_inference_run": false,
+      "retrieved_via": "Explicitly identified public mirror",
+      "publisher_LFS_SHA256_match": null
+    }
+  ],
+  "raw_question_text_redistributed": false,
+  "source_content_terms_note": "Retain all notices/attribution; repository and mirror licence declarations have different scopes. Public thesis pack contains IDs/hashes/retrieval instructions, not exam text."
+}

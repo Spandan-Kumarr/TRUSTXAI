@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "status": "pending_private_matrix_and_variant_exports",
+  "contains_raw_text": false,
+  "contains_source_ids": false,
+  "contains_rater_responses": false,
+  "builder": "research/step-06/scripts/build_annotation_packets.py",
+  "note": "The builder replaces this placeholder with a deterministic public counts-and-hashes manifest after private inputs exist."
+}

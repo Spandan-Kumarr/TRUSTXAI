@@ -1,0 +1,106 @@
+# Full-text audit: human-facing explanation research
+
+Reviewed 26 October 2026. Locators use physical PDF pages. Main methods, experiments, limitations and relevant appendices were inspected. No experiments were reproduced.
+
+## L15 — InterroLang: Exploring NLP Models and Datasets through Dialogue-based Explanations
+
+**Method:** A modular dialogue engine parses questions into executable operations. Its execution engine inserts results into mainly rule/template-based responses. The explained targets are BERT-type models for DailyDialog dialogue acts, BoolQ yes/no answers and OLID offensive/nonoffensive classification. It uses Captum Integrated Gradients, Polyjuice counterfactuals, OpenAttack PWWS adversarial edits and nlpaug augmentations. Rationales are separate prompted outputs conditioned on input and target prediction; ChatGPT demonstrations support Dolly few-shot rationalization. Clarification concerns intent/slots and history, rather than audience-profile rewriting.
+
+**Evaluation:** Task A recruits 10 in-house computational-linguistics/computer-science students to rate turns and dialogues. Task B recruits six participants: four paper authors and two Task A students. Each receives nine instances across three datasets and a randomized itinerary of explanation operations, stopping when ready to guess the target-model output. It measures simulatability, including possibly incorrect model outputs, not real task correctness or appropriate reliance. No separate randomized single-turn control arm is described. Appendix F.2 instructs participants to disregard wrong parses and retry until the intended operation is returned.
+
+**Details:**
+- participants: Task A: 10 students. Task B: six participants, including four authors and two Task A students. These are not disjoint samples.
+- reported_Table_5: Operation-associated Sim(all): free-text rationale 94.74%, local attribution 91.43%, counterfactual 85.00%; average conversational turns 3.70, 3.85 and 4.14 respectively. These overlapping conversational endpoints are not isolated randomized method effects.
+- collected_data: 1,449 Task A dialogue turns and 188 Task B dialogue turns.
+
+**Limitations:** Small in-house/expert samples, with four authors in Task B; BERT-type task-specific targets; no direct model comparison or automated model-improvement loop. Subjective correctness is not semantic claim verification. Polyjuice often failed to produce a label-flipping perturbation. Some explanations induced false trust. Simulatability does not establish human decision utility.
+
+**Overlap:** Close system prior art for executable evidence, dialogue, attribution, counterfactuals and natural-language rationales. Most responses are template-filled; generated rationales are separate prompted outputs. Inspected methods, studies and appendices do not describe checking an audience-rewritten final explanation for supported/contradicted/unsupported decision, attribution and counterfactual claims, nor testing preservation across audience transformations with release gating. This is a bounded observation about the described methods, not proof about every possible code extension.
+
+**Novelty implication:** Conversational attribution-plus-counterfactual-plus-rationale integration is not new. A fixed generative decision-LLM target differs from this paper, but that model change alone does not establish novelty. Its human evidence must not be described as a universal causal benefit of dialogue over one-off explanation.
+
+**Feasibility:** Useful architecture and operation taxonomy; not automatically an apples-to-apples numerical baseline for a different generative decision model. Integrated Gradients requires internal access. Any adapted pipeline needs clear target and method attribution.
+
+**Locators:**
+- Sections 2 and Figure 2, PDF pp. 2–4 (printed 5400–5402): architecture and dialogue.
+- Sections 3–4, PDF pp. 5–6 (printed 5403–5404): targets and methods.
+- Section 5.3 and Tables 3–5, PDF pp. 6–8 (printed 5404–5406): human studies/results.
+- Limitations, PDF p. 9 (printed 5407).
+- Appendix F.2/Figure 8, PDF p. 20 (printed 5418): randomized itinerary and wrong-parse retry instruction.
+
+**Corrections to interim:**
+- Replace a broad superiority claim over one-off explanation with the actual small sequential simulatability study; there is no explicit randomized one-off control arm.
+- Disclose four authors in the six-person simulatability sample.
+- Keep simulation accuracy separate from task correctness and appropriate reliance.
+
+## L20 — On Evaluating Explanation Utility for Human-AI Decision Making in NLP
+
+**Method:** A framework for application-grounded human–AI evaluation and dataset choice, followed by ContractNLI/NDAs case studies using task-finetuned Flan-T5-3B. Criteria cover realistic application and inputs, meaningful effort/difficulty, nonbenign risk and suitable model performance. Seventeen of 53 datasets pass reliance/complementary-performance suitability; six of those have nonbenign hazards and two are removed for quality, leaving four prioritized datasets. Studies compare prediction/confidence, abstention/role/record framing, outcome feedback, Input×Gradient highlights and EK-FAC influential examples.
+
+**Evaluation:** Study I asks humans to make all final decisions under five conditions. There are 35–40 responses per condition, up to six instances per participant and 1,108 annotations; the total unique participant count across conditions is not unambiguously stated. Recruitment requires legal-related education/work and English fluency, with qualification/attention checks and delayed AI reveal. Study II uses idealized deferral: all shown instances are predictor errors and users are warned. It has 23 participants in the highlights condition and 20 in the examples condition, with 73 completed instances.
+
+**Details:**
+- prioritized_datasets: ['EvidenceInference-v2 with retrieval', 'SciFact-Open', 'ContractNLI', 'ILDC']
+- Study_I_conditions: ['P1: prediction and temperature-scaled confidence', 'P2: adds abstention, role and prior-record framing', 'P3: adds outcome feedback', 'P4: adds Input×Gradient highlights', 'P5: adds three EK-FAC influential training examples, themselves highlighted']
+- Study_I_results: All human–AI conditions are at least 9.5 F1 points below the model alone. Table 3 model-minus-human gaps are 17.0, 18.5, 10.7, 9.6 and 10.0 respectively. Conditions also change framing/feedback, so differences cannot all be attributed to explanations.
+- Study_II_results: Best tested deferral recall is 30%, motivating the idealized study assumption. Human micro-F1 is 34.2% on 73 model-error cases. Mean self-reported explanation impact is 2.56. The projected 92.6% team performance assumes perfect deferral and is not a measured deployed-system result.
+- label_quality_caution: An author-reviewed subset of 29 cases changes 11 labels. The resulting score changes concern that subset, not a wholly cleaned benchmark.
+
+**Limitations:** Limited tasks, participants, examples and explanation types; length is an imperfect effort proxy and risk judgments are subjective. Better contemporary models can change task suitability. Gold-label quality matters. Simulatability, perceived helpfulness and real human–AI utility are distinct. Do not infer a unique participant count by dividing annotations.
+
+**Overlap:** The inspected methods/studies do not implement audience rewriting followed by claim-level checking of preserved decision, attribution or counterfactual facts. Role framing concerns participant context; explanations are confidence, highlights and influential examples. This is an evaluation-design source rather than a competing NLE-generation method.
+
+**Novelty implication:** Does not settle the narrow supported-claim-preservation candidate. It strongly constrains human-benefit claims: brief sentiment/rationale benchmarks are not automatically validated real-world decision-support studies.
+
+**Feasibility:** Use the full protocol as an evaluation-design reference, not as an algorithm baseline. A legal user study needs realistic expertise, consent, qualification checks and adequate time. Reassess the selected contemporary LLM rather than inheriting their Flan-T5 task suitability.
+
+**Locators:**
+- Section 2, PDF pp. 2–3: evaluation distinctions.
+- Section 3, PDF pp. 3–6: dataset criteria and the 17/53 versus four-prioritized distinction.
+- Section 4, Figure 1 and Table 3, PDF pp. 6–8: Study I.
+- Section 5, PDF pp. 8–9: Study II and perfect-deferral assumption.
+- Section 7, PDF p. 10: limitations.
+- Appendix D.3–D.6, PDF pp. 22–24: recruitment, consent, payment and process.
+- Table 20, PDF p. 31: perfect-deferral projection.
+
+**Corrections to interim:**
+- Refine “only four suitable datasets” to 17 suitable for reliance/complementary performance, with four prioritized after risk and quality filtering.
+- Separate the idealized 92.6% projection from observed human performance.
+- Keep negative results task-specific and distinguish explanation effects from framing/feedback differences.
+
+## L34 — Attribute-Based Activation Steering of LLMs for Group-Specific Explanation Generation
+
+**Method:** Extracts style/knowledge attributes from Stack Exchange answers for 11 groups using Qwen models and embedding clustering, retaining 1,250 attributes. For each group it selects top style and knowledge attributes, constructs positive-minus-negated attribute activation vectors, weights/sums them and injects steering into selected three-layer windows. It compares group-only/group-plus-attribute prompts, standard Konen steering and proposed attribute steering. The outputs are topical educational explanations, not explanations of a fixed classifier decision.
+
+**Evaluation:** Uses 600 ELI5 test questions and 97 science questions across 11 groups, with three roughly 7–8B model families plus a Qwen32B ablation. Tuning uses 100 ELI5 validation questions. Specificity is estimated by a learned group classifier. Factuality decomposes generated text into atomic facts and validates against Wikipedia using open FActScore; only the science questions receive factuality scores. The human study has nine Upwork experts: three each in biology, game development and philosophy. They rate 50 questions (25 science, 25 ELI5), each with three method outputs shuffled within question, on 1–5 steering, plausibility and helpfulness scales.
+
+**Details:**
+- Table_2: Prompting: steering 3.12, plausibility 4.56, helpfulness 4.03, harmonic mean 3.81. Proposed: 4.17, 3.87, 3.64, 3.88. Konen: 3.46, 2.75, 2.70, 2.93. Thus the proposed method improves steering but does not exceed prompting on helpfulness or plausibility.
+- agreement_and_subsets: Krippendorff alpha ranges 0.178–0.489. Science-question helpfulness 4.01 (prompting) versus 3.90 (proposed) is not significantly different.
+- factuality: OLMo-2-1124-7B-SFT extracts atomic facts; gemma-3-4b-it validates them against Wikipedia as of 1 April 2023. Failed extraction on nonsensical outputs is assigned score zero.
+- compute: Appendix B.1 reports a shared cluster with 16 H200 and eight A100 GPUs, approximately 200 GPU hours total. A small prompting baseline does not necessarily require those resources.
+- ablation_precision: The alternative-attribute-extractor robustness check compares steering-vector cosine similarity, rather than rerunning the entire generation/evaluation pipeline, due to compute cost.
+
+**Limitations:** Group averages may stereotype and miss individual knowledge; Stack Exchange forum participation need not represent professions. English and fixed groups only. LLM-derived attributes and factuality judgments inherit errors; authors interpret factuality relatively, not as absolute truth. Greater specificity can reduce factuality or drift away from answering the question. Human groups were selected among the best-performing groups, sample size is small and agreement low. Human comparison bundles attributes and activation versus group-only baselines, so it is not an isolated activation-effect estimate.
+
+**Overlap:** Direct overlap: the paper already performs atomic-fact checking on generated audience-tailored explanations against a source (Wikipedia). Thus generic audience adaptation plus postgeneration fact checking is prior art. However, inspected methods/evaluation do not preserve a previously fixed target-LLM decision, signed attribution evidence, validated counterfactual outcomes or uncertainty claims across paired rewrites. Factuality concerns topical encyclopedia facts, and scoring is evaluation rather than an output-release gate.
+
+**Novelty implication:** The candidate must specify same-target decision evidence and a distinct preservation mechanism or diagnostic protocol. Audience adaptation, atomic decomposition, factuality checking and trade-off measurement each already exist. Helpful human effects cannot be inferred from steering success.
+
+**Feasibility:** Prompt-based group-only and group-plus-attributes conditions are feasible adaptation comparators. The full activation pipeline needs internal access and substantial data/model infrastructure. Control prompt information and evaluate the same target-decision/evidence setting; do not directly compare its encyclopedia factuality scores with classifier-evidence preservation scores.
+
+**Locators:**
+- Section 3, PDF pp. 3–4 (printed 2931–2932): attributes, activation differences and steering.
+- Sections 4–5, PDF pp. 4–6 (printed 2932–2934): data, models, tuning and metrics.
+- Section 6/Table 1, PDF p. 7 (printed 2935): automatic trade-off.
+- Section 6.3/Table 2, PDF pp. 8–9 (printed 2936–2937): human study and results.
+- Sections 8–9, PDF p. 10 (printed 2938): limitations and ethics.
+- Appendix A.4.4, PDF pp. 17–18 (printed 2945–2946): vector-only robustness check.
+- Appendix B.1/B.3/B.4, PDF pp. 18–19 (printed 2946–2947): compute, specificity models and FActScore.
+- Appendix B.9, PDF pp. 20–22 (printed 2948–2950): group selection, randomization and instructions.
+
+**Corrections to interim:**
+- Strengthen the overlap: atomic-fact support of generated group-specific explanations is already evaluated. Generic postgeneration checks are not an unoccupied gap.
+- Report the mixed human outcomes: prompting has higher helpfulness/plausibility, while the proposed method has higher steering and harmonic mean.
+- Do not call vector-cosine robustness evidence a full generation rerun.
+- Avoid a universal best-harmonic-mean claim: Table 1 Ministral group-plus-attributes Konen baseline has 0.274 versus proposed 0.260.

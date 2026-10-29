@@ -1,0 +1,67 @@
+{
+  "calibration": null,
+  "faulty_requested": 480,
+  "freeze_file_sha256": "10beddd73bf032819310d9bf2924dbfbffde580b835f6509f205b2c651120518",
+  "frozen_threshold": 0.6,
+  "independent_semantic_validation": false,
+  "label_status": "construction_intent_only_pending_independent_review",
+  "mode": "controlled",
+  "private_checkpoints_sha256": "040020aa8d4b6d87f4f0560ab233f77e948c0184d1c5891970968b54e6510701",
+  "raw_text_published": false,
+  "requested_variants": 720,
+  "schema": "trustxai-step6-controlled-summary-2",
+  "slot_counts": {
+    "all_interventions": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "allowed_numeric_wording": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "audience_simplification": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "changed_result": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "counts": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "exact_canonical": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "harmless_reordering": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "missing_limitation": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "option_name": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "recheck_status": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "span_binding": {
+      "instantiated": 60,
+      "requested": 60
+    },
+    "unsupported_clinical_clause": {
+      "instantiated": 60,
+      "requested": 60
+    }
+  },
+  "source_ids_sha256": "7900bc1d455c3ee3d1f6e13beff0cbabc887342cbae0ad2e2e4442fa3ba1c7f4",
+  "sources": 60,
+  "split": "test",
+  "supported_requested": 240
+}

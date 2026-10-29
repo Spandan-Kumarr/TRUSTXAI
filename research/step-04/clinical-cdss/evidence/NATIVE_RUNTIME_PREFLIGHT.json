@@ -1,0 +1,30 @@
+{
+  "package_version": "0.3.16",
+  "device": "CPU,n_gpu_layers0",
+  "tokenizer_reference_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "native_GGUF_revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+  "native_GGUF_SHA256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+  "native_tokenizer_checks": [
+    {
+      "tokens": 1,
+      "all_token_IDs_equal": true
+    },
+    {
+      "tokens": 13,
+      "all_token_IDs_equal": true
+    },
+    {
+      "tokens": 30,
+      "all_token_IDs_equal": true
+    }
+  ],
+  "synthetic_JSON_plumbing_pass": true,
+  "synthetic_new_tokens": 5,
+  "synthetic_seconds": 0.9180362799997965,
+  "synthetic_CPU_seconds": 2.929779451,
+  "load_seconds": 0.36721964800017304,
+  "peak_RSS_GiB": 2.3490524291992188,
+  "system_info": "CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | ",
+  "clinical_sources_used": 0,
+  "clinical_semantic_accuracy_evaluated": false
+}

@@ -1,0 +1,206 @@
+{
+  "status": "Actual generated outputs; format checked only; no independent semantic or clinical validation. Diagnosis names are supplied option labels, not verified medical conclusions. Full clinical question text is not included.",
+  "source_pool": "Eight primary feasibility cases, not development/test",
+  "examples": [
+    {
+      "source_id": "medqa-train-00180",
+      "input_sha256": "ece77f1b1ed23a880a9a75dba840322402be26604dff411b6955ef9c1443e513",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: B (Nodular lymphocyte-predominant Hodgkin lymphoma). It is not a verified diagnosis.",
+        "C2": "Omitting S1 returned B , the same original answer B.",
+        "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: B (Nodular lymphocyte-predominant Hodgkin lymphoma). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned B, the same original answer B.",
+          "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: B (Nodular lymphocyte-predominant Hodgkin lymphoma). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned B, the same original answer B.",
+          "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-01127",
+      "input_sha256": "9c36e359669c16f950e217ac5519bcef3f8d5735379e8bfb27a06be209812986",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: B (Granulosa cell tumor). It is not a verified diagnosis.",
+        "C2": "Omitting S5 returned B , the same original answer B.",
+        "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: B (Granulosa cell tumor). It is not a verified diagnosis.",
+          "C2": "Omitting S5 returned B, the same original answer B.",
+          "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: B (Granulosa cell tumor). It is not a verified diagnosis.",
+          "C2": "Omitting S5 returned B, the same original answer B.",
+          "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-02720",
+      "input_sha256": "afd643dfbe9a173f4ab383d78c25bdca70fd2fc53e958d8cacf844c98cf6975f",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: C (Typhoid fever). It is not a verified diagnosis.",
+        "C2": "Omitting S4 returned A instead of C.",
+        "C3": "2 of 4 case spans tested by one-span omission; 2 valid labels; 2 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: C (Typhoid fever). It is not a verified diagnosis.",
+          "C2": "Omitting S4 returned A instead of C.",
+          "C3": "2 of 4 case spans tested by one-span omission; 2 valid labels; 2 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: C (Typhoid fever). It is not a verified diagnosis.",
+          "C2": "Omitting S4 returned A instead of C.",
+          "C3": "2 of 4 case spans tested by one-span omission; 2 valid labels; 2 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-03101",
+      "input_sha256": "ae5a45163f80b20fb1a5fbc6c17d67001678420e3aab507ee7f30a70fb8bafd7",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: D (Primary dysmenorrhea). It is not a verified diagnosis.",
+        "C2": "Omitting S1 returned D , the same original answer D.",
+        "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: D (Primary dysmenorrhea). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned D, the same original answer D.",
+          "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: D (Primary dysmenorrhea). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned D, the same original answer D.",
+          "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-03700",
+      "input_sha256": "36d0a7a8bee005027f8bcace4f3faeade9269e641dfce185a47857af1cd90be6",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: A (Bacterial vaginosis). It is not a verified diagnosis.",
+        "C2": "Omitting S5 returned A , the same original answer A.",
+        "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: A (Bacterial vaginosis). It is not a verified diagnosis.",
+          "C2": "Omitting S5 returned A, the same original answer A.",
+          "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: A (Bacterial vaginosis). It is not a verified diagnosis.",
+          "C2": "Omitting S5 returned A, the same original answer A.",
+          "C3": "2 of 5 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-04120",
+      "input_sha256": "2bf1a460ea43cb4e548126ea273439a2e573434d29f455fa72cdfbbaa5807ad6",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: A (Separation anxiety disorder). It is not a verified diagnosis.",
+        "C2": "Omitting S7 returned A , the same original answer A.",
+        "C3": "2 of 7 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggested separation anxiety disorder. It is not a verified diagnosis.",
+          "C2": "Omitting S7 returned the same answer, which was separation anxiety disorder.",
+          "C3": "Two out of seven case spans were tested with one-span omission. Two valid labels were found. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes, or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggested separation anxiety disorder. It is not a verified diagnosis.",
+          "C2": "Omitting S7 returned the same answer, which was separation anxiety disorder.",
+          "C3": "Two out of seven case spans were tested with one-span omission. Two valid labels were found. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes, or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-04169",
+      "input_sha256": "fa204f47f3720bf83538d0689817cbe2a2fcce4f90941fead8548ce0198c2e75",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: C (Presence of endometrial glands and stroma in uterine myometrium). It is not a verified diagnosis.",
+        "C2": "Omitting S1 returned C , the same original answer C.",
+        "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: C (Presence of endometrial glands and stroma in uterine myometrium). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned C, the same original answer C.",
+          "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: C (Presence of endometrial glands and stroma in uterine myometrium). It is not a verified diagnosis.",
+          "C2": "Omitting S1 returned C, the same original answer C.",
+          "C3": "2 of 8 case spans tested by one-span omission; 2 valid labels; 0 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    },
+    {
+      "source_id": "medqa-train-06575",
+      "input_sha256": "91c8efb95deb5287022dba097ceeb8cc4a58a45dcdcd2b69a82bba22b348c8cf",
+      "canonical_audit_facts": {
+        "C1": "Recorded model suggestion: B (Menopause). It is not a verified diagnosis.",
+        "C2": "Omitting S6 returned D instead of B.",
+        "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 1 answer changes. The selected-result recheck agreed.",
+        "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+      },
+      "unreviewed_generated_pair": {
+        "novice": {
+          "C1": "Recorded model suggestion: B (Menopause). It is not a verified diagnosis.",
+          "C2": "Omitting S6 returned D instead of B.",
+          "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 1 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        },
+        "expert": {
+          "C1": "Recorded model suggestion: B (Menopause). It is not a verified diagnosis.",
+          "C2": "Omitting S6 returned D instead of B.",
+          "C3": "2 of 6 case spans tested by one-span omission; 2 valid labels; 1 answer changes. The selected-result recheck agreed.",
+          "C4": "These tests do not prove clinical causation, all-edit outcomes or complete internal reasoning."
+        }
+      },
+      "format_valid": true
+    }
+  ]
+}

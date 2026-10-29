@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "user_confirmed": "No API access/budget; continue with local model",
+  "authorised_execution": "local_only",
+  "available_model_weights": "Qwen3-1.7B and previously downloaded Qwen2.5-1.5B; verify healthcare suitability before use",
+  "API_credentials_present_boolean_check": {"OPENAI_API_KEY": false, "GEMINI_API_KEY": false, "GOOGLE_API_KEY": false},
+  "secret_values_read_or_recorded": false,
+  "GPT_runs": 0,
+  "Gemini_runs": 0,
+  "paid_calls_required_for_current_plan": false,
+  "future_API_extension": "conditional; no comparison numbers may be invented",
+  "clinical_deployment": false
+}

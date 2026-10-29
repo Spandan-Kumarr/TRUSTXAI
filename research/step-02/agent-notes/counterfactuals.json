@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Mind the gap: from plausible to valid self-explanations in large language models",
+    "authors": [
+      "Korbinian Randl",
+      "John Pavlopoulos",
+      "Aron Henriksson",
+      "Tony Lindgren"
+    ],
+    "year": 2025,
+    "venue": "Machine Learning 114, article 220",
+    "status": "Published journal article; supplied full PDF",
+    "url": "https://doi.org/10.1007/s10994-025-06838-6",
+    "evidence_url": [
+      "Supplied PAPER 2.pdf, sections 3–6 and Appendix H",
+      "https://raw.githubusercontent.com/k-randl/self-explaining_llms/main/README.md",
+      "https://raw.githubusercontent.com/k-randl/self-explaining_llms/main/self-counterfactuals-movies.py"
+    ],
+    "access_depth": "Full supplied paper plus README and selected implementation source",
+    "contribution": "Analyses extractive/counterfactual self-explanations of LLM classifiers; samples edited inputs and explicitly reclassifies them; estimates retries and evaluates validity, similarity, dependability and runtime.",
+    "limitations": "Classification-only; decoder-only; gradient tests up to 9B; no actionability assessment; prompt sensitivity not systematically evaluated; finite retry budget can fail; similarity/validity do not establish internal reasoning.",
+    "relevance": "Direct base paper and mandatory methodological reference.",
+    "baseline_use": "Reproduce target-model reclassification baseline and bounded rejection sampling before claiming a better validator. Report candidate attempts and failures.",
+    "code_licence": "GPLv3 verified from repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/k-randl/self-explaining_llms",
+    "source_locators": "PDF pp. 10–11 (dependability), 16–20, 35; self-counterfactuals-movies.py lines 114–157"
+  },
+  {
+    "title": "LLMs Don’t Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations",
+    "authors": [
+      "Harry Mayne",
+      "Ryan Othniel Kearns",
+      "Yushi Yang",
+      "Andrew M. Bean",
+      "Eoin D. Delaney",
+      "Chris Russell",
+      "Adam Mahdi"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Conference paper identified by official ACL XML and author repository",
+    "url": "https://aclanthology.org/2025.emnlp-main.1231/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+      "https://raw.githubusercontent.com/HarryMayne/SCEs/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus author README; full paper not retrieved",
+    "contribution": "Studies self-generated counterfactual explanations against empirically elicited LLM decision boundaries; observes a validity–minimality trade-off when prompting for counterfactuals versus minimal counterfactuals.",
+    "limitations": "README identifies tabular binary-classification setting; do not present these results as text-CF evidence or infer complete paper limitations from abstract alone. No numerical effect size asserted here.",
+    "relevance": "Strong near prior art: obtaining valid edits is insufficient; minimality and genuine boundary correspondence need evaluation.",
+    "baseline_use": "Prompt-only counterfactual and minimal-counterfactual conditions are valuable controls; tabular exhaustive-boundary metric does not transfer unchanged to free text.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/HarryMayne/SCEs",
+    "doi": "10.18653/v1/2025.emnlp-main.1231",
+    "metadata_locator": "2025.emnlp.xml volume main, paper 1231",
+    "pages": "24161-24186",
+    "month": "November",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml"
+  },
+  {
+    "title": "Explaining NLP Models via Minimal Contrastive Editing (MiCE)",
+    "authors": [
+      "Alexis Ross",
+      "Ana Marasović",
+      "Matthew Peters"
+    ],
+    "year": 2021,
+    "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    "status": "Conference Findings paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2021.findings-acl.336/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml",
+      "https://raw.githubusercontent.com/allenai/mice/master/README.md",
+      "https://raw.githubusercontent.com/allenai/mice/master/src/edit_finder.py"
+    ],
+    "access_depth": "Official metadata plus README and selected search implementation; full paper not retrieved",
+    "contribution": "Uses a trained editor and search over masking amounts to find minimal contrastive edits; source re-scores candidates with the target predictor, records successful target-label edits and uses a bounded beam/search procedure.",
+    "limitations": "Original toolkit uses task-specific predictor/editor training and legacy AllenNLP/Python3.7 setup; not a drop-in modern instruction-LLM experiment. No benchmark results were rerun.",
+    "relevance": "Minimality search plus classifier validation existed before LLM self-CF work.",
+    "baseline_use": "Relevant algorithmic comparator if adapted fairly to same target model; adaptation must be disclosed.",
+    "code_licence": "Not verified: conventional LICENSE/LICENSE.md/LICENSE.txt paths returned404; do not infer licence",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/allenai/mice",
+    "doi": "10.18653/v1/2021.findings-acl.336",
+    "source_locators": "src/edit_finder.py lines 177–251, 333–445",
+    "pages": "3840–3852",
+    "month": "August",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml"
+  },
+  {
+    "title": "Polyjuice: Generating Counterfactuals for Explaining, Evaluating, and Improving Models",
+    "authors": [
+      "Tongshuang Wu",
+      "Marco Tulio Ribeiro",
+      "Jeffrey Heer",
+      "Daniel Weld"
+    ],
+    "year": 2021,
+    "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2021.acl-long.523/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml",
+      "https://raw.githubusercontent.com/tongshuangwu/polyjuice/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus README; full paper not retrieved",
+    "contribution": "A GPT-2-based general-purpose perturbation generator with controls over edit type and location; supports counterfactual error analysis and augmentation of explanation techniques.",
+    "limitations": "Generator is distinct from validity certification for a specified classifier; sampled perturbations need target-specific label checks. Older generator/tool dependencies and text licences need consideration.",
+    "relevance": "Controlled lexical/semantic edit generation is established prior art.",
+    "baseline_use": "Candidate perturbation-generation comparator or robustness suite component; do not equate every perturbation with a valid counterfactual.",
+    "code_licence": "BSD-3-Clause verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/tongshuangwu/polyjuice",
+    "doi": "10.18653/v1/2021.acl-long.523",
+    "pages": "6707–6723",
+    "month": "August",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml"
+  },
+  {
+    "title": "CREST: A Joint Framework for Rationalization and Counterfactual Text Generation",
+    "authors": [
+      "Marcos Treviso",
+      "Alexis Ross",
+      "Nuno M. Guerreiro",
+      "André Martins"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2023.acl-long.842/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+      "https://raw.githubusercontent.com/deep-spin/crest/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus detailed README; full paper not retrieved",
+    "contribution": "Joint selective rationalization and counterfactual text generation; trains masker/editor, classifies generated edits and uses counterfactuals to regularize rationales. Repository provides IMDB/SNLI edits and validity, fluency, diversity, plausibility and simulation evaluation instructions.",
+    "limitations": "Training-oriented rationalizer/predictor architecture differs from post-hoc verification of a fixed instruction LLM; off-the-shelf validity checks in README must not be assumed same-model validation. Compiler/SparseMAP and legacy dependencies add reproduction cost.",
+    "relevance": "Direct prior art against novelty claims about combining rationales, evidence extraction and counterfactual generation.",
+    "baseline_use": "Possible strong method/data comparator with careful target alignment; at minimum compare conceptual differences explicitly.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/deep-spin/crest",
+    "doi": "10.18653/v1/2023.acl-long.842",
+    "pages": "15109-15126",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml"
+  },
+  {
+    "title": "DISCO: Distilling Counterfactuals with Large Language Models",
+    "authors": [
+      "Zeming Chen",
+      "Qiyue Gao",
+      "Antoine Bosselut",
+      "Ashish Sabharwal",
+      "Kyle Richardson"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2023.acl-long.302/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+      "https://raw.githubusercontent.com/eric11eca/disco/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus author README; full paper not retrieved",
+    "contribution": "Prompts a large language model for phrasal perturbations and filters generations with a task-specific teacher; counterfactual data trains more robust NLI student models.",
+    "limitations": "Training-data augmentation objective, not explanation verification of the same decision LLM; teacher filtering is not automatically target-model validity. README and final ACL abstract report different effect sizes, so no numerical comparison quoted.",
+    "relevance": "Generate-and-filter text pipelines with LLMs are established.",
+    "baseline_use": "Useful prior art and generation/filtering control; cannot directly substitute teacher labels for target-model checks.",
+    "code_licence": "Code MIT verified from LICENSE; README links/claims about data licences conflict and need separate verification",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/eric11eca/disco",
+    "doi": "10.18653/v1/2023.acl-long.302",
+    "pages": "5514-5528",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml"
+  },
+  {
+    "title": "ERASER: A Benchmark to Evaluate Rationalized NLP Models",
+    "authors": [
+      "Jay DeYoung",
+      "Sarthak Jain",
+      "Nazneen Fatema Rajani",
+      "Eric Lehman",
+      "Caiming Xiong",
+      "Richard Socher",
+      "Byron C. Wallace"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Conference benchmark paper; official ACL metadata and repository",
+    "url": "https://aclanthology.org/2020.acl-main.408/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+      "https://raw.githubusercontent.com/jayded/eraserbenchmark/master/README.md",
+      "https://raw.githubusercontent.com/jayded/eraserbenchmark/master/rationale_benchmark/metrics.py"
+    ],
+    "access_depth": "Official abstract/metadata plus README and metric implementation; full paper not retrieved",
+    "contribution": "Benchmark with human rationale annotations and distinct plausibility/faithfulness-oriented measurements. Source implements rationale alignment, classification, comprehensiveness, sufficiency and AOPC metrics.",
+    "limitations": "Human rationale overlap measures agreement, not causal internal faithfulness; removal/retention metrics depend on model score access and perturbation distribution. Dataset source licences must be checked individually.",
+    "relevance": "Provides evaluation protocol and potentially annotated movie-review data consistent with base paper2.",
+    "baseline_use": "Candidate evaluation backbone. Label probability must be meaningfully defined for generative labels; no fabricated probability for API-only access.",
+    "code_licence": "Apache-2.0 verified for code; individual data licences separate",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/jayded/eraserbenchmark",
+    "doi": "10.18653/v1/2020.acl-main.408",
+    "source_locators": "rationale_benchmark/metrics.py lines 250–358, 569–584",
+    "pages": "4443–4458",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+  },
+  {
+    "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+    "authors": [
+      "Marco Tulio Ribeiro",
+      "Tongshuang Wu",
+      "Carlos Guestrin",
+      "Sameer Singh"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2020.acl-main.442/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+      "https://raw.githubusercontent.com/marcotcr/checklist/master/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus detailed README; full paper not retrieved",
+    "contribution": "Behavioral test methodology over linguistic capabilities and test types, with tools for minimum functionality, invariance and directional-expectation testing.",
+    "limitations": "Tests target model behavior and task-specific expectations; not a certificate of narrative faithfulness or fairness. Test labels must match intended semantics of edits.",
+    "relevance": "Separates perturbations that should preserve labels from those that should change them.",
+    "baseline_use": "Use framework to design targeted robustness/negative-control probes rather than claiming all perturbations should keep predictions unchanged.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/marcotcr/checklist",
+    "doi": "10.18653/v1/2020.acl-main.442",
+    "pages": "4902–4912",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+  },
+  {
+    "title": "FitCF: A Framework for Automatic Feature Importance-guided Counterfactual Example Generation",
+    "authors": [
+      "Qianli Wang",
+      "Nils Feldhus",
+      "Simon Ostermann",
+      "Luis Felipe Villa-Arenas",
+      "Sebastian Möller",
+      "Vera Schmitt"
+    ],
+    "year": 2025,
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "status": "Findings ACL2025 paper identified in official anthology metadata",
+    "url": "https://aclanthology.org/2025.findings-acl.64/",
+    "doi": "10.18653/v1/2025.findings-acl.64",
+    "pages": "1176-1191",
+    "month": "July",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml"
+    ],
+    "access_depth": "Official abstract and bibliographic metadata only; full text and code not retrieved",
+    "contribution": "Introduces ZeroCF, attribution-important-word guidance for zero-shot counterfactual generation, and FitCF, which label-flip-verifies these candidates and inserts them as few-shot demonstrations; abstract discusses LIME/Integrated Gradients and ablations.",
+    "limitations": "Only official abstract/metadata read; full protocol, target/generator identity, statistical results, prompt details and licensing not verified. Do not equate author use of faithful with established internal-faithfulness proof.",
+    "relevance": "Very close prior art: attribution-guided generation plus label-flip verification is already expressly proposed.",
+    "baseline_use": "Mandatory near-method comparison for any attribution-guided counterfactual proposal; inspect full text/code before finalizing protocol.",
+    "code_licence": "Not verified; no code retrieved",
+    "search_date": "2026-10-26"
+  },
+  {
+    "title": "iFlip: Iterative Feedback-driven Counterfactual Example",
+    "authors": [
+      "Yilong Wang",
+      "Qianli Wang",
+      "Nils Feldhus"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "status": "Official record labelled Findings EMNLP2026, October; publication timing/version not independently verified",
+    "url": "https://aclanthology.org/2026.findings-emnlp.38/",
+    "doi": null,
+    "pages": "749-779",
+    "month": "October",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml"
+    ],
+    "access_depth": "Official abstract and bibliographic metadata only; full text and code not retrieved",
+    "contribution": "Iterative counterfactual refinement using model-confidence, attribution and natural-language feedback, with number-of-iterations, highly attributed words and early stopping identified as important in the abstract.",
+    "limitations": "October2026 anthology record only; no DOI assigned in accessed metadata. Exact publication/version timing, full protocol, effect-size denominators, human study and code/licence have not been verified. No numeric performance result adopted from abstract.",
+    "relevance": "Very close candidate prior art to attribution-guided iterative validation, feedback and bounded early stopping; novelty must be checked against it.",
+    "baseline_use": "Inspect full text/code and establish release timing; include as nearest related method where reproducible rather than claim iterative feedback itself is new.",
+    "code_licence": "Not verified; no code retrieved",
+    "search_date": "2026-10-26"
+  }
+]

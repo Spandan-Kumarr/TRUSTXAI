@@ -1,0 +1,157 @@
+[
+  {
+    "id": "2025.emnlp-main.1231",
+    "title": "LLMs Don’t Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations",
+    "authors": [
+      "Harry Mayne",
+      "Ryan Othniel Kearns",
+      "Yushi Yang",
+      "Andrew M. Bean",
+      "Eoin D. Delaney",
+      "Chris Russell",
+      "Adam Mahdi"
+    ],
+    "year": "2025",
+    "month": "November",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.1231",
+    "pages": "24161-24186",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml"
+  },
+  {
+    "id": "2021.findings-acl.336",
+    "title": "Explaining NLP Models via Minimal Contrastive Editing (MiCE)",
+    "authors": [
+      "Alexis Ross",
+      "Ana Marasović",
+      "Matthew Peters"
+    ],
+    "year": "2021",
+    "month": "August",
+    "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    "doi": "10.18653/v1/2021.findings-acl.336",
+    "pages": "3840–3852",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml"
+  },
+  {
+    "id": "2021.acl-long.523",
+    "title": "Polyjuice: Generating Counterfactuals for Explaining, Evaluating, and Improving Models",
+    "authors": [
+      "Tongshuang Wu",
+      "Marco Tulio Ribeiro",
+      "Jeffrey Heer",
+      "Daniel Weld"
+    ],
+    "year": "2021",
+    "month": "August",
+    "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2021.acl-long.523",
+    "pages": "6707–6723",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml"
+  },
+  {
+    "id": "2023.acl-long.842",
+    "title": "CREST: A Joint Framework for Rationalization and Counterfactual Text Generation",
+    "authors": [
+      "Marcos Treviso",
+      "Alexis Ross",
+      "Nuno M. Guerreiro",
+      "André Martins"
+    ],
+    "year": "2023",
+    "month": "July",
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2023.acl-long.842",
+    "pages": "15109-15126",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml"
+  },
+  {
+    "id": "2023.acl-long.302",
+    "title": "DISCO: Distilling Counterfactuals with Large Language Models",
+    "authors": [
+      "Zeming Chen",
+      "Qiyue Gao",
+      "Antoine Bosselut",
+      "Ashish Sabharwal",
+      "Kyle Richardson"
+    ],
+    "year": "2023",
+    "month": "July",
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2023.acl-long.302",
+    "pages": "5514-5528",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml"
+  },
+  {
+    "id": "2020.acl-main.408",
+    "title": "ERASER: A Benchmark to Evaluate Rationalized NLP Models",
+    "authors": [
+      "Jay DeYoung",
+      "Sarthak Jain",
+      "Nazneen Fatema Rajani",
+      "Eric Lehman",
+      "Caiming Xiong",
+      "Richard Socher",
+      "Byron C. Wallace"
+    ],
+    "year": "2020",
+    "month": "July",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2020.acl-main.408",
+    "pages": "4443–4458",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+  },
+  {
+    "id": "2020.acl-main.442",
+    "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+    "authors": [
+      "Marco Tulio Ribeiro",
+      "Tongshuang Wu",
+      "Carlos Guestrin",
+      "Sameer Singh"
+    ],
+    "year": "2020",
+    "month": "July",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2020.acl-main.442",
+    "pages": "4902–4912",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+  },
+  {
+    "id": "2025.findings-acl.64",
+    "title": "FitCF: A Framework for Automatic Feature Importance-guided Counterfactual Example Generation",
+    "authors": [
+      "Qianli Wang",
+      "Nils Feldhus",
+      "Simon Ostermann",
+      "Luis Felipe Villa-Arenas",
+      "Sebastian Möller",
+      "Vera Schmitt"
+    ],
+    "abstract": "Counterfactual examples are widely used in natural language processing (NLP) as valuable data to improve models, and in explainable artificial intelligence (XAI) to understand model behavior. The automated generation of counterfactual examples remains a challenging task even for large language models (LLMs), despite their impressive performance on many tasks. In this paper, we first introduce ZeroCF, a faithful approach for leveraging important words derived from feature attribution methods to generate counterfactual examples in a zero-shot setting. Second, we present a new framework, FitCF, which further verifies aforementioned counterfactuals by label flip verification and then inserts them as demonstrations for few-shot prompting, outperforming three state-of-the-art baselines. Through ablation studies, we identify the importance of each of FitCF’s core components in improving the quality of counterfactuals, as assessed through flip rate, perplexity, and similarity measures. Furthermore, we show the effectiveness of LIME and Integrated Gradients as backbone attribution methods for FitCF and find that the number of demonstrations has the largest effect on performance. Finally, we reveal a strong correlation between the faithfulness of feature attribution scores and the quality of generated counterfactuals, which we hope will serve as an importantfinding for future research in this direction.",
+    "year": "2025",
+    "month": "July",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.64",
+    "pages": "1176-1191",
+    "url": "https://aclanthology.org/2025.findings-acl.64/",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml"
+  },
+  {
+    "id": "2026.findings-emnlp.38",
+    "title": "iFlip: Iterative Feedback-driven Counterfactual Example",
+    "authors": [
+      "Yilong Wang",
+      "Qianli Wang",
+      "Nils Feldhus"
+    ],
+    "abstract": "Counterfactual examples are minimal edits to an input that alter a model’s prediction. They are widely employed in explainable AI to probe model behavior and in natural language processing (NLP) to augment training data. However, generating valid counterfactuals with large language models (LLMs) remains challenging, as existing single-pass methods often fail to induce reliable label changes, neglecting LLMs’ self-correction capabilities. To explore this untapped potential, we propose iFlip, an iterative refinement approach that leverages three types of feedback, including model confidence, feature attribution, and natural language. Our results show that iFlip achieves an average 57.8% higher validity than the three state-of-the-art baselines, as measured by the label flipping rate. The user study further corroborates that iFlip outperforms baselines in completeness, overall satisfaction, and feasibility. In addition, ablation studies demonstrate that three components are paramount for iFlip to generate valid counterfactuals: leveraging an appropriate number of iterations, pointing to highly attributed words, and early stopping. Finally, counterfactuals generated by iFlip enable effective counterfactual data augmentation, substantially improving model performance and robustness.",
+    "year": "2026",
+    "month": "October",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "doi": null,
+    "pages": "749-779",
+    "url": "https://aclanthology.org/2026.findings-emnlp.38/",
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml"
+  }
+]

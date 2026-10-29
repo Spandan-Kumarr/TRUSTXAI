@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trustxai.local/schemas/semantic-annotation-response-1.0.json",
+  "title": "TRUSTXAI blinded semantic-preservation annotation response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "packet_id", "item_id", "rater_id", "reviewable",
+    "view_1", "view_2", "cross_view", "needs_adjudication", "notes"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "packet_id": {"type": "string", "minLength": 1},
+    "item_id": {"type": "string", "pattern": "^I-[0-9a-f]{16}$"},
+    "rater_id": {"type": "string", "pattern": "^R-[A-Za-z0-9_-]+$"},
+    "reviewable": {"enum": ["yes", "no"]},
+    "view_1": {"$ref": "#/$defs/view"},
+    "view_2": {"$ref": "#/$defs/view"},
+    "cross_view": {"$ref": "#/$defs/crossView"},
+    "needs_adjudication": {"enum": ["yes", "no"]},
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "claimStatus": {
+      "enum": ["supported", "contradicted", "unsupported", "missing", "unresolved"]
+    },
+    "view": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "C1_status", "C2_status", "C3_status", "C4_status",
+        "extra_claim_present", "extra_claims", "scope_flags"
+      ],
+      "properties": {
+        "C1_status": {"$ref": "#/$defs/claimStatus"},
+        "C2_status": {"$ref": "#/$defs/claimStatus"},
+        "C3_status": {"$ref": "#/$defs/claimStatus"},
+        "C4_status": {"$ref": "#/$defs/claimStatus"},
+        "extra_claim_present": {"enum": ["yes", "no", "unresolved"]},
+        "extra_claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["quote", "status", "reason"],
+            "properties": {
+              "quote": {"type": "string", "minLength": 1},
+              "status": {"enum": ["supported", "contradicted", "unsupported", "unresolved"]},
+              "reason": {"type": "string"}
+            }
+          }
+        },
+        "scope_flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "frozen_decision_changed", "omission_generalized_to_all_edits",
+              "clinical_causation_claimed", "internal_reasoning_claimed",
+              "confidence_invented", "treatment_or_action_added",
+              "external_medical_fact_added", "other"
+            ]
+          }
+        }
+      }
+    },
+    "crossView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["C1", "C2", "C3", "C4"],
+      "properties": {
+        "C1": {"enum": ["preserved", "changed", "missing", "unresolved"]},
+        "C2": {"enum": ["preserved", "changed", "missing", "unresolved"]},
+        "C3": {"enum": ["preserved", "changed", "missing", "unresolved"]},
+        "C4": {"enum": ["preserved", "changed", "missing", "unresolved"]}
+      }
+    }
+  }
+}

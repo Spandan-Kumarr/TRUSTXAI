@@ -1,0 +1,160 @@
+{
+  "protocol_version": "1.0",
+  "date": "2026-10-27",
+  "status": "design_prepared; primary_access_and_feasibility_pending",
+  "test_locked": false,
+  "dataset": {
+    "repository": "UCI",
+    "dataset_id": 228,
+    "name": "SMS Spam Collection",
+    "metadata_url": "https://archive.ics.uci.edu/api/dataset?id=228",
+    "archive_url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+    "license_verified": false,
+    "archive_sha256": null,
+    "actual_row_count": null,
+    "labels": [
+      "ham",
+      "spam"
+    ],
+    "eligible_words_min": 8,
+    "eligible_words_max": 60,
+    "message_token_limit": 256,
+    "deduplication": {
+      "exact": "NFC/casefold/collapsed-whitespace, preserve original inference text",
+      "near": "word-set Jaccard>=0.90 connected components, no cross-split components"
+    },
+    "seed": 20261027,
+    "planned_sources": {
+      "feasibility": 20,
+      "development": 40,
+      "test": 60
+    },
+    "balanced_by_original_label": true,
+    "split_manifest_sha256": null
+  },
+  "models": {
+    "primary": "Qwen/Qwen2.5-1.5B-Instruct",
+    "smaller_fallback": "Qwen/Qwen2.5-0.5B-Instruct",
+    "semantic_checker": "cross-encoder/nli-deberta-v3-base",
+    "revisions": {
+      "primary": null,
+      "smaller_fallback": null,
+      "semantic_checker": null
+    },
+    "weights_verified": false,
+    "licences_verified": false,
+    "trust_remote_code": false,
+    "prefer_safetensors": true,
+    "target_and_renderer_share_weights": true
+  },
+  "runtime": {
+    "environment": "current Linux cloud CPU",
+    "python": "3.12.14",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.57.1",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "generation_processes": 1,
+    "nli_batch_size_max": 8,
+    "hf_cache": "/workspace/thesis-runtime/cache/huggingface",
+    "mac_profile": "optional; M5 reported by user, memory/MPS not inspected"
+  },
+  "feasibility_gates": {
+    "peak_rss_GiB_max": 24,
+    "median_target_score_seconds_max": 5,
+    "median_pair_generation_seconds_max": 120,
+    "valid_json_fraction_min": 0.8,
+    "json_pilot_sources": 10,
+    "balanced_accuracy_min": 0.65,
+    "accuracy_pilot_sources": 20,
+    "estimated_matrix_CPU_hours_max": 24,
+    "observed_gate_results": null
+  },
+  "classifier": {
+    "A": "ham",
+    "B": "spam",
+    "score": "full continuation log-likelihood for each label under fixed task/chat template",
+    "decision": "argmax with tie=A",
+    "not_calibrated_confidence": true,
+    "max_total_context_tokens": 512,
+    "prompt_sha256": null
+  },
+  "evidence": {
+    "method": "complete-whitespace-span deletion sensitivity",
+    "quantity": "decision-class label log-odds",
+    "span_budget_max": 60,
+    "display_decimals": 4,
+    "numerical_nearzero_absolute": 0.0001,
+    "not_shap_or_causal_proof": true
+  },
+  "counterfactual": {
+    "attempts_max": 3,
+    "generation_new_tokens_max": 96,
+    "word_edit_distance_cap": "min(6,max(1,floor(0.25*original_word_count)))",
+    "same_target_independent_scoring": true,
+    "chosen_edit_uncached_recheck": true,
+    "semantic_validity_not_implied": true
+  },
+  "rendering": {
+    "audiences": [
+      "novice",
+      "expert"
+    ],
+    "mandatory_claims": [
+      "decision",
+      "deletion_result_and_scope",
+      "tested_edit_or_search_failure",
+      "limitations"
+    ],
+    "shared_plan": true,
+    "generation": "greedy",
+    "max_new_tokens_per_joint_call": 512,
+    "max_joint_repair_rounds": 1,
+    "checker_threshold_grid": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      0.95
+    ],
+    "development_supported_acceptance_target": 0.9,
+    "selected_threshold": null,
+    "fallback_is_narrative_success": false,
+    "status_only_record_is_informative_success": false
+  },
+  "conditions": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "P"
+  ],
+  "primary_comparison": "P-B1",
+  "primary_endpoint": "independently evaluated complete supported pair yield over all requested60test sources",
+  "diagnostics": {
+    "supported_variants_per_source": 4,
+    "faulty_variants_per_source": 8,
+    "planned_development_variants": 480,
+    "planned_test_variants": 720,
+    "counts_are_planned_not_generated": true
+  },
+  "annotation": {
+    "planned_raters": 2,
+    "researcher_may_be_one_rater": true,
+    "confirmed_raters": 0,
+    "planned_main_view_slots": 720,
+    "approval_and_consent_status": "not established; check applicable process before annotation/study",
+    "user_benefit_study": "conditional PhaseII; not measured"
+  },
+  "statistics": {
+    "primary_test": "two-sided exact McNemar on paired source outcomes",
+    "alpha": 0.05,
+    "difference_interval": "stratified paired source bootstrap95%",
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20261027,
+    "secondary_adjustment": "Holm for formal H2/H3tests",
+    "power_guarantee": false
+  },
+  "experiments_run": 0
+}

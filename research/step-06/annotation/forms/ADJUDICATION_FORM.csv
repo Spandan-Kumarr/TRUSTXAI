@@ -1,0 +1,1 @@
+schema_version,partition,item_id,rater_A_response_sha256,rater_B_response_sha256,disputed_fields_json,adjudicated_values_json,reason,adjudicator_id,adjudicated_at

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "reported_CPUs": 5,
+  "RAM_GiB": 33.289,
+  "runtime_interpreter": "/workspace/thesis-runtime/venv/bin/python",
+  "device": "CPU; no cloudGPU",
+  "decision_threads": 4,
+  "communication_threads": 1,
+  "dependency_freeze": "../evidence/CPU_DEPENDENCIES.freeze.txt",
+  "user_Mac_profile": "MacBookAirM5 reported; RAM/MPS not inspected; not used for measurements",
+  "weights_downloads": "Public ungated pinned official HuggingFace artifacts; TLS and publisher SHA256 retained",
+  "source_data_outside_git": true
+}

@@ -1,0 +1,108 @@
+{
+  "purpose": "Resource-layout simulation only, not supported/fault diagnostic labels or checker accuracy evaluation",
+  "sources": 8,
+  "unreviewed_cost_variants": 96,
+  "raw_mutation_text_packaged": false,
+  "cross_source_cache_reuse_assumed": false,
+  "NLI_only_ablation_additional_model_calls": 0,
+  "token_cost_method": "Round each actual tokenized pair up to measured128/256/512length bucket; no charge for>512because planned guard blocks unresolved inputs",
+  "semantic_preservation_evaluated": false,
+  "results": [
+    {
+      "source_id": "medqa-train-00180",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-01127",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-02720",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-03101",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-03700",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-04120",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 71,
+      "unique_CPU_cost": 43.309473148937506,
+      "uncached_CPU_cost": 165.91798164099995,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 13.419836750374998,
+      "natural_pair_unique_keys": 11,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-04169",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    },
+    {
+      "source_id": "medqa-train-06575",
+      "variants": 12,
+      "derived_from_actual_JSON": true,
+      "unique_NLI_keys": 70,
+      "unique_CPU_cost": 42.699480569375005,
+      "uncached_CPU_cost": 151.27815973149998,
+      "unresolved_overlong_pair_slots": 0,
+      "natural_pair_NLI_CPU_cost_without_cross_output_reuse": 12.199851591249999,
+      "natural_pair_unique_keys": 10,
+      "natural_pair_overlong_slots": 0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rubric_id": "trustxai-semantic-preservation-1.0",
+  "frozen_date": "2026-10-27",
+  "status": "frozen_for_development_annotation_before_test_inference",
+  "judgment_target": "support by the supplied evidence contract, not medical truth or clinical utility",
+  "claim_ids": ["C1", "C2", "C3", "C4"],
+  "claim_definitions": {
+    "C1": "Recorded model option, exact supplied option name, and qualification that it is not a verified diagnosis.",
+    "C2": "Selected omitted-span identity and the exact original-to-modified recorded answer relation.",
+    "C3": "Attempted/available spans, valid outputs, answer-change count, and selected-input recheck status.",
+    "C4": "Limits on clinical causation, untested edits, and complete internal reasoning."
+  },
+  "claim_statuses": {
+    "supported": "The complete stated meaning follows from the displayed evidence without strengthening it.",
+    "contradicted": "The statement conflicts with the displayed evidence.",
+    "unsupported": "The evidence does not establish the statement, even if it could be true elsewhere.",
+    "missing": "The mandatory claim is absent from the view.",
+    "unresolved": "The reviewer cannot decide from the displayed record; give a reason."
+  },
+  "scope_flags": [
+    "frozen_decision_changed",
+    "omission_generalized_to_all_edits",
+    "clinical_causation_claimed",
+    "internal_reasoning_claimed",
+    "confidence_invented",
+    "treatment_or_action_added",
+    "external_medical_fact_added",
+    "other"
+  ],
+  "cross_view_statuses": ["preserved", "changed", "missing", "unresolved"],
+  "complete_supported_view_rule": "C1-C4 are all supported and every added factual clause is supported; no contradicted, unsupported, missing, or unresolved claim is present.",
+  "complete_supported_pair_rule": "Both views independently meet complete_supported_view_rule.",
+  "mechanical_failures": ["missing", "unparseable", "blocked", "status_only"],
+  "llm_narrative_failures": ["fallback_template"],
+  "template_rule": "A deterministic template may be judged for system semantic coverage but is never a successful LLM narrative.",
+  "controlled_variant_rule": "Construction intent is not truth. Reviewers judge the realized text blind; realization is computed only after response lock and unblinding.",
+  "prohibited_inferences": [
+    "clinical correctness",
+    "patient benefit",
+    "causation from omission",
+    "complete internal reasoning",
+    "confidence calibration",
+    "superiority over GPT or Gemini"
+  ]
+}

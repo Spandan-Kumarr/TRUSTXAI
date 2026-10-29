@@ -1,0 +1,40 @@
+{
+  "archives": {
+    "A": {
+      "archive_entries": 13,
+      "bytes": 972518,
+      "filename": "TRUSTXAI_RATER_A.zip",
+      "packet_counts": {
+        "development": 596,
+        "test": 896
+      },
+      "packet_sha256": {
+        "development": "097997ee17e0bfb3c14fe8919671544d06a3a7c5e3ce97efdcaeb75bb25d2c55",
+        "test": "9243e4ce28cb4345799cbc57d498602cddf476527d9cbd3712105d672b2a172f"
+      },
+      "sha256": "c477103296d1fa8ede4adaea2a929fd9be54fea0791f9641ec0f4f079ae75c8a"
+    },
+    "B": {
+      "archive_entries": 13,
+      "bytes": 973724,
+      "filename": "TRUSTXAI_RATER_B.zip",
+      "packet_counts": {
+        "development": 596,
+        "test": 896
+      },
+      "packet_sha256": {
+        "development": "937eafdd6a62db0f077ccc8a3eb64c9f60c3e925b00f3b6bee6e693b17e197ee",
+        "test": "b2de3d994a2c85afbcdbbfa5d8c3fda2aea614fac3c9a90839ca1426ab75ed85"
+      },
+      "sha256": "e8708b6a7aca512dd423792e2129c5cebc234bc2a97934af23a34cf9613449ca"
+    }
+  },
+  "contains_rater_responses": false,
+  "created_on": "2026-10-29",
+  "private_archives_contain_research_text": true,
+  "private_archives_outside_git": true,
+  "public_manifest_contains_raw_text": false,
+  "schema": "trustxai.step6.rater-distribution.v1",
+  "separate_raters_required": true,
+  "status": "private_packages_ready_not_annotated"
+}

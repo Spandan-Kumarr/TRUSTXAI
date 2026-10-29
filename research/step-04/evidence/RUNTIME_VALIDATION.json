@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "torch": "2.8.0+cpu",
+  "transformers": "4.57.1",
+  "huggingface_hub": "0.36.0",
+  "sentencepiece": "0.2.1",
+  "cuda_available": false,
+  "qwen2_architecture_import": "passed",
+  "sequence_classification_import": "passed",
+  "model_weights_loaded": false,
+  "inference_benchmark_run": false,
+  "dataset_loaded": false,
+  "notes": "Architecture import verification, not LLM/model readiness"
+}

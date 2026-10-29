@@ -1,0 +1,14 @@
+{
+  "stage": "feasibility, no development/test inference",
+  "reason": "Qwen2.5-1.5B failed0.65balanced-accuracy gate under3declared prompt variants; general instruction checks show weights/functionality but unreliable task instruction-following",
+  "selection": "one newer similarly sized candidateQwen/Qwen3-1.7B; keep latest general/synthetic few-shot prompt; use supported no-thinking mode",
+  "not_lowering_quality_or_resource_gates": true,
+  "rejected_runs_preserved": [
+    "CLASSIFICATION_PILOT.json",
+    "CLASSIFICATION_PILOT_V2.json",
+    "CLASSIFICATION_PILOT_V3.json"
+  ],
+  "no_final_test_outcomes_seen": true,
+  "do_not_claim_feasibility_tuned_accuracy_as_test_result": true,
+  "script_sha256": "3e722296cfbd8e784742ceee32dbfb487a463c4be039e49d4dc9addedbd759cb"
+}

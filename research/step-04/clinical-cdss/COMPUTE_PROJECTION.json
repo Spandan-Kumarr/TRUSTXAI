@@ -1,0 +1,41 @@
+{
+  "scope": "Fixed development+test workload estimate; no thesis matrix executed",
+  "unit": "aggregate process CPU-hours (user+system), distinct from elapsed wall time",
+  "source_counts": {
+    "development": 40,
+    "test": 60
+  },
+  "target_original_calls": 100,
+  "target_omission_calls": 693,
+  "selected_recheck_calls_max": 100,
+  "unique_joint_generation_calls_max": 400,
+  "logical_test_generation_opportunities": 540,
+  "shared_initial_policy": "B1/B2/B3/Psame exact initial prompt/config; otherwise do not reuse",
+  "general_critic_calls_max": 100,
+  "diagnostic_pairs": 1200,
+  "natural_P_development_check_pairs_max": 160,
+  "exact_NLI_cache_layout_simulated": true,
+  "NLI_cost_fixtures_unreviewed": 96,
+  "target_cost_floor": "Each omitted/rechecked query charged at least original-query mean CPU/wall cost, rather than assuming edited inputs are cheaper",
+  "cache_extrapolation_basis": "Mean per-source unique exact-key cost over8feasibility cases; no cross-source cache benefit assumed. Not a guarantee of final diagnostic-layout cost.",
+  "component_CPU_seconds": {
+    "target_original_omissions_and_rechecks": 33501.59114477308,
+    "joint_narrative_generation": 18556.9399495,
+    "general_critic": 2152.6343624500014,
+    "NLI_diagnostics_exact_cache": 4277.572964182032,
+    "NLI_natural_pairs": 1976.3759577824999,
+    "overhead_allowance": 300.0
+  },
+  "headroom_fraction": 0.25,
+  "expected_total_CPU_hours": 21.09899804815542,
+  "estimated_elapsed_wall_hours_with_headroom": 7.321234879016964,
+  "projected_CPU_budget_gate_pass": true,
+  "CPU_hour_limit": 24,
+  "stress_uncached_full_caps_CPU_hours": 77.85868935505056,
+  "stress_within24CPUhours": false,
+  "new_development_layout_requires_projection_refresh": true,
+  "exploratory_prompt_tuning_and_human_annotation": "Not included; log separately",
+  "runtime_enforcement": "Checkpoint before24process CPU-hours; preserve pending slots and transparently revise allocation rather than drop cases",
+  "test_model_sources_used_by_cost_probe": 0,
+  "results_are_estimates_not_completed_runs": true
+}

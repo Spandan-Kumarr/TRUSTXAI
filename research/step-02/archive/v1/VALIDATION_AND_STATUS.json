@@ -1,0 +1,30 @@
+{
+  "status": "interim; priority full-text verification blocked",
+  "curated_records": 38,
+  "supplied_full_texts_analysed": 2,
+  "official_acl_metadata_records_in_library": 28,
+  "metadata_screen": {
+    "downloaded_collections": 30,
+    "collection_url_attempts": 40,
+    "records_in_downloaded_collections": 38613,
+    "title_keyword_hits": 754,
+    "full_text_screen_of_all_hits": false
+  },
+  "checks": [
+    "38 unique IDs and matching CSV/XLSX record counts",
+    "all L-number citations in main report resolve",
+    "PDF text extraction and 8-page count",
+    "Word document opens and three tables present",
+    "PDF pages 1 and 5 visually inspected",
+    "evidence snapshots and SHA-256 manifest saved",
+    "independent source/novelty review found no material correction"
+  ],
+  "not_claimed": [
+    "38 full-paper reviews",
+    "systematic-review exhaustiveness",
+    "reproduction of published experiments",
+    "verified novelty",
+    "completed application or manuscript"
+  ],
+  "external_blocker": "Current proxy returns403 for scholarly hosts; saved network draft requires user review/save and publication; no runtime update confirmed"
+}

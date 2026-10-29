@@ -1,0 +1,112 @@
+[
+  {
+    "file": "checklist.txt",
+    "sha256": "550167bb1cfb1dd286a9648ac1ddc18ff77916091de9f0f9b7ecdcf135a94af1",
+    "bytes": 17930
+  },
+  {
+    "file": "checklist_lic.txt",
+    "sha256": "a3705b886ca869d0b7c2c6e3ba7f301b63846cdcc729ee917d5d9fd9952cccde",
+    "bytes": 1084
+  },
+  {
+    "file": "crest.txt",
+    "sha256": "5b74d8a1bc5f378296072a57c5e77952a1ba97868ff8735fe0e862d1438ec800",
+    "bytes": 18355
+  },
+  {
+    "file": "crest_eval.txt",
+    "sha256": "934407f1807ae72c1ceea7db30113e78ffa6620731ab7b5bc3e707ec0caf93b8",
+    "bytes": 171
+  },
+  {
+    "file": "crest_license.txt",
+    "sha256": "44ec517473df03606488f3edff149590f42a801dab9679f2b91ab1b0fc4210ff",
+    "bytes": 1071
+  },
+  {
+    "file": "disco.txt",
+    "sha256": "751fcca8f8805a9e87653647d617d00e0206c881984b0ebf6a66a5ee59e65dc2",
+    "bytes": 5823
+  },
+  {
+    "file": "disco_lic.txt",
+    "sha256": "3faf1cecb15ec71b893e3ca8782168d1e49c8150df19239e12c9ad81bd99710c",
+    "bytes": 1075
+  },
+  {
+    "file": "eraser.txt",
+    "sha256": "5274690dba67051baf2d6f8dfb03946238f97dc29eef0c60e6727f04905c4546",
+    "bytes": 2797
+  },
+  {
+    "file": "eraser_lic.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  {
+    "file": "eraser_metrics.txt",
+    "sha256": "8b11a0814f419937c910973aaf248f3754de36386bb0478982b049e3768f19d8",
+    "bytes": 37424
+  },
+  {
+    "file": "mice.md",
+    "sha256": "5bcda518584ea2ec9c725670f57cc74250b9d8d92abc149cb4e7d1201ba18794",
+    "bytes": 5273
+  },
+  {
+    "file": "mice_source.txt",
+    "sha256": "f8266ae19b484e94894a07e4130fff5630055c00bfe5f19df98a29225a6e91fd",
+    "bytes": 19992
+  },
+  {
+    "file": "poly_lic.txt",
+    "sha256": "309d0181fda4eb36771b1aa8b641d5b082c7e62bc36ce471ca2a4b46f2fcb779",
+    "bytes": 1530
+  },
+  {
+    "file": "polyjuice.md",
+    "sha256": "a43a55fb2c9eb1b567821af9500d6fa171aead86121a8eccf7b49903fa8cc788",
+    "bytes": 4251
+  },
+  {
+    "file": "randl.md",
+    "sha256": "694b8b135bfc1b71ac82cc092dcbca2e0fbc31b4dc093a0a38e9961e0472540f",
+    "bytes": 4947
+  },
+  {
+    "file": "randl_counterfactual.txt",
+    "sha256": "f0711b83b5ca45bcf4abc97bfef4b10133c3e82328f5c4828fe8dcd1af862093",
+    "bytes": 7215
+  },
+  {
+    "file": "randl_lic.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149
+  },
+  {
+    "file": "sces.txt",
+    "sha256": "62c4ae683e67cc95c02fe71ca0f4a1bb16dfda5eb3e7bf56ee78452d9291bf86",
+    "bytes": 4411
+  },
+  {
+    "file": "sces_license.txt",
+    "sha256": "158557dd8d0134d5dbbe02ebd1a1ddf44566917c534d6da30013fd9740536165",
+    "bytes": 1068
+  },
+  {
+    "file": "sces_scorer.txt",
+    "sha256": "215752fc0082de3ff32e5bcbb349506e225d908a892d5131e7cbaef87f43b693",
+    "bytes": 1484
+  },
+  {
+    "file": "selected_acl_metadata.json",
+    "sha256": "4161e88dd2c2ad3835e7d87de6d04f0b705523fd496eb308748a0c028b6b6647",
+    "bytes": 8301
+  },
+  {
+    "file": "tailor.txt",
+    "sha256": "b766c13cb042d77f26389aa0253e7cbc0b80816d4e4a66f50c35c878b2b89bc9",
+    "bytes": 4643
+  }
+]

@@ -1,0 +1,1495 @@
+[
+  {
+    "id": "L01",
+    "title": "A Three-level Framework for LLM-enhanced Explainable AI: From Technical Explanations to Natural Language",
+    "authors": [
+      "Marilyn Bello",
+      "Rafael Bello",
+      "María-Matilde García",
+      "Ann Nowé",
+      "Iván Sevillano-García",
+      "Francisco Herrera"
+    ],
+    "year": "2025/2026 metadata unresolved",
+    "venue": "Information Systems Frontiers",
+    "status": "Journal article; supplied PDF accepted 19 November 2025, modified publication 2026; canonical year pending publisher verification",
+    "url": "https://doi.org/10.1007/s10796-025-10668-1",
+    "evidence_url": [
+      "User-supplied PAPER 1.pdf"
+    ],
+    "access_depth": "Full supplied paper, sections 3–5 especially pp. 8–18",
+    "contribution": "Three levels: algorithmic/domain evidence, human-centered interaction, societal transparency; LLM interprets existing XAI evidence for audiences.",
+    "limitations": "Authors explicitly acknowledge conceptual foundation requiring further empirical validation (p.18); loan illustrations are not a controlled user study or measured faithfulness guarantee.",
+    "relevance": "Primary audience-aware framework motivation; broad integration is already proposed.",
+    "baseline_use": "Conceptual architecture comparator; operationalize evidence preservation rather than claiming invention of three-level XAI.",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "publication_verification": "Journal article; supplied PDF accepted 19 November 2025, modified publication 2026; canonical year pending publisher verification",
+    "code_url": "",
+    "access_date": "2026-10-26",
+    "full_text_read": true,
+    "doi": "10.1007/s10796-025-10668-1",
+    "evidence_grade": "F: supplied full text",
+    "citation_status": "Provisional metadata: verify before manuscript"
+  },
+  {
+    "title": "Mind the gap: from plausible to valid self-explanations in large language models",
+    "authors": [
+      "Korbinian Randl",
+      "John Pavlopoulos",
+      "Aron Henriksson",
+      "Tony Lindgren"
+    ],
+    "year": 2025,
+    "venue": "Machine Learning 114, article 220",
+    "status": "Published journal article; supplied full PDF",
+    "url": "https://doi.org/10.1007/s10994-025-06838-6",
+    "evidence_url": [
+      "Supplied PAPER 2.pdf, sections 3–6 and Appendix H",
+      "https://raw.githubusercontent.com/k-randl/self-explaining_llms/main/README.md",
+      "https://raw.githubusercontent.com/k-randl/self-explaining_llms/main/self-counterfactuals-movies.py"
+    ],
+    "access_depth": "Full supplied paper plus README and selected implementation source",
+    "contribution": "Analyses extractive/counterfactual self-explanations of LLM classifiers; samples edited inputs and explicitly reclassifies them; estimates retries and evaluates validity, similarity, dependability and runtime.",
+    "limitations": "Classification-only; decoder-only; gradient tests up to 9B; no actionability assessment; prompt sensitivity not systematically evaluated; finite retry budget can fail; similarity/validity do not establish internal reasoning.",
+    "relevance": "Direct base paper and mandatory methodological reference.",
+    "baseline_use": "Reproduce target-model reclassification baseline and bounded rejection sampling before claiming a better validator. Report candidate attempts and failures.",
+    "code_licence": "GPLv3 verified from repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/k-randl/self-explaining_llms",
+    "source_locators": "PDF pp. 10–11 (dependability), 16–20, 35; self-counterfactuals-movies.py lines 114–157",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "publication_verification": "Published journal article; supplied full PDF",
+    "id": "L02",
+    "access_date": "2026-10-26",
+    "full_text_read": true,
+    "doi": "10.1007/s10994-025-06838-6",
+    "evidence_grade": "F: supplied full text",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+    "authors": [
+      "Marco Tulio Ribeiro",
+      "Tongshuang Wu",
+      "Carlos Guestrin",
+      "Sameer Singh"
+    ],
+    "year": "2020",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2020.acl-main.442/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+      "https://raw.githubusercontent.com/marcotcr/checklist/master/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus detailed README; full paper not retrieved",
+    "contribution": "Behavioral test methodology over linguistic capabilities and test types, with tools for minimum functionality, invariance and directional-expectation testing.",
+    "limitations": "Tests target model behavior and task-specific expectations; not a certificate of narrative faithfulness or fairness. Test labels must match intended semantics of edits.",
+    "relevance": "Separates perturbations that should preserve labels from those that should change them.",
+    "baseline_use": "Use framework to design targeted robustness/negative-control probes rather than claiming all perturbations should keep predictions unchanged.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/marcotcr/checklist",
+    "doi": "10.18653/v1/2020.acl-main.442",
+    "pages": "4902–4912",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2020.acl-main.442",
+    "official_abstract": "Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L03",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "ERASER: A Benchmark to Evaluate Rationalized NLP Models",
+    "authors": [
+      "Jay DeYoung",
+      "Sarthak Jain",
+      "Nazneen Fatema Rajani",
+      "Eric Lehman",
+      "Caiming Xiong",
+      "Richard Socher",
+      "Byron C. Wallace"
+    ],
+    "year": "2020",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Conference benchmark paper; official ACL metadata and repository",
+    "url": "https://aclanthology.org/2020.acl-main.408/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+      "https://raw.githubusercontent.com/jayded/eraserbenchmark/master/README.md",
+      "https://raw.githubusercontent.com/jayded/eraserbenchmark/master/rationale_benchmark/metrics.py"
+    ],
+    "access_depth": "Official abstract/metadata plus README and metric implementation; full paper not retrieved",
+    "contribution": "Benchmark with human rationale annotations and distinct plausibility/faithfulness-oriented measurements. Source implements rationale alignment, classification, comprehensiveness, sufficiency and AOPC metrics.",
+    "limitations": "Human rationale overlap measures agreement, not causal internal faithfulness; removal/retention metrics depend on model score access and perturbation distribution. Dataset source licences must be checked individually.",
+    "relevance": "Provides evaluation protocol and potentially annotated movie-review data consistent with base paper2.",
+    "baseline_use": "Candidate evaluation backbone. Label probability must be meaningfully defined for generative labels; no fabricated probability for API-only access.",
+    "code_licence": "Apache-2.0 verified for code; individual data licences separate",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/jayded/eraserbenchmark",
+    "doi": "10.18653/v1/2020.acl-main.408",
+    "source_locators": "rationale_benchmark/metrics.py lines 250–358, 569–584",
+    "pages": "4443–4458",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2020.acl-main.408",
+    "official_abstract": "State-of-the-art models in NLP are now predominantly based on deep neural networks that are opaque in terms of how they come to make predictions. This limitation has increased interest in designing more interpretable deep models for NLP that reveal the ‘reasoning’ behind model outputs. But work in this direction has been conducted on different datasets and tasks with correspondingly unique aims and metrics; this makes it difficult to track progress. We propose the Evaluating Rationales And Simple English Reasoning (ERASER a benchmark to advance research on interpretable models in NLP. This benchmark comprises multiple datasets and tasks for which human annotations of “rationales” (supporting evidence) have been collected. We propose several metrics that aim to capture how well the rationales provided by models align with human rationales, and also how faithful these rationales are (i.e., the degree to which provided rationales influenced the corresponding predictions). Our hope is that releasing this benchmark facilitates progress on designing more interpretable NLP systems. The benchmark, code, and documentation are available at https://www.eraserbenchmark.com/",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L04",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "NILE : Natural Language Inference with Faithful Natural Language Explanations",
+    "authors": [
+      "Sawan Kumar",
+      "Partha Talukdar"
+    ],
+    "year": "2020",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2020.acl-main.771/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "NILE generates label-specific explanations used in the prediction path and tests explanation sensitivity.",
+    "limitations": "By-construction explanation-to-prediction differs from post-hoc explanations of an unchanged LLM.",
+    "relevance": "Reason-then-predict architectures are existing alternatives; do not silently change scope.",
+    "baseline_use": "Architecture comparator, not same-target post-hoc baseline.",
+    "doi": "10.18653/v1/2020.acl-main.771",
+    "acl_id": "2020.acl-main.771",
+    "pages": "8730–8742",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "official_abstract": "The recent growth in the popularity and success of deep learning models on NLP classification tasks has accompanied the need for generating some form of natural language explanation of the predicted labels. Such generated natural language (NL) explanations are expected to be faithful, i.e., they should correlate well with the model’s internal decision making. In this work, we focus on the task of natural language inference (NLI) and address the following question: can we build NLI systems which produce labels with high accuracy, while also generating faithful explanations of its decisions? We propose Natural-language Inference over Label-specific Explanations (NILE), a novel NLI method which utilizes auto-generated label-specific NL explanations to produce labels along with its faithful explanation. We demonstrate NILE’s effectiveness over previously reported methods through automated and human evaluation of the produced labels and explanations. Our evaluation of NILE also supports the claim that accurate systems capable of providing testable explanations of their decisions can be designed. We discuss the faithfulness of NILE’s explanations in terms of sensitivity of the decisions to the corresponding explanations. We argue that explicit evaluation of faithfulness, in addition to label and explanation accuracy, is an important step in evaluating model’s explanations. Further, we demonstrate that task-specific probes are necessary to establish such sensitivity.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L05",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Towards Faithfully Interpretable NLP Systems: How Should We Define and Evaluate Faithfulness?",
+    "authors": [
+      "Alon Jacovi",
+      "Yoav Goldberg"
+    ],
+    "year": "2020",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2020.acl-main.386/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "Foundational clarification of graded faithfulness and explicit evaluation assumptions.",
+    "limitations": "Conceptual guidance; this is an opinion/evaluation paper, not a deployable validator.",
+    "relevance": "Define what the thesis means by faithfulness and what its tests cannot establish.",
+    "baseline_use": "Framework for evaluation, not algorithm baseline.",
+    "doi": "10.18653/v1/2020.acl-main.386",
+    "acl_id": "2020.acl-main.386",
+    "pages": "4198–4205",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+    "official_abstract": "With the growing popularity of deep-learning based NLP models, comes a need for interpretable systems. But what is interpretability, and what constitutes a high-quality interpretation? In this opinion piece we reflect on the current state of interpretability evaluation research. We call for more clearly differentiating between different desired criteria an interpretation should satisfy, and focus on the faithfulness criteria. We survey the literature with respect to faithfulness evaluation, and arrange the current approaches around three assumptions, providing an explicit form to how faithfulness is “defined” by the community. We provide concrete guidelines on how evaluation of interpretation methods should and should not be conducted. Finally, we claim that the current binary definition for faithfulness sets a potentially unrealistic bar for being considered faithful. We call for discarding the binary notion of faithfulness in favor of a more graded one, which we believe will be of greater practical utility.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L06",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Explaining NLP Models via Minimal Contrastive Editing (MiCE)",
+    "authors": [
+      "Alexis Ross",
+      "Ana Marasović",
+      "Matthew Peters"
+    ],
+    "year": "2021",
+    "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    "status": "Conference Findings paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2021.findings-acl.336/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml",
+      "https://raw.githubusercontent.com/allenai/mice/master/README.md",
+      "https://raw.githubusercontent.com/allenai/mice/master/src/edit_finder.py"
+    ],
+    "access_depth": "Official abstract + Official metadata plus README and selected search implementation; full paper not retrieved",
+    "contribution": "Uses a trained editor and search over masking amounts to find minimal contrastive edits; source re-scores candidates with the target predictor, records successful target-label edits and uses a bounded beam/search procedure.",
+    "limitations": "Original toolkit uses task-specific predictor/editor training and legacy AllenNLP/Python3.7 setup; not a drop-in modern instruction-LLM experiment. No benchmark results were rerun.",
+    "relevance": "Minimality search plus classifier validation existed before LLM self-CF work.",
+    "baseline_use": "Relevant algorithmic comparator if adapted fairly to same target model; adaptation must be disclosed.",
+    "code_licence": "Not verified: conventional LICENSE/LICENSE.md/LICENSE.txt paths returned404; do not infer licence",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/allenai/mice",
+    "doi": "10.18653/v1/2021.findings-acl.336",
+    "source_locators": "src/edit_finder.py lines 177–251, 333–445",
+    "pages": "3840–3852",
+    "month": "August",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2021.findings-acl.336",
+    "official_abstract": "",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L07",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Polyjuice: Generating Counterfactuals for Explaining, Evaluating, and Improving Models",
+    "authors": [
+      "Tongshuang Wu",
+      "Marco Tulio Ribeiro",
+      "Jeffrey Heer",
+      "Daniel Weld"
+    ],
+    "year": "2021",
+    "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2021.acl-long.523/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml",
+      "https://raw.githubusercontent.com/tongshuangwu/polyjuice/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus README; full paper not retrieved",
+    "contribution": "A GPT-2-based general-purpose perturbation generator with controls over edit type and location; supports counterfactual error analysis and augmentation of explanation techniques.",
+    "limitations": "Generator is distinct from validity certification for a specified classifier; sampled perturbations need target-specific label checks. Older generator/tool dependencies and text licences need consideration.",
+    "relevance": "Controlled lexical/semantic edit generation is established prior art.",
+    "baseline_use": "Candidate perturbation-generation comparator or robustness suite component; do not equate every perturbation with a valid counterfactual.",
+    "code_licence": "BSD-3-Clause verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/tongshuangwu/polyjuice",
+    "doi": "10.18653/v1/2021.acl-long.523",
+    "pages": "6707–6723",
+    "month": "August",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2021.acl-long.523",
+    "official_abstract": "",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L08",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L09",
+    "title": "Reframing Human-AI Collaboration for Generating Free-Text Explanations",
+    "authors": [
+      "Sarah Wiegreffe",
+      "Jack Hessel",
+      "Swabha Swayamdipta",
+      "Mark Riedl",
+      "Yejin Choi"
+    ],
+    "year": 2022,
+    "venue": "NAACL 2022",
+    "status": "Published proceedings metadata verified in official ACL Anthology record",
+    "url": "https://aclanthology.org/2022.naacl-main.47/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/allenai/few_shot_explanations/main/README.md"
+    ],
+    "access_depth": "Official ACL abstract and metadata plus official README; full paper not accessed",
+    "contribution": "Few-shot GPT3 free-text explanation generation combined with a supervised filter using binary human acceptability judgments. Official abstract reports crowdworkers sometimes prefer generated explanations to dataset human explanations, with weaknesses including novel information and support for the label.",
+    "limitations": "Human acceptability is partly correlated with fine-grained explanation attributes, not proof of mechanistic faithfulness. Preference and grammatical/factual sufficiency need not imply appropriate reliance; full study protocol and effect sizes not read.",
+    "relevance": "Prior art for human assessment/collaboration around generated explanations; warns against presenting human acceptance as mechanistic fidelity.",
+    "baseline_use": "Human acceptability annotation materials and methodological background; investigate before reusing datasets/prompts.",
+    "code_url": "https://github.com/allenai/few_shot_explanations",
+    "license": "Apache2.0 verified from repository LICENSE",
+    "doi": "10.18653/v1/2022.naacl-main.47",
+    "pages": "632–658",
+    "metadata_source": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2022.naacl.xml",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "publication_verification": "Published proceedings metadata verified in official ACL Anthology record",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "CREST: A Joint Framework for Rationalization and Counterfactual Text Generation",
+    "authors": [
+      "Marcos Treviso",
+      "Alexis Ross",
+      "Nuno M. Guerreiro",
+      "André Martins"
+    ],
+    "year": "2023",
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2023.acl-long.842/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+      "https://raw.githubusercontent.com/deep-spin/crest/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus detailed README; full paper not retrieved",
+    "contribution": "Joint selective rationalization and counterfactual text generation; trains masker/editor, classifies generated edits and uses counterfactuals to regularize rationales. Repository provides IMDB/SNLI edits and validity, fluency, diversity, plausibility and simulation evaluation instructions.",
+    "limitations": "Training-oriented rationalizer/predictor architecture differs from post-hoc verification of a fixed instruction LLM; off-the-shelf validity checks in README must not be assumed same-model validation. Compiler/SparseMAP and legacy dependencies add reproduction cost.",
+    "relevance": "Direct prior art against novelty claims about combining rationales, evidence extraction and counterfactual generation.",
+    "baseline_use": "Possible strong method/data comparator with careful target alignment; at minimum compare conceptual differences explicitly.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/deep-spin/crest",
+    "doi": "10.18653/v1/2023.acl-long.842",
+    "pages": "15109-15126",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2023.acl-long.842",
+    "official_abstract": "Selective rationales and counterfactual examples have emerged as two effective, complementary classes of interpretability methods for analyzing and training NLP models. However, prior work has not explored how these methods can be integrated to combine their complementary advantages. We overcome this limitation by introducing CREST (ContRastive Edits with Sparse raTionalization), a joint framework for selective rationalization and counterfactual text generation, and show that this framework leads to improvements in counterfactual quality, model robustness, and interpretability. First, CREST generates valid counterfactuals that are more natural than those produced by previous methods, and subsequently can be used for data augmentation at scale, reducing the need for human-generated examples. Second, we introduce a new loss function that leverages CREST counterfactuals to regularize selective rationales and show that this regularization improves both model robustness and rationale quality, compared to methods that do not leverage CREST counterfactuals. Our results demonstrate that CREST successfully bridges the gap between selective rationales and counterfactual examples, addressing the limitations of existing methods and providing a more comprehensive view of a model’s predictions.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L10",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L11",
+    "title": "ConvXAI: Delivering Heterogeneous AI Explanations via Conversations to Support Human-AI Scientific Writing",
+    "authors": [
+      "Hua Shen",
+      "Chieh-Yang Huang",
+      "Tongshuang Wu",
+      "Ting-Hao 'Kenneth' Huang"
+    ],
+    "year": 2023,
+    "venue": "CSCW 2023 Demo (author-reported); arXiv:2305.09770",
+    "status": "Demo acceptance stated in official README; separate main research-paper publication not verified",
+    "url": "https://arxiv.org/abs/2305.09770",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/huashen218/convxai/main/README.md"
+    ],
+    "access_depth": "Official README, system/model documentation and preprint citation; no full paper accessed",
+    "contribution": "Conversational system for heterogeneous explanations supporting scientific writing. Repository documents SciBERT writing-structure and GPT-based writing-style models, intent classification, example-based explanations and MiCE counterfactuals.",
+    "limitations": "Scientific-writing support is a specific task; demo code and screenshots do not establish benefit on LLM classification or calibrated trust. README does not provide a full human-study protocol or paper-level results.",
+    "relevance": "Prior art for conversational selection and integration of heterogeneous explanation types, including counterfactuals.",
+    "baseline_use": "Interaction and explanation-menu comparator; distinguish task-specific model support from verification of final LLM-written claims.",
+    "code_url": "https://github.com/huashen218/convxai",
+    "license": "MIT verified from repository LICENSE",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "publication_verification": "Demo acceptance stated in official README; separate main research-paper publication not verified",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "DISCO: Distilling Counterfactuals with Large Language Models",
+    "authors": [
+      "Zeming Chen",
+      "Qiyue Gao",
+      "Antoine Bosselut",
+      "Ashish Sabharwal",
+      "Kyle Richardson"
+    ],
+    "year": "2023",
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Conference paper; official ACL metadata and author repository",
+    "url": "https://aclanthology.org/2023.acl-long.302/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+      "https://raw.githubusercontent.com/eric11eca/disco/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus author README; full paper not retrieved",
+    "contribution": "Prompts a large language model for phrasal perturbations and filters generations with a task-specific teacher; counterfactual data trains more robust NLI student models.",
+    "limitations": "Training-data augmentation objective, not explanation verification of the same decision LLM; teacher filtering is not automatically target-model validity. README and final ACL abstract report different effect sizes, so no numerical comparison quoted.",
+    "relevance": "Generate-and-filter text pipelines with LLMs are established.",
+    "baseline_use": "Useful prior art and generation/filtering control; cannot directly substitute teacher labels for target-model checks.",
+    "code_licence": "Code MIT verified from LICENSE; README links/claims about data licences conflict and need separate verification",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/eric11eca/disco",
+    "doi": "10.18653/v1/2023.acl-long.302",
+    "pages": "5514-5528",
+    "month": "July",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2023.acl-long.302",
+    "official_abstract": "Models trained with counterfactually augmented data learn representations of the causal structure of tasks, enabling robust generalization. However, high-quality counterfactual data is scarce for most tasks and not easily generated at scale. When crowdsourced, such data is typically limited in scale and diversity; when generated using supervised methods, it is computationally expensive to extend to new counterfactual dimensions. In this work, we introduce DISCO (DIStilled COunterfactual Data), a new method for automatically generating high-quality counterfactual data at scale. DISCO engineers prompts to generate phrasal perturbations with a large general language model. Then, a task-specific teacher model filters these generations to distill high-quality counterfactual data. While task-agnostic, we apply our pipeline to the task of natural language inference (NLI) and find that on challenging evaluations such as the NLI stress test, comparatively smaller student models trained with DISCO generated counterfactuals are more robust (6% absolute) and generalize better across distributions (2%) compared to models trained without data augmentation. Furthermore, DISCO augmented models are 10% more consistent between counterfactual pairs on three evaluation sets, demonstrating that DISCO augmentation enables models to more reliably learn causal representations. Our repository are available at: https://github.com/eric11eca/disco",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L12",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L13",
+    "title": "Explaining machine learning models with interactive natural language conversations using TalkToModel",
+    "authors": [
+      "Dylan Slack",
+      "Satyapriya Krishna",
+      "Himabindu Lakkaraju",
+      "Sameer Singh"
+    ],
+    "year": 2023,
+    "venue": "Nature Machine Intelligence",
+    "status": "Published journal article per author repository citation; DOI verified in README, publisher page inaccessible",
+    "url": "https://doi.org/10.1038/s42256-023-00692-8",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/dylan-slack/TalkToModel/main/README.md"
+    ],
+    "access_depth": "Official README including abstract and citation; no full paper accessed",
+    "contribution": "Adaptive dialogue engine interprets natural language, execution component constructs explanations, conversational interface presents them. Repository supports tabular models and includes diabetes, COMPAS, German credit demos.",
+    "limitations": "README explicitly says current system supports tabular models, not BERT sentiment models. Reported 73% healthcare-worker preference and 85% ML-professional ease-of-use agreement are preference/usability outcomes, not proof of faithfulness or calibrated reliance. Full human-study protocol not inspected.",
+    "relevance": "Strong prior art for conversational XAI with executable technical evidence; natural-language UI over explanations is not new.",
+    "baseline_use": "Architecture/UI comparator rather than automatic apples-to-apples end-to-end baseline for LLM text classification.",
+    "code_url": "https://github.com/dylan-slack/TalkToModel",
+    "license": "MIT verified from repository LICENSE",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "publication_verification": "Published journal article per author repository citation; DOI verified in README, publisher page inaccessible",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "doi": "10.1038/s42256-023-00692-8",
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L14",
+    "title": "Faithful Chain-of-Thought Reasoning",
+    "authors": [
+      "Qing Lyu",
+      "Shreya Havaldar",
+      "Adam Stein",
+      "Li Zhang",
+      "Delip Rao",
+      "Eric Wong",
+      "Marianna Apidianaki",
+      "Chris Callison-Burch"
+    ],
+    "year": 2023,
+    "venue": "IJCNLP-AACL 2023",
+    "status": "Author-repository acceptance report; independently verify proceedings",
+    "url": "https://arxiv.org/abs/2301.13379",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/veronica320/Faithful-COT/main/README.md"
+    ],
+    "access_depth": "Primary author-repository README; paper full text not accessed",
+    "contribution": "Translator LM reasoning chains are executed by deterministic solvers to derive answers in structured tasks.",
+    "limitations": "Faithfulness-by-execution constrains answer derivation but does not guarantee that translated premises correctly represent the input. Different from post-hoc classification explanation.",
+    "relevance": "Connecting language, symbolic representations and executable checks is established prior art.",
+    "baseline_use": "Conceptual comparator for verifiable-by-construction methods; not automatically a fair baseline for a fixed classifier.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/veronica320__Faithful-COT.md",
+    "evidence_sha256": "c9853f8ae96b3fe712c6265512427a84480f2495a06f94eb4e9eab409f01bb75",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "publication_verification": "Author-repository acceptance report; independently verify proceedings",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Provisional metadata: verify before manuscript"
+  },
+  {
+    "id": "L15",
+    "title": "InterroLang: Exploring NLP Models and Datasets through Dialogue-based Explanations",
+    "authors": [
+      "Nils Feldhus",
+      "Qianli Wang",
+      "Tatiana Anikina",
+      "Sahil Chopra",
+      "Cennet Oguz",
+      "Sebastian Möller"
+    ],
+    "year": "2023",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "status": "Published proceedings metadata verified in official ACL Anthology record",
+    "url": "https://aclanthology.org/2023.findings-emnlp.359/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/DFKI-NLP/InterroLang/main/README.md",
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings.xml"
+    ],
+    "access_depth": "Official ACL metadata abstract plus official README; full paper not accessed",
+    "contribution": "Adapts TalkToModel to NLP; integrates feature attribution, counterfactuals/perturbations, free-text rationalization and dataset exploration. Official abstract reports two studies: perceived correctness/helpfulness and simulatability; dialogue explanations helped users predict hidden model labels more reliably than one-off explanations.",
+    "limitations": "Perceived helpfulness and model simulatability are distinct from decision correctness and calibrated reliance. Results concern the studied models/tasks; detailed study protocol and effect sizes have not been read. Documented target models are BERT-family task classifiers, not evidence of verified explanations for instruction-tuned generative decision LLMs.",
+    "relevance": "Very close system-level prior art: combining conversation, NLP attribution, counterfactuals and rationalization is not a new contribution by itself.",
+    "baseline_use": "Source of operation taxonomy and NLP UX; compare verified final claims and explicit failure reporting if method differences warrant. No licence confirmed from root LICENSE URL (404).",
+    "code_url": "https://github.com/DFKI-NLP/InterroLang",
+    "license": "Not verified; absence at one URL is not proof no licence exists",
+    "doi": "10.18653/v1/2023.findings-emnlp.359",
+    "pages": "5399-5421",
+    "metadata_source": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings.xml",
+    "official_abstract": "While recently developed NLP explainability methods let us open the black box in various ways (Madsen et al., 2022), a missing ingredient in this endeavor is an interactive tool offering a conversational interface. Such a dialogue system can help users explore datasets and models with explanations in a contextualized manner, e.g. via clarification or follow-up questions, and through a natural language interface. We adapt the conversational explanation framework TalkToModel (Slack et al., 2022) to the NLP domain, add new NLP-specific operations such as free-text rationalization, and illustrate its generalizability on three NLP tasks (dialogue act classification, question answering, hate speech detection). To recognize user queries for explanations, we evaluate fine-tuned and few-shot prompting models and implement a novel adapter-based approach. We then conduct two user studies on (1) the perceived correctness and helpfulness of the dialogues, and (2) the simulatability, i.e. how objectively helpful dialogical explanations are for humans in figuring out the model’s predicted label when it’s not shown. We found rationalization and feature attribution were helpful in explaining the model behavior. Moreover, users could more reliably predict the model outcome based on an explanation dialogue rather than one-off explanations.",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "acl_id": "2023.findings-emnlp.359",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L16",
+    "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+    "authors": [
+      "Miles Turpin",
+      "Julian Michael",
+      "Ethan Perez",
+      "Samuel R. Bowman"
+    ],
+    "year": 2023,
+    "venue": "Archival venue not independently verified here",
+    "status": "Author repository supplies arXiv2023 citation",
+    "url": "https://arxiv.org/abs/2305.04388",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/milesaturpin/cot-unfaithfulness/main/README.md"
+    ],
+    "access_depth": "Primary author-repository README; paper full text not accessed",
+    "contribution": "Biasing features can alter predictions while CoT omits their influence; repository includes BBH/BBQ prompts, samples and analysis.",
+    "limitations": "Specific task/model/input-bias experiments do not establish all explanations are unfaithful. Paper full text was not accessed.",
+    "relevance": "Motivates targeted tests for omitted decision influences and separates persuasive rationales from tested influence.",
+    "baseline_use": "Controlled bias/hint influence stress test; not a universal metric.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/milesaturpin__cot-unfaithfulness.md",
+    "evidence_sha256": "41c5ebac64dc287bde8272412f7682bbc936ac0c8b1886782c1749e87efd65ef",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "publication_verification": "Author repository supplies arXiv2023 citation",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Provisional metadata: verify before manuscript"
+  },
+  {
+    "title": "A Survey on Natural Language Counterfactual Generation",
+    "authors": [
+      "Yongjie Wang",
+      "Xiaoqi Qiu",
+      "Yu Yue",
+      "Xu Guo",
+      "Zhiwei Zeng",
+      "Yuhong Feng",
+      "Zhiqi Shen"
+    ],
+    "year": "2024",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2024.findings-emnlp.276/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "Survey categorizes textual counterfactual generation methods and reviews evaluation metrics.",
+    "limitations": "Survey abstract only; taxonomy details need full text before reuse.",
+    "relevance": "Use as structured citation-tracing source for minimality, validity and semantic quality.",
+    "baseline_use": "Related-work taxonomy rather than algorithm baseline.",
+    "doi": "10.18653/v1/2024.findings-emnlp.276",
+    "acl_id": "2024.findings-emnlp.276",
+    "pages": "4798-4818",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+    "official_abstract": "Natural language counterfactual generation aims to minimally modify a given text such that the modified text will be classified into a different class. The generated counterfactuals provide insight into the reasoning behind a model’s predictions by highlighting which words significantly influence the outcomes. Additionally, they can be used to detect model fairness issues and augment the training data to enhance the model’s robustness. A substantial amount of research has been conducted to generate counterfactuals for various NLP tasks, employing different models and methodologies. With the rapid growth of studies in this field, a systematic review is crucial to guide future researchers and developers. To bridge this gap, this survey provides a comprehensive overview of textual counterfactual generation methods, particularly those based on Large Language Models. We propose a new taxonomy that systematically categorizes the generation methods into four groups and summarizes the metrics for evaluating the generation quality. Finally, we discuss ongoing research challenges and outline promising directions for future work.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L17",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L18",
+    "title": "Are self-explanations from Large Language Models faithful?",
+    "authors": [
+      "Andreas Madsen",
+      "Sarath Chandar",
+      "Siva Reddy"
+    ],
+    "year": "2024",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2024",
+    "status": "Peer-reviewed metadata independently verified in official ACL Anthology XML",
+    "url": "https://aclanthology.org/2024.findings-acl.19/",
+    "doi": "10.18653/v1/2024.findings-acl.19",
+    "pages": "295-337",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml"
+    ],
+    "additional_author_repository": "https://github.com/AndreasMadsen/llm-introspection",
+    "access_depth": "Official archival metadata and abstract plus primary author-repository README; full paper not accessed",
+    "contribution": "Applies self-consistency checks to counterfactual, feature-attribution and redaction explanations; reported reliability depends on explanation type, model and task.",
+    "limitations": "Self-consistency is behavioral evidence and does not expose inaccessible internal ground truth; claims cannot be generalized across models/tasks.",
+    "relevance": "Directly relevant baseline and prior art for target-model counterfactual/redaction tests; undermines treating simple reclassification as novel.",
+    "baseline_use": "Reproduce an access-compatible self-consistency or redaction test, with precise operational terminology.",
+    "access_date": "2026-10-26",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "acl_id": "2024.findings-acl.19",
+    "official_abstract": "Instruction-tuned Large Language Models (LLMs) excel at many tasks and will even explain their reasoning, so-called self-explanations. However, convincing and wrong self-explanations can lead to unsupported confidence in LLMs, thus increasing risk. Therefore, it’s important to measure if self-explanations truly reflect the model’s behavior. Such a measure is called interpretability-faithfulness and is challenging to perform since the ground truth is inaccessible, and many LLMs only have an inference API. To address this, we propose employing self-consistency checks to measure faithfulness. For example, if an LLM says a set of words is important for making a prediction, then it should not be able to make its prediction without these words. While self-consistency checks are a common approach to faithfulness, they have not previously been successfully applied to LLM self-explanations for counterfactual, feature attribution, and redaction explanations. Our results demonstrate that faithfulness is explanation, model, and task-dependent, showing self-explanations should not be trusted in general. For example, with sentiment classification, counterfactuals are more faithful for Llama2, feature attribution for Mistral, and redaction for Falcon 40B.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L19",
+    "title": "Can LLMs Produce Faithful Explanations For Fact-checking? Towards Faithful Explainable Fact-Checking via Multi-Agent Debate",
+    "authors": [
+      "Kyungha Kim",
+      "Sangyun Lee",
+      "Kung-Hsiang Huang",
+      "Hou Pong Chan",
+      "Manling Li",
+      "Heng Ji"
+    ],
+    "year": 2024,
+    "venue": "Archival venue not independently verified here",
+    "status": "Author repository supplies arXiv2024 citation",
+    "url": "https://arxiv.org/abs/2402.07401",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/SangyunLee1027/Code-for-Towards-Faithful-Explainable-Fact-Checking-via-Multi-Agent-Debate/main/README.md"
+    ],
+    "access_depth": "Primary author-repository README; paper full text not accessed",
+    "contribution": "MADR generates explanations, uses debater critiques and a judge, then refines against evidence; defines source-related error types and uses PolitiHop.",
+    "limitations": "Evidence faithfulness is distinct from causal faithfulness to a classifier. LLM critics may share errors and add cost; no audience-preservation claim verified in accessed text.",
+    "relevance": "Very close prior art for generation→critique/checking→refinement; integration alone is not new.",
+    "baseline_use": "Consider a budget-matched critique/refinement comparator; isolate adaptation-specific checks.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/SangyunLee1027__Code-for-Towards-Faithful-Explainable-Fact-Checking-via-Multi-Agent-Debate.md",
+    "evidence_sha256": "7b1f6ed70797c3d3823bf5c1d76af6dc53fc3e7dc40e09de67ae48965fe0ca62",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "publication_verification": "Author repository supplies arXiv2024 citation",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Provisional metadata: verify before manuscript"
+  },
+  {
+    "id": "L20",
+    "title": "On Evaluating Explanation Utility for Human-AI Decision Making in NLP",
+    "authors": [
+      "Fateme Hashemi Chaleshtori",
+      "Atreya Ghosal",
+      "Alexander Gill",
+      "Purbid Bambroo",
+      "Ana Marasovic"
+    ],
+    "year": "2024",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "status": "Published proceedings metadata verified in official ACL Anthology record",
+    "url": "https://aclanthology.org/2024.findings-emnlp.439/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/utahnlp/nlp-explanation-utility-guideline/main/README.md",
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml"
+    ],
+    "access_depth": "Official ACL metadata abstract plus official README and study-template index; full paper not accessed",
+    "contribution": "Reviews application-grounded explanation evaluation metrics and dataset-selection criteria; abstract reports only 4 of more than 50 considered explainability datasets satisfy their criteria. On legal-claim verification given contracts, AI predictions with or without explanations did not speed decision-makers without compromising performance. Argues for revisiting team design and deferral.",
+    "limitations": "Task-specific negative result cannot be generalized to every explanation or application. The abstract does not show that explanations are always useless; full protocol/effect sizes remain uninspected. Highlights need for tasks where human-AI teams are meaningful, independent outcome measurement and appropriate deferral.",
+    "relevance": "Direct evaluation-design prior art for thesis human study and suitable decision-support domains; should be read in full before selecting protocol.",
+    "baseline_use": "Protocol and human-study design source rather than explanation-generation algorithm baseline.",
+    "code_url": "https://github.com/utahnlp/nlp-explanation-utility-guideline",
+    "license": "MIT verified from repository LICENSE",
+    "doi": "10.18653/v1/2024.findings-emnlp.439",
+    "pages": "7456-7504",
+    "metadata_source": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+    "official_abstract": "Is explainability a false promise? This debate has emerged from the insufficient evidence that explanations help people in situations they are introduced for. More human-centered, application-grounded evaluations of explanations are needed to settle this. Yet, with no established guidelines for such studies in NLP, researchers accustomed to standardized proxy evaluations must discover appropriate measurements, tasks, datasets, and sensible models for human-AI teams in their studies. To aid with this, we first review existing metrics suitable for application-grounded evaluation. We then establish criteria to select appropriate datasets, and using them, we find that only 4 out of over 50 datasets available for explainability research in NLP meet them. We then demonstrate the importance of reassessing the state of the art to form and study human-AI teams: teaming people with models for certain tasks might only now start to make sense, and for others, it remains unsound. Finally, we present the exemplar studies of human-AI decision-making for one of the identified tasks — verifying the correctness of a legal claim given a contract. Our results show that providing AI predictions, with or without explanations, does not cause decision makers to speed up their work without compromising performance. We argue for revisiting the setup of human-AI teams and improving automatic deferral of instances to AI, where explanations could play a useful role.",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "acl_id": "2024.findings-emnlp.439",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L21",
+    "title": "On Measuring Faithfulness or Self-consistency of Natural Language Explanations",
+    "authors": [
+      "Letitia Parcalabescu",
+      "Anette Frank"
+    ],
+    "year": "2024",
+    "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Peer-reviewed publication metadata independently verified in official ACL Anthology XML",
+    "url": "https://aclanthology.org/2024.acl-long.329/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/Heidelberg-NLP/CC-SHAP/main/README.md",
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.acl.xml"
+    ],
+    "access_depth": "Official archival metadata and abstract plus primary author-repository README; full paper not accessed",
+    "contribution": "CC-SHAP compares Shapley input contributions toward the answer with contributions toward its explanation; code also implements earlier counterfactual, input-from-explanation, biasing and CoT corruption tests.",
+    "limitations": "Attribution-pattern agreement establishes self-consistency, not guaranteed causal internal faithfulness. Masking assumptions and call/probability requirements matter.",
+    "relevance": "Directly challenges using consistency or an explainer comparison as a faithfulness certificate.",
+    "baseline_use": "Relevant self-consistency comparator where target-model access/compute permit.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/Heidelberg-NLP__CC-SHAP.md",
+    "evidence_sha256": "01f18373bf0c95aa362f9ca49a11194035e08049e93dee3528a435e2f795429e",
+    "doi": "10.18653/v1/2024.acl-long.329",
+    "pages": "6048-6089",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.acl.xml",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "acl_id": "2024.acl-long.329",
+    "official_abstract": "Large language models (LLMs) can explain their predictions through post-hoc or Chain-of-Thought (CoT) explanations. But an LLM could make up reasonably sounding explanations that are unfaithful to its underlying reasoning. Recent work has designed tests that aim to judge the faithfulness of post-hoc or CoT explanations. In this work we argue that these faithfulness tests do not measure faithfulness to the models’ inner workings – but rather their self-consistency at output level.Our contributions are three-fold: i) We clarify the status of faithfulness tests in view of model explainability, characterising them as self-consistency tests instead. This assessment we underline by ii) constructing a Comparative Consistency Bank for self-consistency tests that for the first time compares existing tests on a common suite of 11 open LLMs and 5 tasks – including iii) our new self-consistency measure CC-SHAP. CC-SHAP is a fine-grained measure (not a test) of LLM self-consistency. It compares how a model’s input contributes to the predicted answer and to generating the explanation. Our fine-grained CC-SHAP metric allows us iii) to compare LLM behaviour when making predictions and to analyse the effect of other consistency tests at a deeper level, which takes us one step further towards measuring faithfulness by bringing us closer to the internals of the model than strictly surface output-oriented tests.",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L22",
+    "title": "Tell Me a Story! Narrative-Driven XAI with Large Language Models",
+    "authors": [
+      "David Martens",
+      "James Hinns",
+      "Camille Dams",
+      "Mark Vergouwen",
+      "Theodoros Evgeniou"
+    ],
+    "year": 2024,
+    "venue": "arXiv:2309.17057 (version/publication metadata pending)",
+    "status": "Preprint citation supplied in official README; peer-reviewed venue not verified",
+    "url": "https://arxiv.org/abs/2309.17057",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/ADMAntwerp/XAIstories/main/README.md"
+    ],
+    "access_depth": "Official README and citation; no full paper accessed",
+    "contribution": "Provides SHAPstories narrative generation with LLMs; example notebook and code accept models exposing predict_proba.",
+    "limitations": "README does not establish claim-level verification, audience preservation, controlled human effects or explanation faithfulness. Those are unknown from this access, not confirmed absent from the paper. Models with predict_proba requirement differs from arbitrary black-box generative APIs.",
+    "relevance": "Direct prior art for translating SHAP attributions into LLM narratives; SHAP-plus-LLM cannot itself be novelty.",
+    "baseline_use": "Potential translation-only implementation comparator after code/paper review and adaptation to same target-model interface.",
+    "code_url": "https://github.com/ADMAntwerp/XAIstories",
+    "license": "MIT verified from repository LICENSE",
+    "themes": [
+      "faithfulness",
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "publication_verification": "Preprint citation supplied in official README; peer-reviewed venue not verified",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "A Causal Lens for Evaluating Faithfulness Metrics",
+    "authors": [
+      "Kerem Zaman",
+      "Shashank Srivastava"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2025.emnlp-main.1496/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "Causal Diagnosticity uses model editing to create faithful/unfaithful explanation pairs and compare faithfulness metrics.",
+    "limitations": "Official abstract only; exact model-edit validity and construction require full-text review.",
+    "relevance": "Tests need independent diagnostic checks; optimizing a verifier score is not enough.",
+    "baseline_use": "High-priority evaluation reference.",
+    "doi": "10.18653/v1/2025.emnlp-main.1496",
+    "acl_id": "2025.emnlp-main.1496",
+    "pages": "29425-29449",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "official_abstract": "Large Language Models (LLMs) offer natural language explanations as an alternative to feature attribution methods for model interpretability. However, despite their plausibility, they may not reflect the model’s truereasoning faithfully. While several faithfulness metrics have been proposed, they are often evaluated in isolation, making principled comparisons between them difficult. We present Causal Diagnosticity, a testbed framework for evaluating faithfulness metrics for natural language explanations. We use the concept of diagnosticity, and employ model-editing methods to generate faithful-unfaithful explanation pairs. Our benchmark includes four tasks: fact-checking, analogy, object counting, and multi-hop reasoning. We evaluate prominent faithfulness metrics, including post-hoc explanation and chain-of-thought methods. Diagnostic performance varies across tasks and models, with Filler Tokens performing best overall. Additionally, continuous metrics are generally more diagnostic than binary ones but can be sensitive to noise and model choice. Our results highlight the need for more robust faithfulness metrics.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L23",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "A Necessary Step toward Faithfulness: Measuring and Improving Consistency in Free-Text Explanations",
+    "authors": [
+      "Lingjun Zhao",
+      "Hal Daumé III"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2025.emnlp-main.797/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "PEX consistency extends weight of evidence to quantify support/opposition of free-text explanations; uses preference optimization.",
+    "limitations": "Prediction-explanation consistency is one aspect of faithfulness, not full internal equivalence; abstract only.",
+    "relevance": "Explicit prediction-explanation consistency metrics and optimization already exist.",
+    "baseline_use": "Relevant metric/optimization comparator if compatible.",
+    "doi": "10.18653/v1/2025.emnlp-main.797",
+    "acl_id": "2025.emnlp-main.797",
+    "pages": "15799-15813",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "official_abstract": "Faithful free-text explanations are important to ensure transparency in high-stakes AI decision-making contexts, but they are challenging to generate by language models and assess by humans. In this paper, we present a measure for Prediction-EXplanation (PEX) consistency, by extending the concept of weight of evidence. This measure quantifies how much a free-text explanation supports or opposes a prediction, serving as an important aspect of explanation faithfulness. Our analysis reveals that more than 62% explanations generated by large language models lack this consistency. We show that applying direct preference optimization improves the consistency of generated explanations across three model families, with improvement ranging from 43.1% to 292.3%. Furthermore, we demonstrate that optimizing this consistency measure can improve explanation faithfulness by up to 9.7%.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L24",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Cross-Refine: Improving Natural Language Explanation Generation by Learning in Tandem",
+    "authors": [
+      "Qianli Wang",
+      "Tatiana Anikina",
+      "Nils Feldhus",
+      "Simon Ostermann",
+      "Sebastian Möller",
+      "Vera Schmitt"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 31st International Conference on Computational Linguistics",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.coling-main.77/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.coling.xml",
+      "https://raw.githubusercontent.com/qiaw99/Cross-Refine/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "Uses two LLM roles, generator and critic, to assess, give feedback/suggested explanation and refine an initial NLE without supervised training.",
+    "limitations": "Abstract/README access only. LLM critique and human preference do not certify target-model faithfulness. Exact evaluation constructs and leakage controls require full text.",
+    "relevance": "Direct prior art against novelty of a separate explanation critic or two-model generation-and-checking architecture.",
+    "baseline_use": "Candidate explanation-refinement baseline; compare fairly against its Self-Refine comparator and control call budget.",
+    "doi": null,
+    "acl_id": "2025.coling-main.77",
+    "repository": "https://github.com/qiaw99/Cross-Refine",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/qiaw99_Cross-Refine_README.md",
+    "themes": [
+      "recent"
+    ],
+    "origin_note": "agent-notes/recent.json",
+    "pages": "1150–1167",
+    "official_abstract": "Natural language explanations (NLEs) are vital for elucidating the reasoning behind large language model (LLM) decisions. Many techniques have been developed to generate NLEs using LLMs. However, like humans, LLMs might not always produce optimal NLEs on first attempt. Inspired by human learning processes, we introduce Cross-Refine, which employs role modeling by deploying two LLMs as generator and critic, respectively. The generator outputs a first NLE and then refines this initial explanation using feedback and suggestions provided by the critic. Cross-Refine does not require any supervised training data or additional training. We validate Cross-Refine across three NLP tasks using three state-of-the-art open-source LLMs through automatic and human evaluation. We select Self-Refine (Madaan et al., 2023) as the baseline, which only utilizes self-feedback to refine the explanations. Our findings from automatic evaluation and a user study indicate that Cross-Refine outperforms Self-Refine. Meanwhile, Cross-Refine can perform effectively with less powerful LLMs, whereas Self-Refine only yields strong results with ChatGPT. Additionally, we conduct an ablation study to assess the importance of feedback and suggestions. Both of them play an important role in refining explanations. We further evaluate Cross-Refine on a bilingual dataset in English and German.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.coling.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/qiaw99/Cross-Refine",
+    "id": "L25",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "FitCF: A Framework for Automatic Feature Importance-guided Counterfactual Example Generation",
+    "authors": [
+      "Qianli Wang",
+      "Nils Feldhus",
+      "Simon Ostermann",
+      "Luis Felipe Villa-Arenas",
+      "Sebastian Möller",
+      "Vera Schmitt"
+    ],
+    "year": "2025",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "status": "Findings ACL2025 paper identified in official anthology metadata",
+    "url": "https://aclanthology.org/2025.findings-acl.64/",
+    "doi": "10.18653/v1/2025.findings-acl.64",
+    "pages": "1176-1191",
+    "month": "July",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml"
+    ],
+    "access_depth": "Official abstract and bibliographic metadata only; full text and code not retrieved",
+    "contribution": "Introduces ZeroCF, attribution-important-word guidance for zero-shot counterfactual generation, and FitCF, which label-flip-verifies these candidates and inserts them as few-shot demonstrations; abstract discusses LIME/Integrated Gradients and ablations.",
+    "limitations": "Only official abstract/metadata read; full protocol, target/generator identity, statistical results, prompt details and licensing not verified. Do not equate author use of faithful with established internal-faithfulness proof.",
+    "relevance": "Very close prior art: attribution-guided generation plus label-flip verification is already expressly proposed.",
+    "baseline_use": "Mandatory near-method comparison for any attribution-guided counterfactual proposal; inspect full text/code before finalizing protocol.",
+    "code_licence": "Not verified; no code retrieved",
+    "search_date": "2026-10-26",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2025.findings-acl.64",
+    "official_abstract": "Counterfactual examples are widely used in natural language processing (NLP) as valuable data to improve models, and in explainable artificial intelligence (XAI) to understand model behavior. The automated generation of counterfactual examples remains a challenging task even for large language models (LLMs), despite their impressive performance on many tasks. In this paper, we first introduce ZeroCF, a faithful approach for leveraging important words derived from feature attribution methods to generate counterfactual examples in a zero-shot setting. Second, we present a new framework, FitCF, which further verifies aforementioned counterfactuals by label flip verification and then inserts them as demonstrations for few-shot prompting, outperforming three state-of-the-art baselines. Through ablation studies, we identify the importance of each of FitCF’s core components in improving the quality of counterfactuals, as assessed through flip rate, perplexity, and similarity measures. Furthermore, we show the effectiveness of LIME and Integrated Gradients as backbone attribution methods for FitCF and find that the number of demonstrations has the largest effect on performance. Finally, we reveal a strong correlation between the faithfulness of feature attribution scores and the quality of generated counterfactuals, which we hope will serve as an importantfinding for future research in this direction.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "",
+    "id": "L26",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "LLMs Don’t Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations",
+    "authors": [
+      "Harry Mayne",
+      "Ryan Othniel Kearns",
+      "Yushi Yang",
+      "Andrew M. Bean",
+      "Eoin D. Delaney",
+      "Chris Russell",
+      "Adam Mahdi"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Conference paper identified by official ACL XML and author repository",
+    "url": "https://aclanthology.org/2025.emnlp-main.1231/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+      "https://raw.githubusercontent.com/HarryMayne/SCEs/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata plus author README; full paper not retrieved",
+    "contribution": "Studies self-generated counterfactual explanations against empirically elicited LLM decision boundaries; observes a validity–minimality trade-off when prompting for counterfactuals versus minimal counterfactuals.",
+    "limitations": "README identifies tabular binary-classification setting; do not present these results as text-CF evidence or infer complete paper limitations from abstract alone. No numerical effect size asserted here.",
+    "relevance": "Strong near prior art: obtaining valid edits is insufficient; minimality and genuine boundary correspondence need evaluation.",
+    "baseline_use": "Prompt-only counterfactual and minimal-counterfactual conditions are valuable controls; tabular exhaustive-boundary metric does not transfer unchanged to free text.",
+    "code_licence": "MIT verified in repository LICENSE",
+    "search_date": "2026-10-26",
+    "code_url": "https://github.com/HarryMayne/SCEs",
+    "doi": "10.18653/v1/2025.emnlp-main.1231",
+    "metadata_locator": "2025.emnlp.xml volume main, paper 1231",
+    "pages": "24161-24186",
+    "month": "November",
+    "metadata_source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2025.emnlp-main.1231",
+    "official_abstract": "To collaborate effectively with humans, language models must be able to explain their decisions in natural language. We study a specific type of self-explanation: self-generated counterfactual explanations (SCEs), where a model explains its prediction by modifying the input such that it would have predicted a different outcome. We evaluate whether LLMs can produce SCEs that are valid, achieving the intended outcome, and minimal, modifying the input no more than necessary. When asked to generate counterfactuals, we find that LLMs typically produce SCEs that are valid, but far from minimal, offering little insight into their decision-making behaviour. Worryingly, when asked to generate minimal counterfactuals, LLMs typically make excessively small edits that fail to change predictions. The observed validity-minimality trade-off is consistent across several LLMs, datasets, and evaluation settings. Our findings suggest that SCEs are, at best, an ineffective explainability tool and, at worst, can provide misleading insights into model behaviour. Proposals to deploy LLMs in high-stakes settings must consider the impact of unreliable self-explanations on downstream decision-making. Our code is available at https://github.com/HarryMayne/SCEs.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "id": "L27",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Multi-Level Explanations for Generative Language Models",
+    "authors": [
+      "Lucas Monteiro Paes",
+      "Dennis Wei",
+      "Hyo Jin Do",
+      "Hendrik Strobelt",
+      "Ronny Luss",
+      "Amit Dhurandhar",
+      "Manish Nagireddy",
+      "Karthikeyan Natesan Ramamurthy",
+      "Prasanna Sattigeri",
+      "Werner Geyer",
+      "Soumya Ghosh"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.acl-long.1553/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+      "https://raw.githubusercontent.com/IBM/ICX360/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "MExGen extends perturbation-based attribution such as LIME/SHAP to costly, long-context text generation; scores context parts for influence on outputs and reports automated plus human evaluation.",
+    "limitations": "Official abstract/README only. Context attribution is not proof of internal causal reasoning and is not itself audience-adapted claim validation. Method targets context-grounded generation rather than the same bounded classification task by default.",
+    "relevance": "Prior art for model-grounded explanations of LLM outputs and reusable in-context XAI tooling; the application or extending SHAP to text generation alone cannot be new.",
+    "baseline_use": "Relevant evidence-extraction comparator or reusable toolkit; ICX360 includes MExGen, CELL contrastive prompts and token highlighter. README states Apache2.0, not independently licence-audited here.",
+    "doi": "10.18653/v1/2025.acl-long.1553",
+    "acl_id": "2025.acl-long.1553",
+    "repository": "https://github.com/IBM/ICX360",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/IBM_ICX360_README.md",
+    "themes": [
+      "recent"
+    ],
+    "origin_note": "agent-notes/recent.json",
+    "pages": "32291-32317",
+    "official_abstract": "Despite the increasing use of large language models (LLMs) for context-grounded tasks like summarization and question-answering, understanding what makes an LLM produce a certain response is challenging. We propose Multi-Level Explanations for Generative Language Models (MExGen), a technique to provide explanations for context-grounded text generation. MExGen assigns scores to parts of the context to quantify their influence on the model’s output. It extends attribution methods like LIME and SHAP to LLMs used in context-grounded tasks where (1) inference cost is high, (2) input text is long, and (3) the output is text. We conduct a systematic evaluation, both automated and human, of perturbation-based attribution methods for summarization and question answering. The results show that our framework can provide more faithful explanations of generated output than available alternatives, including LLM self-explanations. We open-source code for MExGen as part of the ICX360 toolkit: https://github.com/IBM/ICX360.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/IBM/ICX360",
+    "id": "L28",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Normalized AOPC: Fixing Misleading Faithfulness Metrics for Feature Attributions Explainability",
+    "authors": [
+      "Joakim Edin",
+      "Andreas Geert Motzfeldt",
+      "Casper L. Christensen",
+      "Tuukka Ruotsalo",
+      "Lars Maaløe",
+      "Maria Maistro"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2025.acl-long.86/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+      "https://raw.githubusercontent.com/JoakimEdin/naopc/main/README.md"
+    ],
+    "access_depth": "Official abstract/metadata + author README; full paper not accessed",
+    "contribution": "Normalized AOPC addresses misleading cross-model comparisons and interprets scores relative to model-specific bounds.",
+    "limitations": "Inspect full-text normalization assumptions and compute costs before adapting to generative LLM labels.",
+    "relevance": "Raw perturbation scores cannot be compared naively across different target models.",
+    "baseline_use": "Metric-design source; primary repository also inspected.",
+    "doi": "10.18653/v1/2025.acl-long.86",
+    "acl_id": "2025.acl-long.86",
+    "pages": "1715-1730",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+    "official_abstract": "Deep neural network predictions are notoriously difficult to interpret. Feature attribution methods aim to explain these predictions by identifying the contribution of each input feature. Faithfulness, often evaluated using the area over the perturbation curve (AOPC), reflects feature attributions’ accuracy in describing the internal mechanisms of deep neural networks. However, many studies rely on AOPC to compare faithfulness across different models, which we show can lead to false conclusions about models’ faithfulness. Specifically, we find that AOPC is sensitive to variations in the model, resulting in unreliable cross-model comparisons. Moreover, AOPC scores are difficult to interpret in isolation without knowing the model-specific lower and upper limits. To address these issues, we propose a normalization approach, Normalized AOPC (NAOPC), enabling consistent cross-model evaluations and more meaningful interpretation of individual scores. Our experiments demonstrate that this normalization can radically change AOPC results, questioning the conclusions of earlier studies and offering a more robust framework for assessing feature attribution faithfulness. Our code is available at https://github.com/JoakimEdin/naopc.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L29",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "authors": [
+      "Yingming Wang",
+      "Pepa Atanasova"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.emnlp-main.427/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+      "https://raw.githubusercontent.com/ymwangv/SR-NLE/master/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "SR-NLE iteratively critiques and refines post-hoc natural-language explanations, including feedback derived from feature attribution; no additional training is required in the reported method.",
+    "limitations": "Only official abstract and author README inspected. Self-feedback is not independent ground truth. Exact tested attribution-feedback procedures, intervention assumptions and reported results need full-text scrutiny; no audience-preservation protocol established by these inspected sources.",
+    "relevance": "Direct prior art against claiming iterative explanation verification/refinement or attribution-guided correction as novel.",
+    "baseline_use": "Strong candidate baseline for attribution-feedback refinement; source pipeline includes answer, explanation, feedback and refinement runners.",
+    "doi": "10.18653/v1/2025.emnlp-main.427",
+    "acl_id": "2025.emnlp-main.427",
+    "repository": "https://github.com/ymwangv/SR-NLE",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/ymwangv_SR-NLE_README.md",
+    "themes": [
+      "recent"
+    ],
+    "origin_note": "agent-notes/recent.json",
+    "pages": "8481-8507",
+    "official_abstract": "With the rapid development of Large Language Models (LLMs), Natural Language Explanations (NLEs) have become increasingly important for understanding model predictions. However, these explanations often fail to faithfully represent the model’s actual reasoning process. While existing work has demonstrated that LLMs can self-critique and refine their initial outputs for various tasks, this capability remains unexplored for improving explanation faithfulness. To address this gap, we introduce Self-critique and Refinement for Natural Language Explanations (SR-NLE), a framework that enables models to improve the faithfulness of their own explanations – specifically, post-hoc NLEs – through an iterative critique and refinement process without external supervision. Our framework leverages different feedback mechanisms to guide the refinement process, including natural language self-feedback and, notably, a novel feedback approach based on feature attribution that highlights important input words. Our experiments across three datasets and four state-of-the-art LLMs demonstrate that SR-NLE significantly reduces unfaithfulness rates, with our best method achieving an average unfaithfulness rate of 36.02%, compared to 54.81% for baseline – an absolute reduction of 18.79%. These findings reveal that the investigated LLMs can indeed refine their explanations to better reflect their actual reasoning process, requiring only appropriate guidance through feedback without additional training or fine-tuning.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/ymwangv/SR-NLE",
+    "id": "L30",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+    "authors": [
+      "Wei Jie Yeo",
+      "Ranjan Satapathy",
+      "Erik Cambria"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2025.emnlp-main.529/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "Studies activation patching to compare causal attributions of explanation and answer, avoiding some out-of-distribution probes.",
+    "limitations": "Requires internal access; author claims about comprehensive faithfulness are not independently verified here.",
+    "relevance": "Behavioral token masking and internal causal probes address different constructs.",
+    "baseline_use": "Potential white-box diagnostic comparator after feasibility assessment.",
+    "doi": "10.18653/v1/2025.emnlp-main.529",
+    "acl_id": "2025.emnlp-main.529",
+    "pages": "10425-10447",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "official_abstract": "Large Language Models (LLMs) are capable of generating persuasive Natural Language Explanations (NLEs) to justify their answers. However, the faithfulness of these explanations should not be readily trusted at face value. Recent studies have proposed various methods to measure the faithfulness of NLEs, typically by inserting perturbations at the explanation or feature level. We argue that these approaches are neither comprehensive nor correctly designed according to the established definition of faithfulness. Moreover, we highlight the risks of grounding faithfulness findings on out-of-distribution samples. In this work, we leverage a causal mediation technique called activation patching, to measure the faithfulness of an explanation towards supporting the explained answer. Our proposed metric, Causal Faithfulness quantifies the consistency of causal attributions between explanations and the corresponding model outputs as the indicator of faithfulness. We experimented across models varying from 2B to 27B parameters and found that models that underwent alignment-tuning tend to produce more faithful and plausible explanations. We find that Causal Faithfulness is a promising improvement over existing faithfulness tests by taking into account the model’s internal computations and avoiding out-of-distribution concerns that could otherwise undermine the validity of faithfulness assessments.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L31",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L32",
+    "title": "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior",
+    "authors": [
+      "Harry Mayne",
+      "Justin Singh Kang",
+      "Dewi Sid William Gould",
+      "Kannan Ramchandran",
+      "Adam Mahdi",
+      "Noah Y. Siegel"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "status": "Author-repository BibTeX cites ICML2026; proceedings not yet inspected",
+    "url": "https://arxiv.org/abs/2602.02639",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/HarryMayne/faithfulness/main/README.md"
+    ],
+    "access_depth": "Primary author-repository README; paper full text not accessed",
+    "contribution": "Evaluates whether self-explanations help predictor models simulate target-model behavior on counterfactual inputs; includes reference/predictor pipelines and simulatability analysis.",
+    "limitations": "README/code description alone does not establish general fidelity. Simulatability depends on task, target, predictor and prompts.",
+    "relevance": "Counterweight to assuming all self-explanations are useless; investigate when they predict behavior.",
+    "baseline_use": "Complementary explanation-assisted simulatability evaluation if feasible; not direct access to hidden computation.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/HarryMayne__faithfulness.md",
+    "evidence_sha256": "ede612606eea2723a8a8ad8d0e51dab7632aac7dfbad4c1856dd915ef443f3c5",
+    "themes": [
+      "faithfulness"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "publication_verification": "Author-repository BibTeX cites ICML2026; proceedings not yet inspected",
+    "code_url": "",
+    "full_text_read": false,
+    "evidence_grade": "R: author repository; archival details may be provisional",
+    "citation_status": "Provisional metadata: verify before manuscript"
+  },
+  {
+    "title": "Accountable AI with Grounded, Faithful, Consistent, Actionable Rationales: A Case Study in Clinical Trial Matching with VERDICT",
+    "authors": [
+      "Zikai Zhou",
+      "Yufei Jin",
+      "Yilin Xu",
+      "Yu-Chiang Wang",
+      "Chieh-Ju Chao",
+      "Monica Lam"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2026.emnlp-main.2598/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+      "https://raw.githubusercontent.com/stanford-oval/clinical-trial-matching/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "VERDICT converts constraints/policies into SMT/MaxSMT and derives eligibility decisions from a solver, exposing assumptions and pivotal conditions that would change outcomes; combines accountable rationale artifacts with a working clinical trial application.",
+    "limitations": "Official abstract and extensive author README only. Solver-based decisions differ from explanations of an unchanged LLM classifier. Clinical resources and data licensing impose scope costs. README-reported benchmark numbers have not been reproduced; no clinical deployment endorsement.",
+    "relevance": "Strong prior art for evidence-grounded decision support, audit trails, pivotal/counterfactual conditions and explicit undecided states. Changing the thesis to solver decisions would change Review1 scope.",
+    "baseline_use": "Architecture/limitation comparator, not automatically a fair same-task numerical baseline. Abstract metadata lists EMNLP2026; collection ingested 2026-10-21 and month October.",
+    "doi": null,
+    "acl_id": "2026.emnlp-main.2598",
+    "repository": "https://github.com/stanford-oval/clinical-trial-matching",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/stanford-oval_clinical-trial-matching_README.md",
+    "themes": [
+      "recent"
+    ],
+    "origin_note": "agent-notes/recent.json",
+    "pages": "58987-59032",
+    "official_abstract": "Accountability means a decision can be examined, justified, and contested. LLMs make this hard: fluent output may be ungrounded, incomplete, or unfaithful to the decision process. Achieving accountability requires verified rationales (how was the decision reached), assumptions (what was assumed rather than known), policy consistency (the same treatment for the same facts), and pivotal conditions (what would change the outcome). We introduce self-faithfulness as an automatic test of accountability: changing the pivotal conditions should change the decision.We examine accountable AI through clinical trial matching, a high-stakes task central to evidence-based medicine. Although LLM-based matchers match patients to trials reasonably accurately, they apply decision policies inconsistently and produce rationales that are unfaithful to their own decisions.We introduce VERDICT, an LLM-based agent that translates a decision task, its constraints, and its policy into Satisfiability Modulo Theories (SMT), then derives the decision with SMT and MaxSMT solvers — so policies are applied consistently and decisions are accountable by construction.Across a SIGIR 2016-derived dataset and TREC 2021, VERDICT achieves the strongest decision accuracy among LLM-only and neurosymbolic baselines, applies policies with perfect consistency, and produces clinician-preferred rationales grounded in explicit assumptions and pivotal conditions, with improved counterfactual self-faithfulness.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/stanford-oval/clinical-trial-matching",
+    "id": "L33",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L34",
+    "title": "Attribute-Based Activation Steering of LLMs for Group-Specific Explanation Generation",
+    "authors": [
+      "Leandra Fichtel",
+      "Janek Prange",
+      "Henning Wachsmuth"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Published October 2026 proceedings metadata in official ACL Anthology; peer-review venue citation also in official repo",
+    "url": "https://aclanthology.org/2026.emnlp-main.127/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/webis-de/emnlp26-group-specific-explanations/main/README.md",
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml"
+    ],
+    "metadata_source": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+    "access_depth": "Official ACL metadata/abstract plus official research README; no full paper accessed",
+    "official_abstract": "To effectively enable people to understand new topics, explanations should be tailored to their backgrounds and abilities. Prompting alone has been shown to be insufficient for creating such explanations, and other computational methods are missing so far. Therefore, this paper investigates whether LLMs can be steered to generate explanations that are tailored to a specific group of people. To this end, we propose an approach that first identifies group-specific attributes in terms of explanatory style and knowledge of a specific target group. Building on activation engineering, it then computes attribute-based steering vectors and adds them to the internal activations of an LLM during inference to enable a fine-grained steering. In our experiments, we assess the steering effectiveness in terms of specificity and factuality of the generated explanations. Additionally, we evaluate the explanations in a study with human experts from different target groups. Compared to prompting and state-of-the-art steering baselines, our approach tailors the explanations significantly better to the target group while maintaining the best specificity-factuality balance.",
+    "contribution": "Identifies target-group style/knowledge attributes, computes attribute-based activation steering vectors and adds them during LLM inference. Abstract reports evaluation of group specificity, factuality and human experts compared with prompting/steering baselines; claimed better specificity-factuality balance is author-reported abstract evidence.",
+    "limitations": "Group-specific topic explanation and factuality are not the same as faithful explanation of a target classifier decision. No full-paper protocol/effect sizes inspected. Requires white-box activation access and more infrastructure than simple prompting; README says full generated database exceeds 100 GB with only an exemplary subset shared.",
+    "relevance": "Very direct, recent prior art: audience tailoring with factuality evaluation cannot be claimed first-ever. Promising narrower question: preservation of verified target-model evidence across audience adaptation, assessed separately from encyclopedic factuality.",
+    "baseline_use": "Adaptation baseline or related method; compare prompting-based audience variants first if steering implementation is beyond available compute. Do not imply head-to-head reproduction already run.",
+    "code_url": "https://github.com/webis-de/emnlp26-group-specific-explanations",
+    "license": "Not verified",
+    "themes": [
+      "human_adaptation"
+    ],
+    "origin_note": "agent-notes/human_adaptation.json",
+    "doi": null,
+    "acl_id": "2026.emnlp-main.127",
+    "pages": "2929-2959",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "FaithLM: Towards Faithful Explanations for Large Language Models",
+    "authors": [
+      "Yu-Neng Chuang",
+      "Guanchu Wang",
+      "Chia-Yuan Chang",
+      "Ruixiang Tang",
+      "Shaochen Zhong",
+      "Fan Yang",
+      "Andrew Wen",
+      "Mengnan Du",
+      "Xuanting Cai",
+      "Vladimir Braverman",
+      "Xia Hu"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2026.eacl-long.177/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.eacl.xml",
+      "https://raw.githubusercontent.com/ynchuang/FaithLM/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "FaithLM formalizes explanation faithfulness via prediction shifts when explanation content is contradicted; uses contrary-hint scoring and iteratively refines elicitation prompts and explanations.",
+    "limitations": "Official abstract plus minimal official README only. Theoretical soundness is an author claim in the abstract, not independently checked. Different intervention semantics from standard input deletion or counterfactual reclassification; cannot treat scores as equivalent.",
+    "relevance": "Direct 2026 prior art for model-agnostic behavioral explanation assessment linked to iterative improvement.",
+    "baseline_use": "High-priority behavioral verification comparator; full text needed before implementing its contrary-hint score.",
+    "doi": "10.18653/v1/2026.eacl-long.177",
+    "acl_id": "2026.eacl-long.177",
+    "repository": "https://github.com/ynchuang/FaithLM",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/ynchuang_FaithLM_README.md",
+    "themes": [
+      "recent"
+    ],
+    "origin_note": "agent-notes/recent.json",
+    "pages": "3802-3824",
+    "official_abstract": "Large language models (LLMs) increasingly produce natural language explanations, yet these explanations often lack faithfulness, and they do not reliably reflect the evidence the model uses to decide. We introduce FaithLM, a model-agnostic framework that evaluates and improves the faithfulness of LLM explanations without token masking or task-specific heuristics. FaithLM formalizes explanation faithfulness as an intervention property: a faithful explanation should yield a prediction shift when its content is contradicted. Theoretical analysis shows that the resulting contrary-hint score is a sound and discriminative estimator of faithfulness. Building on this principle, FaithLM iteratively refines both the elicitation prompt and the explanation to maximize the measured score. Experiments on three multi-domain datasets and multiple LLM backbones demonstrate that FaithLM consistently increases faithfulness and produces explanations more aligned with human rationales than strong self-explanation baselines. These findings highlight that intervention-based evaluation, coupled with iterative optimization, provides a principled route toward faithful and reliable LLM explanations.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.eacl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/ynchuang/FaithLM",
+    "id": "L35",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "id": "L36",
+    "title": "Faithful Serum: Mitigating the Faithfulness Gap in Textual Explanations of LLM Decisions via Attribution Guidance",
+    "authors": [
+      "Bar Alon",
+      "Itamar Zimerman",
+      "Lior Wolf"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Author-repository acceptance claim; independent record not yet inspected",
+    "url": "https://aclanthology.org/2026.acl-long.300/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/Bar-A-94/FaithfulnessSerum/main/README.MD",
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.acl.xml"
+    ],
+    "access_depth": "Official abstract + Primary author-repository README; paper full text not accessed",
+    "contribution": "Counterfactual hint-influence tests plus PE-LRP attribution guidance injected into attention during explanation generation; open/closed model scripts.",
+    "limitations": "Interventions need suitable open-weight access. README notes narrow useful strength range, with unstable or repetitive outputs if too strong. No universal guarantee verified.",
+    "relevance": "Close recent prior art against novelty based only on attribution grounding or detecting hidden hints.",
+    "baseline_use": "Strong access-matched comparator candidate; include among nearest work.",
+    "access_date": "2026-10-26",
+    "local_capture": "/tmp/faithfulness-literature/Bar-A-94__FaithfulnessSerum.md",
+    "evidence_sha256": "f3fd199b05ccadd69de328d8d3add150ef7fe83e5d5ac1c797f730cafb2d8df0",
+    "themes": [
+      "faithfulness",
+      "recent"
+    ],
+    "origin_note": "agent-notes/faithfulness.json",
+    "doi": "10.18653/v1/2026.acl-long.300",
+    "acl_id": "2026.acl-long.300",
+    "pages": "6622-6645",
+    "official_abstract": "Large language models (LLMs) achieve strong performance and have revolutionized NLP, but their lack of explainability keeps them treated as black boxes, limiting their use in domains that demand transparency and trust. A promising direction to address this issue is post-hoc text-based explanations, which aim to explain model decisions in natural language. Prior work has focused on generating convincing rationales that appear to be subjectively faithful, but it remains unclear whether these explanations are epistemically faithful - that is, whether they reflect the internal evidence the model actually relied on for its decision. In this paper, we first assess the epistemic faithfulness of LLM-generated explanations via counterfactuals and show that they are often unfaithful. We then introduce a training-free method, that enhances faithfulness by guiding explanation generation through attention-level interventions, informed by token-level heatmaps extracted via a faithful attribution method. This method significantly improves epistemic faithfulness across multiple models, benchmarks, and prompts. Our code is attached as supplementary material.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.acl.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "https://github.com/Bar-A-94/FaithfulnessSerum",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "Gaming the Judge: How Unfaithful Chain-of-Thought Can Undermine Agent Evaluation",
+    "authors": [
+      "Muhammad Khalifa",
+      "Lajanugen Logeswaran",
+      "Jaekyeom Kim",
+      "Sungryull Sohn",
+      "Yunxiang Zhang",
+      "Moontae Lee",
+      "Hao Peng",
+      "Lu Wang",
+      "Honglak Lee"
+    ],
+    "year": "2026",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "status": "Official ACL proceedings metadata verified; full paper not accessed",
+    "url": "https://aclanthology.org/2026.findings-emnlp.1636/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml"
+    ],
+    "access_depth": "Official abstract and metadata only; full paper not accessed",
+    "contribution": "Studies manipulation of judges by rewriting agent reasoning while holding actions/observations fixed.",
+    "limitations": "Agent evaluation setting differs from classification explanations; abstract-only and no reproduced results.",
+    "relevance": "Independent evidence checks should supplement style-sensitive LLM judgments.",
+    "baseline_use": "Adversarial evaluation motivation, not a direct explanation-generator baseline.",
+    "doi": null,
+    "acl_id": "2026.findings-emnlp.1636",
+    "pages": "34789-34825",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml",
+    "official_abstract": "Large language models (LLMs) are increasingly used as judges to evaluate agent performance, particularly in non-verifiable settings where judgments rely on agent trajectories including chain-of-thought (CoT) reasoning. This paradigm implicitly assumes that the agent’s CoT faithfully reflects both its internal reasoning and the underlying environment state. We show this assumption is brittle: LLM judges are highly susceptible to manipulation of agent reasoning traces. By systematically rewriting agent CoTs while holding actions and observations fixed, we demonstrate that manipulated reasoning alone can increase false positive rates of state-of-the-art vision-language model (VLM) judges by up to 117% relative to the unmanipulated baseline across 800 trajectories spanning diverse web tasks. We study manipulation strategies spanning style-based approaches that alter only the presentation of reasoning and content-based approaches that fabricate signals of task progress, and find that content-based manipulations are consistently more effective. We evaluate mitigation strategies including manipulation-aware prompting and judge-time scaling, which can reduce but do not eliminate the vulnerability. Our findings reveal a fundamental vulnerability in LLM-based evaluation and highlight the need for judging mechanisms that verify reasoning claims against observable evidence.",
+    "themes": [
+      "evaluation_foundations"
+    ],
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "origin_note": "root abstract screening",
+    "code_url": "",
+    "id": "L37",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  },
+  {
+    "title": "iFlip: Iterative Feedback-driven Counterfactual Example",
+    "authors": [
+      "Yilong Wang",
+      "Qianli Wang",
+      "Nils Feldhus"
+    ],
+    "year": "2026",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "status": "Official record labelled Findings EMNLP2026, October; publication timing/version not independently verified",
+    "url": "https://aclanthology.org/2026.findings-emnlp.38/",
+    "doi": null,
+    "pages": "749-779",
+    "month": "October",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml"
+    ],
+    "access_depth": "Official abstract and bibliographic metadata only; full text and code not retrieved",
+    "contribution": "Iterative counterfactual refinement using model-confidence, attribution and natural-language feedback, with number-of-iterations, highly attributed words and early stopping identified as important in the abstract.",
+    "limitations": "October2026 anthology record only; no DOI assigned in accessed metadata. Exact publication/version timing, full protocol, effect-size denominators, human study and code/licence have not been verified. No numeric performance result adopted from abstract.",
+    "relevance": "Very close candidate prior art to attribution-guided iterative validation, feedback and bounded early stopping; novelty must be checked against it.",
+    "baseline_use": "Inspect full text/code and establish release timing; include as nearest related method where reproducible rather than claim iterative feedback itself is new.",
+    "code_licence": "Not verified; no code retrieved",
+    "search_date": "2026-10-26",
+    "themes": [
+      "counterfactuals"
+    ],
+    "origin_note": "agent-notes/counterfactuals.json",
+    "acl_id": "2026.findings-emnlp.38",
+    "official_abstract": "Counterfactual examples are minimal edits to an input that alter a model’s prediction. They are widely employed in explainable AI to probe model behavior and in natural language processing (NLP) to augment training data. However, generating valid counterfactuals with large language models (LLMs) remains challenging, as existing single-pass methods often fail to induce reliable label changes, neglecting LLMs’ self-correction capabilities. To explore this untapped potential, we propose iFlip, an iterative refinement approach that leverages three types of feedback, including model confidence, feature attribution, and natural language. Our results show that iFlip achieves an average 57.8% higher validity than the three state-of-the-art baselines, as measured by the label flipping rate. The user study further corroborates that iFlip outperforms baselines in completeness, overall satisfaction, and feasibility. In addition, ablation studies demonstrate that three components are paramount for iFlip to generate valid counterfactuals: leveraging an appropriate number of iterations, pointing to highly attributed words, and early stopping. Finally, counterfactuals generated by iFlip enable effective counterfactual data augmentation, substantially improving model performance and robustness.",
+    "metadata_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml",
+    "publication_verification": "Official ACL proceedings metadata retrieved",
+    "code_url": "",
+    "id": "L38",
+    "access_date": "2026-10-26",
+    "full_text_read": false,
+    "evidence_grade": "A/R: official abstract and/or author repository",
+    "citation_status": "Source-backed metadata; verify final venue style before manuscript"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "CPUs_reported": 5,
+  "RAM_GiB": 33.289,
+  "runtime": "/workspace/thesis-runtime/venv/bin/python",
+  "device": "CPU",
+  "target": "Qwen3-4B-Instruct-2507 BF16,4threads",
+  "communication": "Qwen3-1.7B BF16,1thread",
+  "cloud_environment_restarted_before_clinical_pilot": true,
+  "MacBookAirM5": "User-reported only; not inspected or benchmarked",
+  "API_budget": "User confirmed no API access/budget; local only"
+}

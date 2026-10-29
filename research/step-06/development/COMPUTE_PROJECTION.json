@@ -1,0 +1,38 @@
+{
+  "CPU_hour_limit": 24.0,
+  "all_100_sources_retained": true,
+  "budget_gate_pass": true,
+  "development_sources": 40,
+  "development_sources_observed": 40,
+  "max_physical_joint_generations_per_source": 6,
+  "observed_components_CPU_seconds": {
+    "checker_diagnostics_and_posthoc_scoring": 1378.823125,
+    "natural_matrix": 15835.665218541999,
+    "target_inference_and_omissions": 15047.595751566003
+  },
+  "observed_development_CPU_hours": 8.96169002641889,
+  "observed_development_repair_rates": {
+    "B3": {
+      "eligible_sources": 40,
+      "rate": 0.875,
+      "repairs": 35
+    },
+    "P": {
+      "eligible_sources": 40,
+      "rate": 1.0,
+      "repairs": 40
+    }
+  },
+  "previous_400_call_maximum_superseded": true,
+  "projected_aggregate_CPU_hours": 22.404225066047225,
+  "projected_test_CPU_hours": 13.442535039628334,
+  "projection_method": "Scale all observed development components by 60/40 for held-out test",
+  "raw_text_published": false,
+  "research_communicator_context_tokens": 2048,
+  "schema": "trustxai.step6.compute-projection.v1",
+  "status": "refreshed_after_development",
+  "test_sources": 60,
+  "test_sources_accessed": 0,
+  "unit": "aggregate process CPU-hours (user+system), distinct from elapsed wall time",
+  "worst_case_joint_generations_all_sources": 600
+}

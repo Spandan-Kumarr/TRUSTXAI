@@ -1,0 +1,217 @@
+{
+  "calibration": {
+    "calibration_scope": "development_controlled_variants",
+    "curves": {
+      "nli_only": [
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.6
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.7
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.8
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.9
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.95
+        }
+      ],
+      "typed_plus_nli": [
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.6
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.7
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.8
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.9
+        },
+        {
+          "faulty_abstention": 0.0,
+          "faulty_acceptance": 0.0,
+          "faulty_rejection": 1.0,
+          "faulty_slots": 320,
+          "supported_abstention": 0.0,
+          "supported_acceptance": 0.0,
+          "supported_rejection": 1.0,
+          "supported_slots": 160,
+          "threshold": 0.95
+        }
+      ]
+    },
+    "independent_semantic_validation": false,
+    "instantiated_slots": 480,
+    "label_basis": "automated_construction_intent_pending_independent_review",
+    "label_status": "automated_construction_intent",
+    "minimum_supported_acceptance": 0.9,
+    "missing_slots": 0,
+    "nli_only_matched_threshold": null,
+    "requested_slots": 480,
+    "selected_threshold": null,
+    "sources_completed": 40,
+    "sources_expected": 40,
+    "split": "development",
+    "status": "complete",
+    "supported_acceptance_by_threshold": {
+      "0.6": 0.0,
+      "0.7": 0.0,
+      "0.8": 0.0,
+      "0.9": 0.0,
+      "0.95": 0.0
+    },
+    "test_sources_accessed": 0,
+    "threshold_grid": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      0.95
+    ],
+    "typed_plus_nli_selected_threshold": null,
+    "typed_plus_nli_selection_status": "no_eligible_threshold",
+    "variants_completed": 480,
+    "variants_expected": 480
+  },
+  "faulty_requested": 320,
+  "freeze_file_sha256": null,
+  "frozen_threshold": null,
+  "independent_semantic_validation": false,
+  "label_status": "construction_intent_only_pending_independent_review",
+  "mode": "controlled",
+  "private_checkpoints_sha256": "fe842c1f0b7823622e8c786caa6fe2b902a7f3587f27f331212916afc3f4f823",
+  "raw_text_published": false,
+  "requested_variants": 480,
+  "schema": "trustxai-step6-controlled-summary-2",
+  "slot_counts": {
+    "all_interventions": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "allowed_numeric_wording": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "audience_simplification": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "changed_result": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "counts": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "exact_canonical": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "harmless_reordering": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "missing_limitation": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "option_name": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "recheck_status": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "span_binding": {
+      "instantiated": 40,
+      "requested": 40
+    },
+    "unsupported_clinical_clause": {
+      "instantiated": 40,
+      "requested": 40
+    }
+  },
+  "source_ids_sha256": "42303edbeca745382ce120035ea1bd36123ed90832e64154c10c3cc1ad986584",
+  "sources": 40,
+  "split": "development",
+  "supported_requested": 160
+}

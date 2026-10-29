@@ -1,0 +1,48 @@
+{
+  "status": "early-rejected dynamic-qint8 generation profile, incomplete feasibility run",
+  "reason": "First completed joint narrative decoded empty (one EOS token), unlike original FP32 usable JSON; do not accept speed with unusable output. No claim of ten-source gate performance.",
+  "completed_sources": 2,
+  "results": [
+    {
+      "source_id": "uci228-00268",
+      "deletion_tests": 27,
+      "deletion_total_seconds": 33.664552240999,
+      "CF_attempts": 3,
+      "CF_generation_seconds": 26.027270290999695,
+      "CF_generation_tokens": 288,
+      "CF_evaluated": 0,
+      "CF_target_success": false,
+      "CF_retest_label_agrees": null,
+      "informative_evidence_available": false,
+      "pair_json_valid": false,
+      "pair_generation_seconds": 1.6709049209998739,
+      "pair_generation_tokens": 1,
+      "pair_context_tokens": 433,
+      "hit_token_cap": false,
+      "total_case_seconds": 64.8618221769998,
+      "peak_rss_GiB": 16.455585479736328
+    },
+    {
+      "source_id": "uci228-00586",
+      "deletion_tests": 16,
+      "deletion_total_seconds": 12.161572757001068,
+      "CF_attempts": 3,
+      "CF_generation_seconds": 21.404222234000372,
+      "CF_generation_tokens": 288,
+      "CF_evaluated": 0,
+      "CF_target_success": false,
+      "CF_retest_label_agrees": null,
+      "informative_evidence_available": false,
+      "pair_json_valid": false,
+      "pair_generation_seconds": 47.257468922000044,
+      "pair_generation_tokens": 512,
+      "pair_context_tokens": 433,
+      "hit_token_cap": true,
+      "total_case_seconds": 83.42548412899987,
+      "peak_rss_GiB": 16.455585479736328
+    }
+  ],
+  "target_remains_FP32": true,
+  "test_sources_used": 0,
+  "semantic_preservation_evaluated": false
+}

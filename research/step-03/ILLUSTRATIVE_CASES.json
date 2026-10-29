@@ -1,0 +1,72 @@
+{
+  "synthetic": true,
+  "purpose": "Invented specification examples only; not model outputs, benchmark cases or executed validator results",
+  "input_id": "illustrative-original",
+  "decision": "A",
+  "attribution": {
+    "feature": "slow",
+    "magnitude": 0.42,
+    "sign": null,
+    "quantity": "illustrative unsigned attribution magnitude",
+    "not_a_measured_result": true
+  },
+  "counterfactual": {
+    "edited_input_id": "illustrative-edit-1",
+    "requested_target": "B",
+    "observed_label": "A",
+    "attempts": 1
+  },
+  "required_claim_ids": [
+    "decision",
+    "unsigned_attribution",
+    "tested_edit_outcome",
+    "limits"
+  ],
+  "variants": [
+    {
+      "id": "positive_plain",
+      "text": "The model returned A. The word slow has an unsigned importance score of 0.42 under the recorded method. The one tested edit still returned A, so it did not reach B. This does not establish what all other edits would do.",
+      "expected": "supported_complete"
+    },
+    {
+      "id": "positive_expert",
+      "text": "For the recorded configuration the predicted class is A. The attribution magnitude for slow is 0.42; its direction is unavailable. Reclassification of the tested edit returned A rather than requested B. No universal counterfactual conclusion follows from one attempt.",
+      "expected": "supported_complete"
+    },
+    {
+      "id": "wrong_target",
+      "claim": "The tested edit returned B.",
+      "expected": "contradicted"
+    },
+    {
+      "id": "invented_direction",
+      "claim": "Slow increased the probability of A.",
+      "expected": "unsupported"
+    },
+    {
+      "id": "universal_failure",
+      "claim": "No possible edit can reach B.",
+      "expected": "unsupported"
+    },
+    {
+      "id": "wrong_units",
+      "claim": "The model is 42 percent certain.",
+      "expected": "unsupported"
+    },
+    {
+      "id": "omission",
+      "text": "The model returned A.",
+      "expected": "supported_statement_but_incomplete_plan; release fails"
+    },
+    {
+      "id": "keyword_trap",
+      "claim": "Although slow appears in the evidence, its positive direction is proven.",
+      "expected": "unsupported_despite_correct_feature_name"
+    },
+    {
+      "id": "scope_preserving",
+      "claim": "No B outcome was observed in the one recorded attempt.",
+      "expected": "supported_limited_claim_not_a_complete_narrative"
+    }
+  ]
+}

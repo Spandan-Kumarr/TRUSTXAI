@@ -1,0 +1,46 @@
+{
+  "status": "early-stopped CPU FP32 generation profile; not a completed 10-source rendering pilot",
+  "reason": "Completed initial cases exceeded predeclared 120-second median pair-generation gate; use bounded alternate CPU generation arithmetic before test inference",
+  "completed_sources": 2,
+  "results": [
+    {
+      "source_id": "uci228-00268",
+      "deletion_tests": 27,
+      "CF_attempts": 3,
+      "CF_evaluated": 0,
+      "CF_target_success": false,
+      "CF_retest_label_agrees": null,
+      "informative_evidence_available": false,
+      "pair_json_valid": true,
+      "pair_generation_seconds": 147.07573762399988,
+      "pair_generation_tokens": 325,
+      "pair_context_tokens": 433,
+      "hit_token_cap": false,
+      "total_case_seconds": 266.2539766069999,
+      "peak_rss_GiB": 10.015491485595703
+    },
+    {
+      "source_id": "uci228-00586",
+      "deletion_tests": 16,
+      "CF_attempts": 3,
+      "CF_evaluated": 1,
+      "CF_target_success": false,
+      "CF_retest_label_agrees": true,
+      "informative_evidence_available": true,
+      "pair_json_valid": true,
+      "pair_generation_seconds": 140.31603159099996,
+      "pair_generation_tokens": 307,
+      "pair_context_tokens": 433,
+      "hit_token_cap": false,
+      "total_case_seconds": 191.046222124,
+      "peak_rss_GiB": 10.015491485595703
+    }
+  ],
+  "semantic_preservation_evaluated": false,
+  "test_sources_used": 0,
+  "inflight_case_discarded": true,
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "target_dtype": "float32",
+  "renderer_dtype": "float32"
+}

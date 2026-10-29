@@ -1,0 +1,8 @@
+Gate,Observed,Required,Pass
+accuracy,0.6666666666666666,>=0.50,True
+positionmacroF1,0.6702380952380953,>=0.40,True
+targetmedianseconds,12.118402126500769,<=20,True
+JSONfraction,1.0,>=0.80,True
+generationmedianseconds,19.76650971250001,<=180,True
+peakRSSGiB,18.90821075439453,<=24,True
+expectedCPUhours,21.09899804815542,<=24,True

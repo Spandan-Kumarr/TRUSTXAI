@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "declared_before_alternative_healthcare_inference": true,
+  "context": "Initial1.7B healthcare pilot failed; second and final prompt trial on1.7B still running. Only metadata of stronger candidate inspected, no outputs.",
+  "condition": "If either unchanged target-quality gate still fails after V2, activate one stronger local candidate. If V2passes, do not claim new candidate performance without another declared run.",
+  "candidate": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "profile": "One shared BF16 model,4threads for fixed greedy classifier,1for rendering; no integer quantization; measured peak memory/latency required",
+  "same_feasibility_sources": 24,
+  "same_classification_prompt": "CLASSIFICATION_PROMPT_V2.json",
+  "thresholds_unchanged": true,
+  "reason": "Stronger instruction-tuned local model while respecting no-API budget and24GiB memory; downloading artifacts in advance does not establish suitability",
+  "gold_test_outputs_seen": 0,
+  "selected_activation_reason": "Both completed1.7Bprompt variants failed unchanged0.50balanced-accuracy threshold",
+  "target_profile": "Qwen3-4B-Instruct-2507 nativeBF16,4classifier threads",
+  "communication_profile": "Qwen3-1.7B nativeBF16,1generation thread, as declared separately before rendering",
+  "pilot_script_sha256": "1e0dfe3c09f780693809b878df63fb2573abc5072a4014019c09d4ce0801e4b6"
+}

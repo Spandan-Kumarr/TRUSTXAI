@@ -1,0 +1,349 @@
+{
+  "phase": "clinical diagnostic-vignette feasibility; not held-out results",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "dtype": "float32",
+  "threads": 4,
+  "enable_thinking": false,
+  "classifier": "greedy exact-label text generation; no likelihood fallback or decision repair",
+  "prompt_sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de",
+  "sources": 24,
+  "class_counts": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "D": 6
+  },
+  "correct": 16,
+  "accuracy": 0.6666666666666666,
+  "balanced_accuracy": 0.6666666666666666,
+  "macro_F1": 0.6702380952380953,
+  "recall_by_class": {
+    "A": 0.8333333333333334,
+    "B": 0.6666666666666666,
+    "C": 0.5,
+    "D": 0.6666666666666666
+  },
+  "valid_decision_fraction": 1.0,
+  "confusion_matrix_rows_true_cols_pred_A_B_C_D_invalid": [
+    [
+      5,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      4,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      3,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "median_target_seconds": 12.118402126500769,
+  "median_target_CPU_seconds": 38.853135278999986,
+  "peak_RSS_GiB": 18.90821075439453,
+  "load_seconds": 4.579680683998959,
+  "gates": {
+    "balanced_accuracy": true,
+    "macro_F1": true,
+    "each_class_nonzero_recall": true,
+    "valid_decisions": true,
+    "target_latency": true,
+    "memory": true
+  },
+  "all_classification_gates_pass": true,
+  "development_sources_scored": 0,
+  "test_sources_scored": 0,
+  "option_position_metrics_not_disease_class_performance": true,
+  "model_load_events": [],
+  "phased_model_residency": false,
+  "results": [
+    {
+      "seconds": 13.014480195000942,
+      "CPU_seconds": 41.364705994999994,
+      "new_tokens": 2,
+      "context_tokens": 344,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-00180",
+      "input_sha256": "ece77f1b1ed23a880a9a75dba840322402be26604dff411b6955ef9c1443e513"
+    },
+    {
+      "seconds": 8.66740011300135,
+      "CPU_seconds": 27.69121914400001,
+      "new_tokens": 2,
+      "context_tokens": 235,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-01127",
+      "input_sha256": "9c36e359669c16f950e217ac5519bcef3f8d5735379e8bfb27a06be209812986"
+    },
+    {
+      "seconds": 12.154710444001466,
+      "CPU_seconds": 38.90146159,
+      "new_tokens": 2,
+      "context_tokens": 330,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-01945",
+      "input_sha256": "093d28dea1917c3589d4664cd8b0727c485ae93ab9205829bfbaa66a802049cf"
+    },
+    {
+      "seconds": 10.200054656999782,
+      "CPU_seconds": 32.70270280599999,
+      "new_tokens": 2,
+      "context_tokens": 279,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-02720",
+      "input_sha256": "afd643dfbe9a173f4ab383d78c25bdca70fd2fc53e958d8cacf844c98cf6975f"
+    },
+    {
+      "seconds": 10.985378930001389,
+      "CPU_seconds": 34.77151946799998,
+      "new_tokens": 2,
+      "context_tokens": 273,
+      "hit_cap": false,
+      "label": "D",
+      "raw_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "source_id": "medqa-train-03101",
+      "input_sha256": "ae5a45163f80b20fb1a5fbc6c17d67001678420e3aab507ee7f30a70fb8bafd7"
+    },
+    {
+      "seconds": 8.061901877001219,
+      "CPU_seconds": 26.122682326000017,
+      "new_tokens": 2,
+      "context_tokens": 234,
+      "hit_cap": false,
+      "label": "D",
+      "raw_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "source_id": "medqa-train-03263",
+      "input_sha256": "c9a86647c0945e46d71cb0e8cac228fc6a298f4b69de6fd4fdd37d5f47c94abb"
+    },
+    {
+      "seconds": 7.701260066000032,
+      "CPU_seconds": 24.830110259999998,
+      "new_tokens": 2,
+      "context_tokens": 217,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-03700",
+      "input_sha256": "36d0a7a8bee005027f8bcace4f3faeade9269e641dfce185a47857af1cd90be6"
+    },
+    {
+      "seconds": 12.543730215998949,
+      "CPU_seconds": 40.06088660599997,
+      "new_tokens": 2,
+      "context_tokens": 360,
+      "hit_cap": false,
+      "label": "D",
+      "raw_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "source_id": "medqa-train-04037",
+      "input_sha256": "352c2869c6c52c650545bcdb7b0196fad221eab0f789d83c03e80be3ebbe9902"
+    },
+    {
+      "seconds": 10.420364802001131,
+      "CPU_seconds": 33.719183259999966,
+      "new_tokens": 2,
+      "context_tokens": 294,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-04120",
+      "input_sha256": "2bf1a460ea43cb4e548126ea273439a2e573434d29f455fa72cdfbbaa5807ad6"
+    },
+    {
+      "seconds": 14.485547430000224,
+      "CPU_seconds": 46.35210747599996,
+      "new_tokens": 2,
+      "context_tokens": 416,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-04169",
+      "input_sha256": "fa204f47f3720bf83538d0689817cbe2a2fcce4f90941fead8548ce0198c2e75"
+    },
+    {
+      "seconds": 9.80295269799899,
+      "CPU_seconds": 31.453234182000017,
+      "new_tokens": 2,
+      "context_tokens": 278,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-04630",
+      "input_sha256": "8adbdc9eed8ae788358ff43f6b296553d293dd5e97e2e35d0253b0023ec7c295"
+    },
+    {
+      "seconds": 12.688127737001196,
+      "CPU_seconds": 40.683710883,
+      "new_tokens": 2,
+      "context_tokens": 366,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-04642",
+      "input_sha256": "0cf1eaaa40c46cd5d051f638424be66c2f3cc5f4a3efcf4aa7e5ed6f65835ffc"
+    },
+    {
+      "seconds": 12.22784419799973,
+      "CPU_seconds": 38.83978563900001,
+      "new_tokens": 2,
+      "context_tokens": 334,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-05774",
+      "input_sha256": "777c39d4e7018219f1d92e528415d89d5d2a8e3bba6a48298a8b478a328fffe3"
+    },
+    {
+      "seconds": 14.70798327599914,
+      "CPU_seconds": 46.80117001999997,
+      "new_tokens": 2,
+      "context_tokens": 435,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-06371",
+      "input_sha256": "68b5a4d6bbdc0f83bee67b5654f067b89ad7dd65a38568221ef4cd51f90014e8"
+    },
+    {
+      "seconds": 13.468083968999053,
+      "CPU_seconds": 42.804406646000075,
+      "new_tokens": 2,
+      "context_tokens": 396,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-06519",
+      "input_sha256": "8576ea9722e268f32ef8d1d99e84529f7d4e5c6f14fb53bf96ff66198dc17b15"
+    },
+    {
+      "seconds": 12.082093809000071,
+      "CPU_seconds": 38.86648491899996,
+      "new_tokens": 2,
+      "context_tokens": 356,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-06575",
+      "input_sha256": "91c8efb95deb5287022dba097ceeb8cc4a58a45dcdcd2b69a82bba22b348c8cf"
+    },
+    {
+      "seconds": 12.586137854999834,
+      "CPU_seconds": 40.16623662300003,
+      "new_tokens": 2,
+      "context_tokens": 356,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-06654",
+      "input_sha256": "d7192a531f4053512aa7938e5a54429f642d9fad7dea99863d80f9491483132c"
+    },
+    {
+      "seconds": 10.332149967998703,
+      "CPU_seconds": 33.342650574000004,
+      "new_tokens": 2,
+      "context_tokens": 294,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-06842",
+      "input_sha256": "f9f5529306fe83a3c943e1acf4b3de7a16f8f0debdc31df37e12755b9026f2ff"
+    },
+    {
+      "seconds": 17.501626072000363,
+      "CPU_seconds": 55.130521716999965,
+      "new_tokens": 2,
+      "context_tokens": 491,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-06883",
+      "input_sha256": "10a2db79e2ddb6369487ca6d12284f2c2666bd244b78a6d823c184aa79d980cf"
+    },
+    {
+      "seconds": 15.964353617000597,
+      "CPU_seconds": 51.07781748500008,
+      "new_tokens": 2,
+      "context_tokens": 453,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-07361",
+      "input_sha256": "1a0e1af504b9acda093d0a5e7a1ad1891f7f93420c17af8f7eb10aa3d9002754"
+    },
+    {
+      "seconds": 9.465599402999942,
+      "CPU_seconds": 30.037303213000087,
+      "new_tokens": 2,
+      "context_tokens": 266,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-07663",
+      "input_sha256": "67ca245567c5402b0f2daf1f11733045a0a07baff08b9b2b5cddf23a88e83fd6"
+    },
+    {
+      "seconds": 8.614922321999984,
+      "CPU_seconds": 27.37792682999998,
+      "new_tokens": 2,
+      "context_tokens": 237,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-08022",
+      "input_sha256": "57d52da8b3afe78ded0071d6105abb8e1d8bc8ff9341c10be0c51c9bed9efff4"
+    },
+    {
+      "seconds": 9.622876600000382,
+      "CPU_seconds": 30.673437786000022,
+      "new_tokens": 2,
+      "context_tokens": 281,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-08568",
+      "input_sha256": "91f520e345abdf9386d6f2c9417cdc13ddf6d751058d8be06714436acc7b49f0"
+    },
+    {
+      "seconds": 14.592981752000924,
+      "CPU_seconds": 46.60744392999993,
+      "new_tokens": 2,
+      "context_tokens": 431,
+      "hit_cap": false,
+      "label": "D",
+      "raw_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "source_id": "medqa-train-09540",
+      "input_sha256": "91f4b1ae846a7b55c544e5afe1d86a2ab6cad2c08e66b6f3e120c34c13ce6f71"
+    }
+  ]
+}

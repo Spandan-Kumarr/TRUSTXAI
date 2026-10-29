@@ -1,0 +1,6 @@
+{
+  "reason": "Initial4Bload attempt found verified weight shards but lacked pinned model.safetensors.index.json; fetched official index and verified all mapped shard files exist",
+  "model_predictions_in_failed_attempt": 0,
+  "weights_SHA256_verification_unchanged": true,
+  "index_sha256": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c"
+}

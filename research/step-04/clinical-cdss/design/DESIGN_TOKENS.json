@@ -1,0 +1,15 @@
+{
+  "product": "TRUSTXAI Clinical Decision Support",
+  "inspiration": ["ChatGPT conversation layout", "Codex workspace simplicity"],
+  "brand": "TRUSTXAI",
+  "theme_default": "system",
+  "sidebar_width_px": 250,
+  "conversation_max_width_px": 820,
+  "evidence_panel_width_px": 340,
+  "composer_radius_px": 24,
+  "font_family": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+  "light": {"main":"#ffffff","sidebar":"#f9f9f9","text":"#252525","border":"#e5e5e5"},
+  "dark": {"main":"#212121","sidebar":"#171717","text":"#ececec","border":"#383838"},
+  "primary_task": "Most-likely-diagnosis selection from supplied clinical options",
+  "implementation_status": "Design requirement saved; implementation is Step5"
+}

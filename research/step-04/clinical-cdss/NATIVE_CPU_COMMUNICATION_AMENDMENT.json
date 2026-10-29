@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "before_clinical_rendering_outputs": true,
+  "target_profile_unchanged": "Qwen3-4B-Instruct-2507FP32,4threads; completed24case clinical screen16/24correct, no test scores",
+  "communication_CPU_candidate": "Official Qwen/Qwen3-1.7B-GGUF Q8_0, native llama.cpp CPU kernels; no unsupported BF16 arithmetic",
+  "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+  "expected_GGUF_SHA256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+  "reason": "Restarted AVX2-only machine; reduce communication memory/time using supported CPU8bit model format. Previous PyTorch dynamic-int8 failure is a different implementation and gives no native-Q8quality assurance.",
+  "quality_requirement": "Measure all8predeclared clinical format/runtime cases under unchanged gates; do not inherit semantic correctness from source model",
+  "source_weight_lineage": "Official publisher references Qwen3-1.7B family; exact original conversion commit not established. GGUF artifact itself is pinned/hash verified.",
+  "target_and_communication_residency": "Separate phases: clinical evidence first using fixed FP32target; then unload it and load native communication model. All target consistency queries stay uncached.",
+  "declared_native_generation": "greedy temperature0,repeat_penalty1,seed20261027,n_ctx2048,n_threads2,n_threads_batch4; exact no-thinking publisher chat template from existing tokenizer verified against native token IDs before use",
+  "rendering_token_cap": 384,
+  "JSON_validity_is_semantic_accuracy": false,
+  "test_sources_seen": 0
+}

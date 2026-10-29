@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "before_development_or_test_inference": true,
+  "reason": "FP32 generation preliminary latency exceeded120s; qint8 generation returned empty first narrative. One native BF16 communication alternative with CPU AVX512_BF16 capability confirmed.",
+  "profile": "Separate Qwen3-1.7B communication model loaded bfloat16 from same pinned SHA256-verified weights; no integer quantization; target FP32 unchanged",
+  "CPU_threads": "4 for task scoring/evidence;1 for generation, restored after every call. Record both wall seconds and process CPU seconds.",
+  "gates_unchanged": true,
+  "source_selection": "Same first5per original class on20-source feasibility pool; all10cases",
+  "not_target_quality_evidence": true,
+  "not_semantic_preservation_evidence": true
+}

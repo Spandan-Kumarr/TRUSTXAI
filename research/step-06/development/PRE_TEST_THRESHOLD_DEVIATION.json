@@ -1,0 +1,20 @@
+{
+  "schema": "trustxai.step6.threshold-deviation.v1",
+  "declared_before_test_access": true,
+  "test_sources_accessed": 0,
+  "fallback_threshold": 0.6,
+  "reason": "No threshold in the prespecified 0.60, 0.70, 0.80, 0.90, 0.95 grid retained the required 90% of supported-intent development variants. All five settings accepted 0 of 160 supported-intent variants under the complete typed-plus-NLI rule. Use the least selective prespecified setting, 0.60, without claiming that the development acceptance target was met; retain false-rejection, fallback, and coverage failures in all denominators.",
+  "development_sources": 40,
+  "controlled_slots": 480,
+  "supported_slots": 160,
+  "supported_acceptance_by_threshold": {
+    "0.6": 0.0,
+    "0.7": 0.0,
+    "0.8": 0.0,
+    "0.9": 0.0,
+    "0.95": 0.0
+  },
+  "independent_semantic_validation": false,
+  "label_basis": "automated construction intent pending independent review",
+  "scope": "Pre-test operating deviation; no held-out test source or outcome was accessed."
+}

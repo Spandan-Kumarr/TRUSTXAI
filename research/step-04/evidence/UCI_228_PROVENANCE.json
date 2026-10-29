@@ -1,0 +1,37 @@
+{
+  "uci_id": 228,
+  "name": "SMS Spam Collection",
+  "repository_url": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "num_instances": 5574,
+  "dataset_doi": "10.24432/C5CC84",
+  "creators": [
+    "Tiago Almeida",
+    "Jos Hidalgo"
+  ],
+  "intro_paper": {
+    "ID": 366,
+    "type": "NATIVE",
+    "title": "Contributions to the study of SMS spam filtering: new collection and results",
+    "authors": "Tiago A. Almeida, J. M. G. Hidalgo, A. Yamakami",
+    "venue": "ACM Symposium on Document Engineering",
+    "year": 2011,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://dl.acm.org/doi/10.1145/2034691.2034742",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "year_of_dataset_creation": 2011,
+  "last_updated": "Thu Jan 11 2024",
+  "catalogue_licence": "CC BY4.0",
+  "licence_excerpt": "This dataset is licensed under a Creative Commons Attribution4.0International(CC BY4.0)license; appropriate credit required.",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "catalogue_capture_sha256": "660dc9dd7394d1b87a81cf8f6dcb00a6df5a19aea2ac51941b0c27d7cf4f6330",
+  "legacy_readme_note": "Original archive readme retains authors copyright/disclaimer, requests citation, and provides corpus for free without use limits other than stated notices. Original retained locally.",
+  "raw_messages_not_in_this_summary": true
+}

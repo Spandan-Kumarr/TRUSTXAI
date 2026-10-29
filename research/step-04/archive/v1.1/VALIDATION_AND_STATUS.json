@@ -1,0 +1,51 @@
+{
+  "step": 4,
+  "version": "1.1",
+  "status": "dataset_sources_splits_and_tokenizer_verified; model_weight_delivery_blocked",
+  "date": "2026-10-27",
+  "dataset_rows": 5574,
+  "label_counts": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "eligible_independent_groups": 3696,
+  "sources_allocated": {
+    "feasibility": 20,
+    "development": 40,
+    "test": 60
+  },
+  "cross_partition_group_overlap": false,
+  "test_inputs_model_scored": 0,
+  "licence_evidence": "UCI CC BY4.0catalogue plus archived original notices; model publisher Apache2.0cards, Qwen LICENSE files",
+  "model_revisions_pinned": true,
+  "weights_download_verified": false,
+  "weights_loaded": false,
+  "model_accuracy": null,
+  "model_latency": null,
+  "NLI_inference_run": false,
+  "tokenizer_preflight_sources": 20,
+  "label_token_ids": {
+    "A": [
+      32
+    ],
+    "B": [
+      33
+    ]
+  },
+  "max_feasibility_context_tokens": 152,
+  "external_blocker": "us.aws.cdn.hf.co proxy403 during actual weight redirect; additional host save confirmed; publish/runtime change not confirmed",
+  "runtime_deps": "previously compatible43packageCPU runtime; tokenizer preflight executed now",
+  "checks": [
+    "dataset parse, counts and malformed records",
+    "source-level group overlap",
+    "manifest and canonical prompt hashes",
+    "versioned NLI label mapping",
+    "PDF/Word integrity and evidence assertions",
+    "Python helper syntax; download helper not executed to completion",
+    "Repeat data preparation produced identical split manifest SHA256",
+    "PDF pages1and7visually inspected"
+  ],
+  "experiments_run": 0,
+  "test_locked": false,
+  "no_secret_values_recorded": true
+}

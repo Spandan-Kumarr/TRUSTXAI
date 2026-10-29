@@ -1,0 +1,93 @@
+{
+  "checks": 10,
+  "unique_feasibility_sources": 5,
+  "test_sources_used": 0,
+  "all_labels_equal": true,
+  "max_absolute_logscore_difference": 4.863739013671875e-05,
+  "tolerance": 0.0001,
+  "median_uncached_seconds": 2.8186359119999906,
+  "median_cached_seconds": 1.085338524000008,
+  "purpose": "Numerical equivalence check for immutable static-prefix KV reuse, not a faithfulness benchmark",
+  "records": [
+    {
+      "source_id": "uci228-00268",
+      "version": "original",
+      "max_logscore_difference": 1.9073486328125e-06,
+      "same_label": true,
+      "uncached_seconds": 3.4003238249999868,
+      "cached_seconds": 1.6740956429998732
+    },
+    {
+      "source_id": "uci228-00268",
+      "version": "first_word_removed",
+      "max_logscore_difference": 5.7220458984375e-06,
+      "same_label": true,
+      "uncached_seconds": 3.4072543879999557,
+      "cached_seconds": 1.5151552940001238
+    },
+    {
+      "source_id": "uci228-00586",
+      "version": "original",
+      "max_logscore_difference": 1.0669231414794922e-05,
+      "same_label": true,
+      "uncached_seconds": 3.2810604270000567,
+      "cached_seconds": 0.8630938809999407
+    },
+    {
+      "source_id": "uci228-00586",
+      "version": "first_word_removed",
+      "max_logscore_difference": 4.863739013671875e-05,
+      "same_label": true,
+      "uncached_seconds": 2.4186859320000167,
+      "cached_seconds": 0.9201747629999772
+    },
+    {
+      "source_id": "uci228-00918",
+      "version": "original",
+      "max_logscore_difference": 1.3828277587890625e-05,
+      "same_label": true,
+      "uncached_seconds": 2.7251020530000005,
+      "cached_seconds": 1.1589426949999506
+    },
+    {
+      "source_id": "uci228-00918",
+      "version": "first_word_removed",
+      "max_logscore_difference": 4.410743713378906e-05,
+      "same_label": true,
+      "uncached_seconds": 2.9121697709999808,
+      "cached_seconds": 1.1285738720000609
+    },
+    {
+      "source_id": "uci228-01064",
+      "version": "original",
+      "max_logscore_difference": 1.33514404296875e-05,
+      "same_label": true,
+      "uncached_seconds": 2.990040098999998,
+      "cached_seconds": 1.0614623289998235
+    },
+    {
+      "source_id": "uci228-01064",
+      "version": "first_word_removed",
+      "max_logscore_difference": 1.52587890625e-05,
+      "same_label": true,
+      "uncached_seconds": 2.663042819000111,
+      "cached_seconds": 1.1092147190001924
+    },
+    {
+      "source_id": "uci228-01168",
+      "version": "original",
+      "max_logscore_difference": 1.1444091796875e-05,
+      "same_label": true,
+      "uncached_seconds": 2.7211022960000264,
+      "cached_seconds": 0.6806366089999756
+    },
+    {
+      "source_id": "uci228-01168",
+      "version": "first_word_removed",
+      "max_logscore_difference": 1.52587890625e-05,
+      "same_label": true,
+      "uncached_seconds": 2.373197972999833,
+      "cached_seconds": 0.5879277860001366
+    }
+  ]
+}

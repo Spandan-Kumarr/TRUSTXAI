@@ -1,0 +1,57 @@
+{
+  "recorded_date": "2026-10-27",
+  "step": 5,
+  "status": "complete_application_implementation_and_integration",
+  "application": {
+    "local_service_ready": true,
+    "chat_style_interface_ready": true,
+    "real_local_models": true,
+    "diagnostic_audit_ready": true,
+    "source_grounded_chat_ready": true,
+    "fail_closed_release_ready": true,
+    "public_deployment": false,
+    "clinical_validation": false
+  },
+  "verification": {
+    "backend_tests_passed": 107,
+    "backend_test_seconds": 0.51,
+    "browser_fixture_tests_passed": 4,
+    "browser_fixture_test_seconds": 7.2,
+    "production_build_passed": true,
+    "real_model_browser_check_passed": true,
+    "real_model_mock_routes": false,
+    "real_case_id": "81678ff5-9b0a-45ec-b91e-6b59827d901e",
+    "browser_errors": 0
+  },
+  "real_integration_observation": {
+    "source_type": "synthetic_research_case_without_clinical_gold",
+    "decision": "A",
+    "decision_name": "Community-acquired pneumonia",
+    "spans_tested": 4,
+    "spans_available": 4,
+    "answer_changes": 0,
+    "selected_recheck_agreed": true,
+    "release_status": "evidence_template",
+    "automated_generated_pair_release_passed": false,
+    "wall_seconds": 160.08335026600253,
+    "CPU_seconds": 450.216346139,
+    "peak_process_RSS_GiB": 18.927963256835938
+  },
+  "interpretation": {
+    "software_integration_established": true,
+    "diagnostic_accuracy_established_by_step_5": false,
+    "semantic_checker_reliability_established": false,
+    "clinical_utility_established": false,
+    "gpt_gemini_comparison_run": false,
+    "comparative_improvement_established": false
+  },
+  "delivery_pack": {
+    "path": "research/STEP_05_APPLICATION_PACK.zip",
+    "checksum_file": "research/STEP_05_APPLICATION_PACK.sha256",
+    "archive_integrity_checked": true,
+    "model_weights_included": false,
+    "runtime_database_included": false,
+    "raw_datasets_included": false
+  },
+  "next_stage": "Step 6 development-only annotation, calibration and comparison runner; freeze before held-out test"
+}

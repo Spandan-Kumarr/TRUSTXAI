@@ -1,0 +1,44 @@
+[
+  {
+    "file": "sr_nle_faithfulness.py",
+    "url": "https://raw.githubusercontent.com/ymwangv/SR-NLE/master/src/evaluation/faithfulness.py",
+    "status": 200,
+    "bytes": 6929,
+    "sha256": "8a04c2c8d965c0d33033b506625db75c057584447bd2922deb0fa18513ae8d64"
+  },
+  {
+    "file": "sr_nle_counter.py",
+    "url": "https://raw.githubusercontent.com/ymwangv/SR-NLE/master/src/evaluation/counter.py",
+    "status": 200,
+    "bytes": 2805,
+    "sha256": "704681885321717e8601224807430e7369bd3f3057c3495d3896be65880135f3"
+  },
+  {
+    "file": "naopc_readme.md",
+    "url": "https://raw.githubusercontent.com/JoakimEdin/naopc/main/README.md",
+    "status": 200,
+    "bytes": 5959,
+    "sha256": "a8a56c58734616ab258ac34b4944776a2567f3deec7d68fc8e9797764f48a2fb"
+  },
+  {
+    "file": "eraser_readme.md",
+    "url": "https://raw.githubusercontent.com/jayded/eraserbenchmark/master/README.md",
+    "status": 200,
+    "bytes": 2797,
+    "sha256": "5274690dba67051baf2d6f8dfb03946238f97dc29eef0c60e6727f04905c4546"
+  },
+  {
+    "file": "esnli_readme.md",
+    "url": "https://raw.githubusercontent.com/OanaMariaCamburu/e-SNLI/master/README.md",
+    "status": 200,
+    "bytes": 3558,
+    "sha256": "2af33d1b7705dd3e7386fb94e79a206a7594f04d5712c58a3f5f09d4c2c13280"
+  },
+  {
+    "file": "hatexplain_readme.md",
+    "url": "https://raw.githubusercontent.com/hate-alert/HateXplain/master/README.md",
+    "status": 200,
+    "bytes": 7282,
+    "sha256": "7f02071fa1bfab1b07aeda32d911bfaa5598b07b631f3fa688b06a9b4efad684"
+  }
+]

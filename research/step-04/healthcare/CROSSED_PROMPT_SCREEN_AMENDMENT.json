@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-27",
+  "already_observed": "1.7Bzero-shot8/24;1.7Bsynthetic-fewshot11/24;4Bsynthetic-fewshot9/24; no development/test predictions",
+  "reason": "Complete crossed2models x2existing fixed prompts to inspect demonstration-induced bias, without constructing another prompt from errors",
+  "next_run": "4BnativeBF16 with original CLASSIFICATION_PROMPT.json, suffix_Q4_ZS",
+  "healthcare_prompt_texts_fixed": 2,
+  "maximum_current_feasibility_screen_cells": 4,
+  "sample_membership_and_thresholds_unchanged": true,
+  "not_independent_replicates": true,
+  "no_claim_of_significance_or_heldout_performance": true,
+  "if_no_model_passes": "Do not declare application/model readiness or lower quality gate. Preserve evidence and document a justified next resource/model/task decision."
+}

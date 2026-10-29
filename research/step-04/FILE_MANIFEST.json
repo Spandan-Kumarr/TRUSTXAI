@@ -1,0 +1,1007 @@
+[
+  {
+    "file": "CONTINUATION_FINDINGS.md",
+    "bytes": 1005,
+    "sha256": "ca8535a36e997ca6c9e778f204c72e089dfde9f80fd98d28a284ef3bae534c6b"
+  },
+  {
+    "file": "EXPERIMENT_CONFIG.json",
+    "bytes": 11059,
+    "sha256": "7705f07718353459d5e6ad2d4d951715f6763e09b7015ed2e076f9f6080fd278"
+  },
+  {
+    "file": "EXPERIMENT_MATRIX.csv",
+    "bytes": 487,
+    "sha256": "d5c18654dbba0791331e6a987a0181f9f404d2bf578a3bd5750262f92cf5e4ff"
+  },
+  {
+    "file": "INSTALL_CPU_RUNTIME.sh",
+    "bytes": 1058,
+    "sha256": "65049eb64970d88c05249e06470826cf3af7bc463987a6405e40274c3c239324"
+  },
+  {
+    "file": "README.md",
+    "bytes": 1512,
+    "sha256": "899c804fba6b3c7ad74948d745add6b1f2c15443ba80414d3ca90101997db2f8"
+  },
+  {
+    "file": "RESOURCE_SELECTION.csv",
+    "bytes": 851,
+    "sha256": "3ebb9941b3d914a887bd20ed2917f44e019b7478a57d03e7ef6c9b953443cfab"
+  },
+  {
+    "file": "RESUME_GUIDE.md",
+    "bytes": 1759,
+    "sha256": "64327e42277c67d266f6fecf3cf7266f24bf9ae0c114b87836b1513bdaf1c693"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.docx",
+    "bytes": 49779,
+    "sha256": "9aa0de8a94eb9f8f5c914d081f0fcc0cea5a8165c1a0ec1d360ebfdb451bed5d"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.md",
+    "bytes": 27146,
+    "sha256": "2bc6a40966a0b15de68f9026d9cf95fb1963e8448b11361060dd73d5d2ebe55a"
+  },
+  {
+    "file": "STEP_04_EXPERIMENT_PROTOCOL.pdf",
+    "bytes": 67930,
+    "sha256": "d599b88a2830f33bc4b99dee712bdb5d7779c01d60c69abbed015f8e92973842"
+  },
+  {
+    "file": "VALIDATION_AND_STATUS.json",
+    "bytes": 1309,
+    "sha256": "6670dfce484abdfcfeab3481d033cfdc3cdd6628d63b7aeb31fa156c6059a800"
+  },
+  {
+    "file": "archive/v1/EXPERIMENT_CONFIG.json",
+    "bytes": 4865,
+    "sha256": "3c07029c34476c925baaa472372d330a698ad2d783f82bda3ca91adf86d468d6"
+  },
+  {
+    "file": "archive/v1/EXPERIMENT_MATRIX.csv",
+    "bytes": 487,
+    "sha256": "d5c18654dbba0791331e6a987a0181f9f404d2bf578a3bd5750262f92cf5e4ff"
+  },
+  {
+    "file": "archive/v1/INSTALL_CPU_RUNTIME.sh",
+    "bytes": 1058,
+    "sha256": "65049eb64970d88c05249e06470826cf3af7bc463987a6405e40274c3c239324"
+  },
+  {
+    "file": "archive/v1/README.md",
+    "bytes": 1163,
+    "sha256": "6449e2b8bc4824b79ea614f534196bf86b8a53ea4a9899283b3b15747727c200"
+  },
+  {
+    "file": "archive/v1/RESOURCE_SELECTION.csv",
+    "bytes": 773,
+    "sha256": "1981a84ae936629ce7688745614d7d39e24bdd37e8ac99538810932f1a2b0ab9"
+  },
+  {
+    "file": "archive/v1/STEP_04_EXPERIMENT_PROTOCOL.docx",
+    "bytes": 49161,
+    "sha256": "44c4912a03af3162e3129957f8aea3c507cf02d41029289d0f56d6aa515f6ce7"
+  },
+  {
+    "file": "archive/v1/STEP_04_EXPERIMENT_PROTOCOL.md",
+    "bytes": 25212,
+    "sha256": "82516ff7179f6c1f3919eaace60565974fac0fdeebddff0c83329d338b49494f"
+  },
+  {
+    "file": "archive/v1/STEP_04_EXPERIMENT_PROTOCOL.pdf",
+    "bytes": 67008,
+    "sha256": "2b29a4cbe952e29b1cadfdb7027bd3192b9c6d565f26cc2b416195c6d570d1eb"
+  },
+  {
+    "file": "archive/v1/VALIDATION_AND_STATUS.json",
+    "bytes": 1645,
+    "sha256": "aca257fdd96cd9cec2feb3efddb5cf989b39c5279a7ad4800bcc5401e2cc4a8e"
+  },
+  {
+    "file": "archive/v1.1/CONTINUATION_FINDINGS.md",
+    "bytes": 757,
+    "sha256": "292de4ac21c17616a8ff985cc82bc69a596027f2dd30b5f90a9120b9a254cbfc"
+  },
+  {
+    "file": "archive/v1.1/EXPERIMENT_CONFIG.json",
+    "bytes": 6011,
+    "sha256": "9048ce02fd23f99ced15b4e03900820755d44420ac6c92f61a10a0a0e1970454"
+  },
+  {
+    "file": "archive/v1.1/EXPERIMENT_MATRIX.csv",
+    "bytes": 487,
+    "sha256": "d5c18654dbba0791331e6a987a0181f9f404d2bf578a3bd5750262f92cf5e4ff"
+  },
+  {
+    "file": "archive/v1.1/INSTALL_CPU_RUNTIME.sh",
+    "bytes": 1058,
+    "sha256": "65049eb64970d88c05249e06470826cf3af7bc463987a6405e40274c3c239324"
+  },
+  {
+    "file": "archive/v1.1/README.md",
+    "bytes": 1008,
+    "sha256": "e09e6b7223c73c3d66a71d563cc6ae210667e01bc43c06f5ecbdba038a18c4d5"
+  },
+  {
+    "file": "archive/v1.1/RESOURCE_SELECTION.csv",
+    "bytes": 851,
+    "sha256": "3ebb9941b3d914a887bd20ed2917f44e019b7478a57d03e7ef6c9b953443cfab"
+  },
+  {
+    "file": "archive/v1.1/RESUME_GUIDE.md",
+    "bytes": 1511,
+    "sha256": "e694e4119fa52524feaf6ecd76b8068c15d439e686b41698e215187a1c23c86c"
+  },
+  {
+    "file": "archive/v1.1/STEP_04_EXPERIMENT_PROTOCOL.docx",
+    "bytes": 49779,
+    "sha256": "9aa0de8a94eb9f8f5c914d081f0fcc0cea5a8165c1a0ec1d360ebfdb451bed5d"
+  },
+  {
+    "file": "archive/v1.1/STEP_04_EXPERIMENT_PROTOCOL.md",
+    "bytes": 26898,
+    "sha256": "0595f6be41f0260e93f78bbefbcc7de9e095b4330bbc9a316510906e135381df"
+  },
+  {
+    "file": "archive/v1.1/STEP_04_EXPERIMENT_PROTOCOL.pdf",
+    "bytes": 67930,
+    "sha256": "d599b88a2830f33bc4b99dee712bdb5d7779c01d60c69abbed015f8e92973842"
+  },
+  {
+    "file": "archive/v1.1/VALIDATION_AND_STATUS.json",
+    "bytes": 1656,
+    "sha256": "8c102fe294ce0eb286fd105931c841bda3ec6f683162857b58eb79ea1b32eb6a"
+  },
+  {
+    "file": "clinical-cdss/CLASSIFICATION_PILOT_DIAG_FP32.json",
+    "bytes": 11425,
+    "sha256": "1e7871fa21e5d2bfeba0ab252526dcfaa0caf44c167f0315a9d2b4af0206b2a8"
+  },
+  {
+    "file": "clinical-cdss/CLASSIFICATION_PROMPT.json",
+    "bytes": 458,
+    "sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de"
+  },
+  {
+    "file": "clinical-cdss/COMPUTE_PROJECTION.json",
+    "bytes": 2077,
+    "sha256": "05cc758f4f21e54ee1caba1c3267495e085c9c19f0a3138b5c103629ce868a02"
+  },
+  {
+    "file": "clinical-cdss/CPU_RESTART_FP32_AMENDMENT.json",
+    "bytes": 2196,
+    "sha256": "b3a884318fab3ff2d138f7ff7591449f8e461058bd182e5fd43695de4e6d337c"
+  },
+  {
+    "file": "clinical-cdss/CRITIC_COST_PROBE_NATIVE.json",
+    "bytes": 779,
+    "sha256": "9568eaa5194e324dbb14a166239f6c44213276dea4e8932073f71284fb279d67"
+  },
+  {
+    "file": "clinical-cdss/DATA_PREPARATION.json",
+    "bytes": 1431,
+    "sha256": "b9fe77c2395022f11d438f63926ed9135dee82ddd1f066503104d761cd7413f1"
+  },
+  {
+    "file": "clinical-cdss/EVIDENCE_PILOT_DIAG_FP32.json",
+    "bytes": 6158,
+    "sha256": "aab2fd5467b0f590a7d792a10fff5345f4dd462b553a1df32c82d0864e4ddb30"
+  },
+  {
+    "file": "clinical-cdss/EXPERIMENT_CONFIG.json",
+    "bytes": 11059,
+    "sha256": "7705f07718353459d5e6ad2d4d951715f6763e09b7015ed2e076f9f6080fd278"
+  },
+  {
+    "file": "clinical-cdss/EXPLORATORY_SOURCE_EXCLUSIONS.json",
+    "bytes": 1106,
+    "sha256": "fb91c4a706c680a6c2ce23a64c78f336a13a5b7916b0acb390e51b34af70b861"
+  },
+  {
+    "file": "clinical-cdss/FEASIBILITY_DECLARATION.json",
+    "bytes": 4798,
+    "sha256": "0d60d5462f0b638dfbf3abf7927ffb77780cd270ea6ab044033f99901ce0d3c7"
+  },
+  {
+    "file": "clinical-cdss/FEASIBILITY_GATE_SUMMARY.csv",
+    "bytes": 338,
+    "sha256": "bafd5b4e801b54162f4a97f0e8bb0181bf47595cbdcfa554c1fb4f99cc0bfa97"
+  },
+  {
+    "file": "clinical-cdss/FEASIBILITY_REPORT.docx",
+    "bytes": 41666,
+    "sha256": "cf24a6b80de0649ca9d3698c379fc255b4790326f75514ad368000ead6c5e0a2"
+  },
+  {
+    "file": "clinical-cdss/FEASIBILITY_REPORT.md",
+    "bytes": 7326,
+    "sha256": "ad911240c4ae0f8c4519cd63da0623f4ddcf9a8be58d47fcaf36f9585ab2df4a"
+  },
+  {
+    "file": "clinical-cdss/FEASIBILITY_REPORT.pdf",
+    "bytes": 49870,
+    "sha256": "76df96a8038335237ee41ad1750493c84bf7af2fb3446db29aa899c0dbbbab19"
+  },
+  {
+    "file": "clinical-cdss/FORMAT_PILOT_OUTPUTS_FOR_REVIEW.json",
+    "bytes": 13147,
+    "sha256": "7096d90f8d62241d93ea3b076764f4f0d2d890524b71cae2d57074b60943665d"
+  },
+  {
+    "file": "clinical-cdss/NATIVE_CPU_COMMUNICATION_AMENDMENT.json",
+    "bytes": 1587,
+    "sha256": "44ea72c1adeaa61dfe9cf0bdc1d17e033e97c3feb9d526a056a825e54fd8908a"
+  },
+  {
+    "file": "clinical-cdss/NLI_CACHE_COST_PROBE.json",
+    "bytes": 4033,
+    "sha256": "d66a698ba1bdae9f0d2871c5787f70b971296515861c4e061e8e7b356e67ddd4"
+  },
+  {
+    "file": "clinical-cdss/NLI_COST_PROBE.json",
+    "bytes": 1321,
+    "sha256": "15dfaf847d20151c0b25b14ebc4952c7004997a923ad7d1b294ee7ae097ed725"
+  },
+  {
+    "file": "clinical-cdss/POSITIVE_QUERY_GRAMMAR_QA_CORRECTION.json",
+    "bytes": 3473,
+    "sha256": "974ca23ba62bb4954b979fc316f8326a91141d0f8e62456b2504beda3c8f8549"
+  },
+  {
+    "file": "clinical-cdss/PRIMARY_FEASIBILITY_FREEZE.json",
+    "bytes": 1154,
+    "sha256": "b263e9557563cd291b991b495e1c41716e224cbef4519349c580ec93fb87dc51"
+  },
+  {
+    "file": "clinical-cdss/README.md",
+    "bytes": 1338,
+    "sha256": "9c72eb8139386f5405cb4535fd81bfd73c2f469237e908035c7e76a7bdf30b88"
+  },
+  {
+    "file": "clinical-cdss/RENDERING_PILOT_NATIVE.json",
+    "bytes": 4642,
+    "sha256": "b97724cc3e613d119c7a2e2e4f3ac7a5c4859b8b97ade4af887463b29b522f9d"
+  },
+  {
+    "file": "clinical-cdss/REPRODUCE.md",
+    "bytes": 4882,
+    "sha256": "a69a9ace1fe2bc2ea8bd892d759610c63927b9f923e35315033b8d0877240ca2"
+  },
+  {
+    "file": "clinical-cdss/SCOPE.md",
+    "bytes": 1663,
+    "sha256": "0cfe58e507c44c85f5fcfa3baadf1217a6a09ac8d5143ee8972d1d1fb8ced609"
+  },
+  {
+    "file": "clinical-cdss/SEGMENTATION_PRE_INFERENCE_AMENDMENT.json",
+    "bytes": 967,
+    "sha256": "bf42b3c2be33ca03692a1ea7da18a4d3d73a769970f3a63317c04c3419d9ef3f"
+  },
+  {
+    "file": "clinical-cdss/SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff"
+  },
+  {
+    "file": "clinical-cdss/STEP_04_CLINICAL_PROTOCOL.docx",
+    "bytes": 47571,
+    "sha256": "e207d08971e5e42c5f8f955aaa7f9167514c3e3759fbb0dff74d527393a964a3"
+  },
+  {
+    "file": "clinical-cdss/STEP_04_CLINICAL_PROTOCOL.md",
+    "bytes": 22007,
+    "sha256": "d777bdbaf523143de7c87a156aeb2720f0c3ca794d5a4109971fcd45abdd2fb1"
+  },
+  {
+    "file": "clinical-cdss/STEP_04_CLINICAL_PROTOCOL.pdf",
+    "bytes": 85436,
+    "sha256": "b683663d9e8d63408a35bc953e30072786633034139642b62a94c3e9c962820e"
+  },
+  {
+    "file": "clinical-cdss/STRICT_DIAGNOSTIC_SCOPE_AMENDMENT.json",
+    "bytes": 1115,
+    "sha256": "222e0756a4c9018519df91cdd66e2af8c8f33b06a8c5c1928be315b0b3dcc479"
+  },
+  {
+    "file": "clinical-cdss/USER_CONFIRMED_SCOPE.json",
+    "bytes": 522,
+    "sha256": "7380dce52906706aa2b107ef1010947287a6a43e97c6ddc74b35667d2a7b22b8"
+  },
+  {
+    "file": "clinical-cdss/VALIDATION_AND_STATUS.json",
+    "bytes": 1309,
+    "sha256": "6670dfce484abdfcfeab3481d033cfdc3cdd6628d63b7aeb31fa156c6059a800"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/CLASSIFICATION_PILOT_FP32.json",
+    "bytes": 11419,
+    "sha256": "3a949dcaaebf6d1dfd184ae84f5bf8bb73cda651ab277bc2dfe24a2046d0a516"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/CLASSIFICATION_RUN_SIGNATURE.json",
+    "bytes": 527,
+    "sha256": "ce9f78263a17ab16360b06d6bc7dd5dc887e40e914c25efc02ac29661f3165be"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/DATA_PREPARATION.json",
+    "bytes": 1443,
+    "sha256": "90277fa7212709fcf3e0430e921ac4285589c1755e70ec17618f8a50b8228c66"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/EVIDENCE_PILOT_FP32.json",
+    "bytes": 6158,
+    "sha256": "f53d59d0004ef0f85b2850bf4c69afddc963776e0aedf0673346e7ff35bacf7c"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/FEASIBILITY_DECLARATION.json",
+    "bytes": 4093,
+    "sha256": "3ff262b440edeb3805cde31426f6b99bf09f1ed7b134f5b3988fe80f90702a79"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "1a6c304a2272a4fac163b135fa89e346278ae31f6ebe506f346fe962a6f0e15e"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v1/prepare_clinical.py",
+    "bytes": 8007,
+    "sha256": "ec21eedbb6d1164e47d8a7712f367e629bac89359de932aae4b41028440a96f2"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v2/DATA_PREPARATION.json",
+    "bytes": 1459,
+    "sha256": "c01d0b40ecca3787cc993ba9f56e6b6efe32ab00e7a5d837dd742fb74b871a04"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v2/FEASIBILITY_DECLARATION.json",
+    "bytes": 4463,
+    "sha256": "4111b5462e10049a28d916c65748b015919ee2953dbbf6af10eec6005941e193"
+  },
+  {
+    "file": "clinical-cdss/archive/eligibility-v2/SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "faee578e5fe9a3e5d25e0638973f2f3b2e8e8a75bc1055a22e4d86f66bba9892"
+  },
+  {
+    "file": "clinical-cdss/design/DESIGN_TOKENS.json",
+    "bytes": 750,
+    "sha256": "ed5a803abb3ef18ff48575d89f80b24ee2a508011adc1c9670701a9013064e84"
+  },
+  {
+    "file": "clinical-cdss/design/UI_REQUIREMENTS.md",
+    "bytes": 2955,
+    "sha256": "647cc1e3a4365bb36b4ebdf571021060a57d0fecdf4a7ffaf88cf3ab9764ccce"
+  },
+  {
+    "file": "clinical-cdss/evidence/CPU_DEPENDENCIES.freeze.txt",
+    "bytes": 1031,
+    "sha256": "af4e98ea71c208145071e9770861d71d983caebe2773b3db941c8b13e5d10ad3"
+  },
+  {
+    "file": "clinical-cdss/evidence/EXECUTED_PILOT_SCRIPT.py",
+    "bytes": 18661,
+    "sha256": "eb1462e5d6f787f59bc1ade91acb1973d1ebbad2916b2fdec93d0bd8e66cbd35"
+  },
+  {
+    "file": "clinical-cdss/evidence/MEDQA_PAPER_PROVENANCE.json",
+    "bytes": 3176,
+    "sha256": "6b0e1d3d371b827e1630334ea40e7f5430f6686868c37e9ce4338c0679a5d0be"
+  },
+  {
+    "file": "clinical-cdss/evidence/MedQA_author_MIT_LICENSE",
+    "bytes": 1063,
+    "sha256": "8a35478f13bfaa114cd157592ba06b9a27db0f9767ac1cb9b36d435de6157378"
+  },
+  {
+    "file": "clinical-cdss/evidence/MedQA_mirror_card.md",
+    "bytes": 654,
+    "sha256": "c4f44b8111beb0cb7e7894ccbb456be1eceb9acaa3fadff73cd46d2d4309dde7"
+  },
+  {
+    "file": "clinical-cdss/evidence/NATIVE_BUILD_PROVENANCE.json",
+    "bytes": 1242,
+    "sha256": "2cb851a4e20830468462e6e24531fd330b70ae7db99c24089e4db93fb6e66855"
+  },
+  {
+    "file": "clinical-cdss/evidence/NATIVE_COMMUNICATION_MODEL.json",
+    "bytes": 967,
+    "sha256": "c84e346e0ea82a4c944e6e0d930a70b1416d93b3b31c21e38157868addb9ac1b"
+  },
+  {
+    "file": "clinical-cdss/evidence/NATIVE_RUNTIME_PREFLIGHT.json",
+    "bytes": 994,
+    "sha256": "713d4e89081e9825c9895c99d7c6de47020582d6727712b2f179ef6ef50f2e7c"
+  },
+  {
+    "file": "clinical-cdss/evidence/NLI_publisher_card.md",
+    "bytes": 2856,
+    "sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878"
+  },
+  {
+    "file": "clinical-cdss/evidence/Qwen17_GGUF_LICENSE",
+    "bytes": 11544,
+    "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd"
+  },
+  {
+    "file": "clinical-cdss/evidence/Qwen17_GGUF_README.md",
+    "bytes": 6235,
+    "sha256": "60706b0c6aa38e0d1e73a7b21f98e50cad82ee1eaea636fd1f3a49617bccdb0d"
+  },
+  {
+    "file": "clinical-cdss/evidence/Qwen3-1.7B_tokenizer_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "clinical-cdss/evidence/Qwen3-4B_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "clinical-cdss/evidence/Qwen3-4B_card.md",
+    "bytes": 8168,
+    "sha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+  },
+  {
+    "file": "clinical-cdss/evidence/RUNTIME_PROFILE.json",
+    "bytes": 495,
+    "sha256": "7198fd898fa677587e75e8bbed30a31cbf96dd9a0a4a94d514f917816d1b8d51"
+  },
+  {
+    "file": "clinical-cdss/evidence/SELECTED_MODEL_ARTIFACTS.json",
+    "bytes": 5639,
+    "sha256": "dfa3f66349ba79642b66c1775fa772cfad094d8bffb10e0191c470028eaaeadf"
+  },
+  {
+    "file": "clinical-cdss/evidence/SOURCE_PROVENANCE.json",
+    "bytes": 2666,
+    "sha256": "e8f2454c781da21f846e5229d924697b64874f1c94ad3638bea30d9f92795e41"
+  },
+  {
+    "file": "clinical-cdss/evidence/llama_cpp_python_LICENSE.md",
+    "bytes": 1069,
+    "sha256": "c479fb11a66a85fed2004a17dd1b3e44a1858c564b167aecb20ff66cb422ed75"
+  },
+  {
+    "file": "clinical-cdss/scripts/download_native_communication.py",
+    "bytes": 3860,
+    "sha256": "7f1e1833e621753cf0fbc76636f54889e1402652294930ba1dca24449e765932"
+  },
+  {
+    "file": "clinical-cdss/scripts/download_target.py",
+    "bytes": 4428,
+    "sha256": "fb6558c5223c91a2b6dcc17abc2194e988754fb5f7efb3c58746e3a5ab228e77"
+  },
+  {
+    "file": "clinical-cdss/scripts/fetch_clinical_data.py",
+    "bytes": 876,
+    "sha256": "101ec6f4ecd1f4539c896b4cb81f7315108650a36f7666df660ae7058a8f0f24"
+  },
+  {
+    "file": "clinical-cdss/scripts/measure_nli_cost.py",
+    "bytes": 2153,
+    "sha256": "de2d151f26d0261769dad77ae65bd17d25dc99a40a90895e690a7f9fc5e94363"
+  },
+  {
+    "file": "clinical-cdss/scripts/prepare_clinical.py",
+    "bytes": 9326,
+    "sha256": "7c2a588b4eb487f7ed2377f4b17f9dcf1a9196126c88cbd8cb6e789e3eeb3d16"
+  },
+  {
+    "file": "clinical-cdss/scripts/project_compute.py",
+    "bytes": 7962,
+    "sha256": "d23982dd38a3ce3dc5e6ae41dcb1dfa9da77bf384724b6cb5aae0e7d9caf9bbb"
+  },
+  {
+    "file": "clinical-cdss/scripts/render_native_pilot.py",
+    "bytes": 6863,
+    "sha256": "e7b4202ca48a8fd15717bb15b4722bcb78d50c931cd81a18ba1cde599e6f95b7"
+  },
+  {
+    "file": "clinical-cdss/scripts/run_clinical_pilot.py",
+    "bytes": 18659,
+    "sha256": "5efdfc1fc9f8a1a7de95577e10118a3a5a21aca54e23248600aa8aed896b20d9"
+  },
+  {
+    "file": "evidence/ACCESS_CHECKS.json",
+    "bytes": 1117,
+    "sha256": "7609c22bb4873086e3879f53e6698b3aa686f6ba89b72bc0c0df19a3397b479b"
+  },
+  {
+    "file": "evidence/CPU_DEPENDENCIES.freeze.txt",
+    "bytes": 755,
+    "sha256": "986a239ef276d5b61bee8dbf86f409ce36b5d871d6af6d9f545d2b2c5a7deae1"
+  },
+  {
+    "file": "evidence/DATA_DOWNLOAD.json",
+    "bytes": 310,
+    "sha256": "2203c9aad1434206e440e1b924f6eef64530460c06cd2bf687493641f39b56de"
+  },
+  {
+    "file": "evidence/INITIAL_FEASIBILITY.json",
+    "bytes": 460,
+    "sha256": "460bfe3f60c807efe1cbbfbd743b5da8a563675b55bd06f55fad6a47d7d40567"
+  },
+  {
+    "file": "evidence/MODEL_REVISIONS.json",
+    "bytes": 6621,
+    "sha256": "6b2f1ff18b2261bd0888ba723ebbfa251baf2ce4ed0f8dd78ce39134085b0b0a"
+  },
+  {
+    "file": "evidence/NLI_config_verified.json",
+    "bytes": 1051,
+    "sha256": "24b25a774b895e0a1dda6aee33bfcde2c3542b0e7d400a3fbf0494f6ad4397bc"
+  },
+  {
+    "file": "evidence/Qwen2.5_official_README.md",
+    "bytes": 24732,
+    "sha256": "0b2c2bb11806f7a00c8465f2586e2e99f15de28622fd5c9b70b83ae1ab18c75d"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-0.5B-Instruct_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-0.5B-Instruct_card.md",
+    "bytes": 4917,
+    "sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-0.5B-Instruct_metadata.json",
+    "bytes": 9549,
+    "sha256": "951f8006f0656929e14231f0b51cfd95eb44b5915d7d59f3c1f4124efc7218c1"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-1.5B-Instruct_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-1.5B-Instruct_card.md",
+    "bytes": 4917,
+    "sha256": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada"
+  },
+  {
+    "file": "evidence/Qwen__Qwen2.5-1.5B-Instruct_metadata.json",
+    "bytes": 9694,
+    "sha256": "8d4ce9bab664651e5eeeb0dd83c11b85e0980296144d5353410144c089052712"
+  },
+  {
+    "file": "evidence/Qwen__Qwen3-1.7B_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "evidence/Qwen__Qwen3-1.7B_README.md",
+    "bytes": 13963,
+    "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091"
+  },
+  {
+    "file": "evidence/Qwen__Qwen3-1.7B_metadata.json",
+    "bytes": 11764,
+    "sha256": "7a2167b4933f82e48be280c694c08a1af40017315b9f3a80619a09a42e8b1a99"
+  },
+  {
+    "file": "evidence/RUNTIME_VALIDATION.json",
+    "bytes": 418,
+    "sha256": "ef97e365e7fb39d34aa0001d95ef8bb4ee9cc152ade60969c9e47fa33f8b11bc"
+  },
+  {
+    "file": "evidence/UCI_228_PROVENANCE.json",
+    "bytes": 1447,
+    "sha256": "f94908c00a94657428c1ffcdc74a7309ceb06f99b86f8850f9ab283ef775b9b1"
+  },
+  {
+    "file": "evidence/WEIGHT_DELIVERY_BLOCKER.json",
+    "bytes": 501,
+    "sha256": "497d94cb0cdde8f0bb4643cfe414675c0798808ba5c1e0598cd8a147cfa3ee12"
+  },
+  {
+    "file": "evidence/cross-encoder__nli-deberta-v3-base_card.md",
+    "bytes": 2856,
+    "sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878"
+  },
+  {
+    "file": "evidence/cross-encoder__nli-deberta-v3-base_metadata.json",
+    "bytes": 11124,
+    "sha256": "222863523cac0bde4e6ecb7cc3086f7ccaf4ebb8471dfe82d21b866f5641b3df"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PILOT.json",
+    "bytes": 8075,
+    "sha256": "48b14f3c4a63ab6a8ce06ae5cc6f9cd2f4957bd28b387cfedf881ffb005012b3"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PILOT_Q3.json",
+    "bytes": 10614,
+    "sha256": "e08ed5dde729ce4c0c7b501dcab037dee4e112e36bb202ab0fabd0abbb6f1326"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PILOT_V2.json",
+    "bytes": 10566,
+    "sha256": "055f4602746ef0a7f6e0060d106e4bd401c14237cd5907bd9c1c6289054af7f4"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PILOT_V3.json",
+    "bytes": 10539,
+    "sha256": "53d873274b05e05336bdbe6f81ed6102ac3fb3b120c4145ed356486af98107c6"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PROMPT.json",
+    "bytes": 389,
+    "sha256": "6cfb450c99c4e5f7fa7e9403e2d37af79457d85872330cb827b081b4e9394fdb"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PROMPT_V2.json",
+    "bytes": 407,
+    "sha256": "d4c03ead1201b176a71b6cdb1b10b63cb2ea565c6cf96d829a39bb22e955e83a"
+  },
+  {
+    "file": "feasibility/CLASSIFICATION_PROMPT_V3.json",
+    "bytes": 762,
+    "sha256": "65e790be11309d07b0f3f8c34e2c98d6d39e2d80fc347d2b053b7ac7e8cdfb06"
+  },
+  {
+    "file": "feasibility/DATA_PREPARATION.json",
+    "bytes": 1234,
+    "sha256": "ee1d80a0f3f8a2744f0a1f82fb35fb8cb0bbece2097663845339aad7e9cbd8be"
+  },
+  {
+    "file": "feasibility/FEASIBILITY_AMENDMENT_V2.json",
+    "bytes": 382,
+    "sha256": "0a4a99c54acd8113b75a58b6e4f2157a08f6664802b647b3bea80c3cf6a252fe"
+  },
+  {
+    "file": "feasibility/FEASIBILITY_AMENDMENT_V3.json",
+    "bytes": 710,
+    "sha256": "0d40ab428ecd47ba90c5d8a7cd68b981a95e0ecc6fcef5295d10262f285de832"
+  },
+  {
+    "file": "feasibility/GENERATION_PROFILE_AMENDMENT_BF16.json",
+    "bytes": 785,
+    "sha256": "b0588688a0247b2cec0d6eb1f493124b1e96e50cb68f2670588478feda0be54d"
+  },
+  {
+    "file": "feasibility/GENERATION_PROFILE_AMENDMENT_INT8.json",
+    "bytes": 1136,
+    "sha256": "b3897494174d7818e9ed488927a323a2870610bc42de44859a66cadf16c939f3"
+  },
+  {
+    "file": "feasibility/GENERATION_PROFILE_INT8_REJECTION.json",
+    "bytes": 1739,
+    "sha256": "8900071ce3fb34a4d1b9dfd3380a3635c717395ece0dac2843393c3bdd907d5a"
+  },
+  {
+    "file": "feasibility/HEALTHCARE_PIVOT_PAUSE.json",
+    "bytes": 450,
+    "sha256": "fbd9cd182d068ef4e4fe46a02a3dece061b52f2523ad2fe6cf6fbc0c8bbfdfd1"
+  },
+  {
+    "file": "feasibility/MODEL_SELECTION_AMENDMENT_Q3.json",
+    "bytes": 778,
+    "sha256": "6bcec6a0e26681dfa414225fc706b39ce4094b0294b4b87fd1c302c5fdecdcf6"
+  },
+  {
+    "file": "feasibility/NLI_SMOKE.json",
+    "bytes": 1894,
+    "sha256": "8d48509077f22ab729516a44bd1e390b6f6842a4c70d80211bc4bcd8190d598b"
+  },
+  {
+    "file": "feasibility/PREFIX_CACHE_EQUIVALENCE.json",
+    "bytes": 2930,
+    "sha256": "f825c6bb06dfa75f4d72e657eeced24b1fde10cdea5cb15e4b7b5a4370281d6e"
+  },
+  {
+    "file": "feasibility/PRE_RUN_CLARIFICATIONS.json",
+    "bytes": 782,
+    "sha256": "c5fcc2b3e20610efa62f9b6975c2b8e476fe1fd024a4d8d309e825a1c7d88bcd"
+  },
+  {
+    "file": "feasibility/RENDERING_PROFILE_FP32_EARLY_STOP.json",
+    "bytes": 1599,
+    "sha256": "2b16b9937d72e87ee262e28ee86c9588a8e2820d91a6c1e90cff822bb35993e3"
+  },
+  {
+    "file": "feasibility/RENDERING_RUN_DECLARATION.json",
+    "bytes": 768,
+    "sha256": "d813cff007d91d64c51dacdd28bd734ce6b2479dba889e3551941f196c7d6bdd"
+  },
+  {
+    "file": "feasibility/SPLIT_MANIFEST.csv",
+    "bytes": 19757,
+    "sha256": "3c1f7204d74e5ac416602cd2ffe852ce131c2b4576731595b9bedf6a894dc7eb"
+  },
+  {
+    "file": "feasibility/TOKENIZER_PREFLIGHT.json",
+    "bytes": 5732,
+    "sha256": "29512f0045cc54a40981f36a01c9b83ffa37a971b8da2d663efb8247170701fb"
+  },
+  {
+    "file": "feasibility/TOKENIZER_PREFLIGHT_Q3.json",
+    "bytes": 27704,
+    "sha256": "d3fdbaa707d9b3e741b9ad8391f0a3bde7b6417f06f5509b89b7427fc09fa915"
+  },
+  {
+    "file": "feasibility/download_alternative.py",
+    "bytes": 2908,
+    "sha256": "454c74a45ebb7ed3c38a5c544b4a0131470ed852fad2c4c154cc988bde67cf23"
+  },
+  {
+    "file": "feasibility/download_alternative_parallel.py",
+    "bytes": 3359,
+    "sha256": "a770dab03b1ce34788c502acf331e1b158a5687702f258c901292b230c7f138c"
+  },
+  {
+    "file": "feasibility/download_models.py",
+    "bytes": 2761,
+    "sha256": "727e727f75d7ea2627213d201740358ea9c2bf081ce015d2747c8963fa425967"
+  },
+  {
+    "file": "feasibility/prepare_data.py",
+    "bytes": 5114,
+    "sha256": "c3355b07a92fd35b12fbda5009c98b5e0bc0dd32ce9739f1a265f70e94c3a38e"
+  },
+  {
+    "file": "feasibility/run_pilot.py",
+    "bytes": 21219,
+    "sha256": "62e95cd36ca092cdea044f7a8fdb369f78996e336b192eeb7a04b345a250ac86"
+  },
+  {
+    "file": "feasibility/tokenizer_preflight.py",
+    "bytes": 2477,
+    "sha256": "16b6e360bec0902710017c9f538d4d21052d29abf540db984db4230495bff4da"
+  },
+  {
+    "file": "feasibility/tokenizer_preflight_q3.py",
+    "bytes": 2338,
+    "sha256": "f9946508092a71c847245b9fb82e4d5ff1343bfdbf15b08caa5d1267c86f6c21"
+  },
+  {
+    "file": "healthcare/API_AND_SCOPE_STATUS.json",
+    "bytes": 623,
+    "sha256": "eda54112900ab0ed16486357688ba7c518080c034f7db82c546b0ad4e7b276e1"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PILOT.json",
+    "bytes": 10947,
+    "sha256": "319292d4486ddb7a3cfb0f2e38cf154c3e17c842e5271beaa33b9d9e8e2b15f7"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PILOT_Q4.json",
+    "bytes": 10953,
+    "sha256": "58f6adaf30554b8be3d98b85d62de7a9c1379068029cb9a89a6a63436d6a6b77"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PILOT_Q4_ZS.json",
+    "bytes": 10941,
+    "sha256": "f1f08e57867c6c583da13708020bd7da763ed960b541cb53ceaa8e16028dfa2b"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PILOT_V2.json",
+    "bytes": 10946,
+    "sha256": "5870d58e9bb6c01a43a232124ea50054be594e8fe52cf4129e1c221f58d70f5f"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PROMPT.json",
+    "bytes": 532,
+    "sha256": "5737253db3e2f94afda1a3842fb0d3e286eed7cb2d42fdab692c4a06317528a1"
+  },
+  {
+    "file": "healthcare/CLASSIFICATION_PROMPT_V2.json",
+    "bytes": 1272,
+    "sha256": "c42bb73aceeb3d1a5f28599d7dfd21670695fd1e638eed475c9dbac1a0af418d"
+  },
+  {
+    "file": "healthcare/CLINICAL_SCOPE_CLARIFICATION.json",
+    "bytes": 4243,
+    "sha256": "99b0097af419883beca7444a6fdaddeefe771068b8e66d3a8acbd5ab7a2d257c"
+  },
+  {
+    "file": "healthcare/COMMUNICATION_AND_SCHEMA_AMENDMENT.json",
+    "bytes": 1384,
+    "sha256": "42ccb6a74ed91797f99f12fd582f744c34c9248fe85b55a7edaa336334afcd18"
+  },
+  {
+    "file": "healthcare/CROSSED_PROMPT_SCREEN_AMENDMENT.json",
+    "bytes": 798,
+    "sha256": "8212fc5c6fee22cb5a93348723a16f4c420b0a60b7da59feca316030fb9660eb"
+  },
+  {
+    "file": "healthcare/DATA_PREPARATION.json",
+    "bytes": 1259,
+    "sha256": "a7476fcbe7912a68fbde0567519c445a525d033085a988c0937b17949f3655e0"
+  },
+  {
+    "file": "healthcare/DETERMINISTIC_REUSE_AMENDMENT.json",
+    "bytes": 1768,
+    "sha256": "e27930081ba306e89dde42cca0ddb51cde9ff1559ed8aae08fafc3d13d70e04f"
+  },
+  {
+    "file": "healthcare/DIAGNOSTIC_WORKLOAD_AMENDMENT.json",
+    "bytes": 1647,
+    "sha256": "226447a664b50a60ab8e785c8d59db6127e6185fc71a0aac9940aed06959295d"
+  },
+  {
+    "file": "healthcare/FEASIBILITY_DECLARATION.json",
+    "bytes": 3437,
+    "sha256": "d010aebfa7788b5dfd8f505319d346f6aaf19e23051e7d24b4578fd25c066e3b"
+  },
+  {
+    "file": "healthcare/HEALTHCARE_LITERATURE_ADDENDUM.md",
+    "bytes": 7371,
+    "sha256": "08a60531dc4268c57ac82b29ce51c5d9d6a2cb526ae4ab7c0ea65678c2a58eca"
+  },
+  {
+    "file": "healthcare/METHOD_AMENDMENT.md",
+    "bytes": 5408,
+    "sha256": "28c89b70ca530622666029782ba5d83691d50a93c11fd80bfd9ddd7311c44f60"
+  },
+  {
+    "file": "healthcare/MODEL_LOAD_SETUP_CORRECTION.json",
+    "bytes": 360,
+    "sha256": "967798dc6f5c84d482be0816f55a172fd077f492ae12ede131337713f743a9d1"
+  },
+  {
+    "file": "healthcare/NLI_COST_PROBE.json",
+    "bytes": 1326,
+    "sha256": "7910a9f80c4c9bb9462b57e99549fe755a44100f24aa93cc77ea69e37713e6a1"
+  },
+  {
+    "file": "healthcare/PROMPT_AMENDMENT_V2.json",
+    "bytes": 822,
+    "sha256": "b688323afe6115d5e22de0296cfc2650870af234c9f8f481b8718937e59fc469"
+  },
+  {
+    "file": "healthcare/RUNTIME_PROFILE.json",
+    "bytes": 614,
+    "sha256": "1a22395b8c3103dfc801bc26f3b4afa46bc3eacf14251a292d42878f38715c1a"
+  },
+  {
+    "file": "healthcare/SPLIT_MANIFEST.csv",
+    "bytes": 14421,
+    "sha256": "b7877285f57fb2c0bbe98a5921806a7ccc2114b9c4e147c8eb34481e871788a7"
+  },
+  {
+    "file": "healthcare/STRONGER_CANDIDATE_AMENDMENT.json",
+    "bytes": 1436,
+    "sha256": "91c7ac1ba21df4a6418000e433c67f15d2c0b8066ae04264a8d1fdca59dc9079"
+  },
+  {
+    "file": "healthcare/TOKENIZER_PREFLIGHT_Q4.json",
+    "bytes": 13481,
+    "sha256": "4fc9a534194c546c5e407a435847eece93d738e494d6660b5ec8bb5cdf169597"
+  },
+  {
+    "file": "healthcare/TOKENIZER_PREFLIGHT_Q4_ZS.json",
+    "bytes": 13479,
+    "sha256": "5510048f0cf14f6a4bcb0ade9f32e0c0d0668a728cdd866bfaed6c27a88c4df8"
+  },
+  {
+    "file": "healthcare/evidence/CPU_DEPENDENCIES.freeze.txt",
+    "bytes": 827,
+    "sha256": "342975a9f44757e502d8d6c0ab3bb9e8b26e00923c8a6f101f11f80320305a62"
+  },
+  {
+    "file": "healthcare/evidence/HEALTHCARE_FULLTEXT_PROVENANCE.json",
+    "bytes": 2732,
+    "sha256": "28db8c7c7956cf03a17eb214b8387b08ac016e06f536236b8c590dc0b45029c0"
+  },
+  {
+    "file": "healthcare/evidence/LICENSE",
+    "bytes": 1065,
+    "sha256": "8e75abc6136be91e5ae66dbb6dda07c8bc9dcc215ed3bc1ba3ae7fab7904777e"
+  },
+  {
+    "file": "healthcare/evidence/PUBMEDQA_PAPER_PROVENANCE.json",
+    "bytes": 824,
+    "sha256": "c5c99543d5e10d26b1aaafdc8dfda8be25036395403622e30b21e48529c1b9e1"
+  },
+  {
+    "file": "healthcare/evidence/Qwen3-4B_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "healthcare/evidence/Qwen3-4B_README.md",
+    "bytes": 8168,
+    "sha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+  },
+  {
+    "file": "healthcare/evidence/Qwen3-4B_metadata.json",
+    "bytes": 10451,
+    "sha256": "fbaa957d2fca284e2c096a43b18d4afdce210449e94187be35db9958eed6d5a6"
+  },
+  {
+    "file": "healthcare/evidence/README.md",
+    "bytes": 1723,
+    "sha256": "1338affd8530b416358b4ea40e6f1d6c935197352341bca2cf02288985a1fd99"
+  },
+  {
+    "file": "healthcare/evidence/SOURCE_PROVENANCE.json",
+    "bytes": 1884,
+    "sha256": "b61871bdf75b441444fac3e1f499bce933599e9dea570ff1e30dbb8f8676225b"
+  },
+  {
+    "file": "healthcare/evidence/evaluation.py",
+    "bytes": 609,
+    "sha256": "2838af5bb0ac18e301a9af57323c2d89784f153ddaf4f889329bfa04842099f8"
+  },
+  {
+    "file": "healthcare/evidence/preprocess__split_dataset.py",
+    "bytes": 3221,
+    "sha256": "06ea7c187f3f4087bd2d2be9788006eae3a75473c8dcbb55e4cfc495ebd1127b"
+  },
+  {
+    "file": "healthcare/scripts/download_stronger_candidate.py",
+    "bytes": 4425,
+    "sha256": "1cfe60759aa0c43ad0e20c093e942733a1e7a31eaafb05f461438692035eb847"
+  },
+  {
+    "file": "healthcare/scripts/fetch_sources.py",
+    "bytes": 1531,
+    "sha256": "e500cbc6e6d4f6b9ccdf4040d074fdea45cc313b1b35abe657d437f470599f06"
+  },
+  {
+    "file": "healthcare/scripts/measure_nli_cost.py",
+    "bytes": 2157,
+    "sha256": "d54a7a6efc205d784434830a609ef86179b99b6017383acde2baa97c4cc8c537"
+  },
+  {
+    "file": "healthcare/scripts/prepare_healthcare.py",
+    "bytes": 6537,
+    "sha256": "19c405f78b51f0b03f8948fe160b23d01be4ea10c83d271c96ae6032913d43b0"
+  },
+  {
+    "file": "healthcare/scripts/project_compute.py",
+    "bytes": 7619,
+    "sha256": "15b055dfdc6e43b20980faceff2d1907387d51a933d35828e3cc7bdc7c2af168"
+  },
+  {
+    "file": "healthcare/scripts/run_healthcare_pilot.py",
+    "bytes": 14317,
+    "sha256": "bbad67957209df8fccd0ea209594b746b84c871806d4897a91c165fdfdaf8bc9"
+  },
+  {
+    "file": "healthcare/scripts/tokenizer_preflight.py",
+    "bytes": 1700,
+    "sha256": "693aa47a54868b3aa77550ae098bbb1a60d33ebc1efe713a0acee7a35cc83246"
+  },
+  {
+    "file": "healthcare-scope/HEALTHCARE_DIRECTION.md",
+    "bytes": 4874,
+    "sha256": "c25e35c442c6717f6484debc2159c2bda47129e184b74a6dbfdeadd948ebdb78"
+  },
+  {
+    "file": "healthcare-scope/SOURCE_CHECKS.json",
+    "bytes": 5574,
+    "sha256": "916b54839f6c444a91a7c86ddbe31a855ab2b8c305b75ecf5b73f96a35528010"
+  },
+  {
+    "file": "healthcare-scope/medmcqa_card.md",
+    "bytes": 10700,
+    "sha256": "aedb19bd3b6b4ba5b3a371d4aa61aac2195eb6239357d3b733345f62d9104d6a"
+  },
+  {
+    "file": "healthcare-scope/medqa_readme.md",
+    "bytes": 4974,
+    "sha256": "793b8e2803e876ab59b3f68dded40a36eb63d0043e1adf49224f34fd8b608797"
+  },
+  {
+    "file": "healthcare-scope/pubmedqa_license.md",
+    "bytes": 1065,
+    "sha256": "8e75abc6136be91e5ae66dbb6dda07c8bc9dcc215ed3bc1ba3ae7fab7904777e"
+  },
+  {
+    "file": "healthcare-scope/pubmedqa_paper.html",
+    "bytes": 44221,
+    "sha256": "50748fdbcddd0f54d95acbab53286dfe390673cf25fd5bd1e051caf0daf283cc"
+  },
+  {
+    "file": "healthcare-scope/pubmedqa_readme.md",
+    "bytes": 1723,
+    "sha256": "1338affd8530b416358b4ea40e6f1d6c935197352341bca2cf02288985a1fd99"
+  }
+]

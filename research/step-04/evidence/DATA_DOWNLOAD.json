@@ -1,0 +1,8 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+  "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "bytes": 203415,
+  "metadata_reported_rows": 5574,
+  "license_page_has_cc_by_4_0": true,
+  "retrieved_utc": "2026-10-27T02:38:12.999111+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27",
+  "declared_before_any_healthcare_rendering_output": true,
+  "observed_before_amendment": "1.7Bfailed both declared healthcare classification prompts (8/24and11/24correct); no development/test inference",
+  "stronger_target": "Qwen3-4B-Instruct-2507 BF16 if its unchanged healthcare quality/resource gates pass;4target threads",
+  "communication_model": "Pinned already available Qwen3-1.7B BF16,1generation thread; independent role; health-format/runtime gates still must be measured",
+  "reason": "Keep fixed-target quality separate from lower-cost controlled audit-fact rendering; use same communication model across baseline/framework conditions for fairness",
+  "schema": "Two audience objects; each maps exactC1,C2,C3,C4keys to nonempty text strings; compact keys reduce JSON overhead without removing claims",
+  "claim_facts": "Same four essential fact types, concise canonical sentences; all labels/counts/limits preserved",
+  "rendering_sources": 9,
+  "generation_token_cap": 384,
+  "gates_unchanged": true,
+  "diagnostic_critic_max_new_tokens": 16,
+  "diagnostic_critic_output": "Compact JSON score only, uncalibrated operating-point input, no rationale requested",
+  "natural_pair_critic_max_new_tokens": 96,
+  "support_max_rendered_clauses_per_pair": 32,
+  "coverage_checks_per_pair": 8,
+  "NLI_max_tokens": 512,
+  "healthcare_H1_H2_H3_runs": 0
+}

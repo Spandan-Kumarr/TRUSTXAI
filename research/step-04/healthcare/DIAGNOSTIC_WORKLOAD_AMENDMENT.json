@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "declared_before_healthcare_thesis_or_diagnostic_experiments": true,
+  "basis": "Synthetic NLI cost probe measured approximately0.51/1.00/2.52process CPU seconds per pair at128/256/512tokens; CPU workload needs explicit accounting",
+  "H2_primary_comparison": "Typed structural guards plus NLI versus NLI-only using same support/coverage scores; separate development-matched supported acceptance targets",
+  "general_LLM_critic": "Retain B3 as the natural-output baseline across all60test sources; develop its threshold on45development initial pairs. Do not add1260general-critic diagnostic generations to the primary H2matrix",
+  "diagnostics": {"development_sources":45,"development_variants":540,"test_sources":60,"test_variants":720,"per_source_supported":4,"per_source_faulty":8},
+  "expected_NLI_work": "12sentence-support plus8coverage checks per joint pair; measure actual counts. Same scores reused for NLI-only ablation, no duplicate inference",
+  "hard_NLI_work_cap": "32rendered-clause support plus8coverage checks per pair; exceeded/unresolved text blocked without truncation",
+  "planned_fixed_narrative_calls_max": {"development":45,"test":540},
+  "planned_general_critic_calls_max": {"development":45,"test":60},
+  "additional_exploratory_prompt_tuning": "Track separately from the fixed workload estimate",
+  "source_outcome_or_quality_based_scope_selection": false,
+  "quality_and_resource_gates_unchanged": true,
+  "interpretation": "H2tests incremental structural/provenance checks over NLI; B3tests generic critic behavior on natural outputs. Do not claim a full diagnostic LLM-critic benchmark"
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "file": "CLASSIFICATION_PILOT_DIAG_FP32.json",
+    "bytes": 11425,
+    "sha256": "1e7871fa21e5d2bfeba0ab252526dcfaa0caf44c167f0315a9d2b4af0206b2a8"
+  },
+  {
+    "file": "CLASSIFICATION_PROMPT.json",
+    "bytes": 458,
+    "sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de"
+  },
+  {
+    "file": "COMPUTE_PROJECTION.json",
+    "bytes": 2077,
+    "sha256": "05cc758f4f21e54ee1caba1c3267495e085c9c19f0a3138b5c103629ce868a02"
+  },
+  {
+    "file": "CPU_RESTART_FP32_AMENDMENT.json",
+    "bytes": 2196,
+    "sha256": "b3a884318fab3ff2d138f7ff7591449f8e461058bd182e5fd43695de4e6d337c"
+  },
+  {
+    "file": "CRITIC_COST_PROBE_NATIVE.json",
+    "bytes": 779,
+    "sha256": "9568eaa5194e324dbb14a166239f6c44213276dea4e8932073f71284fb279d67"
+  },
+  {
+    "file": "DATA_PREPARATION.json",
+    "bytes": 1431,
+    "sha256": "b9fe77c2395022f11d438f63926ed9135dee82ddd1f066503104d761cd7413f1"
+  },
+  {
+    "file": "EVIDENCE_PILOT_DIAG_FP32.json",
+    "bytes": 6158,
+    "sha256": "aab2fd5467b0f590a7d792a10fff5345f4dd462b553a1df32c82d0864e4ddb30"
+  },
+  {
+    "file": "EXPERIMENT_CONFIG.json",
+    "bytes": 11059,
+    "sha256": "7705f07718353459d5e6ad2d4d951715f6763e09b7015ed2e076f9f6080fd278"
+  },
+  {
+    "file": "EXPLORATORY_SOURCE_EXCLUSIONS.json",
+    "bytes": 1106,
+    "sha256": "fb91c4a706c680a6c2ce23a64c78f336a13a5b7916b0acb390e51b34af70b861"
+  },
+  {
+    "file": "FEASIBILITY_DECLARATION.json",
+    "bytes": 4798,
+    "sha256": "0d60d5462f0b638dfbf3abf7927ffb77780cd270ea6ab044033f99901ce0d3c7"
+  },
+  {
+    "file": "FEASIBILITY_GATE_SUMMARY.csv",
+    "bytes": 338,
+    "sha256": "bafd5b4e801b54162f4a97f0e8bb0181bf47595cbdcfa554c1fb4f99cc0bfa97"
+  },
+  {
+    "file": "FEASIBILITY_REPORT.docx",
+    "bytes": 41666,
+    "sha256": "cf24a6b80de0649ca9d3698c379fc255b4790326f75514ad368000ead6c5e0a2"
+  },
+  {
+    "file": "FEASIBILITY_REPORT.md",
+    "bytes": 7326,
+    "sha256": "ad911240c4ae0f8c4519cd63da0623f4ddcf9a8be58d47fcaf36f9585ab2df4a"
+  },
+  {
+    "file": "FEASIBILITY_REPORT.pdf",
+    "bytes": 49870,
+    "sha256": "76df96a8038335237ee41ad1750493c84bf7af2fb3446db29aa899c0dbbbab19"
+  },
+  {
+    "file": "FORMAT_PILOT_OUTPUTS_FOR_REVIEW.json",
+    "bytes": 13147,
+    "sha256": "7096d90f8d62241d93ea3b076764f4f0d2d890524b71cae2d57074b60943665d"
+  },
+  {
+    "file": "NATIVE_CPU_COMMUNICATION_AMENDMENT.json",
+    "bytes": 1587,
+    "sha256": "44ea72c1adeaa61dfe9cf0bdc1d17e033e97c3feb9d526a056a825e54fd8908a"
+  },
+  {
+    "file": "NLI_CACHE_COST_PROBE.json",
+    "bytes": 4033,
+    "sha256": "d66a698ba1bdae9f0d2871c5787f70b971296515861c4e061e8e7b356e67ddd4"
+  },
+  {
+    "file": "NLI_COST_PROBE.json",
+    "bytes": 1321,
+    "sha256": "15dfaf847d20151c0b25b14ebc4952c7004997a923ad7d1b294ee7ae097ed725"
+  },
+  {
+    "file": "POSITIVE_QUERY_GRAMMAR_QA_CORRECTION.json",
+    "bytes": 3473,
+    "sha256": "974ca23ba62bb4954b979fc316f8326a91141d0f8e62456b2504beda3c8f8549"
+  },
+  {
+    "file": "PRIMARY_FEASIBILITY_FREEZE.json",
+    "bytes": 1154,
+    "sha256": "b263e9557563cd291b991b495e1c41716e224cbef4519349c580ec93fb87dc51"
+  },
+  {
+    "file": "README.md",
+    "bytes": 1338,
+    "sha256": "9c72eb8139386f5405cb4535fd81bfd73c2f469237e908035c7e76a7bdf30b88"
+  },
+  {
+    "file": "RENDERING_PILOT_NATIVE.json",
+    "bytes": 4642,
+    "sha256": "b97724cc3e613d119c7a2e2e4f3ac7a5c4859b8b97ade4af887463b29b522f9d"
+  },
+  {
+    "file": "REPRODUCE.md",
+    "bytes": 4882,
+    "sha256": "a69a9ace1fe2bc2ea8bd892d759610c63927b9f923e35315033b8d0877240ca2"
+  },
+  {
+    "file": "SCOPE.md",
+    "bytes": 1663,
+    "sha256": "0cfe58e507c44c85f5fcfa3baadf1217a6a09ac8d5143ee8972d1d1fb8ced609"
+  },
+  {
+    "file": "SEGMENTATION_PRE_INFERENCE_AMENDMENT.json",
+    "bytes": 967,
+    "sha256": "bf42b3c2be33ca03692a1ea7da18a4d3d73a769970f3a63317c04c3419d9ef3f"
+  },
+  {
+    "file": "SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff"
+  },
+  {
+    "file": "STEP_04_CLINICAL_PROTOCOL.docx",
+    "bytes": 47571,
+    "sha256": "e207d08971e5e42c5f8f955aaa7f9167514c3e3759fbb0dff74d527393a964a3"
+  },
+  {
+    "file": "STEP_04_CLINICAL_PROTOCOL.md",
+    "bytes": 22007,
+    "sha256": "d777bdbaf523143de7c87a156aeb2720f0c3ca794d5a4109971fcd45abdd2fb1"
+  },
+  {
+    "file": "STEP_04_CLINICAL_PROTOCOL.pdf",
+    "bytes": 85436,
+    "sha256": "b683663d9e8d63408a35bc953e30072786633034139642b62a94c3e9c962820e"
+  },
+  {
+    "file": "STRICT_DIAGNOSTIC_SCOPE_AMENDMENT.json",
+    "bytes": 1115,
+    "sha256": "222e0756a4c9018519df91cdd66e2af8c8f33b06a8c5c1928be315b0b3dcc479"
+  },
+  {
+    "file": "USER_CONFIRMED_SCOPE.json",
+    "bytes": 522,
+    "sha256": "7380dce52906706aa2b107ef1010947287a6a43e97c6ddc74b35667d2a7b22b8"
+  },
+  {
+    "file": "VALIDATION_AND_STATUS.json",
+    "bytes": 1309,
+    "sha256": "6670dfce484abdfcfeab3481d033cfdc3cdd6628d63b7aeb31fa156c6059a800"
+  },
+  {
+    "file": "archive/eligibility-v1/CLASSIFICATION_PILOT_FP32.json",
+    "bytes": 11419,
+    "sha256": "3a949dcaaebf6d1dfd184ae84f5bf8bb73cda651ab277bc2dfe24a2046d0a516"
+  },
+  {
+    "file": "archive/eligibility-v1/CLASSIFICATION_RUN_SIGNATURE.json",
+    "bytes": 527,
+    "sha256": "ce9f78263a17ab16360b06d6bc7dd5dc887e40e914c25efc02ac29661f3165be"
+  },
+  {
+    "file": "archive/eligibility-v1/DATA_PREPARATION.json",
+    "bytes": 1443,
+    "sha256": "90277fa7212709fcf3e0430e921ac4285589c1755e70ec17618f8a50b8228c66"
+  },
+  {
+    "file": "archive/eligibility-v1/EVIDENCE_PILOT_FP32.json",
+    "bytes": 6158,
+    "sha256": "f53d59d0004ef0f85b2850bf4c69afddc963776e0aedf0673346e7ff35bacf7c"
+  },
+  {
+    "file": "archive/eligibility-v1/FEASIBILITY_DECLARATION.json",
+    "bytes": 4093,
+    "sha256": "3ff262b440edeb3805cde31426f6b99bf09f1ed7b134f5b3988fe80f90702a79"
+  },
+  {
+    "file": "archive/eligibility-v1/SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "1a6c304a2272a4fac163b135fa89e346278ae31f6ebe506f346fe962a6f0e15e"
+  },
+  {
+    "file": "archive/eligibility-v1/prepare_clinical.py",
+    "bytes": 8007,
+    "sha256": "ec21eedbb6d1164e47d8a7712f367e629bac89359de932aae4b41028440a96f2"
+  },
+  {
+    "file": "archive/eligibility-v2/DATA_PREPARATION.json",
+    "bytes": 1459,
+    "sha256": "c01d0b40ecca3787cc993ba9f56e6b6efe32ab00e7a5d837dd742fb74b871a04"
+  },
+  {
+    "file": "archive/eligibility-v2/FEASIBILITY_DECLARATION.json",
+    "bytes": 4463,
+    "sha256": "4111b5462e10049a28d916c65748b015919ee2953dbbf6af10eec6005941e193"
+  },
+  {
+    "file": "archive/eligibility-v2/SPLIT_MANIFEST.csv",
+    "bytes": 31532,
+    "sha256": "faee578e5fe9a3e5d25e0638973f2f3b2e8e8a75bc1055a22e4d86f66bba9892"
+  },
+  {
+    "file": "design/DESIGN_TOKENS.json",
+    "bytes": 750,
+    "sha256": "ed5a803abb3ef18ff48575d89f80b24ee2a508011adc1c9670701a9013064e84"
+  },
+  {
+    "file": "design/UI_REQUIREMENTS.md",
+    "bytes": 2955,
+    "sha256": "647cc1e3a4365bb36b4ebdf571021060a57d0fecdf4a7ffaf88cf3ab9764ccce"
+  },
+  {
+    "file": "evidence/CPU_DEPENDENCIES.freeze.txt",
+    "bytes": 1031,
+    "sha256": "af4e98ea71c208145071e9770861d71d983caebe2773b3db941c8b13e5d10ad3"
+  },
+  {
+    "file": "evidence/EXECUTED_PILOT_SCRIPT.py",
+    "bytes": 18661,
+    "sha256": "eb1462e5d6f787f59bc1ade91acb1973d1ebbad2916b2fdec93d0bd8e66cbd35"
+  },
+  {
+    "file": "evidence/MEDQA_PAPER_PROVENANCE.json",
+    "bytes": 3176,
+    "sha256": "6b0e1d3d371b827e1630334ea40e7f5430f6686868c37e9ce4338c0679a5d0be"
+  },
+  {
+    "file": "evidence/MedQA_author_MIT_LICENSE",
+    "bytes": 1063,
+    "sha256": "8a35478f13bfaa114cd157592ba06b9a27db0f9767ac1cb9b36d435de6157378"
+  },
+  {
+    "file": "evidence/MedQA_mirror_card.md",
+    "bytes": 654,
+    "sha256": "c4f44b8111beb0cb7e7894ccbb456be1eceb9acaa3fadff73cd46d2d4309dde7"
+  },
+  {
+    "file": "evidence/NATIVE_BUILD_PROVENANCE.json",
+    "bytes": 1242,
+    "sha256": "2cb851a4e20830468462e6e24531fd330b70ae7db99c24089e4db93fb6e66855"
+  },
+  {
+    "file": "evidence/NATIVE_COMMUNICATION_MODEL.json",
+    "bytes": 967,
+    "sha256": "c84e346e0ea82a4c944e6e0d930a70b1416d93b3b31c21e38157868addb9ac1b"
+  },
+  {
+    "file": "evidence/NATIVE_RUNTIME_PREFLIGHT.json",
+    "bytes": 994,
+    "sha256": "713d4e89081e9825c9895c99d7c6de47020582d6727712b2f179ef6ef50f2e7c"
+  },
+  {
+    "file": "evidence/NLI_publisher_card.md",
+    "bytes": 2856,
+    "sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878"
+  },
+  {
+    "file": "evidence/Qwen17_GGUF_LICENSE",
+    "bytes": 11544,
+    "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd"
+  },
+  {
+    "file": "evidence/Qwen17_GGUF_README.md",
+    "bytes": 6235,
+    "sha256": "60706b0c6aa38e0d1e73a7b21f98e50cad82ee1eaea636fd1f3a49617bccdb0d"
+  },
+  {
+    "file": "evidence/Qwen3-1.7B_tokenizer_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "evidence/Qwen3-4B_LICENSE",
+    "bytes": 11343,
+    "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  {
+    "file": "evidence/Qwen3-4B_card.md",
+    "bytes": 8168,
+    "sha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
+  },
+  {
+    "file": "evidence/RUNTIME_PROFILE.json",
+    "bytes": 495,
+    "sha256": "7198fd898fa677587e75e8bbed30a31cbf96dd9a0a4a94d514f917816d1b8d51"
+  },
+  {
+    "file": "evidence/SELECTED_MODEL_ARTIFACTS.json",
+    "bytes": 5639,
+    "sha256": "dfa3f66349ba79642b66c1775fa772cfad094d8bffb10e0191c470028eaaeadf"
+  },
+  {
+    "file": "evidence/SOURCE_PROVENANCE.json",
+    "bytes": 2666,
+    "sha256": "e8f2454c781da21f846e5229d924697b64874f1c94ad3638bea30d9f92795e41"
+  },
+  {
+    "file": "evidence/llama_cpp_python_LICENSE.md",
+    "bytes": 1069,
+    "sha256": "c479fb11a66a85fed2004a17dd1b3e44a1858c564b167aecb20ff66cb422ed75"
+  },
+  {
+    "file": "scripts/download_native_communication.py",
+    "bytes": 3860,
+    "sha256": "7f1e1833e621753cf0fbc76636f54889e1402652294930ba1dca24449e765932"
+  },
+  {
+    "file": "scripts/download_target.py",
+    "bytes": 4428,
+    "sha256": "fb6558c5223c91a2b6dcc17abc2194e988754fb5f7efb3c58746e3a5ab228e77"
+  },
+  {
+    "file": "scripts/fetch_clinical_data.py",
+    "bytes": 876,
+    "sha256": "101ec6f4ecd1f4539c896b4cb81f7315108650a36f7666df660ae7058a8f0f24"
+  },
+  {
+    "file": "scripts/measure_nli_cost.py",
+    "bytes": 2153,
+    "sha256": "de2d151f26d0261769dad77ae65bd17d25dc99a40a90895e690a7f9fc5e94363"
+  },
+  {
+    "file": "scripts/prepare_clinical.py",
+    "bytes": 9326,
+    "sha256": "7c2a588b4eb487f7ed2377f4b17f9dcf1a9196126c88cbd8cb6e789e3eeb3d16"
+  },
+  {
+    "file": "scripts/project_compute.py",
+    "bytes": 7962,
+    "sha256": "d23982dd38a3ce3dc5e6ae41dcb1dfa9da77bf384724b6cb5aae0e7d9caf9bbb"
+  },
+  {
+    "file": "scripts/render_native_pilot.py",
+    "bytes": 6863,
+    "sha256": "e7b4202ca48a8fd15717bb15b4722bcb78d50c931cd81a18ba1cde599e6f95b7"
+  },
+  {
+    "file": "scripts/run_clinical_pilot.py",
+    "bytes": 18659,
+    "sha256": "5efdfc1fc9f8a1a7de95577e10118a3a5a21aca54e23248600aa8aed896b20d9"
+  }
+]

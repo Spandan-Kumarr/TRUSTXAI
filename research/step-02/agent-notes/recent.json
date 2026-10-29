@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "authors": [
+      "Yingming Wang",
+      "Pepa Atanasova"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.emnlp-main.427/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+      "https://raw.githubusercontent.com/ymwangv/SR-NLE/master/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "SR-NLE iteratively critiques and refines post-hoc natural-language explanations, including feedback derived from feature attribution; no additional training is required in the reported method.",
+    "limitations": "Only official abstract and author README inspected. Self-feedback is not independent ground truth. Exact tested attribution-feedback procedures, intervention assumptions and reported results need full-text scrutiny; no audience-preservation protocol established by these inspected sources.",
+    "relevance": "Direct prior art against claiming iterative explanation verification/refinement or attribution-guided correction as novel.",
+    "baseline_use": "Strong candidate baseline for attribution-feedback refinement; source pipeline includes answer, explanation, feedback and refinement runners.",
+    "doi": "10.18653/v1/2025.emnlp-main.427",
+    "acl_id": "2025.emnlp-main.427",
+    "repository": "https://github.com/ymwangv/SR-NLE",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/ymwangv_SR-NLE_README.md"
+  },
+  {
+    "title": "Cross-Refine: Improving Natural Language Explanation Generation by Learning in Tandem",
+    "authors": [
+      "Qianli Wang",
+      "Tatiana Anikina",
+      "Nils Feldhus",
+      "Simon Ostermann",
+      "Sebastian Möller",
+      "Vera Schmitt"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 31st International Conference on Computational Linguistics",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.coling-main.77/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.coling.xml",
+      "https://raw.githubusercontent.com/qiaw99/Cross-Refine/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "Uses two LLM roles, generator and critic, to assess, give feedback/suggested explanation and refine an initial NLE without supervised training.",
+    "limitations": "Abstract/README access only. LLM critique and human preference do not certify target-model faithfulness. Exact evaluation constructs and leakage controls require full text.",
+    "relevance": "Direct prior art against novelty of a separate explanation critic or two-model generation-and-checking architecture.",
+    "baseline_use": "Candidate explanation-refinement baseline; compare fairly against its Self-Refine comparator and control call budget.",
+    "doi": null,
+    "acl_id": "2025.coling-main.77",
+    "repository": "https://github.com/qiaw99/Cross-Refine",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/qiaw99_Cross-Refine_README.md"
+  },
+  {
+    "title": "Multi-Level Explanations for Generative Language Models",
+    "authors": [
+      "Lucas Monteiro Paes",
+      "Dennis Wei",
+      "Hyo Jin Do",
+      "Hendrik Strobelt",
+      "Ronny Luss",
+      "Amit Dhurandhar",
+      "Manish Nagireddy",
+      "Karthikeyan Natesan Ramamurthy",
+      "Prasanna Sattigeri",
+      "Werner Geyer",
+      "Soumya Ghosh"
+    ],
+    "year": "2025",
+    "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2025.acl-long.1553/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+      "https://raw.githubusercontent.com/IBM/ICX360/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "MExGen extends perturbation-based attribution such as LIME/SHAP to costly, long-context text generation; scores context parts for influence on outputs and reports automated plus human evaluation.",
+    "limitations": "Official abstract/README only. Context attribution is not proof of internal causal reasoning and is not itself audience-adapted claim validation. Method targets context-grounded generation rather than the same bounded classification task by default.",
+    "relevance": "Prior art for model-grounded explanations of LLM outputs and reusable in-context XAI tooling; the application or extending SHAP to text generation alone cannot be new.",
+    "baseline_use": "Relevant evidence-extraction comparator or reusable toolkit; ICX360 includes MExGen, CELL contrastive prompts and token highlighter. README states Apache2.0, not independently licence-audited here.",
+    "doi": "10.18653/v1/2025.acl-long.1553",
+    "acl_id": "2025.acl-long.1553",
+    "repository": "https://github.com/IBM/ICX360",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/IBM_ICX360_README.md"
+  },
+  {
+    "title": "Faithful Serum: Mitigating the Faithfulness Gap in Textual Explanations of LLM Decisions via Attribution Guidance",
+    "authors": [
+      "Bar Alon",
+      "Itamar Zimerman",
+      "Lior Wolf"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2026.acl-long.300/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.acl.xml",
+      "https://raw.githubusercontent.com/Bar-A-94/FaithfulnessSerum/main/README.MD"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "Faithful Serum evaluates omitted influential hints using counterfactuals and guides explanations using PE-LRP token-attribution heatmaps injected at attention level; training-free.",
+    "limitations": "Official abstract/README only, not full-text verification. Guidance requires open-model internals; author README notes a narrow intervention-strength range and instability/repetition when too high. Its strong claim of actual-evidence faithfulness must be interpreted within its tests.",
+    "relevance": "Very close 2026 prior art for attribution-grounded explanation generation and intervention-based checks; prevents first-ever grounding-plus-verification claim.",
+    "baseline_use": "High-priority nearest-method comparator if model/access compatible; otherwise explicit related-work comparison and possibly a reproduced simpler condition.",
+    "doi": "10.18653/v1/2026.acl-long.300",
+    "acl_id": "2026.acl-long.300",
+    "repository": "https://github.com/Bar-A-94/FaithfulnessSerum",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/Bar-A-94_FaithfulnessSerum_README.md"
+  },
+  {
+    "title": "FaithLM: Towards Faithful Explanations for Large Language Models",
+    "authors": [
+      "Yu-Neng Chuang",
+      "Guanchu Wang",
+      "Chia-Yuan Chang",
+      "Ruixiang Tang",
+      "Shaochen Zhong",
+      "Fan Yang",
+      "Andrew Wen",
+      "Mengnan Du",
+      "Xuanting Cai",
+      "Vladimir Braverman",
+      "Xia Hu"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2026.eacl-long.177/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.eacl.xml",
+      "https://raw.githubusercontent.com/ynchuang/FaithLM/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "FaithLM formalizes explanation faithfulness via prediction shifts when explanation content is contradicted; uses contrary-hint scoring and iteratively refines elicitation prompts and explanations.",
+    "limitations": "Official abstract plus minimal official README only. Theoretical soundness is an author claim in the abstract, not independently checked. Different intervention semantics from standard input deletion or counterfactual reclassification; cannot treat scores as equivalent.",
+    "relevance": "Direct 2026 prior art for model-agnostic behavioral explanation assessment linked to iterative improvement.",
+    "baseline_use": "High-priority behavioral verification comparator; full text needed before implementing its contrary-hint score.",
+    "doi": "10.18653/v1/2026.eacl-long.177",
+    "acl_id": "2026.eacl-long.177",
+    "repository": "https://github.com/ynchuang/FaithLM",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/ynchuang_FaithLM_README.md"
+  },
+  {
+    "title": "Accountable AI with Grounded, Faithful, Consistent, Actionable Rationales: A Case Study in Clinical Trial Matching with VERDICT",
+    "authors": [
+      "Zikai Zhou",
+      "Yufei Jin",
+      "Yilin Xu",
+      "Yu-Chiang Wang",
+      "Chieh-Ju Chao",
+      "Monica Lam"
+    ],
+    "year": "2026",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    "status": "Official ACL proceedings metadata verified; paper full text not retrieved",
+    "url": "https://aclanthology.org/2026.emnlp-main.2598/",
+    "evidence_url": [
+      "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+      "https://raw.githubusercontent.com/stanford-oval/clinical-trial-matching/main/README.md"
+    ],
+    "access_depth": "Official abstract + author repository README (not full text)",
+    "contribution": "VERDICT converts constraints/policies into SMT/MaxSMT and derives eligibility decisions from a solver, exposing assumptions and pivotal conditions that would change outcomes; combines accountable rationale artifacts with a working clinical trial application.",
+    "limitations": "Official abstract and extensive author README only. Solver-based decisions differ from explanations of an unchanged LLM classifier. Clinical resources and data licensing impose scope costs. README-reported benchmark numbers have not been reproduced; no clinical deployment endorsement.",
+    "relevance": "Strong prior art for evidence-grounded decision support, audit trails, pivotal/counterfactual conditions and explicit undecided states. Changing the thesis to solver decisions would change Review1 scope.",
+    "baseline_use": "Architecture/limitation comparator, not automatically a fair same-task numerical baseline. Abstract metadata lists EMNLP2026; collection ingested 2026-10-21 and month October.",
+    "doi": null,
+    "acl_id": "2026.emnlp-main.2598",
+    "repository": "https://github.com/stanford-oval/clinical-trial-matching",
+    "readme_snapshot": "/workspace/TRUSTXAI/research/step-02/agent-notes/stanford-oval_clinical-trial-matching_README.md"
+  }
+]

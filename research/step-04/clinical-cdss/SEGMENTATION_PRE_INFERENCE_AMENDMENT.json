@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27",
+  "stage": "Before any clinical model inference or prediction",
+  "observed_preparation_issue": "Excluding all cases with more than8punctuation-derived spans left only14testDcases, fewer than planned15",
+  "choice": "Preserve full clinical text and deterministically merge adjacent spans until at most8units, selecting shortest combined character span with earliest-index tie. Do not truncate or discard long cases solely for sentence count. Minimum2units and1536token prompt cap remain.",
+  "clinical_semantics": "Units are contiguous input spans and may contain several findings; no assertion of medically atomic features",
+  "source_selection_not_based_on_model_outcomes": true,
+  "preparation_script_before_sha256": "029ad4913317643eddd04e26422ecccdea4a5ed770bdb71db6c94b110a31b5cc",
+  "target_quality_and_latency_gates_unchanged": true,
+  "planned_sources_unchanged": {
+    "feasibility": 24,
+    "development": 40,
+    "test": 60
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "cpu_count": 5,
+  "memory_GiB_approx": 33,
+  "workspace_disk_free_GiB_approx": 30,
+  "gpu_available": false,
+  "nvidia_smi_present": false,
+  "python": "3.12.14",
+  "observed_network": "Model/dataset host requests returned proxy tunnel403; Qwen official GitHub README200",
+  "credentials_presence_only": {
+    "HF_TOKEN": false,
+    "OPENAI_API_KEY": false,
+    "ANTHROPIC_API_KEY": false
+  },
+  "no_secret_values_inspected": true
+}

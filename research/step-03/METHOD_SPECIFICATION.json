@@ -1,0 +1,67 @@
+{
+  "document_type": "research specification, not implemented validator",
+  "version": "1.0",
+  "date": "2026-10-27",
+  "working_name": "TRUSTXAI: evidence-preserving audience adaptation",
+  "approved_thesis_title": "A Trustworthy & Explainable AI Framework for Large Language Model-Based Decision Support Systems",
+  "scope": {
+    "fixed_target_decision": true,
+    "audience_views": [
+      "novice",
+      "expert"
+    ],
+    "shared_essential_claim_plan": true,
+    "expert_extra_facts_in_paired_narrative": false,
+    "max_joint_repair_rounds": 1,
+    "automatic_internal_faithfulness_guarantee": false
+  },
+  "required_bindings": [
+    "input_identity",
+    "model_id_and_revision",
+    "task_prompt_identity",
+    "label_definitions",
+    "inference_configuration",
+    "evidence_method_and_output_quantity",
+    "evidence_status",
+    "claim_scope",
+    "exact_counterfactual_identity_if_present"
+  ],
+  "claim_types": [
+    "decision",
+    "attribution",
+    "counterfactual_observation",
+    "limits_status",
+    "input_observation"
+  ],
+  "claim_check_statuses": [
+    "supported",
+    "contradicted",
+    "unsupported",
+    "unresolved"
+  ],
+  "release_rule": "Both final views satisfy common mandatory claims and no detected unsupported/contradicted/unresolved assertion; report checker error independently. If failed after one repair, use labelled evidence template.",
+  "fallback_counts_as_LLM_narrative_success": false,
+  "empty_or_status_only_record_counts_as_informative_success": false,
+  "baseline_ids": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "primary_hypothesis": "H1",
+  "primary_metric": "Complete supported pair yield, independently evaluated over all requested source inputs",
+  "independent_evaluation_required": true,
+  "open_step4_choices": [
+    "task_and_dataset",
+    "target_and_communication_models",
+    "attribution_method",
+    "claim_extractor_and_checker",
+    "evidence_selection_and_minimum_information",
+    "sample_sizes_and_statistical_plan",
+    "budgets_and_thresholds",
+    "annotation_and_participant_protocol"
+  ],
+  "novelty_status": "selected candidate; no field-wide first-ever proof",
+  "results_available": false
+}

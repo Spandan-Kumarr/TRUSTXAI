@@ -1,0 +1,658 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "prompt_sha256": "c42bb73aceeb3d1a5f28599d7dfd21670695fd1e638eed475c9dbac1a0af418d",
+  "sources": 129,
+  "max_prompt_tokens": 1069,
+  "cap": 1536,
+  "truncation": false,
+  "target_inference_run": false,
+  "test_model_inference_run": false,
+  "records": [
+    {
+      "source_id": "8422202",
+      "partition": "feasibility",
+      "prompt_tokens": 448
+    },
+    {
+      "source_id": "10340286",
+      "partition": "feasibility",
+      "prompt_tokens": 561
+    },
+    {
+      "source_id": "11838307",
+      "partition": "feasibility",
+      "prompt_tokens": 414
+    },
+    {
+      "source_id": "12612531",
+      "partition": "feasibility",
+      "prompt_tokens": 467
+    },
+    {
+      "source_id": "15466981",
+      "partition": "feasibility",
+      "prompt_tokens": 525
+    },
+    {
+      "source_id": "17403428",
+      "partition": "feasibility",
+      "prompt_tokens": 650
+    },
+    {
+      "source_id": "17578985",
+      "partition": "feasibility",
+      "prompt_tokens": 558
+    },
+    {
+      "source_id": "18096128",
+      "partition": "feasibility",
+      "prompt_tokens": 460
+    },
+    {
+      "source_id": "18269157",
+      "partition": "feasibility",
+      "prompt_tokens": 683
+    },
+    {
+      "source_id": "19145527",
+      "partition": "feasibility",
+      "prompt_tokens": 813
+    },
+    {
+      "source_id": "19683101",
+      "partition": "feasibility",
+      "prompt_tokens": 623
+    },
+    {
+      "source_id": "20338971",
+      "partition": "feasibility",
+      "prompt_tokens": 663
+    },
+    {
+      "source_id": "22211919",
+      "partition": "feasibility",
+      "prompt_tokens": 401
+    },
+    {
+      "source_id": "22813804",
+      "partition": "feasibility",
+      "prompt_tokens": 557
+    },
+    {
+      "source_id": "22867778",
+      "partition": "feasibility",
+      "prompt_tokens": 539
+    },
+    {
+      "source_id": "24237112",
+      "partition": "feasibility",
+      "prompt_tokens": 541
+    },
+    {
+      "source_id": "24315783",
+      "partition": "feasibility",
+      "prompt_tokens": 452
+    },
+    {
+      "source_id": "24866606",
+      "partition": "feasibility",
+      "prompt_tokens": 537
+    },
+    {
+      "source_id": "25070942",
+      "partition": "feasibility",
+      "prompt_tokens": 607
+    },
+    {
+      "source_id": "25432938",
+      "partition": "feasibility",
+      "prompt_tokens": 525
+    },
+    {
+      "source_id": "25636371",
+      "partition": "feasibility",
+      "prompt_tokens": 572
+    },
+    {
+      "source_id": "25987398",
+      "partition": "feasibility",
+      "prompt_tokens": 584
+    },
+    {
+      "source_id": "27184293",
+      "partition": "feasibility",
+      "prompt_tokens": 626
+    },
+    {
+      "source_id": "28407529",
+      "partition": "feasibility",
+      "prompt_tokens": 635
+    },
+    {
+      "source_id": "8200238",
+      "partition": "development",
+      "prompt_tokens": 621
+    },
+    {
+      "source_id": "9444542",
+      "partition": "development",
+      "prompt_tokens": 470
+    },
+    {
+      "source_id": "9569972",
+      "partition": "development",
+      "prompt_tokens": 469
+    },
+    {
+      "source_id": "10757151",
+      "partition": "development",
+      "prompt_tokens": 697
+    },
+    {
+      "source_id": "11247896",
+      "partition": "development",
+      "prompt_tokens": 672
+    },
+    {
+      "source_id": "12690589",
+      "partition": "development",
+      "prompt_tokens": 480
+    },
+    {
+      "source_id": "12855939",
+      "partition": "development",
+      "prompt_tokens": 483
+    },
+    {
+      "source_id": "14713788",
+      "partition": "development",
+      "prompt_tokens": 484
+    },
+    {
+      "source_id": "15477551",
+      "partition": "development",
+      "prompt_tokens": 445
+    },
+    {
+      "source_id": "16361634",
+      "partition": "development",
+      "prompt_tokens": 569
+    },
+    {
+      "source_id": "17279467",
+      "partition": "development",
+      "prompt_tokens": 590
+    },
+    {
+      "source_id": "17429333",
+      "partition": "development",
+      "prompt_tokens": 497
+    },
+    {
+      "source_id": "17483607",
+      "partition": "development",
+      "prompt_tokens": 494
+    },
+    {
+      "source_id": "17562682",
+      "partition": "development",
+      "prompt_tokens": 647
+    },
+    {
+      "source_id": "18534072",
+      "partition": "development",
+      "prompt_tokens": 553
+    },
+    {
+      "source_id": "18799291",
+      "partition": "development",
+      "prompt_tokens": 574
+    },
+    {
+      "source_id": "19327500",
+      "partition": "development",
+      "prompt_tokens": 639
+    },
+    {
+      "source_id": "19542542",
+      "partition": "development",
+      "prompt_tokens": 502
+    },
+    {
+      "source_id": "19575307",
+      "partition": "development",
+      "prompt_tokens": 532
+    },
+    {
+      "source_id": "19711462",
+      "partition": "development",
+      "prompt_tokens": 466
+    },
+    {
+      "source_id": "19925761",
+      "partition": "development",
+      "prompt_tokens": 717
+    },
+    {
+      "source_id": "20082356",
+      "partition": "development",
+      "prompt_tokens": 449
+    },
+    {
+      "source_id": "20101129",
+      "partition": "development",
+      "prompt_tokens": 723
+    },
+    {
+      "source_id": "21190419",
+      "partition": "development",
+      "prompt_tokens": 520
+    },
+    {
+      "source_id": "21558951",
+      "partition": "development",
+      "prompt_tokens": 541
+    },
+    {
+      "source_id": "21593045",
+      "partition": "development",
+      "prompt_tokens": 680
+    },
+    {
+      "source_id": "22706226",
+      "partition": "development",
+      "prompt_tokens": 688
+    },
+    {
+      "source_id": "22954812",
+      "partition": "development",
+      "prompt_tokens": 542
+    },
+    {
+      "source_id": "23096188",
+      "partition": "development",
+      "prompt_tokens": 725
+    },
+    {
+      "source_id": "23360491",
+      "partition": "development",
+      "prompt_tokens": 404
+    },
+    {
+      "source_id": "23386371",
+      "partition": "development",
+      "prompt_tokens": 1069
+    },
+    {
+      "source_id": "23860049",
+      "partition": "development",
+      "prompt_tokens": 528
+    },
+    {
+      "source_id": "23999452",
+      "partition": "development",
+      "prompt_tokens": 748
+    },
+    {
+      "source_id": "24153338",
+      "partition": "development",
+      "prompt_tokens": 558
+    },
+    {
+      "source_id": "24630333",
+      "partition": "development",
+      "prompt_tokens": 713
+    },
+    {
+      "source_id": "24747511",
+      "partition": "development",
+      "prompt_tokens": 464
+    },
+    {
+      "source_id": "24946973",
+      "partition": "development",
+      "prompt_tokens": 617
+    },
+    {
+      "source_id": "25957366",
+      "partition": "development",
+      "prompt_tokens": 573
+    },
+    {
+      "source_id": "26133538",
+      "partition": "development",
+      "prompt_tokens": 551
+    },
+    {
+      "source_id": "26418796",
+      "partition": "development",
+      "prompt_tokens": 482
+    },
+    {
+      "source_id": "26505821",
+      "partition": "development",
+      "prompt_tokens": 685
+    },
+    {
+      "source_id": "26867834",
+      "partition": "development",
+      "prompt_tokens": 849
+    },
+    {
+      "source_id": "26999038",
+      "partition": "development",
+      "prompt_tokens": 710
+    },
+    {
+      "source_id": "27405146",
+      "partition": "development",
+      "prompt_tokens": 519
+    },
+    {
+      "source_id": "27884344",
+      "partition": "development",
+      "prompt_tokens": 499
+    },
+    {
+      "source_id": "8165771",
+      "partition": "test",
+      "prompt_tokens": 480
+    },
+    {
+      "source_id": "8738894",
+      "partition": "test",
+      "prompt_tokens": 586
+    },
+    {
+      "source_id": "9465206",
+      "partition": "test",
+      "prompt_tokens": 786
+    },
+    {
+      "source_id": "9616411",
+      "partition": "test",
+      "prompt_tokens": 481
+    },
+    {
+      "source_id": "10223070",
+      "partition": "test",
+      "prompt_tokens": 538
+    },
+    {
+      "source_id": "10375486",
+      "partition": "test",
+      "prompt_tokens": 499
+    },
+    {
+      "source_id": "10781708",
+      "partition": "test",
+      "prompt_tokens": 509
+    },
+    {
+      "source_id": "10966943",
+      "partition": "test",
+      "prompt_tokens": 463
+    },
+    {
+      "source_id": "11079675",
+      "partition": "test",
+      "prompt_tokens": 644
+    },
+    {
+      "source_id": "11138995",
+      "partition": "test",
+      "prompt_tokens": 520
+    },
+    {
+      "source_id": "11411430",
+      "partition": "test",
+      "prompt_tokens": 601
+    },
+    {
+      "source_id": "11458136",
+      "partition": "test",
+      "prompt_tokens": 505
+    },
+    {
+      "source_id": "11570976",
+      "partition": "test",
+      "prompt_tokens": 387
+    },
+    {
+      "source_id": "11926574",
+      "partition": "test",
+      "prompt_tokens": 654
+    },
+    {
+      "source_id": "12970636",
+      "partition": "test",
+      "prompt_tokens": 620
+    },
+    {
+      "source_id": "15053041",
+      "partition": "test",
+      "prompt_tokens": 654
+    },
+    {
+      "source_id": "16296668",
+      "partition": "test",
+      "prompt_tokens": 543
+    },
+    {
+      "source_id": "16392897",
+      "partition": "test",
+      "prompt_tokens": 521
+    },
+    {
+      "source_id": "16778275",
+      "partition": "test",
+      "prompt_tokens": 533
+    },
+    {
+      "source_id": "16809243",
+      "partition": "test",
+      "prompt_tokens": 556
+    },
+    {
+      "source_id": "16827975",
+      "partition": "test",
+      "prompt_tokens": 733
+    },
+    {
+      "source_id": "17054994",
+      "partition": "test",
+      "prompt_tokens": 480
+    },
+    {
+      "source_id": "17565137",
+      "partition": "test",
+      "prompt_tokens": 659
+    },
+    {
+      "source_id": "17621202",
+      "partition": "test",
+      "prompt_tokens": 474
+    },
+    {
+      "source_id": "17910536",
+      "partition": "test",
+      "prompt_tokens": 615
+    },
+    {
+      "source_id": "18243752",
+      "partition": "test",
+      "prompt_tokens": 396
+    },
+    {
+      "source_id": "18435678",
+      "partition": "test",
+      "prompt_tokens": 551
+    },
+    {
+      "source_id": "18568290",
+      "partition": "test",
+      "prompt_tokens": 650
+    },
+    {
+      "source_id": "19103915",
+      "partition": "test",
+      "prompt_tokens": 501
+    },
+    {
+      "source_id": "19302863",
+      "partition": "test",
+      "prompt_tokens": 615
+    },
+    {
+      "source_id": "19482903",
+      "partition": "test",
+      "prompt_tokens": 628
+    },
+    {
+      "source_id": "20197761",
+      "partition": "test",
+      "prompt_tokens": 611
+    },
+    {
+      "source_id": "20736672",
+      "partition": "test",
+      "prompt_tokens": 593
+    },
+    {
+      "source_id": "20971618",
+      "partition": "test",
+      "prompt_tokens": 546
+    },
+    {
+      "source_id": "21459725",
+      "partition": "test",
+      "prompt_tokens": 750
+    },
+    {
+      "source_id": "21850494",
+      "partition": "test",
+      "prompt_tokens": 654
+    },
+    {
+      "source_id": "21952349",
+      "partition": "test",
+      "prompt_tokens": 495
+    },
+    {
+      "source_id": "22365295",
+      "partition": "test",
+      "prompt_tokens": 551
+    },
+    {
+      "source_id": "22491528",
+      "partition": "test",
+      "prompt_tokens": 471
+    },
+    {
+      "source_id": "23283159",
+      "partition": "test",
+      "prompt_tokens": 751
+    },
+    {
+      "source_id": "23495128",
+      "partition": "test",
+      "prompt_tokens": 541
+    },
+    {
+      "source_id": "23690198",
+      "partition": "test",
+      "prompt_tokens": 608
+    },
+    {
+      "source_id": "23949294",
+      "partition": "test",
+      "prompt_tokens": 613
+    },
+    {
+      "source_id": "24073931",
+      "partition": "test",
+      "prompt_tokens": 768
+    },
+    {
+      "source_id": "24318956",
+      "partition": "test",
+      "prompt_tokens": 580
+    },
+    {
+      "source_id": "24336869",
+      "partition": "test",
+      "prompt_tokens": 589
+    },
+    {
+      "source_id": "24359102",
+      "partition": "test",
+      "prompt_tokens": 555
+    },
+    {
+      "source_id": "24476003",
+      "partition": "test",
+      "prompt_tokens": 633
+    },
+    {
+      "source_id": "24577079",
+      "partition": "test",
+      "prompt_tokens": 527
+    },
+    {
+      "source_id": "25371231",
+      "partition": "test",
+      "prompt_tokens": 435
+    },
+    {
+      "source_id": "25394614",
+      "partition": "test",
+      "prompt_tokens": 595
+    },
+    {
+      "source_id": "25499207",
+      "partition": "test",
+      "prompt_tokens": 781
+    },
+    {
+      "source_id": "25793749",
+      "partition": "test",
+      "prompt_tokens": 875
+    },
+    {
+      "source_id": "25887165",
+      "partition": "test",
+      "prompt_tokens": 532
+    },
+    {
+      "source_id": "26548832",
+      "partition": "test",
+      "prompt_tokens": 829
+    },
+    {
+      "source_id": "26606599",
+      "partition": "test",
+      "prompt_tokens": 689
+    },
+    {
+      "source_id": "26778755",
+      "partition": "test",
+      "prompt_tokens": 667
+    },
+    {
+      "source_id": "26907557",
+      "partition": "test",
+      "prompt_tokens": 446
+    },
+    {
+      "source_id": "27044366",
+      "partition": "test",
+      "prompt_tokens": 693
+    },
+    {
+      "source_id": "28196511",
+      "partition": "test",
+      "prompt_tokens": 601
+    }
+  ]
+}

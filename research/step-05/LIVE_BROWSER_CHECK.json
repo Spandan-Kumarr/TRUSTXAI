@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-27",
+  "mock_routes": false,
+  "inference": "Real pinned local models",
+  "diagnostic_case_id": "81678ff5-9b0a-45ec-b91e-6b59827d901e",
+  "diagnostic_source": "Synthetic research example; no clinical gold label assigned",
+  "diagnostic_status": "complete",
+  "release_status": "evidence_template",
+  "automated_release_passed": false,
+  "spans": 4,
+  "omissions": 4,
+  "decision": "A",
+  "recheck": "A",
+  "distinct_fallback_views": true,
+  "time": {
+    "wall_seconds": 160.08335026600253,
+    "CPU_seconds": 450.216346139
+  },
+  "memory": {
+    "peak_process_RSS_GiB": 18.927963256835938,
+    "residency": "Target released before communicator/checker phase"
+  },
+  "chat_case_id": "0837a7cf-817a-4d7f-935c-2565cba171db",
+  "chat_grounding_status": "source_passages",
+  "chat_citation_cards": 3,
+  "curated_summary_label_visible": true,
+  "desktop_horizontal_overflow": false,
+  "mobile_horizontal_overflow": false,
+  "browser_errors": [],
+  "interpretation": "Integration observations only; no evidence of clinical accuracy, checker reliability, or comparative improvement."
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trustxai.local/schemas/annotation-lock-1.0.json",
+  "title": "TRUSTXAI independent annotation lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "status", "partition", "rater_count",
+    "rater_A_id", "rater_B_id", "raters_distinct",
+    "rater_A_independence_confirmed", "rater_B_independence_confirmed",
+    "rubric_sha256", "packet_manifest_sha256",
+    "rater_A_response_sha256", "rater_B_response_sha256",
+    "rater_A_declaration_sha256", "rater_B_declaration_sha256",
+    "response_schema_validation_passed", "pre_adjudication_agreement_recorded",
+    "independent_annotation_ready", "locked_at", "custodian",
+    "unblinded_at", "notes"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["blank_template_not_a_completed_lock", "locked"]},
+    "partition": {"enum": [null, "development", "test"]},
+    "rater_count": {"type": "integer", "minimum": 0, "maximum": 2},
+    "rater_A_id": {"type": ["string", "null"]},
+    "rater_B_id": {"type": ["string", "null"]},
+    "raters_distinct": {"type": ["boolean", "null"]},
+    "rater_A_independence_confirmed": {"type": ["boolean", "null"]},
+    "rater_B_independence_confirmed": {"type": ["boolean", "null"]},
+    "rubric_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "packet_manifest_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "rater_A_response_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "rater_B_response_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "rater_A_declaration_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "rater_B_declaration_sha256": {"$ref": "#/$defs/digestOrNull"},
+    "response_schema_validation_passed": {"type": ["boolean", "null"]},
+    "pre_adjudication_agreement_recorded": {"type": ["boolean", "null"]},
+    "independent_annotation_ready": {"type": "boolean"},
+    "locked_at": {"type": ["string", "null"]},
+    "custodian": {"type": ["string", "null"]},
+    "unblinded_at": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "locked"}}},
+      "then": {
+        "properties": {
+          "partition": {"enum": ["development", "test"]},
+          "rater_count": {"const": 2},
+          "rater_A_id": {"type": "string", "minLength": 1},
+          "rater_B_id": {"type": "string", "minLength": 1},
+          "raters_distinct": {"const": true},
+          "rater_A_independence_confirmed": {"const": true},
+          "rater_B_independence_confirmed": {"const": true},
+          "rubric_sha256": {"$ref": "#/$defs/digest"},
+          "packet_manifest_sha256": {"$ref": "#/$defs/digest"},
+          "rater_A_response_sha256": {"$ref": "#/$defs/digest"},
+          "rater_B_response_sha256": {"$ref": "#/$defs/digest"},
+          "rater_A_declaration_sha256": {"$ref": "#/$defs/digest"},
+          "rater_B_declaration_sha256": {"$ref": "#/$defs/digest"},
+          "response_schema_validation_passed": {"const": true},
+          "pre_adjudication_agreement_recorded": {"const": true},
+          "independent_annotation_ready": {"const": true},
+          "locked_at": {"type": "string", "minLength": 1},
+          "custodian": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "digestOrNull": {"anyOf": [{"$ref": "#/$defs/digest"}, {"type": "null"}]}
+  }
+}

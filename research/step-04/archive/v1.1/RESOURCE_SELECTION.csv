@@ -1,0 +1,5 @@
+Role,Resource,Primary_URL,Verification_status,Profile
+target/renderer,Qwen/Qwen2.5-1.5B-Instruct,https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct,"publisher card,Apache2.0declaration and exact revision verified; weights not delivered",CPU FP32
+fallback,Qwen/Qwen2.5-0.5B-Instruct,https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct,"publisher card,Apache2.0declaration and exact revision verified; weights not delivered",CPU FP32
+semantic checker,cross-encoder/nli-deberta-v3-base,https://huggingface.co/cross-encoder/nli-deberta-v3-base,"publisher card,Apache2.0declaration and exact revision verified; weights not delivered",CPU; fallible NLI
+dataset,UCI SMS Spam Collection228,https://archive.ics.uci.edu/dataset/228/sms+spam+collection,official archive/catalogue licence verified;5574rows;source splits prepared,offline public research corpus

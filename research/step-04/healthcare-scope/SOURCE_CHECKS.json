@@ -1,0 +1,74 @@
+[
+  {
+    "name": "pubmedqa_readme",
+    "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/master/README.md",
+    "status": 200,
+    "sha256": "1338affd8530b416358b4ea40e6f1d6c935197352341bca2cf02288985a1fd99",
+    "snippets": [
+      "To evaluate your model predictions, please prepare the results in a json format where the key is PMID and value is one of \"yes\", \"no\", and \"maybe\". Run the following script to get the performance:",
+      "After splitting the PQA-L and having `./data/test_set.json`, one can run the following script to get human performance:",
+      "  title={PubMedQA: A Dataset for Biomedical Research Question Answering},"
+    ]
+  },
+  {
+    "name": "pubmedqa_license",
+    "url": "https://raw.githubusercontent.com/pubmedqa/pubmedqa/master/LICENSE",
+    "status": 200,
+    "sha256": "8e75abc6136be91e5ae66dbb6dda07c8bc9dcc215ed3bc1ba3ae7fab7904777e",
+    "snippets": [
+      "MIT License",
+      "Copyright (c) 2019 pubmedqa",
+      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+      "The above copyright notice and this permission notice shall be included in all",
+      "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+    ]
+  },
+  {
+    "name": "medqa_readme",
+    "url": "https://raw.githubusercontent.com/jind11/MedQA/master/README.md",
+    "status": 200,
+    "sha256": "793b8e2803e876ab59b3f68dded40a36eb63d0043e1adf49224f34fd8b608797",
+    "snippets": [
+      "This is the data and baseline source code for the paper: [Jin, Di, et al. \"What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams.\" arXiv preprint arXiv:2009.13081 (2020)](https://arxiv.org/abs/2009.13081). If you would like to use the data or code, please cite the paper:",
+      "  title={What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams},",
+      "- For QAs, we have three sources: US, Mainland of China, and Taiwan District, which are put in folders, respectively. All files for QAs are in jsonl file format, where each line is a data sample as a dict. The \"XX_qbank.jsonl\" files contain all data samples while we also provide an official random split into train, dev, and test sets. Those files in the \"metamap\" folders are extracted medical related phrases using the [Metamap](https://metamap.nlm.nih.gov/) tool. ",
+      "PS: If you have any questions for the data, feel free to leave a message in the Issues.",
+      "In this step, we run the following command to start answering the medical questions by matching each pair of concatenated question and answer candidate to the knowledge base, obtaining the corressponding matching score (i.e., BM25 matching score), and ranking the answer candidates by the matching scores. This script has two arguments to be specified: \"data_path\": the path to the medical quesiton data; \"topn\": we would like to get the top_n matched snippets from the knowledge base.",
+      "python aristomini/solvers/textsearch.py --data_path PATH_TO_QUESTIONS_DATA --topn TOP_N_MATCHING_SCORES_TO_FETCH"
+    ]
+  },
+  {
+    "name": "medmcqa_card",
+    "url": "https://huggingface.co/datasets/openlifescienceai/medmcqa/raw/main/README.md",
+    "status": 200,
+    "sha256": "aedb19bd3b6b4ba5b3a371d4aa61aac2195eb6239357d3b733345f62d9104d6a",
+    "snippets": [
+      "license:",
+      "- question-answering",
+      "  - name: question",
+      "  - name: train",
+      "  - name: test",
+      "  - split: train",
+      "    path: data/train-*",
+      "  - split: test",
+      "    path: data/test-*",
+      "- **Paper:** [MedMCQA: A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering](https://proceedings.mlr.press/v174/pal22a)",
+      "MedMCQA is a large-scale, Multiple-Choice Question Answering (MCQA) dataset designed to address real-world medical entrance exam questions.",
+      "Each sample contains a question, correct answer(s), and other options which require a deeper language understanding as it tests the 10+ reasoning abilities of a model across a wide range of medical subjects & topics. A detailed explanation of the solution, along with the above information, is provided in this study.",
+      "The dataset contains questions about the following topics:",
+      "multiple-choice-QA, open-domain-QA: The dataset can be used to train a model for multi-choice questions answering, open domain questions answering. Questions in these exams are challenging and generally require deeper domain and language understanding as it tests the 10+ reasoning abilities across a wide range of medical subjects & topics.",
+      "The questions and answers are available in English.",
+      "    \"question\":\"A 40-year-old man presents with 5 days of productive cough and fever. Pseudomonas aeruginosa is isolated from a pulmonary abscess. CBC shows an acute effect characterized by marked leukocytosis (50,000 mL) and the differential count reveals a shift to left in granulocytes. Which of the following terms best describes these hematologic findings?\",",
+      "- `id` : a string question identifier for each example",
+      "- `question` : question text (a string)"
+    ]
+  },
+  {
+    "name": "pubmedqa_original_paper",
+    "url": "https://aclanthology.org/D19-1259/",
+    "status": 200,
+    "sha256": "50748fdbcddd0f54d95acbab53286dfe390673cf25fd5bd1e051caf0daf283cc",
+    "parsed_with": "Python html.parser",
+    "counts": "Paper describes1kexpert/61.2kunlabelled/211.3kartificial; no dataset parse performed"
+  }
+]

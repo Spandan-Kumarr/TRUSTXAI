@@ -1,0 +1,28 @@
+{
+  "selection": "First2evidence sources, not selected from successful/correct outputs",
+  "sources": 2,
+  "native_communication_revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+  "new_token_cap": 96,
+  "semantic_judgment_accuracy_evaluated": false,
+  "test_sources_used": 0,
+  "results": [
+    {
+      "source_id": "medqa-train-00180",
+      "seconds": 6.309158568999919,
+      "CPU_seconds": 22.523773044999984,
+      "new_tokens": 16,
+      "context_tokens": 414,
+      "hit_cap": false,
+      "valid_JSON_format": true
+    },
+    {
+      "source_id": "medqa-train-01127",
+      "seconds": 5.825470773999768,
+      "CPU_seconds": 20.528914204000046,
+      "new_tokens": 16,
+      "context_tokens": 390,
+      "hit_cap": false,
+      "valid_JSON_format": true
+    }
+  ]
+}

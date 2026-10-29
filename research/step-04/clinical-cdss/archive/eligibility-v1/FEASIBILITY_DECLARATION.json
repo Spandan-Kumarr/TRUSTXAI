@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-27",
+  "declared_before_clinical_benchmark_model_inference": true,
+  "user_confirmed_task": "Diagnostic decision support from clinical cases",
+  "benchmark_candidate": "MedQA-USMLE4-option explicit-diagnosis clinical vignette subset",
+  "retrieval_source": "GBaker/MedQA-USMLE-4-options public mirror, explicitly identified; upstream author code repository does not contain the question files",
+  "dataset_revision": "0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18",
+  "licence_scope": "Mirror card declaresCCBY4.0; upstream software repoMIT. Do not claim identical scope or redistribute exam text; retain source attribution and hashes",
+  "eligibility": "Clinical-patient term or age pattern in vignette; terminal question sentence contains diagnosis/diagnoses;2to8nonempty sentence-like case spans;4valid nonempty options A-D; task prompt<=1536tokens; no truncation",
+  "segmentation": "Punctuation boundaries, merge fragments to5words where possible; if more than8units, repeatedly merge shortest adjacent combined span (earliest tie). Preserve every character/offset; no clinical content trimming. Units are not medically certified atomic facts.",
+  "input_allowlist": [
+    "clinical case spans",
+    "terminal diagnostic question",
+    "four provided options"
+  ],
+  "excluded_fields": [
+    "answer",
+    "answer_idx",
+    "meta_info",
+    "metamap_phrases"
+  ],
+  "seed": 20261027,
+  "splits": {
+    "feasibility": 24,
+    "development": 40,
+    "test": 60
+  },
+  "sampling": "6/10/15per correct option position A-D, respectively; feasibility/development from published train file only; test from published test file only; group-disjoint before model outcomes",
+  "letter_balance_scope": "Option positions, not disease classes; macroF1/BAover A-D are letter-bias controls, not disease-specific clinical adequacy",
+  "primary_backbone_metric": "Clinical vignette option-selection accuracy, not real-patient diagnostic validity",
+  "target_candidate": "Already SHA256verified Qwen3-4B-Instruct-2507 BF16,4threads,no-thinking,greedy<=8newtokens; strict A-Dparser; no decision repair",
+  "communication_candidate": "SHA256verified Qwen3-1.7BBF16,1thread,no-thinking; health-format results do not transfer without clinical evidence/option-name binding checks",
+  "quality_gates": {
+    "accuracy_min": 0.5,
+    "option_position_macroF1_min": 0.4,
+    "each_position_recall_positive": true,
+    "valid_decisions_min": 0.95,
+    "median_target_seconds_max": 20,
+    "peak_RSS_GiB_max": 24
+  },
+  "gate_rationale": "Same previously declared numerical operational floors;4way nominal-choice chance accuracy0.25. No outcome-based lowering; not a clinical safety guarantee",
+  "rendering_sources": "First2per correct letter in the fixed feasibility sample,8total; not selected from correct predictions",
+  "feasibility_omission_budget": "2preselected case spans: first and last, per feasibility rendering case. Canonical text reports actual limited test count; does not claim complete omission search",
+  "final_pipeline_omission_budget": "Every eligible case span,2to8; preserve diagnostic question and all options",
+  "selected_omission": "Shortest-character valid answer-changing omitted span, else shortest valid nonflip; earliest tie; repeat selected modified input uncached",
+  "rendering_schema": "novice/expert maps, each exactC1-C4nonempty strings; cap384tokens; no repair in feasibility",
+  "rendering_gates": {
+    "valid_JSON_fraction_min": 0.8,
+    "median_pair_seconds_max": 180,
+    "peak_RSS_GiB_max": 24,
+    "projected_process_CPU_hours_max": 24
+  },
+  "scope_of_claims": "Recorded suggestion, source-option binding, actual omission transitions/search counts/retest and limitations. No inferred clinical causation or invented clinical rationale",
+  "shared_initial_policy": "Reuse identical grounded initial output across B1/B2/B3/P only if full signatures match; charge each condition standalone initial cost",
+  "API_execution": "Local only per user; no GPT/Gemini calls or results",
+  "test_locked": false,
+  "clinical_semantic_preservation_evaluated": false
+}

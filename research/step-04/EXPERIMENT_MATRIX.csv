@@ -1,0 +1,7 @@
+Condition,Planned_test_sources,Maximum_joint_narrative_calls_per_source,Additional_LLM_critic_calls,Interpretation
+B0,60,1,0,self-explanation; no E; not primary effect comparison
+B1,60,2,0,grounded initial+blind second draft; no best-of selection
+B2,60,2,0,initial+important-word refinement; adapted prior family
+B3,60,2,1,initial+optional repair; additional generic critic call
+B4,60,0,0,deterministic audience templates
+P,60,2,0,initial+optional repair; structural+NLI checking

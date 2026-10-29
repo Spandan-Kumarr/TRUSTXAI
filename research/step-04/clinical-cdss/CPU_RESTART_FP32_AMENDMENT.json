@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-27",
+  "stage": "Before any completed clinical quality assessment; development/test inference unrun",
+  "observed_environment_change": "Previous cloud CPU exposed AVX512_BF16; restarted CPU hasAVX2but noAVX512/BF16instructions",
+  "failed_resource_profile": "Qwen3-4BnativeBF16; first completed clinical queries64.55and76.98seconds, versus20smedian gate. Incomplete run stopped, no24case accuracy asserted",
+  "completed_BF16_observations": [
+    {
+      "seconds": 64.55092815499938,
+      "CPU_seconds": 249.43569719600004,
+      "new_tokens": 2,
+      "context_tokens": 298,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-00243",
+      "input_sha256": "322afbea8aedb54c2d7d137a10d70ea8947e075f30b2194d7f3b9c2b3c0a434a"
+    },
+    {
+      "seconds": 76.98288324200075,
+      "CPU_seconds": 293.938719987,
+      "new_tokens": 2,
+      "context_tokens": 395,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-00280",
+      "input_sha256": "16e16e454a8987071d72c243fbce13c78dc1bc0cb16684f73b98f0c3f48ee14e"
+    },
+    {
+      "seconds": 96.64117174900002,
+      "CPU_seconds": 376.891618072,
+      "new_tokens": 2,
+      "context_tokens": 518,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-00313",
+      "input_sha256": "58f5234f1486d69cdbb07cb1e00b436116c2b2fde3434a58c0129cebf410f123"
+    }
+  ],
+  "replacement_profile": "FP32target,4threads; FP32communication model,1thread; phased loading to avoid simultaneous weight peaks",
+  "target_and_prompt_unchanged": true,
+  "recheck_semantics": "Fresh full uncached queries; memory phasing changes model residency, not evidence identity",
+  "quality_and_resource_thresholds_unchanged": true,
+  "selected_model_sha256_verification_unchanged": true,
+  "runtime_note": "Measure all speed/memory anew; previous AVX512timings and cost probe do not transfer",
+  "test_outputs_seen": 0
+}

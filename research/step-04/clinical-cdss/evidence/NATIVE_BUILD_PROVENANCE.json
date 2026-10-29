@@ -1,0 +1,37 @@
+{
+  "package": "llama-cpp-python",
+  "version": "0.3.16",
+  "source": "https://github.com/abetlen/llama-cpp-python",
+  "tag": "v0.3.16",
+  "git_revision": "c37132bac860fcc333255c36313f89c4f49d4c8d",
+  "llama_cpp_submodule": "4227c9be4268ac844921b90f31595f81236bd317",
+  "C_compiler": "gcc",
+  "CXX_compiler": "g++",
+  "CMake_args": "GGML_NATIVE=ON;GGML_BLAS=OFF;GGML_CUDA=OFF",
+  "build_parallelism": 4,
+  "native_libraries": [
+    {
+      "file": "libggml-base.so",
+      "sha256": "75d0534b9a9eed5d0de15a43d0bedb7e693eca7b03a5477bfd29cd02d41b65f0"
+    },
+    {
+      "file": "libggml-cpu.so",
+      "sha256": "0282ea73eff2a70b7c4c6fbcbac7455403c2b653dbb85a64032243f28c2a375d"
+    },
+    {
+      "file": "libggml.so",
+      "sha256": "0fcfab901941aae8e56aaa320e9ad80d4c40b0d295c2b9fb898fb73e9ab4b313"
+    },
+    {
+      "file": "libllama.so",
+      "sha256": "0d5e24963628cf1ddf38a5ee66ab6b09b9dd376986366fe7887fc19431adc155"
+    },
+    {
+      "file": "libmtmd.so",
+      "sha256": "2f01991430ceeb46d6bc53704617806782d0fa3347283bffb7b236565c62be07"
+    }
+  ],
+  "TLS_and_publisher_digests_retained": true,
+  "failed_initial_build": "Inherited CC=clang-pthread did not resolve; explicit gcc/g++ build succeeded",
+  "selected_device": "CPU"
+}

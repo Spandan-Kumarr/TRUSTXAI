@@ -1,0 +1,279 @@
+{
+  "protocol_version": "clinical-1.0",
+  "date": "2026-10-27",
+  "status": "Measured feasibility gates passed; application and thesis experiments not yet implemented",
+  "application": "Healthcare Clinical Decision Support System research prototype",
+  "task": "Most-likely-diagnosis selection from4supplied options",
+  "approved_title": "A Trustworthy & Explainable AI Framework for Large Language Model-Based Decision Support Systems",
+  "dataset": {
+    "upstream_author_repository": "https://github.com/jind11/MedQA",
+    "upstream_code_revision": "27b02f66aac217933c9648a06f82e9f720377925",
+    "upstream_license": "MIT for repository software/documentation; does not establish all question-bank content terms",
+    "upstream_question_delivery": "Author README links GoogleDrive; question files absent from Git tree",
+    "retrieved_mirror": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options",
+    "mirror_revision": "0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18",
+    "mirror_card_license": "cc-by-4.0",
+    "no_claim_mirror_is_original_author_release": true,
+    "files": [
+      {
+        "file": "phrases_no_exclude_train.jsonl",
+        "url": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options/resolve/0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18/phrases_no_exclude_train.jsonl",
+        "bytes": 16211077,
+        "sha256": "3a65baf760f17c395058d6699315a7ce8aa767c50cb193fea87ceb94dd790324",
+        "rows": 10178,
+        "fields": [
+          "answer",
+          "answer_idx",
+          "meta_info",
+          "metamap_phrases",
+          "options",
+          "question"
+        ],
+        "answer_keys": {
+          "D": 2383,
+          "A": 2584,
+          "C": 2557,
+          "B": 2654
+        },
+        "option_counts": {
+          "4": 10178
+        },
+        "clinical_heuristic_count": 9580,
+        "terminal_diagnosis_question_heuristic_count": 1253,
+        "model_inference_run": false,
+        "retrieved_via": "Explicitly identified public mirror",
+        "publisher_LFS_SHA256_match": true
+      },
+      {
+        "file": "phrases_no_exclude_test.jsonl",
+        "url": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options/resolve/0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18/phrases_no_exclude_test.jsonl",
+        "bytes": 2075679,
+        "sha256": "c3b905ccfa66152dc25afbcb2c10e86c0bdb208824f0658fcdb2c040f60a2beb",
+        "rows": 1273,
+        "fields": [
+          "answer",
+          "answer_idx",
+          "meta_info",
+          "metamap_phrases",
+          "options",
+          "question"
+        ],
+        "answer_keys": {
+          "B": 309,
+          "D": 265,
+          "C": 346,
+          "A": 353
+        },
+        "option_counts": {
+          "4": 1273
+        },
+        "clinical_heuristic_count": 1205,
+        "terminal_diagnosis_question_heuristic_count": 164,
+        "model_inference_run": false,
+        "retrieved_via": "Explicitly identified public mirror",
+        "publisher_LFS_SHA256_match": null
+      }
+    ],
+    "raw_question_text_redistributed": false,
+    "source_content_terms_note": "Retain all notices/attribution; repository and mirror licence declarations have different scopes. Public thesis pack contains IDs/hashes/retrieval instructions, not exam text."
+  },
+  "cohort": {
+    "source": "Explicitly identified GBaker public mirror; no silent attribution as original author release",
+    "raw_counts": {
+      "train": 10178,
+      "test": 1273
+    },
+    "diagnostic_candidates_before_text_grouping": {
+      "train": 917,
+      "test": 117
+    },
+    "candidate_exact_question_repeats": 0,
+    "near_duplicate_edges": 0,
+    "text_components": 1034,
+    "cross_source_partition_quarantined_cases": 0,
+    "exclusions": {
+      "train:not_terminal_diagnosis_question": 8663,
+      "train:nonclinical_heuristic": 598,
+      "test:not_terminal_diagnosis_question": 1088,
+      "test:nonclinical_heuristic": 68,
+      "train:archived_exploratory_source": 40
+    },
+    "eligible_cases": {
+      "train": 877,
+      "test": 117
+    },
+    "eligible_correct_option_counts": {
+      "train": {
+        "C": 212,
+        "A": 233,
+        "D": 226,
+        "B": 206
+      },
+      "test": {
+        "A": 32,
+        "C": 34,
+        "B": 30,
+        "D": 21
+      }
+    },
+    "selected_sources": {
+      "feasibility": 24,
+      "development": 40,
+      "test": 60
+    },
+    "cross_partition_group_overlap": false,
+    "sampling_seed": 20261027,
+    "max_selected_prompt_tokens": 552,
+    "split_manifest_sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff",
+    "answer_field_projection_sentinel_passed": true,
+    "raw_exam_text_packaged": false,
+    "clinical_model_inference_run": false,
+    "test_model_inference_run": false,
+    "option_position_balance_not_disease_balance": true
+  },
+  "exclusion_policy": "48archived exploratory source IDs; source-only positive diagnostic-request grammar; labels not used for eligibility",
+  "primary_feasibility_freeze": {
+    "date": "2026-10-27",
+    "scope": "Primary diagnosis-only feasibility cohort/prompt frozen after manual terminal-query QA; final thesis test still unlocked",
+    "sources": 24,
+    "prior_exploratory_source_exclusions": 48,
+    "source_manifest_sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff",
+    "prompt_sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de",
+    "exclusion_file_sha256": "fb91c4a706c680a6c2ce23a64c78f336a13a5b7916b0acb390e51b34af70b861",
+    "preparation_script_sha256": "7c2a588b4eb487f7ed2377f4b17f9dcf1a9196126c88cbd8cb6e789e3eeb3d16",
+    "pilot_script_sha256": "eb1462e5d6f787f59bc1ade91acb1973d1ebbad2916b2fdec93d0bd8e66cbd35",
+    "input_allowlist_sentinel_passed": true,
+    "manual_terminal_query_review": "All24requests ask most likely diagnosis; no workup/treatment/mechanism request accepted",
+    "trailing_labs_preserved": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "dtype": "float32",
+    "threads": 4,
+    "seed": 20261027,
+    "new_primary_predictions_seen_before_freeze": 0,
+    "test_predictions_seen": 0,
+    "test_locked": false
+  },
+  "research_counts": {
+    "feasibility": 24,
+    "development": 40,
+    "test": 60
+  },
+  "test_locked": false,
+  "test_sources_scored": 0,
+  "development_sources_scored": 0,
+  "target": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "dtype": "float32",
+    "threads": 4,
+    "enable_thinking": false,
+    "generation": "greedy,max8newtokens,strictA-D,no decision retry",
+    "prompt_sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de"
+  },
+  "communication": {
+    "model": "Qwen/Qwen3-1.7B-GGUF",
+    "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+    "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+    "backend": "llama-cpp-python0.3.16",
+    "quantization": "Q8_0",
+    "threads_decode": 2,
+    "threads_prefill": 4,
+    "context_tokens": 2048,
+    "generation": "greedy,no-thinking,repeat_penalty1,max384newtokens",
+    "role_phased_after_target_evidence": true
+  },
+  "checker": {
+    "model": "cross-encoder/nli-deberta-v3-base",
+    "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+    "dtype": "float32",
+    "threads": 4,
+    "max_tokens": 512,
+    "truncate": false,
+    "selected_threshold": null
+  },
+  "evidence": {
+    "feasibility_omissions": "First/last span,2percase",
+    "full_study_omissions": "Every eligible source span,2to8",
+    "selected_recheck_uncached": true,
+    "not_clinical_causation": true
+  },
+  "conditions": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "P"
+  ],
+  "primary_comparison": "PversusB1",
+  "primary_endpoint": "Complete supported LLMnarrative-pair yield over all60requested sources; fallback/status-only/unparseable counts fail",
+  "template_baseline": "LLMnarrative yield not applicable; evaluate system semantic coverage/cost separately",
+  "repair_rounds_max": 1,
+  "diagnostics": {
+    "development": 480,
+    "test": 720,
+    "counts_planned_not_generated": true,
+    "H2": "typed+NLIversusNLI-only at development-matched supported acceptance"
+  },
+  "annotation": {
+    "planned_independent_raters": 2,
+    "confirmed_raters": 0,
+    "planned_main_view_slots": 720,
+    "human_benefit_study": "conditionalPhaseII; not executed"
+  },
+  "statistics": {
+    "primary": "two-sided exactMcNemar",
+    "alpha": 0.05,
+    "interval": "stratified paired-source bootstrap95%,5000replicates,seed20261027",
+    "secondary": "Holmif inferentialH2/H3reported",
+    "power_guarantee": false
+  },
+  "compute_projection": {
+    "scope": "Fixed development+test workload estimate; no thesis matrix executed",
+    "unit": "aggregate process CPU-hours (user+system), distinct from elapsed wall time",
+    "source_counts": {
+      "development": 40,
+      "test": 60
+    },
+    "target_original_calls": 100,
+    "target_omission_calls": 693,
+    "selected_recheck_calls_max": 100,
+    "unique_joint_generation_calls_max": 400,
+    "logical_test_generation_opportunities": 540,
+    "shared_initial_policy": "B1/B2/B3/Psame exact initial prompt/config; otherwise do not reuse",
+    "general_critic_calls_max": 100,
+    "diagnostic_pairs": 1200,
+    "natural_P_development_check_pairs_max": 160,
+    "exact_NLI_cache_layout_simulated": true,
+    "NLI_cost_fixtures_unreviewed": 96,
+    "target_cost_floor": "Each omitted/rechecked query charged at least original-query mean CPU/wall cost, rather than assuming edited inputs are cheaper",
+    "cache_extrapolation_basis": "Mean per-source unique exact-key cost over8feasibility cases; no cross-source cache benefit assumed. Not a guarantee of final diagnostic-layout cost.",
+    "component_CPU_seconds": {
+      "target_original_omissions_and_rechecks": 33501.59114477308,
+      "joint_narrative_generation": 18556.9399495,
+      "general_critic": 2152.6343624500014,
+      "NLI_diagnostics_exact_cache": 4277.572964182032,
+      "NLI_natural_pairs": 1976.3759577824999,
+      "overhead_allowance": 300.0
+    },
+    "headroom_fraction": 0.25,
+    "expected_total_CPU_hours": 21.09899804815542,
+    "estimated_elapsed_wall_hours_with_headroom": 7.321234879016964,
+    "projected_CPU_budget_gate_pass": true,
+    "CPU_hour_limit": 24,
+    "stress_uncached_full_caps_CPU_hours": 77.85868935505056,
+    "stress_within24CPUhours": false,
+    "new_development_layout_requires_projection_refresh": true,
+    "exploratory_prompt_tuning_and_human_annotation": "Not included; log separately",
+    "runtime_enforcement": "Checkpoint before24process CPU-hours; preserve pending slots and transparently revise allocation rather than drop cases",
+    "test_model_sources_used_by_cost_probe": 0,
+    "results_are_estimates_not_completed_runs": true
+  },
+  "all_feasibility_gates_passed": true,
+  "thesis_experiments_run": 0,
+  "semantic_preservation_evaluated": false,
+  "GPT_runs": 0,
+  "Gemini_runs": 0,
+  "UI": "design/UI_REQUIREMENTS.md; implementationStep5"
+}

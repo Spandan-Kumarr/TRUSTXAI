@@ -1,0 +1,51 @@
+{
+  "dataset_rows": 5574,
+  "labels": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "malformed_records": 0,
+  "unique_normalized_exact_groups": 5159,
+  "removed_exact_repeated_rows": 415,
+  "conflicting_exact_groups": 0,
+  "near_duplicate_edges": 56,
+  "near_components": 5109,
+  "conflicting_near_components_quarantined": 0,
+  "excluded_components": {
+    "word_budget": 1413
+  },
+  "eligible_independent_groups": 3696,
+  "eligible_labels": {
+    "ham": 3114,
+    "spam": 582
+  },
+  "partitions": {
+    "feasibility": {
+      "sources": 20,
+      "labels": {
+        "spam": 10,
+        "ham": 10
+      }
+    },
+    "development": {
+      "sources": 40,
+      "labels": {
+        "ham": 20,
+        "spam": 20
+      }
+    },
+    "test": {
+      "sources": 60,
+      "labels": {
+        "spam": 30,
+        "ham": 30
+      }
+    }
+  },
+  "cross_partition_group_overlap": false,
+  "split_manifest_sha256": "3c1f7204d74e5ac416602cd2ffe852ce131c2b4576731595b9bedf6a894dc7eb",
+  "tokenizer_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "test_inputs_scored_by_model": false,
+  "amendment": "Also quarantine mixed-label near-connected components, before model outcome inspection."
+}

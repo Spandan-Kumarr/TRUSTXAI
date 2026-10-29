@@ -1,0 +1,58 @@
+[
+  {
+    "file": "talktomodel_readme.md",
+    "url": "https://raw.githubusercontent.com/dylan-slack/TalkToModel/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "eac27a15fcfebb680be26ca3168755c2012d3f966c1bacc761fd3fdf5ad9a596",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "interrolang_readme.md",
+    "url": "https://raw.githubusercontent.com/DFKI-NLP/InterroLang/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "913fa379e3bf2a64224536c2bebc751caa63e5347bba1c627c077de68c1a4af1",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "xaistories_readme.md",
+    "url": "https://raw.githubusercontent.com/ADMAntwerp/XAIstories/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "0220b9075b98ffb014256e51362be3ea4c547daad0f2ad1af8b1e9103a58b47c",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "convxai_readme.md",
+    "url": "https://raw.githubusercontent.com/huashen218/convxai/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "8398732bc8babc571c56da9becd93380f98c2e2d3915116a60137e1e4dc8b1fb",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "explanation_utility_readme.md",
+    "url": "https://raw.githubusercontent.com/utahnlp/nlp-explanation-utility-guideline/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "b37fbe2e3596310999e53ea0b7d52e9a8c7e68ee54f23e96f70a0eb8747791d8",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "few_shot_explanations_readme.md",
+    "url": "https://raw.githubusercontent.com/allenai/few_shot_explanations/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "5ac116f4045a0774e83db5a7bc41425b22b1fd321a76ae601e0f551cfe66346b",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "malware_software_lead_readme.md",
+    "url": "https://raw.githubusercontent.com/gak92/LLM-XAI-Malware-Framework/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "0f00cc653b37df722cdc24d5dc9fe4770fed5493c5a141118c813f027eef9d91",
+    "source_type": "primary repository README"
+  },
+  {
+    "file": "group_specific_readme.md",
+    "url": "https://raw.githubusercontent.com/webis-de/emnlp26-group-specific-explanations/main/README.md",
+    "access_date": "2026-10-26",
+    "sha256": "e746ccd74e039a551363772d685367a98c3e46b29a755abd1fc917e781ec1d1f",
+    "source_type": "primary repository README"
+  }
+]

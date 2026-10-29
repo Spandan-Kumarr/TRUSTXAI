@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-27",
+  "scope": "Primary diagnosis-only feasibility cohort/prompt frozen after manual terminal-query QA; final thesis test still unlocked",
+  "sources": 24,
+  "prior_exploratory_source_exclusions": 48,
+  "source_manifest_sha256": "730d9ecfa80b04f5bc466f74d9750a5be08c35c029dc32c63ee21d11f4e70bff",
+  "prompt_sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de",
+  "exclusion_file_sha256": "fb91c4a706c680a6c2ce23a64c78f336a13a5b7916b0acb390e51b34af70b861",
+  "preparation_script_sha256": "7c2a588b4eb487f7ed2377f4b17f9dcf1a9196126c88cbd8cb6e789e3eeb3d16",
+  "pilot_script_sha256": "eb1462e5d6f787f59bc1ade91acb1973d1ebbad2916b2fdec93d0bd8e66cbd35",
+  "input_allowlist_sentinel_passed": true,
+  "manual_terminal_query_review": "All24requests ask most likely diagnosis; no workup/treatment/mechanism request accepted",
+  "trailing_labs_preserved": true,
+  "model": "Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "dtype": "float32",
+  "threads": 4,
+  "seed": 20261027,
+  "new_primary_predictions_seen_before_freeze": 0,
+  "test_predictions_seen": 0,
+  "test_locked": false
+}

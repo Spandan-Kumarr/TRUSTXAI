@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-27",
+  "issue": "Manual terminal-query QA still found treatment/pathology/findings requests mentioning most likely diagnosis. Those are not disease-identification requests.",
+  "fix": "Positive grammar: is/would be + the + most likely/probable diagnosis, or Which/What diagnosis is most likely. Keep procedural/negative query exclusions.",
+  "partial_queries_before_stop": [
+    {
+      "seconds": 10.093745928001226,
+      "CPU_seconds": 32.10285752,
+      "new_tokens": 2,
+      "context_tokens": 272,
+      "hit_cap": false,
+      "label": "B",
+      "raw_sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+      "source_id": "medqa-train-00434",
+      "input_sha256": "a445487345f9741ec533ce718d8c37ddfbeb68ec9305e371a168d74b80850a0b"
+    },
+    {
+      "seconds": 12.86712206699849,
+      "CPU_seconds": 41.165235592,
+      "new_tokens": 2,
+      "context_tokens": 380,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-00828",
+      "input_sha256": "c64cc2d02851dbc1c73f5f4a0a0f61cd10970f561cd6de2f23c9e1818d4318a9"
+    },
+    {
+      "seconds": 9.033338175000608,
+      "CPU_seconds": 29.039130079000003,
+      "new_tokens": 2,
+      "context_tokens": 253,
+      "hit_cap": false,
+      "label": "A",
+      "raw_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "source_id": "medqa-train-01363",
+      "input_sha256": "c386eb7549ad9b6d53f5634d8975e9c8052b2dcf312bd058cb23dca6bc89260c"
+    },
+    {
+      "seconds": 20.50311634100035,
+      "CPU_seconds": 64.57738861,
+      "new_tokens": 2,
+      "context_tokens": 584,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-01811",
+      "input_sha256": "a112004834dae620988101c067ce1ddebd04bd0f167a71cb30d498fe892eb656"
+    },
+    {
+      "seconds": 13.149515707000319,
+      "CPU_seconds": 42.20233878299999,
+      "new_tokens": 2,
+      "context_tokens": 371,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-02541",
+      "input_sha256": "976b1c4fdfceee5cea0ba1dad8b8aacb991f0a1870e1ce739699f0addcd07108"
+    },
+    {
+      "seconds": 11.360608294000485,
+      "CPU_seconds": 36.55643305799998,
+      "new_tokens": 2,
+      "context_tokens": 329,
+      "hit_cap": false,
+      "label": "D",
+      "raw_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "source_id": "medqa-train-03364",
+      "input_sha256": "5a739fed128204b4041ad742a82b6fdede2aa7cd6b93de28bd98b289dccd5938"
+    },
+    {
+      "seconds": 10.209819654999592,
+      "CPU_seconds": 32.49548633799998,
+      "new_tokens": 2,
+      "context_tokens": 295,
+      "hit_cap": false,
+      "label": "C",
+      "raw_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "source_id": "medqa-train-03657",
+      "input_sha256": "ecb0ec587767949f15cde6f2e8e0e517e55ffb4ec397220b58e44aeae44bc200"
+    }
+  ],
+  "completed_quality_assessment_in_this_attempt": false,
+  "source_exclusions_total": 48,
+  "test_model_queries": 0,
+  "reason_for_fresh_cohort": "Keep task-scope refinement exploratory and independent of primary feasibility sample; no outcome-dependent case selection"
+}

@@ -1,0 +1,36 @@
+{
+  "blinded_unique_item_count": 596,
+  "contains_rater_responses": false,
+  "contains_raw_text": false,
+  "contains_source_ids": false,
+  "controlled_variants_instantiated": 480,
+  "controlled_variants_not_instantiated": 0,
+  "deduplicated_natural_logical_rows": 164,
+  "frozen_public_artifacts": {
+    "annotation_lock_schema_sha256": "d1bfbbbe2dba52e013d59a2c1987af5eb2068740d06743f45e223ec9b25fe03c",
+    "builder_sha256": "951efaae5aaf34491aa4f7e77f0ffc71b045b133a8ac040580fbee5ec036bed2",
+    "randomization_sha256": "2911e865dab035f6c1b362226ebe8f0001b6224c63d0bafca5c35578e9ed4f48",
+    "response_schema_sha256": "8348d81965623841048794a838e7d24cfd2bcb918f50938dc9ddfa16ddbce055",
+    "rubric_sha256": "dfb7e46855c1d69a20d7894ba6fb58502abd2883a74f7ddd89fa87047fac9276"
+  },
+  "independent_annotation_complete": false,
+  "inputs": {
+    "controlled_variants_jsonl_sha256": "2752937571899d10141dca4463e9e414a334085ae3b57151af99fc3191519209",
+    "natural_jsonl_sha256": "78b30e6dd56c811726244c82bbf0335090efc8635bed585dc47a6e2b8f86fc93"
+  },
+  "nonreviewable_slot_count": 7,
+  "partition": "development",
+  "private_input_counts": {
+    "controlled_variant_rows": 480,
+    "natural_logical_rows": 280
+  },
+  "private_outputs": {
+    "rater_A_jsonl_sha256": "097997ee17e0bfb3c14fe8919671544d06a3a7c5e3ce97efdcaeb75bb25d2c55",
+    "rater_B_jsonl_sha256": "937eafdd6a62db0f077ccc8a3eb64c9f60c3e925b00f3b6bee6e693b17e197ee",
+    "sealed_mapping_json_sha256": "e2eb794107837aae6a1739ffe10d43e006e4716e72a56625339b4fdb9d9c0817"
+  },
+  "schema_version": "1.0",
+  "seed": 20261027,
+  "source_count": 40,
+  "status": "packets_built_not_annotated"
+}

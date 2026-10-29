@@ -1,0 +1,91 @@
+{
+  "step": 6,
+  "status": "computational_evaluation_complete_human_annotation_pending",
+  "completed_on": "2026-10-29",
+  "timezone": "Asia/Kolkata",
+  "scope": "Application development and computational research complete; formal human annotation remains external work before paper writing",
+  "application_development_complete": true,
+  "computational_research_complete": true,
+  "human_annotation_workflow_ready": true,
+  "freeze": {
+    "status": "locked_before_test_access",
+    "sha256": "10beddd73bf032819310d9bf2924dbfbffde580b835f6509f205b2c651120518",
+    "selected_fallback_threshold": 0.6,
+    "development_acceptance_target_met": false
+  },
+  "development": {
+    "sources": 40,
+    "correct": 29,
+    "accuracy": 0.725,
+    "macro_f1": 0.7171052631578947,
+    "valid_decision_fraction": 1.0,
+    "informative_evidence_sources": 40,
+    "omission_attempts": 286,
+    "answer_changes": 35,
+    "selected_rechecks_agreed": 40,
+    "controlled_diagnostic_slots": 480,
+    "natural_logical_rows": 280,
+    "annotation_packet_items": 596
+  },
+  "held_out_test": {
+    "sources": 60,
+    "correct": 47,
+    "accuracy": 0.7833333333333333,
+    "balanced_accuracy": 0.7833333333333333,
+    "macro_f1": 0.7864651477554703,
+    "valid_decision_fraction": 1.0,
+    "informative_evidence_sources": 60,
+    "omission_attempts": 407,
+    "answer_changes": 54,
+    "sources_with_any_change": 32,
+    "selected_rechecks_agreed": 60,
+    "controlled_diagnostic_slots": 720,
+    "natural_logical_rows": 420,
+    "annotation_packet_items": 896
+  },
+  "checker_result": {
+    "development_supported_acceptance_at_all_grid_thresholds": 0.0,
+    "held_out_supported_intent_false_rejection": 1.0,
+    "held_out_faulty_intent_false_acceptance": 0.0,
+    "held_out_B1_automated_proxy_yield": 0.0,
+    "held_out_P_automated_proxy_yield": 0.0,
+    "interpretation": "Severe automated-checker coverage failure; not independent semantic ground truth"
+  },
+  "compute": {
+    "refreshed_projected_aggregate_cpu_hours": 22.404225066047225,
+    "observed_runner_cpu_hours": 21.336376385495003,
+    "observed_total_with_diagnostics_cpu_hours": 22.187436020772783,
+    "cpu_hour_limit": 24.0,
+    "physical_narrative_calls": 582,
+    "physical_critic_calls": 100
+  },
+  "validation": {
+    "backend_tests_passed": 195,
+    "backend_tests_failed": 0,
+    "frontend_production_build_passed": true,
+    "browser_tests_passed": 4,
+    "browser_tests_failed": 0,
+    "public_raw_text_exported": false,
+    "gold_entered_inference": false,
+    "test_tuning_after_freeze": false
+  },
+  "formal_hypotheses_completed": false,
+  "formal_hypotheses_blocker": "Two real independent annotators, agreement and adjudication are required",
+  "annotation_workflow": {
+    "development_blinded_items_per_rater": 596,
+    "test_blinded_items_per_rater": 896,
+    "separate_private_rater_packages_created": true,
+    "offline_rater_form_created": true,
+    "response_validation_agreement_adjudication_and_lock_processor_created": true,
+    "processor": "research/step-06/scripts/process_annotations.py",
+    "responses_received": false,
+    "annotation_lock_created": false
+  },
+  "independent_semantic_validation": false,
+  "clinical_validation_established": false,
+  "gpt_comparison_run": false,
+  "gemini_comparison_run": false,
+  "audience_study_run": false,
+  "research_paper_written": false,
+  "review_2_presentation_created": false
+}

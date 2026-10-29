@@ -1,0 +1,8 @@
+{
+  "reason": "v1A/B classifier failed balanced accuracy gate:0.60; speed/memory passed",
+  "change": "Test literal semantic class verbalizers ham/spam; preserve full continuation scoring and internal A=ham/B=spam class IDs",
+  "uses_only_feasibility_pool": true,
+  "original_run_preserved": true,
+  "final_test_scored": false,
+  "no_claim_of_independent_quality_validation": true
+}

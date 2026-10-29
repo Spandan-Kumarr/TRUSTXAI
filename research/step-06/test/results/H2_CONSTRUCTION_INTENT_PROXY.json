@@ -1,0 +1,117 @@
+{
+  "analysis_status": "non_independent_proxy",
+  "methods": {
+    "nli_only": {
+      "abstention_requested": 0.0,
+      "counts": {
+        "faulty": {
+          "reject": 480
+        },
+        "supported": {
+          "reject": 240
+        }
+      },
+      "coverage": 1.0,
+      "false_acceptance_evaluable": 0.0,
+      "false_acceptance_requested": 0.0,
+      "false_rejection_evaluable": 1.0,
+      "false_rejection_requested": 1.0,
+      "method": "nli_only",
+      "missing_slots": 0,
+      "requested_faulty": 480,
+      "requested_supported": 240,
+      "supported_acceptance_evaluable": 0.0,
+      "supported_acceptance_requested": 0.0
+    },
+    "typed_plus_nli": {
+      "abstention_requested": 0.0,
+      "counts": {
+        "faulty": {
+          "reject": 480
+        },
+        "supported": {
+          "reject": 240
+        }
+      },
+      "coverage": 1.0,
+      "false_acceptance_evaluable": 0.0,
+      "false_acceptance_requested": 0.0,
+      "false_rejection_evaluable": 1.0,
+      "false_rejection_requested": 1.0,
+      "method": "typed_plus_nli",
+      "missing_slots": 0,
+      "requested_faulty": 480,
+      "requested_supported": 240,
+      "supported_acceptance_evaluable": 0.0,
+      "supported_acceptance_requested": 0.0
+    }
+  },
+  "paired_source_bootstrap": {
+    "differences": {
+      "abstention_requested": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "typed_nli_minus_nli_only": 0.0
+      },
+      "false_acceptance_requested": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "typed_nli_minus_nli_only": 0.0
+      },
+      "false_rejection_requested": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "typed_nli_minus_nli_only": 0.0
+      },
+      "supported_acceptance_requested": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "typed_nli_minus_nli_only": 0.0
+      }
+    },
+    "method": "source-cluster bootstrap; all diagnostic variants retained with each sampled source",
+    "replicates": 5000,
+    "seed": 20261027,
+    "strata": {
+      "A": 15,
+      "B": 15,
+      "C": 15,
+      "D": 15
+    }
+  },
+  "paired_source_tests": {
+    "abstention_requested": {
+      "method": "all paired differences are zero",
+      "nonzero_pairs": 0,
+      "observed_mean": 0.0,
+      "two_sided_p": 1.0
+    },
+    "false_acceptance_requested": {
+      "method": "all paired differences are zero",
+      "nonzero_pairs": 0,
+      "observed_mean": 0.0,
+      "two_sided_p": 1.0
+    },
+    "false_rejection_requested": {
+      "method": "all paired differences are zero",
+      "nonzero_pairs": 0,
+      "observed_mean": 0.0,
+      "two_sided_p": 1.0
+    },
+    "supported_acceptance_requested": {
+      "method": "all paired differences are zero",
+      "nonzero_pairs": 0,
+      "observed_mean": 0.0,
+      "two_sided_p": 1.0
+    }
+  },
+  "semantic_label_basis": "controlled construction intent; not independent semantic truth"
+}

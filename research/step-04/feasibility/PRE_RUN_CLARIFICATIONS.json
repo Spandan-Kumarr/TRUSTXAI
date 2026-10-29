@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "stage": "before first weight-based inference",
+  "pilot_code_sha256": "632c3e7fccbc28c56f0fb5c015e7895434e6feca7127f970c017d07c963ced37",
+  "selection": "classification20feasibility only; rendering first5per original class",
+  "predeclared_clarifications": [
+    "CF sampling temperature0.7,top_p0.9,top_k50 with recorded per-attempt seeds",
+    "Generation context guard4096; no silent truncation; classifier remains512",
+    "JSON prompt has complete valid two-view schema",
+    "Deletion removes selected span and boundary whitespace, preserving other text"
+  ],
+  "final_test_inference_run": false,
+  "download_event": "first transfer interrupted after2104326801bytes; resuming cached partial with official HTTPS client; expected hashes unchanged"
+}

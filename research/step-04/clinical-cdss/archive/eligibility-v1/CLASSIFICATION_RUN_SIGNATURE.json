@@ -1,0 +1,11 @@
+{
+  "script_sha256": "9cf354c4030763923d0703d9e60b9755718be2b0a9f9eb8c29dd21586e18422c",
+  "result_sha256": "3a949dcaaebf6d1dfd184ae84f5bf8bb73cda651ab277bc2dfe24a2046d0a516",
+  "model": "Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "prompt_sha256": "496a66f3496a8c3711a2495d89ae267d778efc4faa617b12435145033f15a6de",
+  "source_manifest_sha256": "1a6c304a2272a4fac163b135fa89e346278ae31f6ebe506f346fe962a6f0e15e",
+  "target_dtype": "float32",
+  "threads": 4,
+  "test_sources_scored": 0
+}

@@ -1,0 +1,309 @@
+{
+  "search_date": "2026-10-26",
+  "method": "Title keyword screening of specified official ACL XML collections; not exhaustive bibliographic search",
+  "queries": "explan|faithful|counterfactual|rationale|appropriate reliance|overreliance|calibrat.*trust|trust.*calibrat",
+  "records_in_retrieved_collections": 38613,
+  "title_matches": 754,
+  "requests": [
+    {
+      "collection": "2019.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2019.acl.xml",
+      "status": 200,
+      "bytes": 1031,
+      "sha256": "c47b9418b6a523a21e6d5cfd27cbcae54cac8d5c46ccbfc9c2a092d481a5485e",
+      "retrieved_utc": "2026-10-26T14:11:31.493842+00:00"
+    },
+    {
+      "collection": "2020.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.acl.xml",
+      "status": 200,
+      "bytes": 1500743,
+      "sha256": "bf1af8c932bb12c3059451d9be8aaa7c6288399acba2bc8d57a7ef18a5c16b58",
+      "retrieved_utc": "2026-10-26T14:11:31.635011+00:00"
+    },
+    {
+      "collection": "2020.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.emnlp.xml",
+      "status": 200,
+      "bytes": 1401361,
+      "sha256": "8ec7c4f277521729165d91606d5c6dd61bd1b05e01f623caae3217878fca8882",
+      "retrieved_utc": "2026-10-26T14:11:31.698173+00:00"
+    },
+    {
+      "collection": "2021.naacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.naacl.xml",
+      "status": 200,
+      "bytes": 993466,
+      "sha256": "7b11fc7bfcaf643f2bc067093440fd44a30d344ce0a3caf1f07d4b8eb5a000c3",
+      "retrieved_utc": "2026-10-26T14:11:31.643724+00:00"
+    },
+    {
+      "collection": "2021.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.emnlp.xml",
+      "status": 200,
+      "bytes": 1628125,
+      "sha256": "40311bea6e15046b0edb6ca54e58cb81b3e922587587c682fd5d8968010f08fe",
+      "retrieved_utc": "2026-10-26T14:11:31.880579+00:00"
+    },
+    {
+      "collection": "2022.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2022.acl.xml",
+      "status": 200,
+      "bytes": 1557096,
+      "sha256": "3bd77df368a6d3272ddeacf15cce6dd9fae1a39f9c2e3b20c71b67e1558a9100",
+      "retrieved_utc": "2026-10-26T14:11:31.678744+00:00"
+    },
+    {
+      "collection": "2022.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2022.emnlp.xml",
+      "status": 200,
+      "bytes": 2023350,
+      "sha256": "984e9c2f1f35fe1f7ee192704a66b93e4db9931e89d967fe884f422e7be4a0d8",
+      "retrieved_utc": "2026-10-26T14:11:31.853504+00:00"
+    },
+    {
+      "collection": "2023.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.acl.xml",
+      "status": 200,
+      "bytes": 2796127,
+      "sha256": "4a02e87cb81ec2cc192c6a3e3739246ebd3cfca696abb456e06dc9d2ee214ef6",
+      "retrieved_utc": "2026-10-26T14:11:31.855046+00:00"
+    },
+    {
+      "collection": "2023.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.emnlp.xml",
+      "status": 200,
+      "bytes": 2311759,
+      "sha256": "fa6e4f1de0f178a9b1b4e2023036fb4335e6ad8c25f3bc1e89b7f912ac56fd80",
+      "retrieved_utc": "2026-10-26T14:11:31.359993+00:00"
+    },
+    {
+      "collection": "2023.findings-acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings-acl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:31.535875+00:00"
+    },
+    {
+      "collection": "2023.findings-emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings-emnlp.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:31.683280+00:00"
+    },
+    {
+      "collection": "2024.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.acl.xml",
+      "status": 200,
+      "bytes": 2258349,
+      "sha256": "753c5d3bc7f794889a4c9c9e6d5caa48e202a907a95212a4baed1e919cf77fa2",
+      "retrieved_utc": "2026-10-26T14:11:31.998282+00:00"
+    },
+    {
+      "collection": "2024.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.emnlp.xml",
+      "status": 200,
+      "bytes": 3555473,
+      "sha256": "c2e27a37a9596e13db645faaf1911944ca4371df94c2501d85afc3918af4a5c6",
+      "retrieved_utc": "2026-10-26T14:11:32.198023+00:00"
+    },
+    {
+      "collection": "2024.naacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.naacl.xml",
+      "status": 200,
+      "bytes": 1408921,
+      "sha256": "963ea7c81fd0a9cf46b8059e47d2950dcba717e284fcbc98a813f8a5c01996f1",
+      "retrieved_utc": "2026-10-26T14:11:32.176592+00:00"
+    },
+    {
+      "collection": "2024.eacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.eacl.xml",
+      "status": 200,
+      "bytes": 627010,
+      "sha256": "cb03a2a71a0ea7962db45bb91dd237c0ca990c6551bf1d4c920285919b5e0059",
+      "retrieved_utc": "2026-10-26T14:11:32.159424+00:00"
+    },
+    {
+      "collection": "2024.findings-acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings-acl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:31.904242+00:00"
+    },
+    {
+      "collection": "2024.findings-emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings-emnlp.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:31.902587+00:00"
+    },
+    {
+      "collection": "2024.findings-naacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings-naacl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.083360+00:00"
+    },
+    {
+      "collection": "2025.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+      "status": 200,
+      "bytes": 5130200,
+      "sha256": "f850a43d27fde93ffe2a08e99db4cad58a097ba0afd5faef364e958a0310ef69",
+      "retrieved_utc": "2026-10-26T14:11:32.637079+00:00"
+    },
+    {
+      "collection": "2025.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+      "status": 200,
+      "bytes": 5478636,
+      "sha256": "de0fea329d1c2197d70461c5492829df9036d5a2db8217ab35a46a54fd675b84",
+      "retrieved_utc": "2026-10-26T14:11:32.520827+00:00"
+    },
+    {
+      "collection": "2025.naacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.naacl.xml",
+      "status": 200,
+      "bytes": 2174766,
+      "sha256": "0b8c078dc8cde01cf8cee005eb2bf14f3f078f23a6ab4f3474b63ad76fb61d47",
+      "retrieved_utc": "2026-10-26T14:11:32.578304+00:00"
+    },
+    {
+      "collection": "2025.coling",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.coling.xml",
+      "status": 200,
+      "bytes": 1547484,
+      "sha256": "a5495e99d910583d35cb542af5f1d2e8a445bffd3a56c0691a0f458ca862aced",
+      "retrieved_utc": "2026-10-26T14:11:32.397593+00:00"
+    },
+    {
+      "collection": "2025.findings-acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings-acl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.217278+00:00"
+    },
+    {
+      "collection": "2025.findings-emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings-emnlp.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.274304+00:00"
+    },
+    {
+      "collection": "2025.findings-naacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings-naacl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.342594+00:00"
+    },
+    {
+      "collection": "2026.acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.acl.xml",
+      "status": 200,
+      "bytes": 7363144,
+      "sha256": "48f9f74a0291b088b58a4d55527fa1c8adfe7ce82916d9a6e2c3b08891015f3f",
+      "retrieved_utc": "2026-10-26T14:11:33.065997+00:00"
+    },
+    {
+      "collection": "2026.emnlp",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.emnlp.xml",
+      "status": 200,
+      "bytes": 7786305,
+      "sha256": "0b3a1aa6e11bf58fbeab2c980d64b3c1440f9cdbc9f305271f83f7103dddbb58",
+      "retrieved_utc": "2026-10-26T14:11:33.260503+00:00"
+    },
+    {
+      "collection": "2026.eacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.eacl.xml",
+      "status": 200,
+      "bytes": 1578200,
+      "sha256": "470f5bcb7d82344e5c8893df818e4c3d490c260628b38cf9a430fc5621bad201",
+      "retrieved_utc": "2026-10-26T14:11:33.010069+00:00"
+    },
+    {
+      "collection": "2026.findings-acl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings-acl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.904705+00:00"
+    },
+    {
+      "collection": "2026.findings-eacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings-eacl.xml",
+      "status": "HTTP Error 404: Not Found",
+      "retrieved_utc": "2026-10-26T14:11:32.961012+00:00"
+    },
+    {
+      "collection": "2024.tacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.tacl.xml",
+      "status": 200,
+      "bytes": 173745,
+      "sha256": "a28ea4889fa12ab9781e4b5ff12b4022e475a3daa99af8415befaa72e6ad536b",
+      "retrieved_utc": "2026-10-26T14:11:32.883688+00:00"
+    },
+    {
+      "collection": "2025.tacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.tacl.xml",
+      "status": 200,
+      "bytes": 159042,
+      "sha256": "5352ef57662a74293247472d13748e69a6679d2a77692dfdd489fb603cd2e498",
+      "retrieved_utc": "2026-10-26T14:11:33.008384+00:00"
+    },
+    {
+      "collection": "2026.tacl",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.tacl.xml",
+      "status": 200,
+      "bytes": 214569,
+      "sha256": "065ee0680d1f3415e2ac5c801ef283004b3edc1a2b9858a806e5455de052decd",
+      "retrieved_utc": "2026-10-26T14:11:32.902056+00:00"
+    },
+    {
+      "collection": "2020.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2020.findings.xml",
+      "status": 200,
+      "bytes": 785118,
+      "sha256": "afce4e5280fb83194f2e64ed1f635389736f5c7172ae3f11ddd734438d9acd4a",
+      "retrieved_utc": "2026-10-26T14:13:39.699551+00:00"
+    },
+    {
+      "collection": "2021.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2021.findings.xml",
+      "status": 200,
+      "bytes": 1094306,
+      "sha256": "184169df589f0748a5acce728cfffe0de37bc3d6660dcdb3312e24196ce4db03",
+      "retrieved_utc": "2026-10-26T14:13:39.370681+00:00"
+    },
+    {
+      "collection": "2022.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2022.findings.xml",
+      "status": 200,
+      "bytes": 2361273,
+      "sha256": "076e107f493c9c4d21ecdc1990f8f37dde67c7baa4b1ff507188e5c393e646e6",
+      "retrieved_utc": "2026-10-26T14:13:39.686410+00:00"
+    },
+    {
+      "collection": "2023.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2023.findings.xml",
+      "status": 200,
+      "bytes": 4385209,
+      "sha256": "a31e4657cdfff734836301d6202998ec75386d0c8add9ded9c85d2eb9537e19b",
+      "retrieved_utc": "2026-10-26T14:13:40.067732+00:00"
+    },
+    {
+      "collection": "2024.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+      "status": 200,
+      "bytes": 5720090,
+      "sha256": "ee2e8c8760219d05c923e6b3786f31e0d8cb0052bfb682d949b88fed87c08246",
+      "retrieved_utc": "2026-10-26T14:13:39.813722+00:00"
+    },
+    {
+      "collection": "2025.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml",
+      "status": 200,
+      "bytes": 8737945,
+      "sha256": "5d82e1dd52414c617bf78eed6253055db15b3419f1b8b8e15c24c6f6737bdd64",
+      "retrieved_utc": "2026-10-26T14:13:40.130416+00:00"
+    },
+    {
+      "collection": "2026.findings",
+      "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml",
+      "status": 200,
+      "bytes": 13107421,
+      "sha256": "5d8bdd1669517b69fb112a323362846d4796189a0ee5d8c45231f79c44723edf",
+      "retrieved_utc": "2026-10-26T14:13:40.307301+00:00"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "base_seed": 20261027,
+  "algorithm": "Python random.Random with sorted canonical inputs before shuffling",
+  "source_blind_id": "first 16 hex characters of SHA-256('20261027:source:' + source_id)",
+  "item_id": "first 16 hex characters of SHA-256 over the canonical evidence and two view texts, prefixed I-",
+  "view_order": "deterministic bit from SHA-256('20261027:view:' + item_id); audience labels are kept only in sealed_mapping.json",
+  "packet_order": {
+    "rater_A": "base_seed + 101",
+    "rater_B": "base_seed + 202"
+  },
+  "constraints": [
+    "Inputs are sorted before pseudorandom operations.",
+    "Identical natural outputs for one source and evidence record are deduplicated and mapped to all logical roles privately.",
+    "Mechanical null outputs and explicitly non-instantiated diagnostic slots are sealed as nonreviewable and are not placed in either rater packet.",
+    "Condition, generation stage, repair status, checker results, intended variant label, mutation type, and benchmark gold label are absent from rater packets.",
+    "Operational blinding also requires withholding the original private exports and sealed mapping from raters. Hash-derived identifiers are not cryptographic anonymization."
+  ]
+}

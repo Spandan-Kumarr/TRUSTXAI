@@ -1,0 +1,18 @@
+{
+  "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+  "authors": [
+    "Qiao Jin",
+    "Bhuwan Dhingra",
+    "Zhengping Liu",
+    "William W. Cohen",
+    "Xinghua Lu"
+  ],
+  "year": 2019,
+  "venue": "EMNLP-IJCNLP",
+  "doi": "10.18653/v1/D19-1259",
+  "source_url": "https://aclanthology.org/D19-1259.pdf",
+  "PDF_sha256": "05d2c994c3a0cbf02967ed83cd22a319722e81039bb998f9b8c92e6a13f302da",
+  "read_scope": "Original paper extracted to local text; task/data/split/method sections inspected; no baseline reproduced",
+  "local_file": "/workspace/thesis-runtime/healthcare/PubMedQA_original_paper.pdf",
+  "comparison_limit": "Current proposed60source class-balanced subset is not the full500source natural-prevalence official test. No direct numeric leaderboard comparison authorised by this subset."
+}

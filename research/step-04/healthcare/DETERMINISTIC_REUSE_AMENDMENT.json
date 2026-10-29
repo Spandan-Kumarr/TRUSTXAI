@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "declared_before_development_or_test_experiments": true,
+  "observed_basis": "First healthcare pair required92.75seconds; exact reuse is necessary to estimate whole-matrix CPU cost honestly",
+  "shared_initial": "B1/B2/B3/P use identical grounded evidence, shared plan, model, prompt, greedy settings and seed. Compute/store one initial pair and attach the same immutable output to all four logical conditions. If any signature differs, do not reuse.",
+  "maximum_joint_calls_per_condition": {"B0":1,"B1":2,"B2":2,"B3":2,"B4":0,"P":2},
+  "maximum_unique_joint_generation_calls_per_test_source": 6,
+  "maximum_unique_joint_generation_calls_total": {"development":45,"test":360},
+  "interpretation": "Primary PversusB1 isolates checking/feedback repair versus blind rewrite from the same initial pair. Initial-plan superiority is not inferred from this comparison.",
+  "standalone_condition_cost": "Charge the common initial cost to each logical condition for per-condition comparisons. Report physical shared whole-matrix runtime separately. Do not claim Pcost savings from cross-condition reuse.",
+  "NLI_cache": "Cache exact premise/hypothesis token-ID pairs plus frozen model/revision/dtype. No semantic normalization or approximate matching; reused scores do not replace case/provenance structural checks. Same scores reused for NLI-only ablation.",
+  "target_queries": "No target prediction cache; every omission and selected-result consistency recheck remains a fresh full query",
+  "required_cost_verification": "Count exact NLI cache keys and token lengths on feasibility-based cost fixtures; no semantic correctness labels or benchmark performance claims",
+  "quality_and_resource_gates_unchanged": true,
+  "test_outputs_seen": 0
+}
