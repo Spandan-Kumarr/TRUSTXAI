@@ -102,7 +102,7 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm run test:e2e
 
 All 195 backend/research tests pass. The backend tests use protocol fakes; the browser suite uses explicitly labelled API fixtures. The production build and all four browser tests pass with the configured system Chromium. Real-model integration observations are recorded separately in [Step 5 delivery notes](research/step-05/STEP_05_DELIVERY.md).
 
-The application stores case inputs, drafts, source snapshots and exports locally in `TRUSTXAI_APP_DATA` (default `/workspace/thesis-runtime/app`). Deleting a conversation hides it through soft deletion; it is not secure erasure of SQLite records. There are no user accounts or authentication. Use synthetic/public research cases in this local prototype.
+The application stores case inputs, drafts, source snapshots and exports locally in `TRUSTXAI_APP_DATA` (default `.trustxai-runtime/app` inside the project). `TRUSTXAI_RUNTIME` can move the complete runtime directory, and `TRUSTXAI_APP_DATA` can move only the application data directory. Deleting a conversation hides it through soft deletion; it is not secure erasure of SQLite records. There are no user accounts or authentication. Use synthetic/public research cases in this local prototype.
 
 ## Research status
 
