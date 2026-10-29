@@ -2,6 +2,9 @@
 
 A local conversational workspace for **A Trustworthy & Explainable AI Framework for Large Language Model-Based Decision Support Systems**. The current research task is diagnostic decision support from clinical vignettes with four supplied candidate diagnoses.
 
+**Master's thesis project author and repository owner:** Spandan Kumar Gope  
+**GitHub:** [Spandan-Kumarr/TRUSTXAI](https://github.com/Spandan-Kumarr/TRUSTXAI)
+
 The React interface provides a conversation sidebar, a central chat composer, light/dark themes, source cards and an evidence drawer. FastAPI runs real local models, records their observations and retains an exportable audit for each case. No GPT/Gemini API access is required.
 
 ## Run in the configured cloud workspace
@@ -69,6 +72,12 @@ The verified environment is Linux x86_64, CPU only, with approximately 33 GiB RA
 The manifests currently record the configured cloud model paths. A different machine requires provisioning the pinned assets/dependencies and updating those paths. `TRUSTXAI_RUNTIME` changes the runtime/data root, while model lookup uses the recorded manifests. MacBook M5/MPS execution and a fresh-machine installer have not been validated.
 
 ## Open the downloaded project in VS Code
+
+Download the stable source archive from [TRUSTXAI v1.0.0](https://github.com/Spandan-Kumarr/TRUSTXAI/archive/refs/tags/v1.0.0.zip), or clone it with:
+
+```sh
+git clone https://github.com/Spandan-Kumarr/TRUSTXAI.git
+```
 
 Install Python 3.12, Node.js and Git, extract the project ZIP, then open the extracted `TRUSTXAI` folder in VS Code. In its integrated terminal run:
 
