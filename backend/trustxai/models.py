@@ -6,7 +6,8 @@ import json
 import resource
 import time
 from pathlib import Path
-from .config import RESEARCH, TARGET_CONTEXT, NATIVE_CONTEXT, MODEL_MEMORY_GIB
+from .config import (INFERENCE_PROFILE, MODEL_MEMORY_GIB, NATIVE_CONTEXT,
+                     RESEARCH, RUNTIME, TARGET_CONTEXT)
 from .domain import LETTERS, digest
 
 
@@ -15,6 +16,8 @@ class LocalModels:
         self.manifests = json.loads((RESEARCH.parent / 'evidence/MODEL_REVISIONS.json').read_text())
         self.native_info = json.loads((RESEARCH / 'evidence/NATIVE_COMMUNICATION_MODEL.json').read_text())
         self.prompt = json.loads((RESEARCH / 'CLASSIFICATION_PROMPT.json').read_text())
+        self.profile = INFERENCE_PROFILE
+        self.target_device = 'mps' if self.profile == 'mac16_mps_fp16' else 'cpu'
         self.target = self.target_tok = self.generator = self.generator_tok = self.nli = self.nli_tok = None
         self.torch_initialized = False
         self.phase = 'idle'
@@ -22,28 +25,58 @@ class LocalModels:
     @property
     def target_identity(self):
         meta = self.manifests['Qwen/Qwen3-4B-Instruct-2507']
-        return {'model': 'Qwen/Qwen3-4B-Instruct-2507', 'revision': meta['revision'],
-                'dtype': 'float32', 'threads': 4, 'enable_thinking': False, 'max_new_tokens': 8,
-                'prompt_sha256': hashlib.sha256((RESEARCH / 'CLASSIFICATION_PROMPT.json').read_bytes()).hexdigest(),
-                'decoding': 'greedy; strict A-D; fresh full query; no decision retry'}
+        value = {'model': 'Qwen/Qwen3-4B-Instruct-2507', 'revision': meta['revision'],
+                 'dtype': 'float32', 'threads': 4, 'enable_thinking': False, 'max_new_tokens': 8,
+                 'prompt_sha256': hashlib.sha256((RESEARCH / 'CLASSIFICATION_PROMPT.json').read_bytes()).hexdigest(),
+                 'decoding': 'greedy; strict A-D; fresh full query; no decision retry'}
+        if self.profile == 'mac16_mps_fp16':
+            value.update(dtype='float16', device='Apple MPS', runtime_profile=self.profile)
+        return value
 
     @property
     def communicator_identity(self):
-        return {'model': self.native_info['model'], 'revision': self.native_info['revision'],
-                'sha256': self.native_info['sha256'], 'backend': 'llama-cpp-python 0.3.16',
-                'quantization': 'Q8_0', 'threads_decode': 2, 'threads_prefill': 4,
-                'context_tokens': NATIVE_CONTEXT, 'enable_thinking': False, 'temperature': 0,
-                'repeat_penalty': 1}
+        value = {'model': self.native_info['model'], 'revision': self.native_info['revision'],
+                 'sha256': self.native_info['sha256'], 'backend': 'llama-cpp-python 0.3.16',
+                 'quantization': 'Q8_0', 'threads_decode': 2, 'threads_prefill': 4,
+                 'context_tokens': NATIVE_CONTEXT, 'enable_thinking': False, 'temperature': 0,
+                 'repeat_penalty': 1}
+        if self.profile == 'mac16_mps_fp16':
+            value.update(device='Metal', runtime_profile=self.profile)
+        return value
+
+    def _target_path(self):
+        meta = self.manifests['Qwen/Qwen3-4B-Instruct-2507']
+        portable = RUNTIME / 'models/Qwen3-4B-Instruct-2507' / meta['revision']
+        return portable if portable.exists() else Path(meta['local_path'])
+
+    def _communicator_path(self):
+        portable = RUNTIME / 'models/Qwen3-1.7B-GGUF' / self.native_info['revision'] / self.native_info['file']
+        return portable if portable.exists() else Path(self.native_info['local_path'])
+
+    def _communicator_tokenizer_path(self):
+        meta = self.manifests['Qwen/Qwen3-1.7B']
+        portable = RUNTIME / 'models/Qwen3-1.7B' / meta['revision']
+        if portable.exists():
+            return portable
+        return Path(meta.get('tokenizer_local_path', meta['local_path']))
+
+    def _checker_path(self):
+        meta = self.manifests['cross-encoder/nli-deberta-v3-base']
+        portable = RUNTIME / 'models/nli-deberta-v3-base' / meta['revision']
+        return portable if portable.exists() else Path(meta['local_path'])
 
     def available(self):
         target = self.manifests['Qwen/Qwen3-4B-Instruct-2507']
-        checker = self.manifests['cross-encoder/nli-deberta-v3-base']
-        checks = {'target': all((Path(target['local_path']) / f['name']).exists() for f in target['files']),
-                  'communicator': Path(self.native_info['local_path']).exists(),
-                  'checker': (Path(checker['local_path']) / 'model.safetensors').exists()}
+        checks = {'target': all((self._target_path() / f['name']).exists() for f in target['files']),
+                  'communicator': self._communicator_path().exists(),
+                  'communicator_tokenizer': (self._communicator_tokenizer_path() / 'tokenizer.json').exists(),
+                  'checker': (self._checker_path() / 'model.safetensors').exists()}
         return {'ready': all(checks.values()), 'assets': checks, 'phase': self.phase,
                 'target': self.target_identity, 'communicator': self.communicator_identity,
-                'device': 'CPU', 'integrity_basis': 'Previously verified pinned setup manifests'}
+                'device': 'Apple MPS' if self.profile == 'mac16_mps_fp16' else 'CPU',
+                'profile': self.profile,
+                'research_result_compatible': self.profile == 'research_cpu_fp32',
+                'integrity_basis': 'Pinned revisions with publisher artifact digests'}
 
     def _torch(self):
         import torch
@@ -53,9 +86,12 @@ class LocalModels:
             self.torch_initialized = True
         return torch
 
-    @staticmethod
-    def _trim():
+    def _trim(self):
         gc.collect()
+        if self.torch_initialized and self.profile == 'mac16_mps_fp16':
+            torch = self._torch()
+            if torch.backends.mps.is_available():
+                torch.mps.empty_cache()
         try:
             ctypes.CDLL('libc.so.6').malloc_trim(0)
         except OSError:
@@ -68,13 +104,13 @@ class LocalModels:
         self._trim()
 
     def release_target(self):
-        self.target = None
+        self.target = self.target_tok = None
         self._trim()
 
     def _memory_check(self):
         import psutil
         if psutil.Process().memory_info().rss / 2**30 > MODEL_MEMORY_GIB:
-            raise RuntimeError('The configured 24 GiB inference memory budget was exceeded')
+            raise RuntimeError(f'The configured {MODEL_MEMORY_GIB} GiB inference memory budget was exceeded')
 
     def load_target(self):
         if self.target is not None:
@@ -83,11 +119,17 @@ class LocalModels:
         self.release_communication()
         torch = self._torch()
         from transformers import AutoModelForCausalLM, AutoTokenizer
-        path = self.manifests['Qwen/Qwen3-4B-Instruct-2507']['local_path']
+        if self.profile == 'mac16_mps_fp16' and not torch.backends.mps.is_available():
+            raise RuntimeError('The mac16 profile requires Apple Silicon with PyTorch MPS support')
+        path = self._target_path()
         self.target_tok = AutoTokenizer.from_pretrained(path, local_files_only=True, trust_remote_code=False)
-        self.target = AutoModelForCausalLM.from_pretrained(path, local_files_only=True,
-                        trust_remote_code=False, use_safetensors=True, dtype=torch.float32,
-                        attn_implementation='sdpa').eval()
+        arguments = {'local_files_only': True, 'trust_remote_code': False,
+                     'use_safetensors': True, 'attn_implementation': 'sdpa'}
+        if self.profile == 'mac16_mps_fp16':
+            arguments.update(dtype=torch.float16, device_map={'': 'mps'}, low_cpu_mem_usage=True)
+        else:
+            arguments['dtype'] = torch.float32
+        self.target = AutoModelForCausalLM.from_pretrained(path, **arguments).eval()
         self._memory_check()
 
     def classify(self, prepared, omitted=None):
@@ -100,6 +142,8 @@ class LocalModels:
         messages = [{'role': 'system', 'content': self.prompt['system']}, {'role': 'user', 'content': user}]
         inputs = self.target_tok.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
                         return_tensors='pt', return_dict=True, enable_thinking=False)
+        if getattr(self, 'target_device', 'cpu') != 'cpu':
+            inputs = {key: value.to(self.target_device) for key, value in inputs.items()}
         n = inputs['input_ids'].shape[-1]
         if n > TARGET_CONTEXT:
             raise ValueError(f'The case uses {n} target tokens; the local limit is {TARGET_CONTEXT}. Shorten the case or options; no text was truncated.')
@@ -124,11 +168,12 @@ class LocalModels:
         self.phase = 'loading communicator'
         from llama_cpp import Llama
         from transformers import AutoTokenizer
-        tokenizer = self.manifests['Qwen/Qwen3-1.7B']
-        path = tokenizer.get('tokenizer_local_path', tokenizer['local_path'])
+        path = self._communicator_tokenizer_path()
         self.generator_tok = AutoTokenizer.from_pretrained(path, local_files_only=True, trust_remote_code=False)
-        self.generator = Llama(model_path=self.native_info['local_path'], n_ctx=NATIVE_CONTEXT,
-                    n_threads=2, n_threads_batch=4, n_gpu_layers=0, seed=20261027, verbose=False)
+        self.generator = Llama(model_path=str(self._communicator_path()), n_ctx=NATIVE_CONTEXT,
+                    n_threads=2, n_threads_batch=4,
+                    n_gpu_layers=-1 if self.profile == 'mac16_mps_fp16' else 0,
+                    seed=20261027, verbose=False)
         self._memory_check()
 
     def generate(self, system, user, cap=384):
@@ -157,7 +202,7 @@ class LocalModels:
         self.phase = 'loading checker'
         torch = self._torch()
         from transformers import AutoTokenizer, AutoModelForSequenceClassification
-        path = self.manifests['cross-encoder/nli-deberta-v3-base']['local_path']
+        path = self._checker_path()
         self.nli_tok = AutoTokenizer.from_pretrained(path, local_files_only=True)
         self.nli = AutoModelForSequenceClassification.from_pretrained(path, local_files_only=True,
                     trust_remote_code=False, use_safetensors=True, dtype=torch.float32).eval()

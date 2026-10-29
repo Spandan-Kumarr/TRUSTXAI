@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 TASK_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+TASK_RUNTIME="${TRUSTXAI_RUNTIME:-$TASK_ROOT/.trustxai-runtime}"
+if [[ -z "${TRUSTXAI_PROFILE:-}" && -f "$TASK_RUNTIME/profile" ]]; then
+  export TRUSTXAI_PROFILE="$(<"$TASK_RUNTIME/profile")"
+fi
+if [[ "${TRUSTXAI_PROFILE:-}" == mac16_mps_fp16 ]]; then
+  export PYTORCH_ENABLE_MPS_FALLBACK=1
+fi
 if [[ -n "${TRUSTXAI_PYTHON:-}" ]]; then
   TASK_PYTHON="$TRUSTXAI_PYTHON"
 elif [[ -x "$TASK_ROOT/.venv/bin/python" ]]; then

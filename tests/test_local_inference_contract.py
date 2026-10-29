@@ -6,6 +6,54 @@ from conftest import query_hash
 from trustxai.models import LocalModels
 
 
+def test_research_identity_is_unchanged_and_mac_profile_is_explicit():
+    model = LocalModels()
+    assert model.profile == 'research_cpu_fp32'
+    assert model.target_identity['dtype'] == 'float32'
+    assert 'runtime_profile' not in model.target_identity
+    assert 'runtime_profile' not in model.communicator_identity
+
+    model.profile = 'mac16_mps_fp16'
+    assert model.target_identity['dtype'] == 'float16'
+    assert model.target_identity['device'] == 'Apple MPS'
+    assert model.target_identity['runtime_profile'] == 'mac16_mps_fp16'
+    assert model.communicator_identity['device'] == 'Metal'
+
+
+def test_portable_runtime_layout_overrides_recorded_cloud_paths(tmp_path, monkeypatch):
+    import trustxai.models as models_module
+
+    monkeypatch.setattr(models_module, 'RUNTIME', tmp_path)
+    model = LocalModels()
+    target = model.manifests['Qwen/Qwen3-4B-Instruct-2507']
+    target_dir = tmp_path / 'models/Qwen3-4B-Instruct-2507' / target['revision']
+    target_dir.mkdir(parents=True)
+    for record in target['files']:
+        (target_dir / record['name']).touch()
+
+    communicator = tmp_path / 'models/Qwen3-1.7B-GGUF' / model.native_info['revision'] / model.native_info['file']
+    communicator.parent.mkdir(parents=True)
+    communicator.touch()
+
+    tokenizer = model.manifests['Qwen/Qwen3-1.7B']
+    tokenizer_dir = tmp_path / 'models/Qwen3-1.7B' / tokenizer['revision']
+    tokenizer_dir.mkdir(parents=True)
+    (tokenizer_dir / 'tokenizer.json').touch()
+
+    checker = model.manifests['cross-encoder/nli-deberta-v3-base']
+    checker_dir = tmp_path / 'models/nli-deberta-v3-base' / checker['revision']
+    checker_dir.mkdir(parents=True)
+    (checker_dir / 'model.safetensors').touch()
+
+    status = model.available()
+    assert status['ready'] is True
+    assert all(status['assets'].values())
+    assert model._target_path() == target_dir
+    assert model._communicator_path() == communicator
+    assert model._communicator_tokenizer_path() == tokenizer_dir
+    assert model._checker_path() == checker_dir
+
+
 class OutputTokens:
     def __getitem__(self, key):
         assert key[0] == 0 and isinstance(key[1], slice)

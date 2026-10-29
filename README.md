@@ -73,7 +73,7 @@ The manifests currently record the configured cloud model paths. A different mac
 
 ## Open the downloaded project in VS Code
 
-Download the stable source archive from [TRUSTXAI v1.0.0](https://github.com/Spandan-Kumarr/TRUSTXAI/archive/refs/tags/v1.0.0.zip), or clone it with:
+Download the stable source archive from [TRUSTXAI v1.0.2](https://github.com/Spandan-Kumarr/TRUSTXAI/archive/refs/tags/v1.0.2.zip), or clone it with:
 
 ```sh
 git clone https://github.com/Spandan-Kumarr/TRUSTXAI.git
@@ -89,7 +89,21 @@ chmod +x scripts/setup-local.sh scripts/run.sh
 
 Open `http://127.0.0.1:8000`. The setup script creates `.venv`, installs the API/test dependencies, installs the locked frontend packages and builds the interface. This starts the application shell and API on macOS or Linux without using the cloud-specific Python path.
 
-The GitHub/source ZIP intentionally excludes model weights, raw private cases, SQLite history and the cloud virtual environment. Consequently, diagnostic inference reports that assets are unavailable until the three pinned model assets are provisioned and their local paths are updated in the recorded manifests. The current full inference configuration is CPU FP32 and has not been validated on Apple Silicon/MPS. The research documents, source code, aggregate results and tests are included.
+The GitHub/source ZIP intentionally excludes model weights, raw private cases, SQLite history and the cloud virtual environment. Consequently, diagnostic inference reports that assets are unavailable until the pinned model assets are provisioned. The application resolves provisioned assets from `.trustxai-runtime/models` without rewriting the frozen research manifests. The current full inference configuration is CPU FP32 and has not been validated on Apple Silicon/MPS. The research documents, source code, aggregate results and tests are included.
+
+### Optional 16 GB Apple Silicon demo profile
+
+The frozen thesis runs used the recorded Linux CPU FP32 profile, which reached approximately 18.93 GiB peak process RSS. A 16 GB Apple Silicon Mac must not attempt that profile. The optional local-demo profile uses the same pinned Qwen3-4B target revision in FP16 on Apple MPS, the pinned Qwen3-1.7B Q8_0 communicator on Metal, and the pinned checker on CPU. Backend, device and precision can affect outputs, so local-demo results are labelled `mac16_mps_fp16` and are not interchangeable with the frozen thesis measurements.
+
+After the normal local setup, install CMake and provision approximately 11–13 GB of public model assets:
+
+```sh
+brew install cmake
+./scripts/setup-models-mac16.sh
+./scripts/run.sh
+```
+
+No API key or paid service is required. The installer verifies the recorded publisher SHA256 digests and writes the selected profile under `.trustxai-runtime/`. Keep at least 15 GiB free during provisioning. Model setup on a fresh Apple Silicon machine remains environment-dependent; if a native package build fails, retain its complete Terminal output for diagnosis.
 
 For frontend development, run `npm run dev` in `frontend/`; Vite proxies `/api` to the backend on port 8000. API documentation is available at `/docs`.
 
