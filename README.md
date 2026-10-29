@@ -68,6 +68,20 @@ The verified environment is Linux x86_64, CPU only, with approximately 33 GiB RA
 
 The manifests currently record the configured cloud model paths. A different machine requires provisioning the pinned assets/dependencies and updating those paths. `TRUSTXAI_RUNTIME` changes the runtime/data root, while model lookup uses the recorded manifests. MacBook M5/MPS execution and a fresh-machine installer have not been validated.
 
+## Open the downloaded project in VS Code
+
+Install Python 3.12, Node.js and Git, extract the project ZIP, then open the extracted `TRUSTXAI` folder in VS Code. In its integrated terminal run:
+
+```sh
+chmod +x scripts/setup-local.sh scripts/run.sh
+./scripts/setup-local.sh
+./scripts/run.sh
+```
+
+Open `http://127.0.0.1:8000`. The setup script creates `.venv`, installs the API/test dependencies, installs the locked frontend packages and builds the interface. This starts the application shell and API on macOS or Linux without using the cloud-specific Python path.
+
+The GitHub/source ZIP intentionally excludes model weights, raw private cases, SQLite history and the cloud virtual environment. Consequently, diagnostic inference reports that assets are unavailable until the three pinned model assets are provisioned and their local paths are updated in the recorded manifests. The current full inference configuration is CPU FP32 and has not been validated on Apple Silicon/MPS. The research documents, source code, aggregate results and tests are included.
+
 For frontend development, run `npm run dev` in `frontend/`; Vite proxies `/api` to the backend on port 8000. API documentation is available at `/docs`.
 
 ```sh
